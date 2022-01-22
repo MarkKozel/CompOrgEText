@@ -1,11 +1,13 @@
 ---
-title: LC3 Commands
-shorttitle: Commands
+title: LC3 Assembly Emulator
+shorttitle: The Little Computer 3
 
 tags: []
 ---
-
 # {{ $frontmatter.title }}
 **{{ $frontmatter.shorttitle }}**
+
+
+
 
     

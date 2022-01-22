@@ -39,6 +39,10 @@ module.exports = {
         link: '/etext/',
       },
       {
+        text: 'LC3',
+        link: '/LC3/',
+      },
+      {
         text: 'Course Info',
         link: '/CourseInformation/',
       },
@@ -64,6 +68,30 @@ module.exports = {
             'LogicAndDigitalCircuits/',
             'AssemblyProgramming/',
           ]
+        }
+      ],
+      '/LC3/': [
+        {
+          title: 'The LC3',
+          path: '/LC3/',
+          collapsable: false,
+          children: [
+            'LC3/',
+            'LC3/GettingStarted/',
+          ],
+        },
+        {
+          title: 'LC3 Commands',
+          path: '/LC3/Commands/',
+          collapsable: false,
+          children: [
+            'Commands/',
+            'Commands/ALU',
+            'Commands/Branching',
+            'Commands/MemoryAccess',
+            'Commands/TrapRoutines',
+            'Commands/Subroutine',
+          ],
         }
       ],
       '/CourseInformation/': [
@@ -108,5 +136,58 @@ module.exports = {
   plugins: [
     '@vuepress/plugin-back-to-top',
     '@vuepress/plugin-medium-zoom',
+    "vuepress-plugin-copyright",
+    {
+      noCopy: true, // the selected text will be non-copyable
+      minLength: 40, // if its length is greater than 100
+      authorName:
+        "Mark Kozel. This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License",
+      clipboardComponent: "../components/ClipboardComponent.vue",
+    },
+    "vuepress-plugin-container",
+    {
+      type: "readmore",
+      before: (info) =>
+        `<div class="readmore">
+            <p class="readmoretitle">Read More: <em> ${info}</em></p>`,
+      after: () => "</div>\n",
+    },
+    "vuepress-plugin-container",
+    {
+      type: "thinkaboutit",
+      before: (info) =>
+        `<div class="custom-container thinkaboutit"> ${info ? `<p class="custom-container-title thinkaboutittitle">${info}</p>` : ''}\n`,
+      after: () => "</div>\n",
+    },
+    "vuepress-plugin-container", {
+      type: "whatsgoingon",
+      before: (info) => `<div class="whatsgoingon">
+          <p class="title">What's Going On${info}</p>`,
+      after: () => "</div>\n",
+    },
+    "vuepress-plugin-container", {
+      type: "bythenumbers",
+      before: (info) => `<div class="bythenumbers"><h4>By The Numbers: <u>${info}</u></h4>`,
+      after: () => "</div>\n",
+    },
+    "vuepress-plugin-container",
+    {
+      type: "left",
+      defaultTitle: "",
+    },
+    "vuepress-plugin-container",
+    {
+      type: "right",
+      defaultTitle: "",
+    },
+    "vuepress-plugin-container",
+    {
+      type: "tip",
+      defaultTitle: "Tip",
+    },
+    '@vuepress/search', {
+      searchMaxSuggestions: 10
+    }
+
   ]
 }
