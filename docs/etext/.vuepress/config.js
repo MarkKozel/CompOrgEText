@@ -36,19 +36,19 @@ module.exports = {
     nav: [
       {
         text: 'E-Text',
-        link: '/EText/',
+        link: '/etext/',
       },
       {
-        text: 'Guide',
+        text: 'Course Info',
+        link: '/CourseInformation/',
+      },
+      {
+        text: 'About',
+        link: '/about/',
+      },
+      {
+        text: 'VP Guide',
         link: '/guide/',
-      },
-      {
-        text: 'Config',
-        link: '/config/'
-      },
-      {
-        text: 'VuePress',
-        link: 'https://v1.vuepress.vuejs.org'
       }
     ],
     sidebar: {
@@ -63,6 +63,29 @@ module.exports = {
             'NumberSystems/',
             'LogicAndDigitalCircuits/',
             'AssemblyProgramming/',
+          ]
+        }
+      ],
+      '/CourseInformation/': [
+        {
+          title: 'Course Info',
+          collapsable: false,
+          children: [
+            '',
+            'CourseOrganization',
+            'CourseRational',
+          ]
+        }
+      ],
+      '/About/': [
+        {
+          title: 'About This EText',
+          collapsable: false,
+          children: [
+            '',
+            'Funding',
+            'Colophon',
+            'GettingStarted',
           ]
         }
       ],
