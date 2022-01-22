@@ -1,5 +1,5 @@
 {
-  "name": "CompOrgEText",
+  "name": "comp-org-etext",
   "version": "0.0.1",
   "description": "Computer Organization online textbook",
   "main": "index.js",
@@ -9,8 +9,8 @@
   },
   "repository": "https://github.com/MarkKozel/CompOrgEText.git/CompOrgEText",
   "scripts": {
-    "dev": "vuepress dev src",
-    "build": "vuepress build src"
+    "dev": "vuepress dev etext",
+    "build": "vuepress build etext"
   },
   "license": "MIT",
   "devDependencies": {

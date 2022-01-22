@@ -4,7 +4,7 @@ module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: 'Vuepress Docs Boilerplate',
+  title: 'CS 131 - Computer Organization',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
@@ -27,12 +27,17 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
+    logo: '/images/CourseLogo.png',
     repo: '',
     editLinks: false,
     docsDir: '',
     editLinkText: '',
     lastUpdated: false,
     nav: [
+      {
+        text: 'E-Text',
+        link: '/EText/',
+      },
       {
         text: 'Guide',
         link: '/guide/',
@@ -47,6 +52,20 @@ module.exports = {
       }
     ],
     sidebar: {
+      '/EText/': [
+        {
+          title: 'Text',
+          collapsable: false,
+          children: [
+            '',
+            'Introduction/',
+            'Foundations/',
+            'NumberSystems/',
+            'LogicAndDigitalCircuits/',
+            'AssemblyProgramming/',
+          ]
+        }
+      ],
       '/guide/': [
         {
           title: 'Guide',
