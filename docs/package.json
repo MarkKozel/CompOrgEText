@@ -1,0 +1,19 @@
+{
+  "name": "CompOrgEText",
+  "version": "0.0.1",
+  "description": "Computer Organization online textbook",
+  "main": "index.js",
+  "authors": {
+    "name": "Mark Kozel",
+    "email": "Development@markkozel.net"
+  },
+  "repository": "https://github.com/MarkKozel/CompOrgEText.git/CompOrgEText",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}
