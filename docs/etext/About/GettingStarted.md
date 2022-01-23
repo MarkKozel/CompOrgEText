@@ -20,10 +20,31 @@ Other will not be able to see these updates
 
 > The following process is how the original project was developed. Other tools may be substituted
 
-1. Pull this repo, which you can check off the list since you have this document
-1. Install [NodeJS](https://nodejs.org/en/download/) on your system
+### Initial Setup of GitHub Repo and Initialization
+You will clone the repo from GitHub. Switch to the ```docs``` directory. And install the required node modules
+1. Install git command-line tools from [git-scm](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+1. Install NodeJS [NodeJS Download page](https://nodejs.org/en/download/)
+1. Open a command windows and switch to the location you want the project folder to exist
+1. ```git clone https://github.com/MarkKozel/CompOrgEText.git``` to pull master branch of repo to your system
+1. ```cd CompOrgEText/docs``` to switch to the document root folder
+1. ```npm install``` to install required NodeJS modules
+
+### Start Dev Server
+The built-in dev server allows you to render and view the entire site on a local web server on your system. This speeds up modification process by allowing you to modify and review without needs to update GitHub. You will start the dev server, the open a browser tab to view the site
+
+1. In the command windows ```cd CompOrgEText/docs``` to switch to the document root folder
+1. ```npm run dev``` to start the dev server
+1. Once the final ```success``` message appears, open a browser to the address shown in that message (typically http://localhost:8080)
+
+Editing files in the *working files* and saving will trigger the dev server to restart, and saved changes will appear in the browser
+
+If changes do not appear in the browser, try 1) pressing F5 in the browser or 2) stopping and restarting the dev server (ctrl-c in the terminal should stop it)
+
+### Installing VSCode to make Updates
+You can use any editing environment to update and push changes. This section covers using VSCode
+
 1. Install [Code](https://code.visualstudio.com/Download) on your system
-1. Start Code and open the project folder (Comp142-EText)
+1. Start Code and open the project folder (CompOrgEText/docs)
 1. Start a terminal window in Code
     > *View > Terminal* -or- *CTRL + `*
 1. Verify Node isn installed and accessible
@@ -42,27 +63,3 @@ Other will not be able to see these updates
     >Note the web address on this line (something like http://localhost:8080)
 1. Open a web browser and enter the web address
 1. You will, if everything worked, the opening page of the project
-
-## Deploying
-
-To make the materials available to others, the project source files make be rendered at a static site
-
-The GitHub repo and Netlify site are associated so that a commit to GitHub causes a build to be triggered in Netlify
-
-There is a good setup guide at [VuePressBooks](https://vuepressbook.com/netlify.html#deploying-a-vuepress-site-to-netlify)
-
-Following the above guide, this project is modified on a PC. Changes are pushed to GitHub. Netlify is notified, and starts a Build. When the build is complete, the updates are deployed
-
-Once this is initially setup and working, the standard update cycle is as follows:
-1. Create, modify, remove files
-1. Add changes to local git repo
-
-    ```git add .```
-1. Commit changes
-
-    ```git commit -m '<your commit comment>'```
-1. Push changes to remote repo
-
-    ```git push```
-
-This initiates the build and deploy processes on Netlify

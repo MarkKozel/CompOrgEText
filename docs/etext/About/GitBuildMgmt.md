@@ -4,28 +4,14 @@
 *Local Repo* is the git repo on your computer
 *Working Files* is the set of files you view and edit
 
-## Initial Setup of GitHub Repo and Initialization
-You will clone the repo from GitHub. Switch to the ```docs``` directory. And install the required node modules
-
-1. ```git clone https://github.com/MarkKozel/CompOrgEText.git```
-1. ```cd CompOrgEText/docs```
-1. ```npm install```
-
-To run the development server so you can review the site quickly:
-```npm run dev```
-Once the final ```success``` message appears, open a browser to the address shown in that message (http://localhost:8080)
-
-Editing files in the *working files* and saving will trigger the dev server to restart, and saved changes will appear in the browser
-
-If changes do not appear in the browser, try 1) pressing F5 in the browser or 2) stopping and restarting the dev server (ctrl-c in the terminal should stop it)
-
-
 ## Normal Workflow
 1. ```git branch``` to show what branch you are currently on
 1. ```git fetch``` to get an new branched from *remote repo* into your *working repo*
 1. ```git checkout '<branch name>'``` to switch to *branch name*. If *branch name* has different files, they will be pulled into your *local repo* and *working* files
+1. Modify files
+1. Commit and Push modifications...next section
 
-## Regular update of working files to GitHub
+## Regular Update of Working Files to GitHub
 You will select files to **commit** to your *working repo*, then **push** them to *remote repo*
 
 > for Master, Dev, and DocReview branches, a push will trigger a re-deploy of the site on Netlify
