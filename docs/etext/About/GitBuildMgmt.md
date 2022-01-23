@@ -37,6 +37,22 @@ You will select files to **commit** to your *working repo*, then **push** them t
 
 > If you are committing several small updates, you can preform several ```add``` and ```commit``` operation, then ```push``` later. The history of commits and commit messages will remain separate
 
+## Pull Request to Merge Other Branches into Master
+For official merges that require review prior to pushing to Master branch, we will use the GutHub **Pull Request** mechanism to track major updates. Merging into master can be done via *command line git commands*, **Pull Requests** communicate the need for review
+
+1. Login to (GitHub)[https://github.com/]
+1. Open Repository
+1. Click **Pull Request** 
+1. Click **New Pull Request**
+1. Select branches for *base* and *compare*
+  - For Dev merge into Master, *base* is Master and *compare* is Dev
+1. Review modification that will be made to the *base* branch in this **Pull Request**
+1. If everything looks good, click the **Create Pull Request** button
+1. On the next screen you can add comments that the admin will review when processing the request
+1. Click **Create Pull Request** button
+
+Admin will review request. They may add comments/questions. Eventually, that will pusg
+
 ## Forgot to Switch to a Branch Before Committing?
 ```git switch '<branch name>'``` with switch *local repo* branch w/o updating the *working files*
 
