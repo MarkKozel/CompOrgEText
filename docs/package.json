@@ -1,6 +1,6 @@
 {
   "name": "comp-org-etext",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Computer Organization online textbook",
   "main": "index.js",
   "authors": {
@@ -12,7 +12,7 @@
     "dev": "vuepress dev etext",
     "build": "vuepress build etext"
   },
-  "license": "MIT",
+  "license": "CC-BY-SA-4.0",
   "devDependencies": {
     "@vuepress/plugin-back-to-top": "^1.9.7",
     "@vuepress/plugin-search": "^1.9.7",
