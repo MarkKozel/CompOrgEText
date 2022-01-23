@@ -4,7 +4,24 @@
 *Local Repo* is the git repo on your computer
 *Working Files* is the set of files you view and edit
 
-## Normal Workflow
+## Workflows
+
+## Standard Workflow
+This is a typical workflow for a work session. It covers getting updated with te\he latest updates from other contributors, making and testing mods, and pushing to GitHub
+
+The examples here are for a Doc Reviewer to get current Dev updates, make modification, and push to DocReview branch
+
+1. Check current branch. Switch to DocReview if needed
+1. Pull from GitHub
+1. Merge Dev branch changes into DocReview
+1. Update files in DocReview branch
+1. Commit and Push to GitHub on DocReview Branch
+1. Login to GitHub adn create Pull Request for newly pushed DocReview update
+  - This will be a request to merge DocReview changes into Dev branch
+1. Done
+
+some notes: 
+
 1. ```git branch``` to show what branch you are currently on
 1. ```git fetch``` to get an new branched from *remote repo* into your *working repo*
 1. ```git checkout '<branch name>'``` to switch to *branch name*. If *branch name* has different files, they will be pulled into your *local repo* and *working* files
@@ -23,7 +40,7 @@ You will select files to **commit** to your *working repo*, then **push** them t
 
 > If you are committing several small updates, you can preform several ```add``` and ```commit``` operation, then ```push``` later. The history of commits and commit messages will remain separate
 
-## Pull Request to Merge Other Branches into Master
+### Pull Request to Merge Other Branches into Master
 For official merges that require review prior to pushing to Master branch, we will use the GutHub **Pull Request** mechanism to track major updates. Merging into master can be done via *command line git commands*, **Pull Requests** communicate the need for review
 
 1. Login to (GitHub)[https://github.com/]
