@@ -1,5 +1,9 @@
-# omputer Organization E-Textbook
+# Computer Organization E-Textbook
 ## Online Open Educational Resources (OER) / Zero Cost Textbook (ZCT)
+
+Master Branch Build Status: [CompOrgEText Master Site](comp-org-etext.netlify.app)
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f3989d12-377f-4c71-9d7f-9970711129b9/deploy-status)](https://app.netlify.com/sites/comp-org-etext/deploys)
 
 ## Project
 Create a set of online resources to replace current textbook for CS-131, Computer Organization at Allan Hancock
@@ -44,8 +48,6 @@ A VuePress site is created using Markdown (simplified HTML syntax), style and th
 The VuePress site is built into a static web site that can be deployed to various hosting sites for student use
 
 The Documentation Source will be available on GitHub to allow others to instructors to modify and deploy their own version of the documentation. Other instructors couple then deploy their modified documentation to their own web sites for their students to access
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/3d257301-cf65-416b-9219-845ea673442d/deploy-status)](https://app.netlify.com/sites/cs131/deploys)
 
 ## Development Log
 20220122 - Starting with clean repo to facilitate coordinating with Doc Reviewer and Peer Reviewer. Reverted to VuePress 1.x as 2.x was to *betaish*
