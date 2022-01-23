@@ -1,4 +1,4 @@
-# Comp142 - Computer Organization E-Textbook
+# omputer Organization E-Textbook
 ## Online Open Educational Resources (OER) / Zero Cost Textbook (ZCT)
 
 ## Project
@@ -48,6 +48,8 @@ The Documentation Source will be available on GitHub to allow others to instruct
 [![Netlify Status](https://api.netlify.com/api/v1/badges/3d257301-cf65-416b-9219-845ea673442d/deploy-status)](https://app.netlify.com/sites/cs131/deploys)
 
 ## Development Log
+20220122 - Starting with clean repo to facilitate coordinating with Doc Reviewer and Peer Reviewer. Reverted to VuePress 1.x as 2.x was to *betaish*
+
 20211121 - Continuing to add structure and some content. Fixed issue w/ question components. They were not seeing global styles, so moved styles into <scope> blocks in each component. Will need to figure this out later
 
 20211129 - Adding pages for SW development (Design, Debugging, and Comments) for use in class this semester. Added LC3 Directory for LC3-specific examples
