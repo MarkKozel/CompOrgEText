@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Program Flow | CS 131 - Computer Organization</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="Controlling the flow of a program from within the program is a big part of Turing initial General Purpose computer. It allows a program to execute in various orders, based on internal changes and external data">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/assets/css/0.styles.cae50936.css" as="style"><link rel="preload" href="/assets/js/app.55f9c1c1.js" as="script"><link rel="preload" href="/assets/js/2.23fe0875.js" as="script"><link rel="preload" href="/assets/js/32.ec7dccd4.js" as="script"><link rel="preload" href="/assets/js/5.f5b36fc3.js" as="script"><link rel="prefetch" href="/assets/js/10.5bd32d4f.js"><link rel="prefetch" href="/assets/js/11.a829b5f9.js"><link rel="prefetch" href="/assets/js/12.7308925a.js"><link rel="prefetch" href="/assets/js/13.a6068e34.js"><link rel="prefetch" href="/assets/js/14.4d64f870.js"><link rel="prefetch" href="/assets/js/15.6f8be927.js"><link rel="prefetch" href="/assets/js/16.b35aa036.js"><link rel="prefetch" href="/assets/js/17.5d5c29d8.js"><link rel="prefetch" href="/assets/js/18.29b1bbdd.js"><link rel="prefetch" href="/assets/js/19.fb8b109d.js"><link rel="prefetch" href="/assets/js/20.6a93413b.js"><link rel="prefetch" href="/assets/js/21.38653396.js"><link rel="prefetch" href="/assets/js/22.ce0d711f.js"><link rel="prefetch" href="/assets/js/23.ef090e13.js"><link rel="prefetch" href="/assets/js/24.e3d5246b.js"><link rel="prefetch" href="/assets/js/25.76357b1a.js"><link rel="prefetch" href="/assets/js/26.d29a0ca5.js"><link rel="prefetch" href="/assets/js/27.a18b74d2.js"><link rel="prefetch" href="/assets/js/28.a80cbb66.js"><link rel="prefetch" href="/assets/js/29.aa187075.js"><link rel="prefetch" href="/assets/js/3.799b0ae7.js"><link rel="prefetch" href="/assets/js/30.cc45cc20.js"><link rel="prefetch" href="/assets/js/31.527f073f.js"><link rel="prefetch" href="/assets/js/33.8aaeb412.js"><link rel="prefetch" href="/assets/js/34.def8ebe7.js"><link rel="prefetch" href="/assets/js/35.9565748e.js"><link rel="prefetch" href="/assets/js/36.1a7d8c71.js"><link rel="prefetch" href="/assets/js/37.540f1705.js"><link rel="prefetch" href="/assets/js/38.d11a2905.js"><link rel="prefetch" href="/assets/js/39.cd120c63.js"><link rel="prefetch" href="/assets/js/4.9b335f76.js"><link rel="prefetch" href="/assets/js/40.fbad6832.js"><link rel="prefetch" href="/assets/js/41.3f63dcaf.js"><link rel="prefetch" href="/assets/js/42.631e9065.js"><link rel="prefetch" href="/assets/js/43.fdc7fc56.js"><link rel="prefetch" href="/assets/js/44.62ee35b0.js"><link rel="prefetch" href="/assets/js/45.53220787.js"><link rel="prefetch" href="/assets/js/46.d56d5c68.js"><link rel="prefetch" href="/assets/js/47.96782874.js"><link rel="prefetch" href="/assets/js/48.8e3c02f0.js"><link rel="prefetch" href="/assets/js/49.a96cf87b.js"><link rel="prefetch" href="/assets/js/50.2843ced3.js"><link rel="prefetch" href="/assets/js/51.332d1218.js"><link rel="prefetch" href="/assets/js/52.73dc97c1.js"><link rel="prefetch" href="/assets/js/53.ba44c0d0.js"><link rel="prefetch" href="/assets/js/54.07834be9.js"><link rel="prefetch" href="/assets/js/55.894d16a1.js"><link rel="prefetch" href="/assets/js/56.ceecc893.js"><link rel="prefetch" href="/assets/js/57.70cc71eb.js"><link rel="prefetch" href="/assets/js/58.b7a964f3.js"><link rel="prefetch" href="/assets/js/59.01d8fa5a.js"><link rel="prefetch" href="/assets/js/6.316a9004.js"><link rel="prefetch" href="/assets/js/60.11a0716f.js"><link rel="prefetch" href="/assets/js/61.9b586efb.js"><link rel="prefetch" href="/assets/js/62.826d95d9.js"><link rel="prefetch" href="/assets/js/63.cb80a864.js"><link rel="prefetch" href="/assets/js/64.159fec77.js"><link rel="prefetch" href="/assets/js/65.054924e7.js"><link rel="prefetch" href="/assets/js/66.74a29ade.js"><link rel="prefetch" href="/assets/js/67.0c6949a4.js"><link rel="prefetch" href="/assets/js/68.6c20ed63.js"><link rel="prefetch" href="/assets/js/69.4e4578cc.js"><link rel="prefetch" href="/assets/js/7.9b806e34.js"><link rel="prefetch" href="/assets/js/70.407cd69d.js"><link rel="prefetch" href="/assets/js/71.8439dfbb.js"><link rel="prefetch" href="/assets/js/72.b6273b33.js"><link rel="prefetch" href="/assets/js/73.6eb60eae.js"><link rel="prefetch" href="/assets/js/74.131ad3af.js"><link rel="prefetch" href="/assets/js/75.735a0cf8.js"><link rel="prefetch" href="/assets/js/8.1e607f02.js"><link rel="prefetch" href="/assets/js/9.e8afeaed.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.cae50936.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/images/CourseLogo.png" alt="CS 131 - Computer Organization" class="logo"> <span class="site-name can-hide">CS 131 - Computer Organization</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/etext/" class="nav-link">
+  E-Text
+</a></div><div class="nav-item"><a href="/LC3/" class="nav-link">
+  LC3
+</a></div><div class="nav-item"><a href="/CourseInformation/" class="nav-link">
+  Course Info
+</a></div><div class="nav-item"><a href="/about/" class="nav-link">
+  About
+</a></div><div class="nav-item"><a href="/guide/" class="nav-link">
+  VP Guide
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/etext/" class="nav-link">
+  E-Text
+</a></div><div class="nav-item"><a href="/LC3/" class="nav-link">
+  LC3
+</a></div><div class="nav-item"><a href="/CourseInformation/" class="nav-link">
+  Course Info
+</a></div><div class="nav-item"><a href="/about/" class="nav-link">
+  About
+</a></div><div class="nav-item"><a href="/guide/" class="nav-link">
+  VP Guide
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Text</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/EText/" aria-current="page" class="sidebar-link">CS-131 Computer Organization</a></li><li><a href="/EText/Introduction/" class="sidebar-link">Introduction to Computer Organization</a></li><li><a href="/EText/Foundations/" class="sidebar-link">Foundations</a></li><li><a href="/EText/NumberSystems/" class="sidebar-link">Number Systems</a></li><li><a href="/EText/LogicAndDigitalCircuits/" class="sidebar-link">Logic and Digital Circuits</a></li><li><a href="/EText/AssemblyProgramming/" aria-current="page" class="sidebar-link">Assembly Programming</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="frontmatter-title"><a href="#frontmatter-title" class="header-anchor">#</a> Program Flow</h1> <p><strong>Controlling the flow of a program from within the program is a big part of Turing initial General Purpose computer. It allows a program to execute in various orders, based on internal changes and external data</strong></p> <div class="key-concepts" data-v-6393cc7e><table style="border:none" data-v-6393cc7e><tr data-v-6393cc7e><td class="border" style="10%" data-v-6393cc7e><p class="header" data-v-6393cc7e>Key Concepts</p></td> <table cellspacing="0" cellpadding="0" class="inner" data-v-6393cc7e><tr class="inner" data-v-6393cc7e><td class="inner" data-v-6393cc7e><p id="Sequential Flow" class="concept" data-v-6393cc7e>Sequential Flow</p></td> <td class="inner" data-v-6393cc7e><p id="Sequential Flow" class="details" data-v-6393cc7e>Program execution in order, without any variation</p></td></tr><tr class="inner" data-v-6393cc7e><td class="inner" data-v-6393cc7e><p id="Conditional Flow" class="concept" data-v-6393cc7e>Conditional Flow</p></td> <td class="inner" data-v-6393cc7e><p id="Conditional Flow" class="details" data-v-6393cc7e>A single decision point in the program that will execute or skip a section of the code</p></td></tr><tr class="inner" data-v-6393cc7e><td class="inner" data-v-6393cc7e><p id="Iterative Flow" class="concept" data-v-6393cc7e>Iterative Flow</p></td> <td class="inner" data-v-6393cc7e><p id="Iterative Flow" class="details" data-v-6393cc7e>Repeating a section of code more than once, often with different data each time</p></td></tr></table></tr></table></div> <h2 id="introduction"><a href="#introduction" class="header-anchor">#</a> Introduction</h2> <h2 id="sequential-flow"><a href="#sequential-flow" class="header-anchor">#</a> Sequential Flow</h2> <p>A program executing in sequence is not changing flow. It is executing each instruction in order from first to last</p> <p>While the program is performing operations on data from user input and/or data stored in memory, it is not jumping around in the code based on the data</p> <p><em>Simple sequential program in Java and LC-3 Assembly</em>
+:::: code-group
+::: code-group-item Java</p> <div class="language-java extra-class"><pre class="language-java"><code><span class="token keyword">int</span> result <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> x <span class="token operator">=</span> <span class="token number">15</span><span class="token punctuation">;</span>
+x <span class="token operator">+=</span> <span class="token number">15</span><span class="token punctuation">;</span>
+result <span class="token operator">=</span> x <span class="token operator">*</span> <span class="token number">2</span><span class="token punctuation">;</span>
+</code></pre></div><p>:::
+::: code-group-item LC-3</p> <div class="language-asm extra-class"><pre class="language-text"><code>.ORIG x3000
+
+   LD R2, X
+   ADD R2, R2, #15
+   ADD R3, R2, R2
+   ST R3, Result
+
+   HALT
+.END
+
+Result .FILL #0
+X .FILL #15
+</code></pre></div><p>:::
+::::</p> <p>These two code examples run top to bottom with no change in flow</p> <p><img src="/images/AssemblyProgramming/ProgramFlow/Diagram_Sequential.png" alt="Sequential Flow Diagram"></p> <h2 id="conditional-flow"><a href="#conditional-flow" class="header-anchor">#</a> Conditional Flow</h2> <p>In conditional flow, the program can execute or skip 1 or more lines of code based on a condition. The condition is evaluated while the program is running. In this way, the same program can execute differently, based on data or user inputs, each time it runs</p> <p><strong>Conditions</strong> are the result of comparing data with another data items, or to a range of values. The condition typically results in a true/false state</p> <details class="custom-block details"><summary>Example Comparisons</summary> <ul><li>data is the same as a single value  <code>x = 17</code></li> <li>data is larger that a value         <code>x &gt; 16</code></li> <li>data within a range of values       <code>x &gt; 16 &amp;&amp; x &lt; 87</code></li></ul> <p>In each case, the comparison is either true or false</p></details> <p>With the Condition evaluated, the program will execute or skip certain code if the condition is <code>true</code>. Otherwise, the program will continue executing in a sequential flow</p> <p><img src="/images/AssemblyProgramming/ProgramFlow/Diagram_Conditional.png" alt="Conditional Flow Diagram"></p> <h3 id="if-branch"><a href="#if-branch" class="header-anchor">#</a> IF Branch</h3> <p>A program can evaluate a condition, such as an arithmetic or logical comparison between values. Based on that condition, the code may skip a section of code that does not pertain to the condition</p> <p><em>Simple conditional 'if'  program in Java and LC-3 Assembly</em>
+:::: code-group
+::: code-group-item Java</p> <div class="language-java extra-class"><pre class="language-java"><code>  <span class="token class-name">Scanner</span> myObj <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Scanner</span><span class="token punctuation">(</span><span class="token class-name">System</span><span class="token punctuation">.</span>in<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;Enter age&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token class-name">String</span> userAge <span class="token operator">=</span> myObj<span class="token punctuation">.</span><span class="token function">nextInt</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">if</span><span class="token punctuation">(</span>userAge <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span>
+  <span class="token punctuation">{</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;You entered a valid age&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><p>:::
+::: code-group-item Assembly</p> <div class="language- extra-class"><pre class="language-text"><code>.ORIG x3000
+  LEA R0, enterAge
+  PUTS
+  IN
+  JSR convertToInt ; subroutine to convert input into a number and save in R1
+  BRp Valid ; Based on CC register set by convertToInt
+  BRnz Done
+
+  Valid LEA R0, goodAge
+  PUTS
+
+  Done HALT
+.END
+
+enterAge .STRINGZ &quot;Enter age&quot;
+goodAge .STRINGZ &quot;You entered a valid age&quot;
+</code></pre></div><p>:::
+::::</p> <h3 id="if-else-branch"><a href="#if-else-branch" class="header-anchor">#</a> If/Else Branch</h3> <p>The program may choose between 2 separate code sections based on a condition</p> <p><em>Simple conditional 'if/else'  program in Java and LC-3 Assembly</em>
+:::: code-group
+::: code-group-item Java</p> <div class="language-java extra-class"><pre class="language-java"><code>  <span class="token class-name">Scanner</span> myObj <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Scanner</span><span class="token punctuation">(</span><span class="token class-name">System</span><span class="token punctuation">.</span>in<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;Enter age&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token class-name">String</span> userAge <span class="token operator">=</span> myObj<span class="token punctuation">.</span><span class="token function">nextInt</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">if</span><span class="token punctuation">(</span>userAge <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span>
+  <span class="token punctuation">{</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;You entered a valid age&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">else</span>
+  <span class="token punctuation">{</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;You entered an invalid age&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><p>:::
+::: code-group-item Assembly</p> <div class="language- extra-class"><pre class="language-text"><code>.ORIG x3000
+  LEA R0, enterAge
+  PUTS
+  IN
+  JSR convertToInt ; subroutine to convert input into a number and save in R1
+  BRp Valid ; Based on CC register set by convertToInt
+  BRnz Invalid
+
+  Valid LEA R0, goodAge
+    PUTS
+    BR Done
+
+  Invalid LEA R0, badAge
+    PUTS
+
+  Done HALT
+.END
+
+enterAge .STRINGZ &quot;Enter age&quot;
+goodAge .STRINGZ &quot;You entered a valid age&quot;
+badAge .STRINGZ &quot;You entered an invalid age&quot;
+</code></pre></div><p>:::
+::::</p> <p>Other conditionals constructs, such as Switch, While, and Do/While are based on these same Condition check and change in flow</p> <h2 id="iterative-flow"><a href="#iterative-flow" class="header-anchor">#</a> Iterative Flow</h2> <p>A program can execute a section of code multiple times. This is common in arithmetic function and database processing</p> <p>The number of iteration (number of times the section runs) can be a built-in value or based on user or external inputs</p> <p><img src="/images/AssemblyProgramming/ProgramFlow/Diagram_Iterative.png" alt="Iterative Flow Diagram"></p> <h3 id="for-loop"><a href="#for-loop" class="header-anchor">#</a> For Loop</h3> <p>:::: code-group
+::: code-group-item Java</p> <div class="language-java extra-class"><pre class="language-java"><code><span class="token keyword">int</span> x <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">10</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+x <span class="token operator">+=</span> i<span class="token punctuation">;</span> <span class="token comment">//Add current value if i to x</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>:::
+::: code-group-item Assembly</p> <div class="language- extra-class"><pre class="language-text"><code>.ORIG x3000
+  ADD R1, R1, #0; int x = 0
+  ADD R2, R2, #0; int i = 0;
+loop   
+
+  Done HALT
+.END
+
+
+</code></pre></div><p>:::
+::::</p> <h2 id="conclusion"><a href="#conclusion" class="header-anchor">#</a> Conclusion</h2></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.55f9c1c1.js" defer></script><script src="/assets/js/2.23fe0875.js" defer></script><script src="/assets/js/32.ec7dccd4.js" defer></script><script src="/assets/js/5.f5b36fc3.js" defer></script>
+  </body>
+</html>
