@@ -76,8 +76,8 @@ module.exports = {
           path: '/LC3/',
           collapsable: false,
           children: [
-            'LC3/',
-            'LC3/GettingStarted/',
+            '',
+            'GettingStarted',
           ],
         },
         {
