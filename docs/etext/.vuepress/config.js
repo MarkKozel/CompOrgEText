@@ -114,6 +114,7 @@ module.exports = {
             'Funding',
             'Colophon',
             'GettingStarted',
+            'GitBuildMgmt',
           ]
         }
       ],
