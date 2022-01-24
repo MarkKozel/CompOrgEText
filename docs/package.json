@@ -10,7 +10,8 @@
   "repository": "https://github.com/MarkKozel/CompOrgEText.git/CompOrgEText",
   "scripts": {
     "dev": "vuepress dev etext",
-    "build": "vuepress build etext"
+    "build": "vuepress build etext",
+    "win10": "set NODE_OPTIONS=--openssl-legacy-provider & vuepress dev etext"
   },
   "license": "CC-BY-SA-4.0",
   "devDependencies": {
