@@ -105,7 +105,7 @@ The *caller* code could, but it would have to save all 8 registers becuase it do
 
 It is more practice for the *callee* code to save only the registers it knows it will be using, then restore only those registers before returning to the caller code
 
-::: thinkaboutit Can the Caller accuratly save all 8 registers?
+::: considerit Can the Caller accuratly save all 8 registers?
 The Caller would need to save all 8 register (since it does not know what the TRAP or Sub is going to modify)
 
 However, during the FDE Cycle of the ```JSR``` line, R7 will be changed (to current PC). So, the R7 saved before the JSR is executed will be different than R7 during the FDE cycle for the JSR line

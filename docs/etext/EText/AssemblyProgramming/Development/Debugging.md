@@ -98,7 +98,7 @@ In this type of error, the assembler does not show an error and the program runs
 
 <QuestionMC question="What is the problem in the above code" answer='A' AChoice="After the 'Pos' message is printed, it needs to 'jump around' the 'Neg' message" BChoice="'positive' and 'negative' messages are next to each other in memory'" CChoice="There are 2 'TRAP PUTS' instructions the code" DChoice="'Init' code never runs'" rightAnswerFeedback="Right! After the 'positive' message is loaded and PUTS is called, the 'negative' message is loaded and printed...always" wrongAnswerFeedback="Since LC-3 does not have a built-in if/else, the code must purposfully execute the 'if' or 'else' code itself. After the 'positive' message is printed, the next line of code that executes is at line x3006, where the 'negative' message is loaded and printed. The code needs to skip this section by jumping around it"/>
  
-::: thinkaboutit Consistent Errors
+::: considerit Consistent Errors
 As strange as it may sound, the best bugs are the ones that occur every time the code ot code segment runs. This unusually indicates the error is something relatively easy to fix
 
 Bugs that don't occur every time indicates an error causes by some outside influence, such as another code module, driver, or data from an outside source (like the network). These sporadic bugs are more difficult to find because you need them to occur to find them

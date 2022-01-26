@@ -192,16 +192,16 @@ High-level abstraction of computer architecture
 High-level abstraction of computer architecture
 :::
 
-### Think About It
+### Consider It
 ```md
-::: thinkaboutit Newton's First Law
+::: considerit Newton's First Law
 In an inertial frame of reference, an object either remains at rest or continues to move at a constant velocity, unless acted upon by a force
 :::
 ```
-::: thinkaboutit Newton's First Law
+::: considerit Newton's First Law
 In an inertial frame of reference, an object either remains at rest or continues to move at a constant velocity, unless acted upon by a force
 :::
-```
+
 
 ### What's Going On
 ```md

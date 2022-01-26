@@ -43,7 +43,7 @@ In the classroom setting, formal processes take too long to learn and use when t
 
 For bigger work, like a semester-long project or a senior theses, having consistent rules, styles, and practices will produce a better produce...and a better grade
 
-::: thinkaboutit College CS Group Projects
+::: considerit College CS Group Projects
 Imagine you and 2-3 other students working on a semester-long software project. It is likely that, after some consideration, your team will take the divide-and-conquer approach. Someone writes the GUI, another works on the database, etc
 
 - Without discussing which language to use, or how the GUI will get data from the database, each team goes off to work on their own to code up their part

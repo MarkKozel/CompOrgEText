@@ -107,7 +107,7 @@ In general, algorithms are a **sequence** of steps that **solve a problem** with
 ### Algorithms in Computer Organization
 We will use algorithms to understand how common analog procedures are executed in the digital world. If I ask you to add two (2) multi-digit numbers, you can likely complete the task without much step-by-step thought. However, we will need to think of simple math operations as an algorithm in order to implement them in digital logic and assembly language
 
-::: thinkaboutit Quick Thought Experiment
+::: considerit Quick Thought Experiment
 Think about how you would teach a first grade student how to add 2 multi-digit numbers
 
 First, Think of the steps to add 1234 and 4321 (note, there are no carries)
