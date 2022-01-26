@@ -122,18 +122,18 @@ module.exports = {
           ]
         }
       ],
-      '/VuePressTests/': [
-        {
-          title: 'Examples',
-          collapsable: false,
-          children: [
-            '',
-            'Examples',
-            'Layouts',
-            "Templates",
-          ]
-        }
-      ],
+      // '/VuePressTests/': [
+      //   {
+      //     title: 'Examples',
+      //     collapsable: false,
+      //     children: [
+      //       '',
+      //       'Examples',
+      //       'Layouts',
+      //       "Templates",
+      //     ]
+      //   }
+      // ],
       '/guide/': [
         {
           title: 'Guide',
