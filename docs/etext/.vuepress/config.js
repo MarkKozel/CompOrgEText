@@ -1,31 +1,14 @@
 const { description } = require('../../package')
 
 module.exports = {
-  /**
-   * Ref：https://v1.vuepress.vuejs.org/config/#title
-   */
   title: 'CS 131 - Computer Organization',
-  /**
-   * Ref：https://v1.vuepress.vuejs.org/config/#description
-   */
   description: description,
-
-  /**
-   * Extra tags to be injected to the page HTML `<head>`
-   *
-   * ref：https://v1.vuepress.vuejs.org/config/#head
-   */
   head: [
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
   ],
 
-  /**
-   * Theme configuration, here is the default theme configuration for VuePress.
-   *
-   * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
-   */
   themeConfig: {
     logo: '/images/CourseLogo.png',
     repo: '',
@@ -122,28 +105,6 @@ module.exports = {
           ]
         }
       ],
-      // '/VuePressTests/': [
-      //   {
-      //     title: 'Examples',
-      //     collapsable: false,
-      //     children: [
-      //       '',
-      //       'Examples',
-      //       'Layouts',
-      //       "Templates",
-      //     ]
-      //   }
-      // ],
-      '/guide/': [
-        {
-          title: 'Guide',
-          collapsable: false,
-          children: [
-            '',
-            'using-vue',
-          ]
-        }
-      ],
     }
   },
 
@@ -153,13 +114,16 @@ module.exports = {
   plugins: [
     '@vuepress/plugin-back-to-top',
     '@vuepress/plugin-medium-zoom',
-    // 'vuepress-plugin-copyright', {
-    //   noCopy: true, // the selected text will be non-copyable
-    //   minLength: 40, // if its length is greater than 100
-    //   authorName:
-    //     "Mark Kozel. This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License",
-    //   clipboardComponent: "../components/ClipboardComponent.vue",
-    // },
+
+    [
+      'copyright', {
+        noCopy: false, // the selected text will be non-copyable
+        minLength: 40, // if its length is greater than 100
+        authorName: "Mark F Kozel. Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)",
+        // clipboardComponent: "./components/Clipboard.vue",
+      },
+    ],
+
     ['vuepress-plugin-container', {
       type: "considerit",
       before: (info) =>
