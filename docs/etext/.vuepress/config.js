@@ -60,12 +60,23 @@ module.exports = {
         {
           title: 'Introduction',
           path: '/EText/Introduction',
-          collapsable: false,
+          collapsable: true,
           children: [
             'Introduction/Abstraction',
             'Introduction/Algorithms',
             'Introduction/HardwareSoftware',
             'Introduction/Programming',
+          ],
+        },
+        {
+          title: 'Number Systems',
+          path: '/EText/NumberSystems',
+          collapsable: true,
+          children: [
+            'NumberSystems/DecimalValues',
+            'NumberSystems/BinaryValues',
+            'NumberSystems/HexadecimalValues',
+            'NumberSystems/Others',
           ],
         },
       ],

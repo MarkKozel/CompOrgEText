@@ -1,12 +1,15 @@
 ---
 title: Number Systems
-shorttitle: Build an understanding of the binary number system and how modern computers use binary to represent digital and analog data
-pageType: Unit
+parent: Computer Organization EText
+description: Build an understanding of the binary number system and how modern computers use binary to represent digital and analog data
+pageType: Section
 tags: [number systems, binary, data, digital, analog, hexadecimal, hex]
 ---
 
 # {{ $frontmatter.title }}
-**{{ $frontmatter.shorttitle }}**
+**{{ $frontmatter.description }}**
+
+## Introduction
 
 The advent and evolution of number systems were essential to keep pace with human's needs for understanding and classifying the work around us. Creating a common system to show and calculate quantities is the framework or mathematics...and, more specific to our interests, computer science
 
@@ -51,3 +54,5 @@ Including Unsigned and Signed Integers, and Fractional numbers
 
 ## [Representing Non-Numbers in Binary](LINK TO SECTION)
 Learn how binary is encoded in various formats to represent text and other non-numeric data
+
+## Conclusion
