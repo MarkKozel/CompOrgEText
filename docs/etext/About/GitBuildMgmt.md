@@ -79,3 +79,12 @@ In this example, the user will update *Dev* branch, then merge into *master*
 This can be performed in the reverse order if you need to merge updates in master into Dev
 
 An expected use of this would be to merge Dev or Master changes into DocReview branch to review latest changes. In this case, you would checkout DevReview branch, pull, then merge Dev into it
+
+## Random GIT CLI commands
+
+```git reset``` Unstage all files after a ```git add``` before a *commit*
+
+```git reset path/to/file/file.ext``` unstage single file after ```git add```  before a *commit*
+
+> Check effect with ```git status```
+
