@@ -96,3 +96,8 @@ An expected use of this would be to merge Dev or Master changes into DocReview b
 >
 >Proceed on with ```push``` if desired
 
+```git diff /path/to/file/file.ext``` to view changes since last commit
+
+> Good way to see what you are about to commit if you forget
+
+
