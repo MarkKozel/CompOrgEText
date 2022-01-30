@@ -1,7 +1,7 @@
 ---
 title: TITLE
 description: 
-pageType: Section
+pageType: Book
 tags: []
 ---
 
@@ -13,5 +13,3 @@ tags: []
 ## Section 1
 
 ## Section 2
-
-## Conclusion

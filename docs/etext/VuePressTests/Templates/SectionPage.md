@@ -1,6 +1,6 @@
 ---
 title: TITLE
-parent: PARENT TITLE
+parent: Computer Organization EText
 description: 
 pageType: Section
 tags: []
