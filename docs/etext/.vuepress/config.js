@@ -43,19 +43,31 @@ module.exports = {
       }
     ],
     sidebar: {
+      // '/EText/': [
+      //   {
+      //     title: 'EText Section',
+      //     collapsable: false,
+      //     children: [
+      //       'Introduction/',
+      //       'Foundations/',
+      //       'NumberSystems/',
+      //       'LogicAndDigitalCircuits/',
+      //       'AssemblyProgramming/',
+      //     ]
+      //   }
+      // ],
       '/EText/': [
         {
-          title: 'Text',
+          title: 'Introduction',
+          path: '/EText/Introduction',
           collapsable: false,
           children: [
-            '',
-            'Introduction/',
-            'Foundations/',
-            'NumberSystems/',
-            'LogicAndDigitalCircuits/',
-            'AssemblyProgramming/',
-          ]
-        }
+            'Introduction/Abstraction',
+            'Introduction/Algorithms',
+            'Introduction/HardwareSoftware',
+            'Introduction/Programming',
+          ],
+        },
       ],
       '/LC3/': [
         {
