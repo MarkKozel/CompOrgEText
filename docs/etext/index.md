@@ -26,5 +26,5 @@ footer: The contents of this E-Text were developed under an Open Textbooks Pilot
 
 Course logo by <a rel="license" href="http://3xhumed.deviantart.com/">Exhumed (CC Attribution-Noncommercial-No Derivate 4.0)</a>
 <br>
-<a rel="license" href="https://creativecommons.org/licenses/by/4.0/"></a><br />This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons BY (Attribution) 4.0 International License</a>.
-<img alt="Creative Commons License" style="border-width:0" src="https://licensebuttons.net/l/by/4.0/88x31.png" />
+<a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/"></a><br />This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons BY NC 4.0 International License</a>.
+<img alt="Creative Commons License" style="border-width:0" src="https://licensebuttons.net/l/by-nc/4.0/88x31.png" />
