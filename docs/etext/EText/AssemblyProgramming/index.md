@@ -1,15 +1,15 @@
 ---
 title: Assembly Programming
-shorttitle: Use foundation, number systems, and digital logic to create and run low-level assembly programs
-pageType: Unit
-tags: []
+parent: Computer Organization EText
+description: Use foundation, number systems, and digital logic to create and run low-level assembly programs
+pageType: Section
+tags: [assembly]
 ---
 
 # {{ $frontmatter.title }}
-**{{ $frontmatter.shorttitle }}**
+**{{ $frontmatter.description }}**
 
-INTRODUCTION OF UNIT
-
+## Introduction
 ## Commands
 [Assembly Language Commands](./Commands)
 
@@ -30,3 +30,4 @@ OVERVIEW OF SECTION
 
 Tools and practices from creating and modifying source code
 
+## Conclusion

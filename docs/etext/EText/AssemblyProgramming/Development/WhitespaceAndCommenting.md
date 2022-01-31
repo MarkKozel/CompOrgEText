@@ -1,5 +1,6 @@
 ---
-title: Assembly Programming - Whitespace and Commenting
+title: Whitespace and Commenting
+parent: Development
 description: Whitespace and Comments in Software Development
 pageType: Topic
 tags: [whitespace, comments, tabs, formatting, maintenance]
@@ -7,7 +8,7 @@ tags: [whitespace, comments, tabs, formatting, maintenance]
 
 # {{ $frontmatter.title }}
 
-**{{ $frontmatter.description }}**
+#### {{ $frontmatter.description
 
 <KeyConcepts :ConceptArray= "[
 {
@@ -19,8 +20,6 @@ tags: [whitespace, comments, tabs, formatting, maintenance]
   Details:'Adding comments help others understand important and non-obvious code'
 },
 ]" />
-
-[[toc]]
 
 ## Introduction
 

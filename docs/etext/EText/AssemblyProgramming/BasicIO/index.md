@@ -1,12 +1,13 @@
 ---
-title: Assembly Programming - Basic Input/Output (I/O)
+title: Basic Input/Output (I/O)
+parent: Assembly Programming
 description: Interacting with devices outside of the ISA
+pageType: Topic
 tags: []
 ---
 
 # {{ $frontmatter.title }}
-
-{{ $frontmatter.description }}
+**{{ $frontmatter.description }}**
 
 <KeyConcepts :ConceptArray= "[
 {
@@ -22,10 +23,6 @@ tags: []
   Details:'Displaying or sending data as it changes allow users and other systems to react more quickly, and more often'
 },
 ]" />
-
-[[toc]]
-
-## [LC-3 Basic I/O](../../../LC3/BasicIO/index.md) 
 
 ## Introduction
 

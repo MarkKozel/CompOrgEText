@@ -1,12 +1,13 @@
 ---
-title: Assembly Programming - Branching Commands
+title: Branching Commands
+parent: Commands
 description: 
+pageType: Topic
 tags: []
 ---
 
 # {{ $frontmatter.title }}
-
-{{ $frontmatter.description }}
+**{{ $frontmatter.description }}**
 
 <KeyConcepts :ConceptArray= "[
 {
@@ -15,12 +16,10 @@ tags: []
 }
 ]" />
 
-[[toc]]
-
-## [LC-3 Commands](../../../LC3/Commands/BranchingCommands.md) 
-
 ## Introduction
 
+## Concept 1
 
+## Concept 2
 
 ## Conclusion

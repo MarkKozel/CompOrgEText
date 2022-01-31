@@ -1,34 +1,28 @@
 ---
-title: Assembly Programming - Commands
+title: Commands
+parent: Assembly Programming
 description: 
+pageType: Subsection
 tags: []
 ---
 
 # {{ $frontmatter.title }}
-
-{{ $frontmatter.description }}
-
-<KeyConcepts :ConceptArray= "[
-{
-  Concept:'Software in much more useful if it can interacts with users and other systems',
-  Details:'Accepting input and providing outputs to/from a user or other system allows software to solve more complicated problems.'
-}
-]" />
-
-[[toc]]
-
-## [LC-3 Commands](../../../LC3/Commands/index.md) 
+**{{ $frontmatter.description }}**
 
 ## Introduction
 
 ## Opcodes and Operands
 
-## [ALU Commands](ALUCommands)
+## ALU Commands
+[ALU Commands](ALUCommands)
 
-## [Memory Access Commands](MemoryAccessCommands)
+## Memory Access Commands
+[Memory Access Commands](MemoryAccessCommands)
 
-## [Branching Commands](BranchingCommands)
+## Branching Commands
+[Branching Commands](BranchingCommands)
 
-## [Subroutine Commands](SubroutineCommands)
+## Subroutine Commands
+Subroutine Commands](SubroutineCommands)
 
 ## Conclusion

@@ -92,6 +92,17 @@ module.exports = {
             'NumberSystems/Others',
           ],
         },
+        {
+          title: 'Assembly Programming',
+          path: '/EText/AssemblyProgramming',
+          collapsable: true,
+          children: [
+            'AssemblyProgramming/Commands/',
+            'AssemblyProgramming/BasicIO/',
+            'AssemblyProgramming/Development/',
+            'AssemblyProgramming/ProgramFlow/',
+          ],
+        },
       ],
       '/LC3/': [
         {
@@ -150,7 +161,14 @@ module.exports = {
   plugins: [
     '@vuepress/plugin-back-to-top',
     '@vuepress/plugin-medium-zoom',
-
+    [
+      '@vuepress/last-updated', {
+        dateOptions: {
+          timeZone: 'UTC',
+          timeZoneName: 'short'
+        }
+      }
+    ],
     [
       'copyright', {
         noCopy: false, // the selected text will be non-copyable
