@@ -164,7 +164,7 @@ module.exports = {
     [
       '@vuepress/last-updated', {
         dateOptions: {
-          timeZone: 'UTC',
+          timeZone: 'PST',
           timeZoneName: 'short'
         }
       }
