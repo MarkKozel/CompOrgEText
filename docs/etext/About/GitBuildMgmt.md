@@ -88,7 +88,7 @@ An expected use of this would be to merge Dev or Master changes into DocReview b
 
 > Check effect with ```git status```
 
-```git commit -amend``` to modify a mistake in the current *commit* action
+```git commit --amend``` to modify a mistake in the current *commit* action
 
 > Such as realizing there is a typo in the text
 >
