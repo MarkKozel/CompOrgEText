@@ -1,7 +1,7 @@
 # Computer Organization E-Textbook
 ## Online Open Educational Resources (OER) / Zero Cost Textbook (ZCT)
 
-|Link|Status|
+|Link|Build Status|
 |-|-|
 |[Master Site](https://comp-org-etext.netlify.app/)|[![Netlify Status](https://api.netlify.com/api/v1/badges/f3989d12-377f-4c71-9d7f-9970711129b9/deploy-status)](https://app.netlify.com/sites/comp-org-etext/deploys)|
 |[Dev Site](https://comp-org-etext-dev.netlify.app/)|[![Netlify Status](https://api.netlify.com/api/v1/badges/c805c9e1-1cb6-443b-b135-44b21528c680/deploy-status)](https://app.netlify.com/sites/comp-org-etext-dev/deploys)|
