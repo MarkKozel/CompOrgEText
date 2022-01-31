@@ -1,14 +1,14 @@
 ---
-title: Pioneers - Turing
+title: Pioneers - Alan Turing
+parent: Foundations
 description: Theories and Influence of Alan Turing
+pageType: Topic
 tags: [Turing, General Purpose Computer, Theory, State, State Machine]
-# prev: ./index
-# next: ./vonNeumann
 ---
 
 # {{ $frontmatter.title }}
+**{{ $frontmatter.description }}**
 
-#### {{ $frontmatter.description }}
 
 <KeyConcepts :ConceptArray= "[
 {
@@ -26,6 +26,10 @@ tags: [Turing, General Purpose Computer, Theory, State, State Machine]
 ]" />
 
 ## Introduction
+
+::: readmore Life of Alan Turing
+[Alan Turing - Wikipedia](https://en.wikipedia.org/wiki/Alan_Turing) - June 23, 1912 - June 7, 1954
+:::
 
 ## A Theoretical General Purpose Computer
 

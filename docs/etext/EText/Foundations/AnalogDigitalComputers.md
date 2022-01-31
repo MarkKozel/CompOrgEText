@@ -1,4 +1,26 @@
-## Analog and Digital Computers
+---
+title: Analog and Digital Computers
+parent: Foundations
+description: TODO
+pageType: Topic
+tags: []
+---
+
+# {{ $frontmatter.title }}
+**{{ $frontmatter.description }}**
+
+<KeyConcepts :ConceptArray= "[
+{
+  Concept:'Concept 1',
+  Details:'Details of concept 1'
+},
+{  
+  Concept:'Concept 2',
+  Details:'Details of concept 2' 
+}
+]" />
+
+## Introduction
 
 Humans developed devices to complete tasks (everyday and labor-intensive) 1) faster, and 2) reliably. As new materials and technologies become available (and cost-effective), these devices are upgraded or replaced.
 
@@ -18,7 +40,7 @@ Computers evolved in a similar way, starting as people with special skills and t
 
 Fast-forward to today's high-speed stock market trading computers, considering thousands of variables to decide to _buy_ or _sell_ in the market
 
-### Analog Computing Devices
+## Analog Computing Devices
 
 ::: left
 Analog, in the computer context, means signals or data represented by values that have a continuous and infinite number of variations
@@ -30,7 +52,7 @@ i.e.: The number of unique values between 0 and 1
 
 Until relatively recently, computers were not digital devices. They were mechanical and electrical analog systems. These systems use mechanical or electrical motion to represent information
 
-#### Mechanical Analog Systems
+### Mechanical Analog Systems
 
 Gears and springs could be constructed to retain states and move to different states in a pre-determined sequence.
 
@@ -52,7 +74,7 @@ As seen in this video, electricity is used to turn shafts to move gears as neede
 Also, the "program" us changed by swapping gears and shafts
 :::
 
-#### Electrical Analog Systems
+### Electrical Analog Systems
 
 In the 1930s and 1940s, humans were able to make and control electricity to a highly precise level. With improved electrical switched, resistors, and capacitors; mechanical systems in analog computers were replaces with electrical current to represent states and changes in states
 
@@ -67,7 +89,7 @@ Electrical computing systems also were also easier to modify "programs"
 [CHM Analog Computers](https://www.computerhistory.org/revolution/analog-computers/3)
 :::
 
-### Digital Computing Devices
+## Digital Computing Devices
 
 Further advances in electronic technology drove the next major advance in computers...**Vacuum Tubes**. While eventually replaced with transistors, vacuum tubes allowed computers to control electricity with electricity. Coupled with control circuits, digital computers could now be programmed and run using electricity to perform logical operations and maintain data between steps
 
@@ -89,3 +111,5 @@ Vacuum tubes were replaced with **Transistors** in the late 1950s. Based on the 
 Transistors were, however, cheaper, more energy-efficient, and far more reliable that vacuum tubes
 
 <QuestionMC question="Which of the following is made up of digital values?" answer='D' AChoice="The tension of a spring" BChoice="Your current interest level in this reading" CChoice="Pressure you can apply to a car's break pedal" DChoice="Number of students on this class's Wait List" rightAnswerFeedback="Right! Since we can't have 1/2 students signing up for classes, this value is digital" wrongAnswerFeedback="Incorrect. That value can have ever an infinite amount of variations. Students on a wait list can only be a count of whole students, and never a number in-between"/>
+
+## Conclusion

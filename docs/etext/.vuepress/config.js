@@ -69,6 +69,19 @@ module.exports = {
           ],
         },
         {
+          title: 'Foundations',
+          path: '/EText/Foundations',
+          collapsable: true,
+          children: [
+            'Foundations/History',
+            'Foundations/AnalogDigitalComputers',
+            'Foundations/SpecificGeneralUseComputers',
+            'Foundations/Turing',
+            'Foundations/Shannon',
+            'Foundations/vonNeumann',
+          ],
+        },
+        {
           title: 'Number Systems',
           path: '/EText/NumberSystems',
           collapsable: true,
