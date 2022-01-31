@@ -52,7 +52,13 @@ The VuePress site is built into a static web site that can be deployed to variou
 The Documentation Source will be available on GitHub to allow others to instructors to modify and deploy their own version of the documentation. Other instructors couple then deploy their modified documentation to their own web sites for their students to access
 
 ## Development Log
+20220130 - Completed overall structure of EText. Finalized page templates got Book, Section, Subsection, and Topic. Applied templates to all (I think) pages in EText section
+
+Re-structures somewhat in Introduction and Foundations, and merged form fragmented content
+
 20220122 - Starting with clean repo to facilitate coordinating with Doc Reviewer and Peer Reviewer. Reverted to VuePress 1.x as 2.x was to *betaish*
+
+Established *master*, *dev*, and *docreview* branches, and created Netlify sites for each. This to establish a simple workflow for collaboration 
 
 20211121 - Continuing to add structure and some content. Fixed issue w/ question components. They were not seeing global styles, so moved styles into <scope> blocks in each component. Will need to figure this out later
 
