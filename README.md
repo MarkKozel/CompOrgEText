@@ -52,6 +52,9 @@ The VuePress site is built into a static web site that can be deployed to variou
 The Documentation Source will be available on GitHub to allow others to instructors to modify and deploy their own version of the documentation. Other instructors couple then deploy their modified documentation to their own web sites for their students to access
 
 ## Development Log
+20220131 - Upgraded to VuePress 1.9.2 -> 1.9.7. Removed unneeded plugin installs (since they are built-in) [Out of teh Box](https://vuepress.vuejs.org/plugin/#out-of-the-box)
+
+
 20220130 - Completed overall structure of EText. Finalized page templates got Book, Section, Subsection, and Topic. Applied templates to all (I think) pages in EText section
 
 Re-structures somewhat in Introduction and Foundations, and merged form fragmented content

@@ -171,9 +171,19 @@ module.exports = {
    * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
    */
   plugins: [
+    '@vuepress/search', {
+      searchMaxSuggestions: 10
+    },
+
+    ['@vuepress/active-header-links'],
+
     ['@vuepress/plugin-back-to-top'],
 
     ['@vuepress/medium-zoom'],
+
+    ['@vuepress/nprogress'],
+
+    ['vuepress-plugin-smooth-scroll'],
 
     [
       '@vuepress/last-updated', {
@@ -230,9 +240,5 @@ module.exports = {
       type: "tip",
       defaultTitle: "Tip",
     }],
-    '@vuepress/search', {
-      searchMaxSuggestions: 10
-    }
-
   ]
 }
