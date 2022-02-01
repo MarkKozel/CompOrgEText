@@ -171,6 +171,13 @@ module.exports = {
    * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
    */
   plugins: [
+    [
+      '@vuepress/google-analytics',
+      {
+        'ga': 'UA-219120655-1' // UA-00000000-0
+      }
+    ],
+
     '@vuepress/search', {
       searchMaxSuggestions: 10
     },
