@@ -93,6 +93,18 @@ module.exports = {
           ],
         },
         {
+          title: 'Logic/Digital Circuits',
+          path: '/EText/LogicAndDigitalCircuits',
+          collapsable: true,
+          children: [
+            'LogicAndDigitalCircuits/BasicLogic',
+            'LogicAndDigitalCircuits/BasicCircuits',
+            'LogicAndDigitalCircuits/LogicCircuits',
+            'LogicAndDigitalCircuits/ControlCircuits',
+            'LogicAndDigitalCircuits/DesigningCircuits',
+          ],
+        },
+        {
           title: 'Assembly Programming',
           path: '/EText/AssemblyProgramming',
           collapsable: true,

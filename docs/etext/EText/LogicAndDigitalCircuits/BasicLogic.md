@@ -1,20 +1,24 @@
 ---
-title: Logic and Circuits - Basic Logic
-description: TOPIC OVERVIEW DESCRIPTION
+title: Basic Logic
+parent: Logic and Digital Circuits
+description: TODO
 pageType: Topic
 tags: []
 ---
 
 # {{ $frontmatter.title }}
-
 **{{ $frontmatter.description }}**
 
 <KeyConcepts :ConceptArray= "[
 {
-  Concept:'Natural Language',
-  Details:'Spoken and written communication developed and evolved over time, and used by humans'
-}]" />
-
+  Concept:'Concept 1',
+  Details:'Details of concept 1'
+},
+{  
+  Concept:'Concept 2',
+  Details:'Details of concept 2' 
+}
+]" />
 ## Introduction
 
 ## Elementary Logic Constructs

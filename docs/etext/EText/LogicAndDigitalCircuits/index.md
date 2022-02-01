@@ -1,12 +1,13 @@
 ---
 title: Logic and Digital Circuits
-shorttitle: Putting bits to work in computer hardware
-pageType: Unit
+parent: Computer Organization EText
+description: Putting bits to work in computer hardware
+pageType: Section
 tags: []
 ---
 
 # {{ $frontmatter.title }}
-**{{ $frontmatter.shorttitle }}**
+**{{ $frontmatter.description }}**
 
 Logic is the basic decision-making language for computer hardware and software. Using the simplified binary number system, computers function in the mutually exclusive realm or *and*/*or*/*not*
 
