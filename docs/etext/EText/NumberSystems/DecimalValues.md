@@ -24,7 +24,7 @@ tags: []
 }
 ]" />
 
-## Introduction to {{ $frontmatter.title }}
+## Introduction
 
 ## What is **Base 10**?
 
