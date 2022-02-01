@@ -171,8 +171,10 @@ module.exports = {
    * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
    */
   plugins: [
-    '@vuepress/plugin-back-to-top',
-    '@vuepress/plugin-medium-zoom',
+    ['@vuepress/plugin-back-to-top'],
+
+    ['@vuepress/medium-zoom'],
+
     [
       '@vuepress/last-updated', {
         dateOptions: {
@@ -181,6 +183,7 @@ module.exports = {
         }
       }
     ],
+
     [
       'copyright', {
         noCopy: false, // the selected text will be non-copyable

@@ -32,10 +32,7 @@
   "license": "CC-BY-NC-4.0",
   "devDependencies": {
     "@vuepress/plugin-back-to-top": "^1.9.7",
-    "@vuepress/plugin-search": "^1.9.7",
-    "vuepress": "^1.9.2",
-    "vuepress-plugin-container": "^2.1.5",
-    "vuepress-plugin-copyright": "^1.0.2",
-    "vuepress-plugin-demo-code": "^0.6.0"
+    "vuepress": "^1.9.7",
+    "vuepress-plugin-copyright": "^1.0.2"
   }
 }
