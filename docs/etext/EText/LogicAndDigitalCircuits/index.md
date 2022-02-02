@@ -2,7 +2,7 @@
 title: Logic and Digital Circuits
 parent: Computer Organization EText
 description: Putting bits to work in computer hardware
-pageType: Section
+pageClass: Section
 tags: []
 ---
 

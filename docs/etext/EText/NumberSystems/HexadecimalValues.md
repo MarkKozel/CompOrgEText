@@ -2,7 +2,7 @@
 title: Hexadecimal Values
 parent: Number Systems
 description: Understand how base 16 (hex) number system is a shorthand to base 2 (binary)
-pageType: Topic
+pageClass: Topic
 tags: []
 ---
 

@@ -187,7 +187,7 @@ module.exports = {
 
     ['@vuepress/plugin-back-to-top'],
 
-    ['@vuepress/medium-zoom'],
+    '@vuepress/medium-zoom', {},
 
     ['@vuepress/nprogress'],
 

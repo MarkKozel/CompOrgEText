@@ -1,7 +1,7 @@
 ---
 title: Computer Organization EText
 description: 
-pageType: Book
+pageClass: Book
 tags: []
 ---
 

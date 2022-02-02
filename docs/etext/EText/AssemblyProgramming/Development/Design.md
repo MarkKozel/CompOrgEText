@@ -2,7 +2,7 @@
 title: Design
 parent: Development
 description: Best Practices for Designing, Implementing, and Testing LC-3 Code
-pageType: Topic
+pageClass: Topic
 tags: []
 ---
 

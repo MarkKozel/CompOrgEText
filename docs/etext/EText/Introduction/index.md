@@ -2,7 +2,7 @@
 title: Introduction to Computer Organization
 parent: Computer Organization EText
 description: Description of main topics to be covered in this course
-pageType: Section
+pageClass: Section
 tags: []
 ---
 

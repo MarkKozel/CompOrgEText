@@ -2,7 +2,7 @@
 title: Analog and Digital Computers
 parent: Foundations
 description: TODO
-pageType: Topic
+pageClass: Topic
 tags: []
 ---
 

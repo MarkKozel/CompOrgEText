@@ -9,7 +9,7 @@ Units will contain 1 or more [sections](#section-pages) that present more detail
 ---
 title: UNIT
 shorttitle: UNIT OVERVIEW DESCRIPTION
-pageType: Unit
+pageClass: Unit
 tags: []
 ---
 
@@ -31,7 +31,7 @@ Sections will contain 1 or more [topics](#topic-pages) that present details info
 ---
 title: UNIT - SECTION
 shorttitle: SECTION OVERVIEW DESCRIPTION
-pageType: Section
+pageClass: Section
 tags: []
 ---
 
@@ -54,7 +54,7 @@ Main page for a Topic, which presents lowest level of detailed parts of a relate
 ---
 title: UNIT - SECTION - TOPIC
 description: TOPIC OVERVIEW DESCRIPTION
-pageType: Topic
+pageClass: Topic
 tags: []
 ---
 

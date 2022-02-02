@@ -2,7 +2,7 @@
 title: Pioneers - John von Nuemann
 parent: Foundations
 description: The practical application of John von Nuemann
-pageType: Topic
+pageClass: Topic
 tags: [von Nuemann, von Nuemann model]
 ---
 

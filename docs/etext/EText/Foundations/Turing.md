@@ -2,7 +2,7 @@
 title: Pioneers - Alan Turing
 parent: Foundations
 description: Theories and Influence of Alan Turing
-pageType: Topic
+pageClass: Topic
 tags: [Turing, General Purpose Computer, Theory, State, State Machine]
 ---
 

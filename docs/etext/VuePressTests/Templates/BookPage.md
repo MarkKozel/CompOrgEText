@@ -1,7 +1,7 @@
 ---
 title: TITLE
 description: 
-pageType: Book
+pageClass: Book
 tags: []
 ---
 

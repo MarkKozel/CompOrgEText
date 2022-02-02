@@ -2,7 +2,7 @@
 title: A Bit of History
 parent: Foundations
 description: How We got here here
-pageType: Topic
+pageClass: Topic
 tags: []
 ---
 

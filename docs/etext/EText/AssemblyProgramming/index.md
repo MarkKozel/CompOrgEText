@@ -2,7 +2,7 @@
 title: Assembly Programming
 parent: Computer Organization EText
 description: Use foundation, number systems, and digital logic to create and run low-level assembly programs
-pageType: Section
+pageClass: Section
 tags: [assembly]
 ---
 

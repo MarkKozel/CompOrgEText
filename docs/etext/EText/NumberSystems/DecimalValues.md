@@ -2,7 +2,7 @@
 title: Decimal Values
 parent: Number Systems
 description: Review base 10 number system and recall how you learned to perform arithmetic operations
-pageType: Topic
+pageClass: Topic
 tags: []
 ---
 

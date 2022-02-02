@@ -2,7 +2,7 @@
 title: General- and Specific-Use Computers
 parent: Foundations
 description: TODO
-pageType: Topic
+pageClass: Topic
 tags: []
 ---
 

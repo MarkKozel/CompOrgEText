@@ -2,14 +2,14 @@
 title: Foundations
 parent: Computer Organization EText
 description: Building an understanding of core computer hardware/software concepts, standards, and components present on modern-day computers
-pageType: Topic
+pageClass: Topic
 tags: []
 ---
 
 # {{ $frontmatter.title }}
 **{{ $frontmatter.description }}**
 
-Description of {{ $frontmatter.title }} {{ $frontmatter.pageType }}
+Description of {{ $frontmatter.title }} {{ $frontmatter.pageClass }}
 
 ## Introduction
 

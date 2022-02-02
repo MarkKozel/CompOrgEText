@@ -2,7 +2,7 @@
 title: Whitespace and Commenting
 parent: Development
 description: Whitespace and Comments in Software Development
-pageType: Topic
+pageClass: Topic
 tags: [whitespace, comments, tabs, formatting, maintenance]
 ---
 

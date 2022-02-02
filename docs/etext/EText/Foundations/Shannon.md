@@ -2,7 +2,7 @@
 title: Pioneers - Claude Shannon
 parent: Foundations
 description: The decision to use binary
-pageType: Topic
+pageClass: Topic
 tags: [Claude Shannon, Binary]
 ---
 

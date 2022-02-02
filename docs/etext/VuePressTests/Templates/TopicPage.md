@@ -2,7 +2,7 @@
 title: TITLE
 parent: PARENT TITLE
 description: 
-pageType: Topic
+pageClass: Topic
 tags: []
 ---
 

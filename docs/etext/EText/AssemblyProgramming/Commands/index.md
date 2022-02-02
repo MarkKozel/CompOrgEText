@@ -2,7 +2,7 @@
 title: Commands
 parent: Assembly Programming
 description: 
-pageType: Subsection
+pageClass: Subsection
 tags: []
 ---
 

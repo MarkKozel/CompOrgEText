@@ -1,7 +1,7 @@
 ---
 title: Development Practices
 shorttitle: Writing quality code includes readability and maintainability
-pageType: Unit
+pageClass: Unit
 tags: [design, debugging, comments]
 ---
 

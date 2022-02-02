@@ -2,7 +2,7 @@
 title: Branching Commands
 parent: Commands
 description: 
-pageType: Topic
+pageClass: Topic
 tags: []
 ---
 

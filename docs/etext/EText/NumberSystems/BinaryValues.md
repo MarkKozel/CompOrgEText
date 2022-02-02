@@ -2,7 +2,7 @@
 title: Binary Values
 parent: Number Systems
 description: Apply base 10 principles and practices to base 2
-pageType: Topic
+pageClass: Topic
 tags: []
 ---
 

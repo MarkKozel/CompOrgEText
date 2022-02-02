@@ -2,7 +2,7 @@
 title: TITLE
 parent: Computer Organization EText
 description: 
-pageType: Section
+pageClass: Section
 tags: []
 ---
 

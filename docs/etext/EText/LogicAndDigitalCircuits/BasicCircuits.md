@@ -2,7 +2,7 @@
 title: Basic Circuits
 parent: Logic and Digital Circuits
 description: TODO
-pageType: Topic
+pageClass: Topic
 tags: []
 ---
 

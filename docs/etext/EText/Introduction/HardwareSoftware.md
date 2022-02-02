@@ -2,7 +2,7 @@
 title: Connecting Hardware to Software
 parent: Introduction to Computer Organization
 description: 
-pageType: Topic
+pageClass: Topic
 tags: []
 ---
 

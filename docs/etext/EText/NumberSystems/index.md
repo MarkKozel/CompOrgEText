@@ -2,7 +2,7 @@
 title: Number Systems
 parent: Computer Organization EText
 description: Build an understanding of the binary number system and how modern computers use binary to represent digital and analog data
-pageType: Section
+pageClass: Section
 tags: [number systems, binary, data, digital, analog, hexadecimal, hex]
 ---
 

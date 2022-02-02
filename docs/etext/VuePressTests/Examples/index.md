@@ -14,35 +14,26 @@ Units contain sections of more specific content (Units)
 [Topic Template](./templates/2_Topic.md)
 
 ## Code Blocks
+
 Option in default theme
 
-````md
-:::: code-group
-  ::: code-group-item FOO
-    ```js
-    const foo = 'foo'
-    ```
-  :::
-  ::: code-group-item BAR
-    ```js
-    const bar = 'bar'
-    ```
-  :::
-::::
-````
+Multi-tabbed code windows
 
-:::: code-group
-::: code-group-item FOO
-```js
-const foo = 'foo'
+````
+<code-group>
+<code-block title="YARN">
+```bash
+yarn create vuepress-site [optionalDirectoryName]
 ```
-:::
-::: code-group-item BAR
-```js
-const bar = 'bar'
+</code-block>
+
+<code-block title="NPM">
+```bash
+npx create-vuepress-site [optionalDirectoryName]
 ```
-:::
-::::
+</code-block>
+</code-group>
+````
 
 <code-group>
 <code-block title="YARN">

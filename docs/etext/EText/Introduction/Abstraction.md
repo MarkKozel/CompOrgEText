@@ -2,7 +2,7 @@
 title: Abstraction
 parent: Introduction to Computer Organization
 description: 
-pageType: Topic
+pageClass: Topic
 tags: []
 ---
 

@@ -2,7 +2,7 @@
 title: Programming Approach and Debugging
 parent: Introduction to Computer Organization
 description: 
-pageType: Topic
+pageClass: Topic
 tags: []
 ---
 

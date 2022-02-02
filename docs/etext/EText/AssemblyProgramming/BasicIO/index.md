@@ -2,7 +2,7 @@
 title: Basic Input/Output (I/O)
 parent: Assembly Programming
 description: Interacting with devices outside of the ISA
-pageType: Topic
+pageClass: Topic
 tags: []
 ---
 
