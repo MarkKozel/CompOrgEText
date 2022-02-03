@@ -98,6 +98,7 @@ module.exports = {
           collapsable: true,
           children: [
             'LogicAndDigitalCircuits/BasicLogic',
+            'LogicAndDigitalCircuits/TheTransistor',
             'LogicAndDigitalCircuits/BasicCircuits',
             'LogicAndDigitalCircuits/LogicCircuits',
             'LogicAndDigitalCircuits/ControlCircuits',
@@ -247,6 +248,10 @@ module.exports = {
     ["vuepress-plugin-container", {
       type: "tip",
       defaultTitle: "Tip",
+    }],
+    ["vuepress-plugin-container", {
+      type: "note",
+      defaultTitle: "Note:",
     }],
   ]
 }

@@ -1,7 +1,7 @@
 ---
 title: Other Number Systems
 parent: Number Systems
-description: Understand how base 16 (hex) number system is a shorthand to base 2 (binary)
+description: IN WORK, DO NOT USE YET
 pageClass: Topic
 tags: []
 ---
