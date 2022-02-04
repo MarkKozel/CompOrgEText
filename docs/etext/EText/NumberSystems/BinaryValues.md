@@ -23,12 +23,12 @@ tags: []
 ## What is **Base 2**?
 
 ::: bythenumbers Base 2 Number System
-|Property|Value|
-|-|-:|
-|# of symbols|2|
-|Symbol Range|0 - 1|
-|Symbols|0 1|
-|Place Value Factor|2|
+| Property           | Value |
+| ------------------ | ----: |
+| # of symbols       |     2 |
+| Symbol Range       | 0 - 1 |
+| Symbols            |   0 1 |
+| Place Value Factor |     2 |
 :::
 
 Also referred to as Binary system, *Base 2* is a system commonly used by humans to refer to integer values or quantities
@@ -89,5 +89,27 @@ Using this effect, we can extract each Binary digit from the Decimal value...but
 1. The reminder is the least-significate Binary value
 1. The result of the division is the new Decimal value to operate upon
 1. Repeat steps until the result of division is 0
+
+## Discrete vs. Analog Values
+
+As computer information changes from voltages in transistors to bits in memory, there is a tiny, but fundamental change in its state. It changes from an analog signal to a discrete state
+
+signal - an analog stream that may fluctuation a small amount and remain valid
+
+Examples:
+> Dimmer Switch attached to a Light
+> 
+> Water flowing through a hose, controlled by a valve
+> 
+> Speed (velocity) a student drives to class
+
+state - a discrete value that can change between well-defined states 
+
+Examples:
+> Light controlled by an on/off switch
+> 
+> Water Valve being on/off
+> 
+> Student attending a class meeting
 
 ## Conclusion

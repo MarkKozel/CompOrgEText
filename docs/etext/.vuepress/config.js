@@ -90,6 +90,8 @@ module.exports = {
             'NumberSystems/BinaryValues',
             'NumberSystems/HexadecimalValues',
             'NumberSystems/Others',
+            'NumberSystems/RepresentingNumbers',
+            'NumberSystems/RepresentingNonNumbers',
           ],
         },
         {
