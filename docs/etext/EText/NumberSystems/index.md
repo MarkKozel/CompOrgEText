@@ -21,12 +21,9 @@ And we will learn of a couple of other systems that make it easier for computer 
 
 ## First a Review
 
-| A brief history of numerical systems - Alessandra King - TED-Ed|
-|-|
-|<p>1, 2, 3, 4, 5, 6, 7, 8, 9... and 0. With just these ten symbols, we can write any rational number imaginable. But why these particular symbols? Why ten of them? And why do we arrange them the way we do? Alessandra King gives a brief history of numerical systems.</p> <p>Lesson by Alessandra King, animation by Zedem Media. Copyright CC BY–NC–ND 4.0 International</p> |
-| <iframe width="560" height="315" src="https://www.youtube.com/embed/cZH0YnFpjwU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>|
-
-
+*A brief history of numerical systems - Alessandra King - TED-Ed*
+<p>1, 2, 3, 4, 5, 6, 7, 8, 9... and 0. With just these ten symbols, we can write any rational number imaginable. But why these particular symbols? Why ten of them? And why do we arrange them the way we do? Alessandra King gives a brief history of numerical systems.</p> <p>Lesson by Alessandra King, animation by Zedem Media. Copyright CC BY–NC–ND 4.0 International</p> 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cZH0YnFpjwU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
 
 ## Decimal Values
 
@@ -47,12 +44,15 @@ Apply base 10 principles and practices to base 2
 
 Understand how base 16 (hex) number system is a shorthand to base 2 (binary)
 
-## [Representing Numbers in Binary](LINK TO SECTION)
+## Representing Numbers in Binary
 Discover how binary is applied to modern computer hardware/software to represent base 10 numeric information
 
 Including Unsigned and Signed Integers, and Fractional numbers
+[Representing Numbers in Binary](./RepresentingNumbers)
 
-## [Representing Non-Numbers in Binary](LINK TO SECTION)
+## Representing Non-Numeric Data in Binary
 Learn how binary is encoded in various formats to represent text and other non-numeric data
+
+[Representing Non-Numeric Data in Binary](./RepresentingNonNumbers)
 
 ## Conclusion

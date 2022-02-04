@@ -90,6 +90,10 @@ Using this effect, we can extract each Binary digit from the Decimal value...but
 1. The result of the division is the new Decimal value to operate upon
 1. Repeat steps until the result of division is 0
 
+| Binary 1 - Converting to and from Denary| Computer Science (YouTube Creator)|
+| :-: | :-: |
+| <iframe width="560" height="315" src="https://www.youtube.com/embed/cJNm938Xwao" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> | <p>This is the first in a series of computer science videos about the binary number system which is fundamental to the operation of a digital electronic computer. It covers the need for binary and details of how to convert positive whole numbers in base 10 into 8 bit binary, and vice versa.</p> <p></p> |
+
 ## Discrete vs. Analog Values
 
 As computer information changes from voltages in transistors to bits in memory, there is a tiny, but fundamental change in its state. It changes from an analog signal to a discrete state

@@ -32,6 +32,9 @@ tags: []
 
 ### 2's Complement
 
+**Twos complement: Negative numbers in binary - Ben Eater**
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4qH4unVtJkE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+
 ## Fixed-Point
 
 ## Conclusion
