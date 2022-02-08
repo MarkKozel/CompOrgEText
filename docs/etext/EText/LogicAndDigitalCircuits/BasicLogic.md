@@ -19,9 +19,12 @@ tags: []
   Details:'Details of concept 2' 
 }
 ]" />
+
 ## Introduction
 
 ## Elementary Logic Constructs
+
+Basic logic operations 
 
 ### NOT
 
