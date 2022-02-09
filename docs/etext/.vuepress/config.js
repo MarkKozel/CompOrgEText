@@ -3,6 +3,14 @@ const { description } = require('../../package')
 module.exports = {
   title: 'CS 131 - Computer Organization',
   description: description,
+
+  markdown: {
+    linkify: true,
+    extendMarkdown: md => {
+      md.use(require('markdown-it-imsize'));
+    },
+  },
+
   head: [
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
@@ -85,6 +93,7 @@ module.exports = {
           title: 'Number Systems',
           path: '/EText/NumberSystems',
           collapsable: true,
+          sidebarDepth: 3,
           children: [
             'NumberSystems/DecimalValues',
             'NumberSystems/BinaryValues',
