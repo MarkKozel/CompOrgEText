@@ -35,6 +35,12 @@ tags: []
     </tr>
 </table>
 
+## Truth Tables
+
+TODO:
+
+[Truth Tables](TruthTables)
+
 ## Basic Logic
 
 Logic drives the decision-making capabilities of computers. From high-level programming language comparisons to low-level hardware data flow, logic enables computers to react to the dynamic nature of real-world inputs.

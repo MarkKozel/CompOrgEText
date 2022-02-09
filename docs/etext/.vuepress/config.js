@@ -99,6 +99,7 @@ module.exports = {
           path: '/EText/LogicAndDigitalCircuits',
           collapsable: true,
           children: [
+            'LogicAndDigitalCircuits/TruthTables',
             'LogicAndDigitalCircuits/BasicLogic',
             'LogicAndDigitalCircuits/TheTransistor',
             'LogicAndDigitalCircuits/BasicCircuits',
