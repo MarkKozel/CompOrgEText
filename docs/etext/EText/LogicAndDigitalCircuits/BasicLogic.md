@@ -28,10 +28,13 @@ Basic logic operations
 
 ### NOT
 
+       
 |a|b|
 |-|-|
 |0|1|
 |1|0|
+
+![NOT Gate](/images/Circuits/Gate_NOT.png =150x)
 
 Applying NOT to something typically means considering the opposite of the original things.
 
@@ -52,6 +55,8 @@ NOT is the only operation we will discuss that takes 1 input. It operates on a s
 |1|0|1|
 |1|1|1|
 
+![OR Gate](/images/Circuits/Gate_OR.png =150x)
+
 Applying OR to something typically means considering any one situation enough to lead to the outcome.
 
 > We will go to the park if traffic is not too bad OR I we can get an Uber
@@ -68,6 +73,8 @@ When applied to binary values, OR compare two bits. If either bit is *1* the res
 |0|1|0|
 |1|0|0|
 |1|1|1|
+
+![AND Gate](/images/Circuits/Gate_AND.png =150x)
 
 Applying OR to something typically means considering all situations must occur to lead to the outcome.
 
@@ -86,6 +93,8 @@ When applied to binary values, AND compare two bits. If either bit is *0* the re
 |1|0|1|
 |1|1|0|
 
+![XOR Gate](/images/Circuits/Gate_XOR.png =150x)
+
 XOR is referred to as **Exclusive OR**. The difference between XOR and OR is the case where both bits as *1* results in *0*. Another way to think of this is *the two bits being compared must be **different** to result in 1*
 
 ## Complex Logic Constructs
@@ -99,6 +108,8 @@ XOR is referred to as **Exclusive OR**. The difference between XOR and OR is the
 |1|0|0|1|
 |1|1|1|0|
 
+![NAND Gate](/images/Circuits/Gate_NAND.png =150x)
+
 NAND is referred to as **NOT AND**. It negates the results of the AND output. In effect it only output a *0* if both inputs are *1*
 
 NAND is effectively feeding the output of an AND operation into a NOT operation. It is interesting that the result is *1* unless both inputs are *1*
@@ -110,6 +121,8 @@ NAND is effectively feeding the output of an AND operation into a NOT operation.
 |0|1|1|0|
 |1|0|1|0|
 |1|1|1|0|
+
+![NOR Gate](/images/Circuits/Gate_NOR.png =150x)
 
 NOR is referred to as **NOT OR**. It negates the results of the OR output. In effect it only output a *1* if both inputs are *0*
 

@@ -39,8 +39,6 @@ The line from *source* to *drain* is one independent electrical connection. ther
 
 The *Control* line also has another line that connects both to a power source. It is omitted from these diagrams for simplicity. In truth, the two electrical connections (*source* to *drain* and *Control* to the missing ground connection) typically share a ground or common. The two connections still operate separately
 
-
-
 ::: note
 The P-Type symbol includes a circle where the *Control* line meets the *Reference* line. A circle symbol indicates *opposite* or *inverse*.
 
