@@ -14,13 +14,23 @@ tags: []
   Concept:'Simple Chemistry and a Little Voltage',
   Details:'Using 2 variations of silicon, transistors can physically represent the digital zero (0) and one (1) values that represent the basic numeric units'
 },
-{  
-  Concept:'Concept 2',
-  Details:'Details of concept 2' 
+{
+  Concept:'Timing is Critical when using Transistors to Hold Digital States',
+  Details:'Using an analog signal like voltage to represent digital values requires a brief time period of transistors to settle to a 0 or 1 state'
 }
 ]" />
 
 ## Introduction
+
+Transistors are electronic devices constructed to *control* or *amplify* electrical input. In computer organization, we are interested in the *control* version as they will represent the *1* and *0* values of binary numbers
+
+There are 2 general types of transistors used in computer hardware. They are made of silicon and one (1) of two (2) different add-in materials. Silicon mixed with one (1) add-in causes a particular *switch* behavior. Mixed with the other add-in, the transistor behaves with the opposite *switch* action.
+
+*How semiconductors work - Ben Eater - UK YouTube Provider*
+<p>A detailed look at semiconductor materials and diodes..</p> <p>Copyright TODO</p> 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/33vbFFFn04k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+> This video describe the movement of electrons through the two (2) silicon mixtures. It is not within the scope of this course, but is a great description of how electrons move through silicon materials. If you are interested in understanding transistors at the lowest levels, check it out
 
 ## P- and N-Type Transistors
 Semiconductor transistors act as switches in the core of modern computers. Constructed with layers of slight variations of silicon (mixed or doped with other elements). Transistors have a control connector that provides an input into the device. The input voltage will cause the transistor to output 1) the same voltage as its input, or 2) the opposite of its input voltage
@@ -46,6 +56,20 @@ Also, *source* and *drain* lines are swapped between P- and N-Type diagrams. Fin
 :::
 
 ## Transistors as Bits
-If the power supply feeding
+Transistors use a voltage input to switch another voltage output. Voltage are analog quantities, meaning there are (until we start looking at the level os the electron) an infinite number of different voltage level or amounts.
+
+Binary values are digital. The have 2 distinct values and nothing in between. At teh lowest level, binary values are *1* or *0*. There is no 0.5 binary value.
+
+To use analog transistors to represent digital bits, hardware designers must consider the rise/fall time of transistors. Essentially, then a transistor is first set to *on* or *1*, it will take a very short time for the voltage in the transistor to *rise* to a level that is *on* or *1*.
+
+Likewise, when a transistor it set ot *off* or *0*, there is brief *fall* time where the voltage dissipates from the transistor.
+
+The purpose of the clock in modern computers is to orchestrate the rise/fall cycles of all transistors in the system. It synchronizes part of the hardware to send control signals with the transistors that receive the control signals. During a part of a clock cycle, control signals are send out to transistors. During another part of teh clock system, activity is prevented so those transistors have time to rise/fall.
+
+The clock cycle provides other essential duties in modern computer hardware. In computer organization, we rely on it to keep transistors synchronized to maintain reliable binary values.
 
 ## Conclusion
+
+Silicon materials can be used to hold voltages. The voltages control the state of a bipolar device. The P- and N-Type bipolar devices (transistors) are used in modern computers to represent the digital *1* and *0* values in the binary number system.
+
+A clock is used to ensure all transistors have the time to transition between states.
