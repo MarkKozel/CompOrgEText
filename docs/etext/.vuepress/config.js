@@ -107,10 +107,11 @@ module.exports = {
           title: 'Logic/Digital Circuits',
           path: '/EText/LogicAndDigitalCircuits',
           collapsable: true,
+          sidebarDepth: 3,
           children: [
             'LogicAndDigitalCircuits/TruthTables',
-            'LogicAndDigitalCircuits/BasicLogic',
             'LogicAndDigitalCircuits/TheTransistor',
+            'LogicAndDigitalCircuits/BasicLogic',
             'LogicAndDigitalCircuits/BasicCircuits',
             'LogicAndDigitalCircuits/LogicCircuits',
             'LogicAndDigitalCircuits/ControlCircuits',
