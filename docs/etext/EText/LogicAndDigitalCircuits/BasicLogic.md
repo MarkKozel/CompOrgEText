@@ -22,6 +22,10 @@ tags: []
 
 ## Introduction
 
+*Introduction to Logic Gates - Kevin Drumm - UK YouTube Provider*
+<p>This is a beginner's introduction to logic gates.  It starts with an historical mention of the development of two state devices including valves and transistors, and how these led to the silicon chip. It then goes on to describe the nature and behaviour of the three main logic gates NOT, AND and OR in terms of electrical voltages, binary digits (bits) and truth tables.</p> <p>Copyright TODO</p> 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fw-N9P38mi4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Simple Logic Constructs
 
 Basic logic operations 
