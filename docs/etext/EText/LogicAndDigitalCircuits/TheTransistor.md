@@ -62,11 +62,23 @@ Binary values are digital. The have 2 distinct values and nothing in between. At
 
 To use analog transistors to represent digital bits, hardware designers must consider the rise/fall time of transistors. Essentially, then a transistor is first set to *on* or *1*, it will take a very short time for the voltage in the transistor to *rise* to a level that is *on* or *1*.
 
+We will refer to *rise* and *fall* time intervals generally as *settle time*. This is the time required for a transistor (or a circuit made is similar transistors) to change from one state to the other.
+
 Likewise, when a transistor it set ot *off* or *0*, there is brief *fall* time where the voltage dissipates from the transistor.
 
-The purpose of the clock in modern computers is to orchestrate the rise/fall cycles of all transistors in the system. It synchronizes part of the hardware to send control signals with the transistors that receive the control signals. During a part of a clock cycle, control signals are send out to transistors. During another part of teh clock system, activity is prevented so those transistors have time to rise/fall.
+The purpose of the clock in modern computers is to orchestrate the settle time* of all transistors in the system. It synchronizes part of the hardware to send control signals with the transistors that receive the control signals. During a part of a clock cycle, control signals are send out to transistors. During another part of the clock system, activity is prevented so those transistors have time to *settle*.
 
 The clock cycle provides other essential duties in modern computer hardware. In computer organization, we rely on it to keep transistors synchronized to maintain reliable binary values.
+
+CPU and motherboard manufactures must match the *settle time* for the transistors with a clock speed that allows 
+
+::: note
+Thinking about how the clock keep all the transistors (and other things) synchronized, consider what happens when a computer *modder* increases the clock speed beyond the manufacturer's recommendations
+
+How would transistors react to having less *settle time*?
+
+What might happen to circuits that are sending or receiving bits from these transistors?
+:::
 
 ## Conclusion
 
