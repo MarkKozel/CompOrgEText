@@ -41,6 +41,12 @@ TODO:
 
 [Truth Tables](TruthTables)
 
+## The Transistor
+
+This microscopic physical device combines simple chemistry with the properties of electric potentials (voltage) to enable modern computers to perform with speed, accuracy, and reliability.
+
+[The Transistor](TheTransistor)
+
 ## Basic Logic
 
 Logic drives the decision-making capabilities of computers. From high-level programming language comparisons to low-level hardware data flow, logic enables computers to react to the dynamic nature of real-world inputs.
@@ -48,12 +54,6 @@ Logic drives the decision-making capabilities of computers. From high-level prog
 We review simple logic function used not only in computer science, but in everyday situations.
 
 [Basic Logic](BasicLogic)
-
-## The Transistor
-
-This microscopic physical device combines simple chemistry with the properties of electric potentials (voltage) to enable modern computers to perform with speed, accuracy, and reliability.
-
-[The Transistor](TheTransistor)
 
 ## Basic Circuits
 

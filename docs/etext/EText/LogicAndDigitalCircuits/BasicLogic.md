@@ -1,7 +1,7 @@
 ---
 title: Basic Logic
 parent: Logic and Digital Circuits
-description: TODO
+description: Creating Simple Logic Circuits using Transistors
 pageClass: Topic
 tags: []
 ---
@@ -11,12 +11,8 @@ tags: []
 
 <KeyConcepts :ConceptArray= "[
 {
-  Concept:'Concept 1',
-  Details:'Details of concept 1'
-},
-{  
-  Concept:'Concept 2',
-  Details:'Details of concept 2' 
+  Concept:'Transistors Are used to Construct Simple Logic Gate',
+  Details:'Connecting 2, 4, or 6 Transistors in series and parallel, we have Basic Logic Circuits that behave like well-known logic functions'
 }
 ]" />
 
@@ -26,13 +22,12 @@ tags: []
 <p>This is a beginner's introduction to logic gates.  It starts with an historical mention of the development of two state devices including valves and transistors, and how these led to the silicon chip. It then goes on to describe the nature and behaviour of the three main logic gates NOT, AND and OR in terms of electrical voltages, binary digits (bits) and truth tables.</p> <p>Copyright TODO</p> 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fw-N9P38mi4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## Simple Logic Constructs
+## Simple Logic Circuits
 
 Basic logic operations 
 
 ### NOT
 
-       
 |a|b|
 |-|-|
 |0|1|
@@ -173,9 +168,15 @@ When applied to binary values, AND compare two bits. If either bit is *0* the re
 
 XOR is referred to as **Exclusive OR**. The difference between XOR and OR is the case where both bits as *1* results in *0*. Another way to think of this is *the two bits being compared must be **different** to result in 1*
 
-## Complex Logic Constructs
+## Logic Circuit Constructs
+
+There are a couple of interesting things we can do with the simple logic circuits to made them more versatile or to change their behavior.
 
 ### Adding Inputs to a Logic Circuit
+
+At this point all of our logic circuits have 2 inputs (with the exception of NOT). It is possible to have a logic circuit with more than two (2) inputs.
+
+While the diagram for a 3 or 4 input AND circuit seems simple, under-the-hood it is a set of 2-input AND circuits with the output of 1 feeding an input of the next. The logical behavior still works as expected. 
 
 ### DeMorgan's Laws
 
