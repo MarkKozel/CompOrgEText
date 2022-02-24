@@ -73,7 +73,7 @@ The clock cycle provides other essential duties in modern computer hardware. In 
 CPU and motherboard manufactures must match the *settle time* for the transistors with a clock speed that allows 
 
 ::: note
-Thinking about how the clock keep all the transistors (and other things) synchronized, consider what happens when a computer *modder* increases the clock speed beyond the manufacturer's recommendations
+Considering the clock keeps all the transistors (and other things) synchronized, what happens when a computer *modder* increases the clock speed beyond the manufacturer's recommendations
 
 How would transistors react to having less *settle time*?
 
