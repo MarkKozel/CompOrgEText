@@ -111,10 +111,10 @@ module.exports = {
           children: [
             'LogicAndDigitalCircuits/TruthTables',
             'LogicAndDigitalCircuits/TheTransistor',
-            'LogicAndDigitalCircuits/BasicLogic',
-            'LogicAndDigitalCircuits/BasicCircuits',
-            'LogicAndDigitalCircuits/LogicCircuits',
+            'LogicAndDigitalCircuits/BasicLogicCircuits',
             'LogicAndDigitalCircuits/ControlCircuits',
+            'LogicAndDigitalCircuits/StorageCircuits',
+            'LogicAndDigitalCircuits/AdderCircuits',
             'LogicAndDigitalCircuits/DesigningCircuits',
           ],
         },
