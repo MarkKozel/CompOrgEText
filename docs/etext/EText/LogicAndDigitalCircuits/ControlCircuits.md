@@ -30,12 +30,18 @@ The *Control Unit* knows what control circuits are available, how to use them, a
 
 ## Decoder
 
+Decoding is a function that converts encoded info back to its original form. The original encoding might be to make information compact (like compressing a file), converting to a different try of data (such as Digital to Analog), or using bit patterns to indicate CPU operations
+
+We'll use the last example to talk about decoders using an over-simplified CPU.
+
+The CPU includes the Arithmetic Log Unit (ALU). This device can perform basic math and logic operations. When the Control Unit is executing an assembly instruction, part of the instruction includes an encoded pair of bits that indicates the correct math function to execute
 
 
-As an example, the following Decoder *un-encodes* data based on the following truth table. 
+
+
 ![Decoder Truth Table](/images/Circuits/Circuit_Decoder_TT.png =300x)
 
-![Decoder Truth Table](/images/Circuits/Circuit_Decoder_Circuit.png =300x)
+![Decoder Truth Table](/images/Circuits/Decoder_2x4.png =400x)
 
 ![Decoder Truth Table](/images/Circuits/Circuit_Decoder_Simple.png =300x)
 
