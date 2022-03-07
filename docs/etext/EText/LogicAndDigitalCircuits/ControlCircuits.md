@@ -34,17 +34,102 @@ Decoding is a function that converts encoded info back to its original form. The
 
 We'll use the last example to talk about decoders using an over-simplified CPU.
 
-The CPU includes the Arithmetic Log Unit (ALU). This device can perform basic math and logic operations. When the Control Unit is executing an assembly instruction, part of the instruction includes an encoded pair of bits that indicates the correct math function to execute
+The CPU includes the Arithmetic Log Unit (ALU). This device can perform basic math and logic operations. When the Control Unit is executing an assembly instruction, part of the instruction includes an encoded pair of bits that indicates the correct math function to execute.
+
+### Truth Table
+
+|A|B|D0|D1|D2|D3|
+|-|-|-|-|-|-|
+|0|0|**1**|0|0|0|
+|0|1|0|**1**|0|0|
+|1|0|0|0|**1**|0|
+|1|1|0|0|0|**1**|
+
+A and B inputs are effectively selected 1 of the 4 outputs to be active (high). The other 3 outputs will always be inactive/low. The outputs are mutually exclusive...one (1) and only one will be active based on the inputs.
+
+With this two (2) input Decoder, there will always be 4 outputs. In order to retain the mutually exclusive state, the input/output relationship is <b> *n* inputs -> 2<sup>n</sup> outputs </b>. 
+
+> There must always be 2<sup>*number of inputs*</sup> outputs.
+
+### Detailed Circuit Diagram
+
+The decoder circuit is useful to convert encoded data to the original value. Setting A and B inputs will result in a one (1) output on 1 of the 4 lines. The example below works like a switch, with the two (2) inputs mimicking the *address* of the output to light up.
+
+![Decoder Truth Table](/images/Circuits/Decoder_2x4.png =300x)
 
 
+::: details Decoding ISA Arithmetic Instructions
 
+In modern ISAs, 2 bits of an instruction might represent which basic arithmetic operation to execute. In our example 16-bit ISA, bits 7 & 8 of an assembly instruction represent the math function for the Arithmetic Logic Unit (ALU) 
 
-![Decoder Truth Table](/images/Circuits/Circuit_Decoder_TT.png =300x)
+<table>
+<tr>
+<td>
 
-![Decoder Truth Table](/images/Circuits/Decoder_2x4.png =400x)
+|Decoded Instruction|Bits 8 & 7|Operation|
+|-|:-:|-|
+|1010110**00**1111100|00|Add|
+|1010110**01**1111100|01|Subtract|
+|1010110**10**1111100|10|Multiply|
+|1010110**11**1111100|11|Divide|
+
+</td>
+
+![Decoder Truth Table](/images/Circuits/Decoder_Example.png =300x)
+
+</tr>
+</table>
+
+Bits 8 & 7 are inputs into decoder to select 1 of the 4 operations. The output of this decoder will provide input another circuit (The Operation Selector) that enables the correct arithmetic operation for the instruction.
+:::
+
+### Simplified Component
+
+To simplify more complicate circuit diagrams, the Decoder has a symbol that hide the inner workings.
 
 ![Decoder Truth Table](/images/Circuits/Circuit_Decoder_Simple.png =300x)
 
+Like the circuit above this symbol has 2 inputs (A and B) and four (4) mutually exclusive outputs (D0, D1, D2, and D3).
+
 ## Multiplexer
+
+A Multiplexer chooses one (1) outputs from multiple inputs. The input value is unaltered by the circuit. It will retain its current value. The *Selection* signals allow 1 of the inputs through the circuit and blocks the others.
+
+The Selection signals are set outside the multiplexer and set to cause a particular input value to be *selected* to be output
+
+With 4 inputs, a multiplexer requires 2 Selection inputs. **N inputs -> &Sqrt;2 selection signals**
+
+> 2<sup>n input values</sup> require n selection signals
+
+### Truth Table
+
+|S1|S2|||||
+|-|-|-|-|-|-|
+|0|0|**A**||||
+|0|1||**B**|||
+|1|0|||**C**||
+|1|1||||**D**|
+
+### Detailed Circuit Diagram
+
+The selection signals enter each AND gate with a different set of normal and inverted modifiers
+
+Inverted signals is effective run through a NOT gate or *flipped*. Normal signals unaltered
+
+> Note that S0 and S1 entering each AND gate have a different pair of normal/inverted settings. The first has both inputs inverted, the next has S0 inverted and S1 normal. The third has S0 normal and S1 inverted. The fourth has both normal
+>
+> This causes the mutual exclusive behavior when selecting an input signal to output
+
+The four (4) input values are all normal connections. Each is allowed into the its AND gate unaltered.
+
+![Decoder Truth Table](/images/Circuits/Multiplexer_2x4.png =600x)
+
+### Simplified Component
+
+We can use the simpler multiplexer symbol keep our diagram clean
+
+![Decoder Truth Table](/images/Circuits/Circuit_Multiplexer_Simple.png =300x)
+
+Input value and selection signals work the same as above
 
 ## Conclusion
