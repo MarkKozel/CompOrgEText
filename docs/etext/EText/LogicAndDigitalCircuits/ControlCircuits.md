@@ -11,12 +11,12 @@ tags: []
 
 <KeyConcepts :ConceptArray= "[
 {
-  Concept:'Concept 1',
-  Details:'Details of concept 1'
+  Concept:'Control circuits manage data flow',
+  Details:''
 },
 {  
-  Concept:'Concept 2',
-  Details:'Details of concept 2' 
+  Concept:'Statelessness',
+  Details:'When put into action, a control circuit will receive input values and produce an output. Once that action is complete, the control circuit resets for the next use. The results of the last use are not retained for future uses' 
 }
 ]" />
 
@@ -24,9 +24,17 @@ tags: []
 
 Control or Combination circuits are used to manage the flow of information from clock cycle to clock cycle. These groups of <a href="./BasicLogicCircuits" target="_blank">Basic Logic Circuits</a> consist of input/control bits, and one or more output bits.
 
-Control circuits are used by the computer based on the current program instruction (assembly instructions in this course). In the course of executing a single assembly instruction, the CPU's *Control Unit* will use required control circuits to complete actions like *retrieved data*, *store data*, *add bit*, *read keyboard input*.
+Control circuits are used to execute the current program instruction (assembly instructions in this course). In the course of executing a single assembly instruction, the CPU's *Control Unit* will use required control circuits to complete actions like *retrieved data*, *store data*, *add bit*, *read keyboard input*.
 
 The *Control Unit* knows what control circuits are available, how to use them, and when to use them to execute a program instruction.  More on that when we talk about the Von Neumann Model in the next section.
+
+### Stateless Circuits
+
+Circuits are sent input signals during a single clock cycle. The electrons propagate through the circuit (all the transistors in each part of the circuit) during the same clock cycle. And, within that same clock cycle, the resulting output(s) pass on to another part of the system.
+
+Next time the same control circuit is used, it is reset. It does not *remember* its last results to use in producing then next result. This *stateless* property of control circuits. They functions control circuits provide are all simple, stand alone actions.
+
+> [Download these example circuits](/downloads/Logisim/Control.circ) to examine in [Logisim Circuit Simulation Tool](http://www.cburch.com/logisim/)
 
 ## Decoder
 
@@ -75,8 +83,11 @@ In modern ISAs, 2 bits of an instruction might represent which basic arithmetic 
 
 </td>
 
-![Decoder Truth Table](/images/Circuits/Decoder_Example.png =300x)
+</td>
 
+![Decoder Example](/images/Circuits/Decoder_Example.png =300x)
+
+</td>
 </tr>
 </table>
 
@@ -123,6 +134,33 @@ Inverted signals is effective run through a NOT gate or *flipped*. Normal signal
 The four (4) input values are all normal connections. Each is allowed into the its AND gate unaltered.
 
 ![Decoder Truth Table](/images/Circuits/Multiplexer_2x4.png =600x)
+
+::: details Multiplexing ISA Arithmetic Instructions
+
+In modern ISAs, 2 bits of an instruction might represent which data source to use. We have 4 1-bit values from 4 memory locations. In our example 16-bit ISA, bits 2 & 1 of an assembly instruction contain an address/reference for each source.
+
+<table>
+<tr>
+<td>
+
+|Decoded Instruction|Bits 2 & 1|Operation|
+|-|:-:|-|
+|1010110001111**00**0|00|L1 Cache|
+|1010110011111**01**0|01|Temp Register|
+|1010110101111**10**0|10|RAM|
+|1010110111111**11**0|11|Keyboard|
+
+</td>
+
+<td>
+
+![Multiplexer Example](/images/Circuits/Multiplexer_Example.png =1500x)
+
+</td>
+</tr>
+</table>
+Each of the 4 source devices is sending a 1 into the multiplexer. Bits 2 & 1 from the instruction are used to select one (1) of the four (4) sources to pass on to the next circuit using the value.
+:::
 
 ### Simplified Component
 
