@@ -322,4 +322,192 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="SR1 (01)"/>
     </comp>
   </circuit>
+  <circuit name="DLatch">
+    <a name="circuit" val="DLatch"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(520,90)" to="(580,90)"/>
+    <wire from="(100,90)" to="(100,160)"/>
+    <wire from="(560,50)" to="(600,50)"/>
+    <wire from="(560,230)" to="(600,230)"/>
+    <wire from="(570,110)" to="(570,140)"/>
+    <wire from="(530,170)" to="(530,200)"/>
+    <wire from="(560,50)" to="(560,130)"/>
+    <wire from="(190,200)" to="(230,200)"/>
+    <wire from="(180,70)" to="(220,70)"/>
+    <wire from="(190,240)" to="(230,240)"/>
+    <wire from="(570,150)" to="(570,170)"/>
+    <wire from="(70,50)" to="(100,50)"/>
+    <wire from="(580,70)" to="(600,70)"/>
+    <wire from="(580,130)" to="(600,130)"/>
+    <wire from="(550,140)" to="(570,140)"/>
+    <wire from="(580,250)" to="(600,250)"/>
+    <wire from="(580,190)" to="(600,190)"/>
+    <wire from="(310,220)" to="(330,220)"/>
+    <wire from="(570,110)" to="(600,110)"/>
+    <wire from="(570,170)" to="(600,170)"/>
+    <wire from="(500,190)" to="(520,190)"/>
+    <wire from="(200,110)" to="(220,110)"/>
+    <wire from="(310,90)" to="(310,140)"/>
+    <wire from="(330,170)" to="(330,220)"/>
+    <wire from="(100,160)" to="(100,220)"/>
+    <wire from="(550,130)" to="(560,130)"/>
+    <wire from="(190,140)" to="(310,140)"/>
+    <wire from="(560,160)" to="(560,230)"/>
+    <wire from="(70,260)" to="(120,260)"/>
+    <wire from="(70,50)" to="(70,260)"/>
+    <wire from="(520,170)" to="(520,190)"/>
+    <wire from="(60,160)" to="(100,160)"/>
+    <wire from="(580,70)" to="(580,90)"/>
+    <wire from="(580,90)" to="(580,130)"/>
+    <wire from="(550,150)" to="(570,150)"/>
+    <wire from="(310,90)" to="(330,90)"/>
+    <wire from="(100,220)" to="(120,220)"/>
+    <wire from="(300,90)" to="(310,90)"/>
+    <wire from="(330,220)" to="(340,220)"/>
+    <wire from="(580,130)" to="(580,190)"/>
+    <wire from="(580,190)" to="(580,250)"/>
+    <wire from="(60,50)" to="(70,50)"/>
+    <wire from="(100,90)" to="(110,90)"/>
+    <wire from="(200,170)" to="(330,170)"/>
+    <wire from="(190,140)" to="(190,200)"/>
+    <wire from="(550,160)" to="(560,160)"/>
+    <wire from="(200,110)" to="(200,170)"/>
+    <comp lib="0" loc="(500,190)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="Enable"/>
+      <a name="labelloc" val="south"/>
+    </comp>
+    <comp lib="4" loc="(640,230)" name="D Flip-Flop">
+      <a name="trigger" val="high"/>
+      <a name="label" val="D3 (11)"/>
+    </comp>
+    <comp lib="0" loc="(520,90)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="Input"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(530,200)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="width" val="2"/>
+      <a name="tristate" val="false"/>
+      <a name="pull" val="up"/>
+      <a name="label" val="Selector"/>
+      <a name="labelloc" val="south"/>
+    </comp>
+    <comp lib="4" loc="(640,110)" name="D Flip-Flop">
+      <a name="trigger" val="high"/>
+      <a name="label" val="D1 (01)"/>
+    </comp>
+    <comp lib="0" loc="(340,220)" name="Probe">
+      <a name="facing" val="west"/>
+      <a name="label" val="-Q"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif plain 18"/>
+    </comp>
+    <comp lib="1" loc="(300,90)" name="NOR Gate">
+      <a name="size" val="70"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="4" loc="(640,50)" name="D Flip-Flop">
+      <a name="trigger" val="high"/>
+      <a name="label" val="D0 (00)"/>
+    </comp>
+    <comp lib="1" loc="(180,70)" name="AND Gate">
+      <a name="size" val="70"/>
+      <a name="inputs" val="2"/>
+      <a name="negate0" val="true"/>
+    </comp>
+    <comp lib="0" loc="(60,160)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="EN"/>
+      <a name="labelfont" val="SansSerif plain 18"/>
+    </comp>
+    <comp lib="4" loc="(640,170)" name="D Flip-Flop">
+      <a name="trigger" val="high"/>
+      <a name="label" val="D2 (10)"/>
+    </comp>
+    <comp lib="0" loc="(60,50)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="D"/>
+      <a name="labelfont" val="SansSerif plain 18"/>
+    </comp>
+    <comp lib="1" loc="(190,240)" name="AND Gate">
+      <a name="size" val="70"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(330,90)" name="Probe">
+      <a name="facing" val="west"/>
+      <a name="label" val="Q"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif plain 18"/>
+    </comp>
+    <comp lib="1" loc="(310,220)" name="NOR Gate">
+      <a name="size" val="70"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="6" loc="(381,16)" name="Text">
+      <a name="text" val="Creative Commons BY NC 4.0 International License"/>
+    </comp>
+    <comp lib="2" loc="(530,170)" name="Decoder">
+      <a name="select" val="2"/>
+    </comp>
+  </circuit>
+  <circuit name="RisingEdge">
+    <a name="circuit" val="RisingEdge"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(50,40)" to="(50,80)"/>
+    <wire from="(190,180)" to="(190,190)"/>
+    <wire from="(40,190)" to="(190,190)"/>
+    <wire from="(150,60)" to="(170,60)"/>
+    <wire from="(50,40)" to="(100,40)"/>
+    <wire from="(180,160)" to="(200,160)"/>
+    <wire from="(190,180)" to="(200,180)"/>
+    <wire from="(50,150)" to="(50,170)"/>
+    <wire from="(50,80)" to="(60,80)"/>
+    <wire from="(40,40)" to="(50,40)"/>
+    <wire from="(40,150)" to="(50,150)"/>
+    <wire from="(50,170)" to="(60,170)"/>
+    <wire from="(90,80)" to="(100,80)"/>
+    <wire from="(50,150)" to="(150,150)"/>
+    <comp lib="0" loc="(40,150)" name="Clock"/>
+    <comp lib="1" loc="(150,170)" name="NOT Gate"/>
+    <comp lib="0" loc="(40,190)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(170,60)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="6" loc="(381,16)" name="Text">
+      <a name="text" val="Creative Commons BY NC 4.0 International License"/>
+    </comp>
+    <comp lib="4" loc="(240,160)" name="D Flip-Flop"/>
+    <comp lib="1" loc="(150,60)" name="AND Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="1" loc="(90,80)" name="NOT Gate"/>
+    <comp lib="1" loc="(120,170)" name="NOT Gate"/>
+    <comp lib="1" loc="(180,160)" name="AND Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="6" loc="(131,265)" name="Text">
+      <a name="text" val="Simulate &gt; Tick Frequency &gt; 1 Hz"/>
+    </comp>
+    <comp lib="0" loc="(40,40)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="6" loc="(111,250)" name="Text">
+      <a name="text" val="Simulate &gt; Ticks Enabled"/>
+    </comp>
+    <comp lib="1" loc="(90,170)" name="NOT Gate"/>
+    <comp lib="6" loc="(159,233)" name="Text">
+      <a name="text" val="To use this circuit, Start the simulator's clock"/>
+    </comp>
+  </circuit>
 </project>
