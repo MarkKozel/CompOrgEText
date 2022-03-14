@@ -58,7 +58,7 @@ Also, *source* and *drain* lines are swapped between P- and N-Type diagrams. Fin
 ## Transistors as Bits
 Transistors use a voltage input to switch another voltage output. Voltage are analog quantities, meaning there are (until we start looking at the level os the electron) an infinite number of different voltage level or amounts.
 
-Binary values are digital. The have 2 distinct values and nothing in between. At teh lowest level, binary values are *1* or *0*. There is no 0.5 binary value.
+Binary values are digital. The have 2 distinct values and nothing in between. At the lowest level, binary values are *1* or *0*. There is no 0.5 binary value.
 
 ![P- and N-Type](/images/Circuits/PNTypeBinaryFunctions.png)
 
