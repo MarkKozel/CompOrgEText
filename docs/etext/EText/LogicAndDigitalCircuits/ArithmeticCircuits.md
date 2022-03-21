@@ -86,7 +86,7 @@ The above circuit has 2 sets of redundant AND gates (101 and 111). The circuit d
 
 ### Rippler Adder
 
-Connecting a series of *Full* Adders creates a circuit that will add two (2) multi-length bit strings together. The term *Ripple* denotes how the *Carry<sub>in</sub>* and *Carry<sub>out</sub>*, invidivual *Full* adders are chained together, connecting a *Carry<sub>out</sub>* from a less significant bit place to the next most significate bit's *Carry<sub>in</sub>*. The *Ripple* thought the circuit quickly (in the same clock cycle) to produce the sum of all the bits.
+Connecting a series of *Full* Adders creates a circuit that will add two (2) multi-length bit strings together. The term *Ripple* denotes how the *Carry<sub>in</sub>* and *Carry<sub>out</sub>* of individual *Full* adders are chained together, connecting a *Carry<sub>out</sub>* from a less significant bit place to the next most significate bit's *Carry<sub>in</sub>*. The *Carry* results *Ripple* thought the circuit quickly (in the same clock cycle) to produce the sum of all the bits.
 
 The *Carry<sub>out</sub>* from the last *Full* Adder is considered *Overflow* for a 4-bit system. It may set a flag for the program to check. It may connect to a *Carry<sub>in</sub>* of another 4-bit Ripple Adder circuit.
 
