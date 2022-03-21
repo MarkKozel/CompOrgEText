@@ -1,5 +1,5 @@
 ---
-title: Adder Circuits
+title: Arithmetic Circuits
 parent: Logic and Digital Circuits
 description: TODO
 pageClass: Topic
@@ -22,10 +22,20 @@ tags: []
 
 ## Introduction
 
-## Half Adder
+## Adder
 
-## Full Adder
+### Half Adder
 
-## Rippler Adder
+### Full Adder
+
+### Rippler Adder
+
+## Subtractor
+
+### Half Subtractor
+
+### Full Subtractor
+
+### Rippler Subtractor
 
 ## Conclusion

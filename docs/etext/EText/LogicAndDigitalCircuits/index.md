@@ -1,7 +1,7 @@
 ---
 title: Logic and Digital Circuits
 parent: Computer Organization EText
-description: Putting bits to work in computer hardware
+description: Putting Bits to Work in Computer Hardware
 pageClass: Section
 tags: []
 ---
@@ -65,16 +65,24 @@ Arraigning sets of transistors into parallel and series configurations they beha
 
 Combining basic logic circuits, we create higher-level digital control circuits that can manage data flow, move information, and orchestrate higher-level digital hardware capabilities.
 
+## Designing Circuits
+
+Creating digital circuits starts with a Truth Table, listing all digital inputs and the required outputs for each possible set of inputs. Using a simple algorithm, an equitant circuit can be created to match the starting Truth Table. 
+
+[Designing Circuits](DesigningCircuits)
+
+## Control Circuits
+
 [Control Circuits](ControlCircuits)
+
+## Arithmetic Circuits
+
+[Arithmetic Circuits](ArithmeticCircuits)
 
 ## Storage Circuits
 Basic logic circuits can also be arraigned to maintain digital information between computer clock-cycles. This allows modern computer hardware to retain information through more complex operations that take multiple operations to complete.
 
 [Storage Circuits](StorageCircuits)
 
-## Designing Circuits
 
-Creating digital circuits starts with a Truth Table, listing all digital inputs and the required outputs for each possible set of inputs. Using a simple algorithm, an equitant circuit can be created to match the starting Truth Table. 
-
-[Designing Circuits](DesigningCircuits)
 
