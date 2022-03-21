@@ -112,10 +112,10 @@ module.exports = {
             'LogicAndDigitalCircuits/TruthTables',
             'LogicAndDigitalCircuits/TheTransistor',
             'LogicAndDigitalCircuits/BasicLogicCircuits',
-            'LogicAndDigitalCircuits/ControlCircuits',
-            'LogicAndDigitalCircuits/StorageCircuits',
-            'LogicAndDigitalCircuits/AdderCircuits',
             'LogicAndDigitalCircuits/DesigningCircuits',
+            'LogicAndDigitalCircuits/ControlCircuits',
+            'LogicAndDigitalCircuits/ArithmeticCircuits',
+            'LogicAndDigitalCircuits/StorageCircuits',
           ],
         },
         {
