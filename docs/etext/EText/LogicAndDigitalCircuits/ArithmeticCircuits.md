@@ -117,6 +117,17 @@ Like the *Half* Adder, the *Half* Subtractor does not handle the third inputs va
 
 Following the [algorithm to create a circuit diagram from a truth table](DesigningCircuits#truth-table-to-circuit-diagram), the following circuit is created
 
+> Reading a line from the truth table is **A - B = D, B<sub>out</sub>** was borrowed from the higher significant value.
+>
+>Line 2: **0 - 1 = 1 after borrowing 1**
+
+```
+  1 0        0 10 (borrowed 1 from 2's column)
+- 0 1  ->  - 0 1
+  ---        ---
+             0 1 
+```
+
 ![Half Adder Circuit](/images/Circuits/Arithmetic_HalfSubtractor.png)
 
 The circuit has two (2) AND gates to handle 0,1 and 1,0. Both of these inputs result in a one (1) for the *Difference* output.
@@ -133,6 +144,40 @@ Like the *Hald* Adder, the two (2) AND gates handling 0,1 and 1,0 inputs are fun
 
 ### Full Subtractor
 
+The missing input, B<sub>in</sub>, is added to the truth table to make if a *Full* Subtractor. This input is **1** if the previous column (1 step less significant) had to borrow from this column
+
+|A|B|B<sub>in</sub>|D|B<sub>out</sub>|
+|-|-|-|-|-|
+|0|0|0|0|0|
+|0|0|1|1|1|
+|0|1|0|1|1|
+|0|1|1|0|1|
+|1|0|0|1|0|
+|1|0|1|0|0|
+|1|1|0|0|0|
+|1|1|1|1|1|
+
+This is a *Full* Subtractor created using the algorithm and it has been simplified.
+
+![Half Adder Circuit](/images/Circuits/Arithmetic_SubtractorSimple.png)
+
+Three (3) of the AND gates from the D circuit are the same for the B<sub>out</sub>, 001, 010, and 111.
+
+*Full* Subtractors have a simplified component symbol with the same 3 inputs and 2 outputs.
+
+![Half Adder Circuit](/images/Circuits/Arithmetic_SubtractorComponent.png)
+
 ### Rippler Subtractor
+
+Like the Adder, Subtractors can be connected in series for create a multi-bit subtraction circuit. The 4-bit inputs and outputs work the same as the Adder
+
+The *Borrow<sub>out</sub>* from the last *Full* Subtractor is considered *Underflow* for a 4-bit system. It may set a flag for the program to check. It may connect to a *Borrow<sub>in</sub>* of another 4-bit Ripple Subtractor circuit.
+
+![Half Adder Circuit](/images/Circuits/Arithmetic_RippleSubtractor.png)
+
+Ripple Subtractor can be shown on a circuit diagram with multi-bit inputs and outputs
+
+![Half Adder Circuit](/images/Circuits/Arithmetic_RippleSubtractorComponent.png)
+
 
 ## Conclusion
