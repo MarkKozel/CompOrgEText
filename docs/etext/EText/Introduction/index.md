@@ -1,5 +1,5 @@
 ---
-title: Introduction to Computer Organization
+title: Introduction to Computer Organization Section
 parent: Computer Organization EText
 description: Description of main topics to be covered in this course
 pageClass: Section

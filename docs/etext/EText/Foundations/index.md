@@ -1,8 +1,8 @@
 ---
-title: Foundations
+title: Foundations Section
 parent: Computer Organization EText
 description: Building an understanding of core computer hardware/software concepts, standards, and components present on modern-day computers
-pageClass: Topic
+pageClass: Section
 tags: []
 ---
 

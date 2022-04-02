@@ -1,5 +1,5 @@
 ---
-title: Number Systems
+title: Number Systems Section
 parent: Computer Organization EText
 description: Build an understanding of the binary number system and how modern computers use binary to represent digital and analog data
 pageClass: Section
