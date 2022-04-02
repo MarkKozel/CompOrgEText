@@ -1,5 +1,5 @@
 ---
-title: Assembly Programming
+title: Assembly Programming Section
 parent: Computer Organization EText
 description: Use foundation, number systems, and digital logic to create and run low-level assembly programs
 pageClass: Section

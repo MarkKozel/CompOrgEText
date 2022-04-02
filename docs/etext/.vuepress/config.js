@@ -123,6 +123,7 @@ module.exports = {
           path: '/EText/AssemblyProgramming',
           collapsable: true,
           children: [
+            'AssemblyProgramming/GettingStarted/',
             'AssemblyProgramming/Commands/',
             'AssemblyProgramming/BasicIO/',
             'AssemblyProgramming/Development/',
