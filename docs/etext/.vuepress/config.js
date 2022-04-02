@@ -51,19 +51,6 @@ module.exports = {
       }
     ],
     sidebar: {
-      // '/EText/': [
-      //   {
-      //     title: 'EText Section',
-      //     collapsable: false,
-      //     children: [
-      //       'Introduction/',
-      //       'Foundations/',
-      //       'NumberSystems/',
-      //       'LogicAndDigitalCircuits/',
-      //       'AssemblyProgramming/',
-      //     ]
-      //   }
-      // ],
       '/EText/': [
         {
           title: 'Introduction',
