@@ -18,8 +18,8 @@ Setup the LC-3 Tools for this Section
 [LC-3 Editor](./LC3Edit)
 Creating and Assembling Source Code
 
-## LC-3 Runtime Environment
-[LC-3 Runtime Environment](./LC3Simulate)
+## LC-3 Simulate Environment
+[LC-3 Simulate](./LC3Simulate)
 Running and Examining Object Code
 
 ## Your First LC-3 Program
