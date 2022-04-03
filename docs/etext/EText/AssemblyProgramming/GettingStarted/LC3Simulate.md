@@ -62,4 +62,23 @@ Registers are quick-access data storage used by programs and the LC-3 Simulate e
 
 ### Memory
 
+Random Access Memory (RAM) contains the program code and data. It also contains other elements, such as built-in functions and data essential to the operation of Simulate
+
+![Simulate Memory Breakdown](/images/AssemblyProgramming/GettingStarted/Simulate_Memory_Breakdown.png)
+
+**Current PC** - This indicator provides a visual representation of the PC register. It points to the address in memory contained in the PC
+
+**Memory Addresses** - The address of each memory location is shown in a column to the left of the memory contents. This is shown in Hex notation to save space. Simulate uses 16-bit memory addressing, so there are 2<sup>16</sup> (65,536) memory location addressable with 16 bits.
+
+> Simulate has 128 KB of memory
+>
+> 131,072 bytes
+>
+> Each program instruction or data require 2 bytes (16 bits)
+
+**Memory Contents** - Each memory address is associated with a 16-bit memory location. Simulate displays the contents of each memory location in 3 different formats (from left to right):
+- Binary
+- Hex
+- Reverse-engineered LC-3 Source Instruction
+
 ## Conclusion

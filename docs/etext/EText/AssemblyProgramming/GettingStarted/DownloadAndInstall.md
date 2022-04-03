@@ -37,4 +37,8 @@ Uninstalling  only required deleting the directory contains the â€œinstallationâ
 
 ![LC3 Installation Files](/images/AssemblyProgramming/GettingStarted/LC3Files.png)
 
+### LC-3 Instruction Set Architecture (ISA) Reference
+
+> [Download the complete LC-3 manual](/downloads/LC3/lc3-isa.pdf)
+
 ## Conclusion

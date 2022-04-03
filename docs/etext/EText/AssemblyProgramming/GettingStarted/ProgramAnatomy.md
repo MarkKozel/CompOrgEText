@@ -38,7 +38,7 @@ Comments should not contain trivial information that is obvious by reviewing the
 
 LC3 comments begin with a semicolon ( ; ). All text to the right of a semicolon will not be assembled or executed. Comments can contain any printable characters.
 
-![LC3 Comments](/images/AssemblyProgramming/GettingStarted/LC3Source_Comments.jpg)
+![LC3 Comments](/images/AssemblyProgramming/GettingStarted/Anatomy_Comments.png)
 
 #### Block Comments
 The beginning of a source code file or function/method should contain a Block Comment explaining the general purpose, function, and/or use of the code that follows
@@ -57,6 +57,8 @@ Inline or brief block comments before a logically associated block of code. Whil
 
 ### Beginning and Ending of a Program
 Unlike higher-level programming languages, assembly code contains information that directs the processor to do certain things at the the start and end of the program. Higher-level language executables contain this information, but the developer is not required to supply this information
+
+![Anatomy PseudoOps](/images/AssemblyProgramming/GettingStarted/Anatomy_PseudoOps.png)
 
 #### Object Code Load Point
 Pseudo-Operations (Pseudo-Ops) are assembler directives. These pseudo-ops shortcuts used by the developer to direct the assembler on some basic functions. Pseudo-ops begin with a dot (.)
@@ -82,6 +84,8 @@ Inline comments can be placed to the right of a source code line
 Block comments can be placed on separate lines within the the executable instruction block
 The final line of the executable instruction should be HALT or TRAP x25
 
+![Anatomy ExecCode](/images/AssemblyProgramming/GettingStarted/Anatomy_ExecutableStatements.png)
+
 ### Data Declarations/References
 Static data and pre-defined memory blocks are ‘declared’ using pseudo-ops. 
 All data declarations start with a programmer-defined label. This is essentially a ‘variable name’ that is used within the executable instructions to access the memory/data
@@ -94,6 +98,8 @@ Allocate # number of consecutive memory slots. All slots are initialized to zero
 .STRINGZ *string of characters*
 Allocate a string length +1 consecutive memory slots and fill all ascii code for each character in *string of characters* The final memory slot is filled with zero to indicate End-Of-String
 
+![Anatomy DataDeclarations](/images/AssemblyProgramming/GettingStarted/Anatomy_DataDeclarations.png)
+
 ### Labels
 Labels are effectively a variable name, referring to data or a location within the program. When used in an assembly instruction, a label is replaced with the data to which it refers or a line of code to which the program will jump.
 Line variable names in high-level programming languages, the developer can choose a label name, with some rules:
@@ -105,5 +111,7 @@ Labels should be short, but meaningful
 Abbreviate if possible
 Use underscore (_) to break up words
 Should indicate what the data or code represents (Start, Result, End_Of_Loop)
+
+![Anatomy Labels](/images/AssemblyProgramming/GettingStarted/Anatomy_Labels.png)
 
 ## Conclusion
