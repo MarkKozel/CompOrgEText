@@ -1,12 +1,13 @@
 ---
 title: Getting Started with the LC-3 Assembly Tools
-shorttitle: Get aquatinted with the tools
+parent: Assembly Programming
+description: Get aquatinted with the tools
 pageClass: Unit
 tags: [LC-3, Editor, Simulate, hello world]
 ---
 
 # {{ $frontmatter.title }}
-**{{ $frontmatter.shorttitle }}**
+**{{ $frontmatter.description }}**
 
 This section uses the LC-3 Edit and Simulate tools to create, assemble, run, and debug assembly programs written to the LC-3 ISA specification.
 

@@ -109,14 +109,21 @@ module.exports = {
           title: 'Assembly Programming',
           path: '/EText/AssemblyProgramming',
           collapsable: true,
+          sidebarDepth: 4,
           children: [
             'AssemblyProgramming/GettingStarted/',
             'AssemblyProgramming/Commands/',
+            'AssemblyProgramming/ProgramFlow/',
             'AssemblyProgramming/BasicIO/',
             'AssemblyProgramming/Development/',
-            'AssemblyProgramming/ProgramFlow/',
           ],
         },
+
+        // 'DownloadAndInstall/',
+        // 'LC3Edit/',
+        // 'LC3Simulate/',
+        // 'HelloWorld/',
+
       ],
       '/LC3/': [
         {

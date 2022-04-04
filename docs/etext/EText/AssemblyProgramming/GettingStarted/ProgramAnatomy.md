@@ -102,15 +102,16 @@ Allocate a string length +1 consecutive memory slots and fill all ascii code for
 
 ### Labels
 Labels are effectively a variable name, referring to data or a location within the program. When used in an assembly instruction, a label is replaced with the data to which it refers or a line of code to which the program will jump.
+
 Line variable names in high-level programming languages, the developer can choose a label name, with some rules:
-Letters, numbers, and underscores are allowed
-Cannot look like another assembly element (like an instruction or pseudo-op)
-Spaces are not allowed
-Cannot look like a comment (starting with semicolon)
-Labels should be short, but meaningful
-Abbreviate if possible
-Use underscore (_) to break up words
-Should indicate what the data or code represents (Start, Result, End_Of_Loop)
+- Letters, numbers, and underscores are allowed
+- Cannot look like another assembly element (like an instruction or pseudo-op)
+- Spaces are not allowed
+- Cannot look like a comment (starting with semicolon)
+- Labels should be short, but meaningful
+- Abbreviate if possible
+- Use underscore (_) to break up words
+- Should indicate what the data or code represents (Start, Result, End_Of_Loop)
 
 ![Anatomy Labels](/images/AssemblyProgramming/GettingStarted/Anatomy_Labels.png)
 

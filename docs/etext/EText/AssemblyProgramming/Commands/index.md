@@ -2,16 +2,15 @@
 title: Commands
 parent: Assembly Programming
 description: 
-pageClass: Subsection
+pageClass: Unit
 tags: []
 ---
 
 # {{ $frontmatter.title }}
 **{{ $frontmatter.description }}**
 
-## Introduction
-
-## Opcodes and Operands
+## Anatomy of LC-3 Commands
+[Command Anatomy](CommandAnatomy)
 
 ## ALU Commands
 [ALU Commands](ALUCommands)
@@ -25,4 +24,3 @@ tags: []
 ## Subroutine Commands
 [Subroutine Commands](SubroutineCommands)
 
-## Conclusion
