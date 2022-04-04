@@ -28,6 +28,7 @@ LC-3 is a simulated Von Neumann computer Instruction Set Architecture (ISA). Its
 The LC-3 editor and simulator are used in the course to use the defined ISA to create programs that preform standard Input-Processing-Output flow implemented in the lowest-level human-readable language, Assembly
 
 ### Downloading the Tools
+
 In class, we will be using version 3.01. Linux and Windows versions should be downloaded from McGraw Hill (https://highered.mheducation.com/sites/0072467509/student_view0/lc-3_simulator.html)
 There are various implementations of the LC-3 available online, but most are student projects or hobby programmer implementations. Using these version may change your results
 

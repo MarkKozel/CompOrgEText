@@ -6,8 +6,10 @@ module.exports = {
 
   markdown: {
     linkify: true,
+    lineNumbers: true,
     extendMarkdown: md => {
       md.use(require('markdown-it-imsize'));
+      md.use(require('markdown-it-include'), 'etext//');
     },
   },
 

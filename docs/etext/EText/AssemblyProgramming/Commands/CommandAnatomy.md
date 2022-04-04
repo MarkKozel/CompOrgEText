@@ -74,6 +74,21 @@ A 6- or 9-bit value that is added to the PC register for Load/Store and Branch i
 
 An 8-bit value of a built-in TRAP function. This value is the memory address of a lookup table to the actual TRAP function.
 
+## Referencing Registers
+
+Recall that the LC-3 has eight (8) general registers that user programs and Simulate share. In assemble source code, the registers are identified by "R" and a number (i.e. R3, R7).
+
+Src, Dest, and Base Registers included in Operands are all 3-bit values. The 3 bits address the register to be used in the Operands.
+
+|Source Code|Operand|
+|:-:|:-:|
+|R0|000|
+|R1|001|
+|R2|010|
+|...|...|
+|R7|111|
+
+
 ## Processing a Command
 
 During the execution of a single command, the control unit will direct a series of events during several clock cycles. These events will cause the command to be loaded into the IR, Operands to be moved to/from memory, register values to be loaded into the ALU, and many more.
