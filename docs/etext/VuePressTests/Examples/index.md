@@ -4,17 +4,7 @@
 [LC-3 Test Page](../LC3/LC3Test.md) -->
 
 
-## Include MD file in an MD file
 
-!!!include(VuePressTests\Examples\Another.md)!!!
-
-````
-!!!
-include(VuePressTests\Examples\Another.md)
-!!!
-
-This above 3 lines all on 1 line
-````
 
 ## Page Templates
 This resource is divided into Units

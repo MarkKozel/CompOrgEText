@@ -32,6 +32,10 @@ module.exports = {
         link: '/etext/',
       },
       {
+        text: 'Assembly',
+        link: '/Assembly/',
+      },
+      {
         text: 'LC3',
         link: '/LC3/',
       },
@@ -53,6 +57,31 @@ module.exports = {
       }
     ],
     sidebar: {
+      '/Assembly/': [
+        {
+          title: 'Getting Started',
+          path: '/Assembly/GettingStarted',
+          collapsable: true,
+          sidebarDepth: 4,
+          children: [
+            'GettingStarted/DownloadAndInstall',
+            'GettingStarted/LC3Edit',
+            'GettingStarted/LC3Simulate',
+            'GettingStarted/HelloWorld',
+          ],
+        },
+
+        {
+          title: 'Commands',
+          path: '/Assembly/Commands',
+          collapsable: true,
+          sidebarDepth: 4,
+          children: [
+            'Commands/CommandAnatomy',
+            'Commands/ALUCommands',
+          ],
+        },
+      ],
       '/EText/': [
         {
           title: 'Introduction',
@@ -107,19 +136,19 @@ module.exports = {
             'LogicAndDigitalCircuits/StorageCircuits',
           ],
         },
-        {
-          title: 'Assembly Programming',
-          path: '/EText/AssemblyProgramming',
-          collapsable: true,
-          sidebarDepth: 4,
-          children: [
-            'AssemblyProgramming/GettingStarted/',
-            'AssemblyProgramming/Commands/',
-            'AssemblyProgramming/ProgramFlow/',
-            'AssemblyProgramming/BasicIO/',
-            'AssemblyProgramming/Development/',
-          ],
-        },
+        // {
+        //   title: 'Assembly Programming',
+        //   path: '/EText/AssemblyProgramming',
+        //   collapsable: true,
+        //   sidebarDepth: 4,
+        //   children: [
+        //     'AssemblyProgramming/GettingStarted/',
+        //     'AssemblyProgramming/Commands/',
+        //     'AssemblyProgramming/ProgramFlow/',
+        //     'AssemblyProgramming/BasicIO/',
+        //     'AssemblyProgramming/Development/',
+        //   ],
+        // },
 
         // 'DownloadAndInstall/',
         // 'LC3Edit/',
