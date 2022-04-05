@@ -78,7 +78,7 @@ module.exports = {
           collapsable: true,
           sidebarDepth: 3,
           children: [
-            'BasicIO/index',
+            'BasicIO/IO'
           ],
         },
         {
