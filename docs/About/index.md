@@ -26,3 +26,13 @@ Once a resource is selected, use the **Sidebar** menu at the left of the resourc
 Use the **Search** fields at the top-center to find all references to a keyword
 
 The **Icon/Title** at the top-left will return you to the CS-131 start page
+
+# About this Textbook
+
+[Funding](Funding/)
+
+[Colophon](Colophon/)
+
+If you are interested in building upon this project see the [Getting Started Guide](GettingStarted/)
+
+Working together using GitHub and Git [Collaboration and Git Info](GitBuildMgmt/)

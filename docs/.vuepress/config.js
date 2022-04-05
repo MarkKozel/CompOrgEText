@@ -1,4 +1,4 @@
-const { description } = require('../../package')
+const { description } = require('../package')
 
 module.exports = {
   title: 'CS 131 - Computer Organization',
@@ -9,7 +9,7 @@ module.exports = {
     lineNumbers: true,
     extendMarkdown: md => {
       md.use(require('markdown-it-imsize'));
-      md.use(require('markdown-it-include'), 'etext//');
+      md.use(require('markdown-it-include'));
     },
   },
 
@@ -28,20 +28,16 @@ module.exports = {
     lastUpdated: false,
     nav: [
       {
-        text: 'E-Text',
-        link: '/etext/',
+        text: 'Introduction',
+        link: '/Introduction/',
+      },
+      {
+        text: 'Foundations',
+        link: '/Foundations/',
       },
       {
         text: 'Assembly',
         link: '/Assembly/',
-      },
-      {
-        text: 'LC3',
-        link: '/LC3/',
-      },
-      {
-        text: 'Course Info',
-        link: '/CourseInformation/',
       },
       {
         text: 'About',
@@ -75,41 +71,52 @@ module.exports = {
           title: 'Commands',
           path: '/Assembly/Commands',
           collapsable: true,
-          sidebarDepth: 4,
+          sidebarDepth: 3,
           children: [
             'Commands/CommandAnatomy',
             'Commands/ALUCommands',
           ],
         },
       ],
-      '/EText/': [
+      '/Introduction/': [
         {
-          title: 'Introduction',
-          path: '/EText/Introduction',
+          title: 'History',
+          path: '/Introduction/History',
           collapsable: true,
+          sidebarDepth: 3,
           children: [
-            'Introduction/Abstraction',
-            'Introduction/Algorithms',
-            'Introduction/HardwareSoftware',
-            'Introduction/Programming',
+            'History/History',
+            'History/AnalogDigitalComputers',
+            'History/SpecificGeneralUseComputers',
           ],
         },
         {
-          title: 'Foundations',
-          path: '/EText/Foundations',
+          title: 'Concepts',
+          path: '/Introduction/Concepts',
+          collapsable: true,
+          sidebarDepth: 3,
+          children: [
+            'Concepts/Abstraction',
+            'Concepts/Algorithms',
+            'Concepts/HardwareSoftware',
+            'Concepts/Programming',
+          ],
+        },
+      ],
+      '/Foundations/': [
+        {
+          title: 'Pioneers',
+          path: '/Foundations/Pioneers',
           collapsable: true,
           children: [
-            'Foundations/History',
-            'Foundations/AnalogDigitalComputers',
-            'Foundations/SpecificGeneralUseComputers',
-            'Foundations/Turing',
-            'Foundations/Shannon',
-            'Foundations/vonNeumann',
+            'Pioneers/Turing',
+            'Pioneers/Shannon',
+            'Pioneers/vonNeumann',
           ],
         },
         {
           title: 'Number Systems',
-          path: '/EText/NumberSystems',
+          path: '/Foundations/NumberSystems',
           collapsable: true,
           sidebarDepth: 3,
           children: [
@@ -123,7 +130,7 @@ module.exports = {
         },
         {
           title: 'Logic/Digital Circuits',
-          path: '/EText/LogicAndDigitalCircuits',
+          path: '/Foundations/LogicAndDigitalCircuits',
           collapsable: true,
           sidebarDepth: 3,
           children: [
@@ -136,60 +143,6 @@ module.exports = {
             'LogicAndDigitalCircuits/StorageCircuits',
           ],
         },
-        // {
-        //   title: 'Assembly Programming',
-        //   path: '/EText/AssemblyProgramming',
-        //   collapsable: true,
-        //   sidebarDepth: 4,
-        //   children: [
-        //     'AssemblyProgramming/GettingStarted/',
-        //     'AssemblyProgramming/Commands/',
-        //     'AssemblyProgramming/ProgramFlow/',
-        //     'AssemblyProgramming/BasicIO/',
-        //     'AssemblyProgramming/Development/',
-        //   ],
-        // },
-
-        // 'DownloadAndInstall/',
-        // 'LC3Edit/',
-        // 'LC3Simulate/',
-        // 'HelloWorld/',
-
-      ],
-      '/LC3/': [
-        {
-          title: 'The LC3',
-          path: '/LC3/',
-          collapsable: false,
-          children: [
-            '',
-            'GettingStarted',
-          ],
-        },
-        {
-          title: 'LC3 Commands',
-          path: '/LC3/Commands/',
-          collapsable: false,
-          children: [
-            'Commands/',
-            'Commands/ALU',
-            'Commands/Branching',
-            'Commands/MemoryAccess',
-            'Commands/TrapRoutines',
-            'Commands/Subroutine',
-          ],
-        }
-      ],
-      '/CourseInformation/': [
-        {
-          title: 'Course Info',
-          collapsable: false,
-          children: [
-            '',
-            'CourseOrganization',
-            'CourseRational',
-          ]
-        }
       ],
       '/About/': [
         {
@@ -197,6 +150,8 @@ module.exports = {
           collapsable: false,
           children: [
             '',
+            'CourseOrganization',
+            'CourseRational',
             'Funding',
             'Colophon',
             'GettingStarted',
