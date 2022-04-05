@@ -47,10 +47,6 @@ module.exports = {
         text: 'Examples',
         link: '/VuePressTests/',
       },
-      {
-        text: 'VP Guide',
-        link: '/guide/',
-      }
     ],
     sidebar: {
       '/Assembly/': [
