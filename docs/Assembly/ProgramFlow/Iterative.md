@@ -35,29 +35,19 @@ The number of iteration (number of times the section runs) can be a built-in val
 
 ![Iterative Flow Diagram](/images/AssemblyProgramming/ProgramFlow/Diagram_Iterative.png)
 
-### For Loop
-:::: code-group
-::: code-group-item Java
-```java
-int x = 0;
-for(int i = 0; i < 10; i++) {
-x += i; //Add current value if i to x
-}
-```
-:::
-::: code-group-item Assembly
-```
-.ORIG x3000
-  ADD R1, R1, #0; int x = 0
-  ADD R2, R2, #0; int i = 0;
-loop   
+## For Loop
+<!-- For Loop file -->
+!!!include(Assembly/ProgramFlow/Iterative_ForLoop.md)!!!
 
-  Done HALT
-.END
+## While Loop
 
+Rather than looping a set number of times, a While Loop will loop as long as a condition is true. 
 
-```
-:::
-::::
+Iterating until a condition is met (true) causes a While Loop to execute zero (0) or more times. The number of iterations depends on the condition and when it is finally met.
+
+A while loop much update the condition variable inside the loop, so that when tested at the start of the next iteration it may make the condition true, and exit the loop.
+
+<!-- While Loop file -->
+!!!include(Assembly/ProgramFlow/Iterative_WhileLoop.md)!!!
 
 ## Conclusion

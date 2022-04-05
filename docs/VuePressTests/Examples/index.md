@@ -4,6 +4,17 @@
 [LC-3 Test Page](../LC3/LC3Test.md) -->
 
 
+!!!include(VuePressTests/Examples/Another.md)!!!
+
+```
+!!!
+include(VuePressTests/Examples/Another.md)
+!!!
+
+All on 1 line
+
+Must use forward slashes, otherwise build on live site will fail
+```
 
 
 ## Page Templates

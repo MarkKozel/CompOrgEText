@@ -20,3 +20,6 @@ tags: []
 
 ## Iterative Program Flow
 [Iterative Program Flow](Iterative)
+
+- [For Loop Iterative Program Flow](Iterative_ForLoop)
+- [While Loop Iterative Program Flow](Iterative_WhileLoop)
