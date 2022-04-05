@@ -62,7 +62,6 @@ module.exports = {
             'GettingStarted/HelloWorld',
           ],
         },
-
         {
           title: 'Commands',
           path: '/Assembly/Commands',
@@ -73,6 +72,37 @@ module.exports = {
             'Commands/ALUCommands',
           ],
         },
+        {
+          title: 'BasicIO',
+          path: '/Assembly/BasicIO',
+          collapsable: true,
+          sidebarDepth: 3,
+          children: [
+            'BasicIO/index',
+          ],
+        },
+        {
+          title: 'Program Flow',
+          path: '/Assembly/ProgramFlow',
+          collapsable: true,
+          sidebarDepth: 3,
+          children: [
+            'ProgramFlow/Sequential',
+            'ProgramFlow/Conditional',
+            'ProgramFlow/Iterative',
+          ],
+        },
+        {
+          title: 'Development',
+          path: '/Assembly/Development',
+          collapsable: true,
+          sidebarDepth: 3,
+          children: [
+            'Development/WhitespaceAndCommenting',
+            'Development/Design',
+            'Development/Debugging',
+          ],
+        }
       ],
       '/Introduction/': [
         {

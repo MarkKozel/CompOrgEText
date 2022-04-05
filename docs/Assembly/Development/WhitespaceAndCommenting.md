@@ -7,8 +7,7 @@ tags: [whitespace, comments, tabs, formatting, maintenance]
 ---
 
 # {{ $frontmatter.title }}
-
-#### {{ $frontmatter.description
+**{{ $frontmatter.description }}**
 
 <KeyConcepts :ConceptArray= "[
 {
