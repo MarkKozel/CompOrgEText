@@ -13,6 +13,8 @@ module.exports = {
     },
   },
 
+  cache: false,
+
   head: [
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
@@ -70,6 +72,7 @@ module.exports = {
           children: [
             'Commands/CommandAnatomy',
             'Commands/ALUCommands',
+            'Commands/BranchingCommands',
           ],
         },
         {
