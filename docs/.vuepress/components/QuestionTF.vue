@@ -85,7 +85,7 @@ module.exports = {
 </script>
 
 <style scoped>
-button {
+/* button {
   background-color: #0000ff;
   color: white;
   padding: 14px 20px;
@@ -95,9 +95,9 @@ button {
   opacity: 0.9;
   font-size: 16px;
   font-family: Arial, sans-serif;
-}
+} */
 
-.PossibleAnswers {
+/* .PossibleAnswers {
   display: block;
   position: relative;
   padding-left: 35px;
@@ -108,19 +108,19 @@ button {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
+} */
 
 /* Hide the browser's default radio button */
-.PossibleAnswers input {
+/* .PossibleAnswers input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
   height: 0;
   width: 0;
-}
+} */
 
 /* Create a custom radio button */
-.checkmark {
+/* .checkmark {
   position: absolute;
   top: 0;
   left: 0;
@@ -128,41 +128,41 @@ button {
   width: 25px;
   background-color: #0000ff;
   border-radius: 50%;
-}
+} */
 
 /* On mouse-over, add a grey background color */
-.PossibleAnswers:hover input ~ .checkmark {
+/* .PossibleAnswers:hover input ~ .checkmark {
   background-color: #9999ff;
-}
+} */
 
 /* When the radio button is checked, add a blue background */
-.PossibleAnswers input:checked ~ .checkmark {
+/* .PossibleAnswers input:checked ~ .checkmark {
   background-color: #9999ff;
-}
+} */
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
-.checkmark:after {
+/* .checkmark:after {
   content: "";
   position: absolute;
   display: none;
-}
+} */
 
 /* Show the indicator (dot/circle) when checked */
-.PossibleAnswers input:checked ~ .checkmark:after {
+/* .PossibleAnswers input:checked ~ .checkmark:after {
   display: block;
-}
+} */
 
 /* Style the indicator (dot/circle) */
-.PossibleAnswers .checkmark:after {
+/* .PossibleAnswers .checkmark:after {
   top: 6px;
   left: 6px;
   width: 13px;
   height: 13px;
   border-radius: 80%;
   background: white;
-}
+} */
 
-.questionTable {
+/* .questionTable {
   border-color: #01013b;
   border-style: solid;
   border-width: 1px;
@@ -174,6 +174,6 @@ button {
   padding-top: 1px;
   padding-left: 10px;
   padding-bottom: 10px;
-}
+} */
 </style>
 
