@@ -44,7 +44,7 @@ result = x * 2;
 ```
 :::
 ::: code-group-item LC-3
-```asm
+```
 .ORIG x3000
 
    LD R2, X

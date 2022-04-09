@@ -7,7 +7,7 @@ x += i; //Add current value if i to x
 }
 ```
 
-``` assembly
+``` 
 .ORIG x3000
   ADD R1, R1, #0; int x = 0
   ADD R2, R2, #0; int i = 0;

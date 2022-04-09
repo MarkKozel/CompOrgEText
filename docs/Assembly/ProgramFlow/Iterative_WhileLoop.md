@@ -27,7 +27,7 @@ while(i <= 10){
 
 <QuestionMC question="After the While Loop completes i will contain what number?" answer='D' AChoice="2" BChoice="8" CChoice="10" DChoice="12" rightAnswerFeedback="Right! It will loop 6 times total" wrongAnswerFeedback="Incorrect. Because the condition is 'greater than or equal to', when i = 10 the loop is entered 1 last time, adding 2 more"/>
 
-``` assembly
+``` 
 .ORIG x3000
   ADD R1, R1, #0; int i = 0
 

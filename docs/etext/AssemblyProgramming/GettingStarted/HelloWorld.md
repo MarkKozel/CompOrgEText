@@ -24,7 +24,7 @@ Additionally, you will be exposed to a few of the standard conventions used in o
 1. Start the LC3Edit program
 1. Enter the following code into the Edit Area
 
-    ``` LC-3
+    ```
     .ORIG x3000
        LEA R0, HW
        PUTS
@@ -54,7 +54,7 @@ Additionally, you will be exposed to a few of the standard conventions used in o
 Assembling LC-3 Source Code converts it to Object code that the Simulate program can read in and execute
 1. Click Translate | Assemble or the **asm** button
 1. Review the Output Area. You should see:
-    ``` dos
+    ``` 
     Assembling <path to your file>
     Starting Pass 1…
     Pass 1 - 0 error(s)
