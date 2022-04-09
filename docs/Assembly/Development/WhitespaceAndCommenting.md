@@ -36,7 +36,7 @@ Using blank section or lines in source code makes it more readable for others. I
 
 Use Space or Tab indents in code shows how code it organized within a construct like a for-loop. It is visually obvious that code indented run inside the loop and code that is not indented is outside
 
-@[code java{2-3}](@/Assembly/Development/javaForLoop.java)
+@[code lang=java{2-3}](@/Assembly/Development/javaForLoop.java)
 
 It is visually obvious that each array elements are doubles, the increments by 1 inside the loop
 
