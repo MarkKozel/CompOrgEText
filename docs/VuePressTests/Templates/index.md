@@ -21,94 +21,41 @@ Each **Topic** is a page of information for that *topic*
 
 Initial page for a Book
 
-```text
----
-title: Computer Organization EText
-description: 
-pageClass: Book
-tags: []
----
+[Book Page](BookPage)
 
-# {{ $frontmatter.title }}
-**{{ $frontmatter.description }}**
+<!-- <<< @/VuePressTests/Templates/BookPage.md -->
 
-## Introduction
-```
+@[code lang=markdown](@/VuePressTests/Templates/BookPage.md)
+
 ## Section Pages
 
 Main page for a Section, which presents more detailed parts of a Unit, like *unsigned binary numbers* or *2's complement*
 Sections will contain 1 or more [topics](#topic-pages) that present details information, how-tos, and examples
 
-```text
----
-title: UNIT - SECTION
-shorttitle: SECTION OVERVIEW DESCRIPTION
-pageClass: Section
-tags: []
----
+[Section Page](SectionPage)
 
-# {{ $frontmatter.title }}
-**{{ $frontmatter.shorttitle }}**
-
-INTRODUCTION OF SECTION
-
-## [UNIT X](LINK TO UNIT FILE)
-### UNIT DESCTIPTION
-* LIST OF UNIT SECTIONS
-
-```
-
-## Unit Pages
+<<< @/VuePressTests/Templates/SectionPage.md
 
 Main page for a Unit, which presents an overview of a complex concept, like *binary numbers* or *logic gates*
 Units will contain 1 or more [sections](#section-pages) that present more detailed information
 
-```text
----
-title: UNIT
-shorttitle: UNIT OVERVIEW DESCRIPTION
-pageClass: Unit
-tags: []
----
+## Unit Pages
 
-# {{ $frontmatter.title }}
-**{{ $frontmatter.shorttitle }}**
+[Unit Page](UnitPage)
 
-INTRODUCTION OF UNIT
+<<< @/VuePressTests/Templates/UnitPage.md
 
-## [SECTION NAME](LINK TO SECTION)
-OVERVIEW OF SECTION
+Main page for a Unit, which presents an overview of a complex concept, like *binary numbers* or *logic gates*
+Units will contain 1 or more [sections](#section-pages) that present more detailed information
 
-```
+## Topic Page
 
-## Topic Pages
+[Topic Page](TopicPage)
 
-Main page for a Topic, which presents lowest level of detailed parts of a related Section, like *adding 2 unsigned binary strings* or *algorithm for converting to 2's complement*
+<<< @/VuePressTests/Templates/TopicPage.md
 
-```text
----
-title: UNIT - SECTION - TOPIC
-description: TOPIC OVERVIEW DESCRIPTION
-pageClass: Topic
-tags: []
----
+## Topic Page (LC3 Instructions)
 
-# {{ $frontmatter.title }}
+[Topic Page (LC-3 Instruction)](TopicPageLC3Instruction)
 
-**{{ $frontmatter.description }}**
-
-<KeyConcepts :ConceptArray= "[
-{
-  Concept:'Natural Language',
-  Details:'Spoken and written communication developed and evolved over time, and used by humans'
-}]" />
-
-## Introduction
-
-## TOPIC X
-
-## TOPIC Y
-
-## Conclusion
-
-```
+<<< @/VuePressTests/Templates/TopicPageLC3Instruction.md

@@ -3,8 +3,19 @@
 <!-- ## MD file from outside (../LC3) folder
 [LC-3 Test Page](../LC3/LC3Test.md) -->
 
+## Import Code Snippets
 
-!!!include(VuePressTests/Examples/Another.md)!!!
+```<<< @/VuePressTests/Examples/Another.md```
+
+<<< @/VuePressTests/Examples/Another.md
+
+
+```@[code lang=markdown](@/VuePressTests/Templates/BookPage.md)```
+
+@[code lang=markdown](@/VuePressTests/Templates/BookPage.md)
+
+
+## Inject MD Snippets using markdown-it-include
 
 ```
 !!!
@@ -16,6 +27,10 @@ All on 1 line
 Must use forward slashes, otherwise build on live site will fail
 ```
 
+*start md injected into this page*
+!!!include(VuePressTests/Examples/Another.md)!!!
+
+*end md injected into this page*
 
 ## Page Templates
 This resource is divided into Units
