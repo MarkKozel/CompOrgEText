@@ -36,7 +36,7 @@ Using blank section or lines in source code makes it more readable for others. I
 
 Use Space or Tab indents in code shows how code it organized within a construct like a for-loop. It is visually obvious that code indented run inside the loop and code that is not indented is outside
 
-@[code java{2-3}](./javaForLoop.java)
+@[code java{2-3}](@/Assembly/Development/javaForLoop.java)
 
 It is visually obvious that each array elements are doubles, the increments by 1 inside the loop
 
@@ -45,7 +45,7 @@ It is visually obvious that each array elements are doubles, the increments by 1
 
 Use blank lines to group associate code. This will make it visually easy to see that several line of code exist for some associated purpose
 
-@[code js{1-2,4-9,11-12}](./jsForLoop.js)
+@[code js{1-2,4-9,11-12}](@/Assembly/Development/jsForLoop.js)
 
 The blank lines in this code separate Initialization, Processing Loop, and Output
 
@@ -63,19 +63,19 @@ Comments are included to help other developers understand the organization and i
 
 An overall description of the code helps developers understand the big-picture purpose of the program. Block and Inline comments will clarify particular sections
 
-@[code js{1-4}](./jsForLoop1.js)
+@[code js{1-4}](@/Assembly/Development/jsForLoop1.js)
 
 ### Block Comments
 
 Adding a comment to the beginning of a block can help other developers understand the purpose of group of code
 
-@[code js{6,10,18}](./jsForLoop2.js)
+@[code js{6,10,18}](@/Assembly/Development/jsForLoop2.js)
 
 ### Inline Comments
 
 Adding a comment to the end of a single line of code helps make clear what the line does
 
-@[code js{12,20}](./jsForLoop3.js)
+@[code js{12,20}](@/Assembly/Development/jsForLoop3.js)
 
 <QuestionTF question="Adding good comments to your code now is likely to help you in the future" answer='true' rightAnswerFeedback="Yes, it is very likely to help as you may not recall the reasons for the structure of your code" wrongAnswerFeedback="Well, that may be true, but you will need to have incredible memory recall"/>
 
