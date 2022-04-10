@@ -1,9 +1,10 @@
 <template>
   <div class="lc3instruction">
-    <table class="outer" style="width: 100%">
-      <h3 class="title">{{ opName }}</h3>
-      <table class="inner">
-        <thead>
+    <table class="int-outer" style="width: auto">
+      <h3 class="int-title">{{ opName }}</h3>
+
+      <table class="int-inner" style="width: auto">
+        <!-- <thead class=".int-bits">
           <tr>
             <th
               style="text-align: center"
@@ -13,26 +14,46 @@
               {{ heading }}
             </th>
           </tr>
-        </thead>
-        <tbody>
-          <td style="text-align: center" v-for="bits in getBits" :key="bits">
+        </thead> -->
+        <!-- <tbody> -->
+        <tr>
+          <td
+            class="int-bits float-left"
+            v-for="heading in getHeader"
+            :key="heading"
+          >
+            {{ heading }}
+          </td>
+        </tr>
+
+        <tr>
+          <td class="int-bits float-left" v-for="bits in getBits" :key="bits">
             {{ bits }}
           </td>
-        </tbody>
+        </tr>
+        <!-- </tbody> -->
       </table>
 
-      <p class="close" v-for="description in descriptions" :key="description">
+      <p
+        class="int-close"
+        v-for="description in descriptions"
+        :key="description"
+      >
         <b>{{ formatName(description) }}</b> : {{ formatDesc(description) }}
       </p>
 
-      <div class="close" v-if="examples">
+      <div class="int-close" v-if="examples">
         <br />
 
-        <p v-if="operation" class="example">Operation:</p>
-        <p class="operation">{{ operation }}</p>
+        <p v-if="operation" class="int-example">Operation:</p>
+        <p class="int-operation">{{ operation }}</p>
 
-        <p class="example">Examples:</p>
-        <p class="close code" v-for="example in examples" :key="example">
+        <p class="int-example">Examples:</p>
+        <p
+          class="int-close int-code"
+          v-for="example in examples"
+          :key="example"
+        >
           {{ example }}
         </p>
       </div>
@@ -89,7 +110,7 @@ module.exports = {
 </script>
 
 <style scoped>
-.code {
+.int-code {
   font-family: "Source Code Pro", "Consolas", "Bitstream Vera Sans Mono",
     "Courier New", "Courier", monospace;
   font-weight: bolder;
@@ -98,7 +119,15 @@ module.exports = {
   margin-left: 10px;
 }
 
-.operation {
+.int-bits {
+  font-size: 1.5em;
+  font-family: monospace, monospace;
+  /* overflow: auto; */
+  /* display: block; */
+  text-align: center;
+}
+
+.int-operation {
   /* text-indent:1.5em; */
   margin: 0px;
   margin-left: 50px;
@@ -107,21 +136,21 @@ module.exports = {
   padding-left: 10px;
 }
 
-.example {
+.int-example {
   margin: 0px;
   margin-left: 10px;
   font-weight: bolder;
   padding: 0px;
 }
 
-.title {
+.int-title {
   margin-top: 1px;
   margin-bottom: 1px;
   margin-left: 5px;
   margin-right: 1px;
 }
 
-table.outer {
+table.int-outer {
   border-color: black;
   border-style: solid;
   border-width: 1px;
@@ -129,7 +158,7 @@ table.outer {
   /* margin-left:50px */
 }
 
-table.inner {
+table.int-inner {
   border-color: grey;
   border-style: solid;
   border-width: 1px;
@@ -142,7 +171,7 @@ td {
   padding-bottom: 5px;
 }
 
-p.close {
+p.int-close {
   margin-block-start: 0px;
   margin-block-end: 0px;
   margin-inline-start: 0px;
