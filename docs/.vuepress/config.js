@@ -69,18 +69,20 @@ module.exports = {
           title: 'Commands',
           path: '/Assembly/Commands',
           collapsable: true,
-          sidebarDepth: 3,
+          sidebarDepth: 4,
           children: [
             'Commands/CommandAnatomy',
             'Commands/ALUCommands',
             'Commands/BranchingCommands',
+            'Commands/MemoryAccessCommands',
+            'Commands/SubroutineCommands',
           ],
         },
         {
           title: 'BasicIO',
           path: '/Assembly/BasicIO',
           collapsable: true,
-          sidebarDepth: 3,
+          sidebarDepth: 4,
           children: [
             'BasicIO/IO'
           ],
@@ -89,7 +91,7 @@ module.exports = {
           title: 'Program Flow',
           path: '/Assembly/ProgramFlow',
           collapsable: true,
-          sidebarDepth: 3,
+          sidebarDepth: 4,
           children: [
             'ProgramFlow/Sequential',
             'ProgramFlow/Conditional',
@@ -100,7 +102,7 @@ module.exports = {
           title: 'Development',
           path: '/Assembly/Development',
           collapsable: true,
-          sidebarDepth: 3,
+          sidebarDepth: 4,
           children: [
             'Development/WhitespaceAndCommenting',
             'Development/Design',
@@ -113,7 +115,7 @@ module.exports = {
           title: 'History',
           path: '/Introduction/History',
           collapsable: true,
-          sidebarDepth: 3,
+          sidebarDepth: 4,
           children: [
             'History/History',
             'History/AnalogDigitalComputers',
@@ -124,7 +126,7 @@ module.exports = {
           title: 'Concepts',
           path: '/Introduction/Concepts',
           collapsable: true,
-          sidebarDepth: 3,
+          sidebarDepth: 4,
           children: [
             'Concepts/Abstraction',
             'Concepts/Algorithms',
@@ -137,6 +139,7 @@ module.exports = {
         {
           title: 'Pioneers',
           path: '/Foundations/Pioneers',
+          sidebarDepth: 4,
           collapsable: true,
           children: [
             'Pioneers/Turing',
@@ -148,7 +151,7 @@ module.exports = {
           title: 'Number Systems',
           path: '/Foundations/NumberSystems',
           collapsable: true,
-          sidebarDepth: 3,
+          sidebarDepth: 4,
           children: [
             'NumberSystems/DecimalValues',
             'NumberSystems/BinaryValues',
@@ -162,7 +165,7 @@ module.exports = {
           title: 'Logic/Digital Circuits',
           path: '/Foundations/LogicAndDigitalCircuits',
           collapsable: true,
-          sidebarDepth: 3,
+          sidebarDepth: 4,
           children: [
             'LogicAndDigitalCircuits/TruthTables',
             'LogicAndDigitalCircuits/TheTransistor',

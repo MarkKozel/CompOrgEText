@@ -1,0 +1,3 @@
+.ORIG x3000
+LD R6, MyVal3; R6 will contain 111000111000 base 2
+MyVal3 .FILL b111000111000

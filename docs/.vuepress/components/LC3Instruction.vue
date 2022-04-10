@@ -3,7 +3,7 @@
     <table class="int-outer" style="width: auto">
       <h3 class="int-title">{{ opName }}</h3>
 
-      <table class="int-inner" style="width: auto">
+      <table class="int-inner" style="width: 80%">
         <!-- <thead class=".int-bits">
           <tr>
             <th
