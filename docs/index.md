@@ -9,12 +9,10 @@ actionLink: /EText/
 features:
 - title: School
   details: Allan Hancock College, Santa Maria, Ca
-- title: Discipline
-  details: Math Science - Computer Science
 - title: Degree / Course of Study
   details: Associate of Arts (AA) -or- Associate in Science for Transfer
 - title: Author
-  details: Mark Kozel (MKozel@HancockCollege.edu)
+  details: Mark Kozel (MKozel@HancockCollege.edu) - Math Science - Computer Science
 footer: The contents of this E-Text were developed under an Open Textbooks Pilot grant from the Fund for the Improvement of Postsecondary Education (FIPSE), U.S. Department of Education. However, those contents do not necessarily represent the policy of the Department of Education, and you should not assume endorsement by the Federal Government.
 ---
 
