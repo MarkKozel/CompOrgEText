@@ -47,6 +47,7 @@ The least-significant 9 bits of the LD command is a 9-bit PCOffset values. As de
 :::
 
 ## LD
+Load
 
 ### LC-3 ISA Format
 
@@ -71,93 +72,189 @@ LD loads from Memory into a Register. A destination register is provided to rece
 
 ### Gotchas
 
+None.
+
 ## ST
+Store
 
 ### LC-3 ISA Format
 
-<LC3Instruction opName="ST" :bitPattern="{OpCode:'0011', SR: '000',PCOffset:'000000000'}" :descriptions="[{OPCode:''},{DR:'Source Register'},{PCOffset9:'Offset from current PC to branch'}]"  :examples="['ST R3, MyVal1 ; Store value from Register 3 into memory location labeled MyVal1', 'ST R0, MyVal2 ; Loads the value from Register 0 into memory location labeled MyVal2']"/>
+<LC3Instruction opName="ST" :bitPattern="{OpCode:'0011', SR: '000',PCOffset:'000000000'}" :descriptions="[{OPCode:''},{SR:'Source Register'},{PCOffset9:'Offset from current PC to branch'}]"  :examples="['ST R3, MyVal1 ; Store value from Register 3 into memory location labeled MyVal1', 'ST R0, MyVal2 ; Loads the value from Register 0 into memory location labeled MyVal2']"/>
 
 ### Explanation
 
+Stores a value in a Register into a Memory location. A source register is provided to supply the value to memory. The address to store to is provided to the Memory Interface. This address is calculated based on the PC during execution of the LD instruction.
+
 ### Examples
 
+#### Store value from Register 3 into memory location MyVal1
+@[code lang=asm{3}](@/Assembly/Commands/st1.asm)
+
+```MyVal1 .BLKW 1``` allocates 1 *word* (16-bit memory slot) and labels it *MyVal1*
+
 ### Gotchas
+
+Typically the first register in the assembly instruction is the *Destination Register*. With **ST** it is the *Source Register*.
 
 ## LDI
+Load Indirect
 
 ### LC-3 ISA Format
 
-<LC3Instruction opName="LD" :bitPattern="{OpCode:'0010', DR: '000',PCOffset:'000000000'}" :descriptions="[{OPCode:''},{PCOffset9:'Offset from current PC to branch'}]"  :examples="['LD R3, MyVal1 ; Loads the value from the memory location labeled MyVal1 into Register 3', 'LD R0, MyVal2 ; Loads the value from the memory location labeled MyVal2 into Register 0']"/>
+<LC3Instruction opName="LDI" :bitPattern="{OpCode:'1010', DR: '000',PCOffset:'000000000'}" :descriptions="[{OPCode:''},{DR: 'Destination Register' },{PCOffset9:'Offset from current PC to branch'}]"  :examples="['LDI R3, MyAddr1 ; Loads the value using the address in MyAddr1 into Register 3', 'LDI R0, MyAddr2 ; Loads the value using the address in MyAddr2 into Register 3']"/>
 
 ### Explanation
 
-LD loads from Memory into a Register. A destination register is provided to receive the value from memory. The address to load from is provided to the Memory Interface. This address is calculated based on the PC during execution of the LD instruction.
+LDI loads from Memory into a Register. A destination register is provided to receive the value from memory. 
+
+This differs from LD because it does not load from the *PCOffset* address. It reads *PCOffset* memory location for a 16-bit address. It then uses that address to load data.
+
+The memory location containing the load address is still limited to -256 to +255 memory location before the current PC because it is a *PCOffset9* value.
+
+Using a 16-bit address to request data from memory allows the program to load from any of the 56535 memory locations in the LC-3.
 
 ### Examples
 
-#### Loads value from memory location MyVal1 into Register 3
-@[code lang=asm{2}](@/Assembly/Commands/ld1.asm)
+#### Loads value from memory location contained in MyAddr1 into Register 3
+@[code lang=asm{2}](@/Assembly/Commands/ldi1.asm)
+
+``` asm {4}
+Address   Value
+x6FFE     x0000
+x6FFF     x0000
+x7000     x1234
+x7001     x0000
+```
+
+1. **Controller** uses *PCOffset9* value to calculate memory location that contains address to load
+1. **Controller** requests value from calculated value (x3001 in the example) from Memory Unit
+1. **Memory Unit** return value at address x3001 (x7000 in the example)
+1. **Controller** requests value at address it received from **Memory Unit** (x7000 in the example)
+1. **Memory Unit** returns value at x7000 (x1234 in the example)
+1. **Controller** copies received value into destination register (R3 in the example)
 
 
 ### Gotchas
+
+None.
 
 ## STI
+Store Indirect
 
 ### LC-3 ISA Format
 
-<LC3Instruction opName="NAME" :bitPattern="{OpCode:'0000', DR: '000', SR1:'000',Mode:'1',unused:'00',SR2:'000'}" :descriptions="[{OPCode:''},{DR:'Destination Register'},{SR1:'Source Register 1'}, {Mode:'1 indicates Immediate Mode'}, {unused: 'not used in Register Mode'},{SR2:'Source Register 2' }]"  :examples="['NAME R3, R1, R2 ; sum values in registers 1 and 2, store result in R3', 'NAME R3, R2, R2 ; Add R2 to itself, store result in R3']"/>
+<LC3Instruction opName="SDI" :bitPattern="{OpCode:'0011', SR: '000',PCOffset:'000000000'}" :descriptions="[{OPCode:''},{SR: 'Source Register' },{PCOffset9:'Offset from current PC to branch'}]"  :examples="['SDI R3, MyAddr1 ; Stores the value in Register 3 into the address in MyAddr1', 'SDI R0, MyAddr2 ; Stores the value in Register 0 into the address in MyAddr2']"/>
 
 ### Explanation
 
+Stores a value in a Register into a Memory location. A source register is provided to supply the value to memory. 
+
+This differs from SD because it does not store to the *PCOffset* address. It reads *PCOffset* memory location for a 16-bit address. It then uses that address to store data.
+
+The memory location containing the storage address is still limited to -256 to +255 memory location before the current PC because it is a *PCOffset9* value.
+
+Using a 16-bit address to request data from memory allows the program to store to any of the 56535 memory locations in the LC-3.
+
 ### Examples
 
+#### Store value into memory location contained in MyAddr1 from Register 3
+@[code lang=asm{3}](@/Assembly/Commands/sti1.asm)
+
+``` asm {5}
+Before Update           After Update
+Address   Value         Address   Value
+x6FFE     x0000         x6FFE     x0000
+x6FFF     x0000         x6FFF     x0000
+x7000     x0000         x7000     x000E
+x7001     x0000         x7001     x0000
+```
+
+1. **Controller** uses *PCOffset9* value to calculate memory location that contains address to store
+1. **Controller** requests value from calculated value (x3002 in the example) from Memory Unit
+1. **Memory Unit** return value at address x3002 (x7000 in the example)
+1. **Controller** requests the **Memory Unit** store value in R3 into the address it received (store 14<sub>10</sub> (000E<sub>16</sub>) into memory address x7000 in the example)
+
 ### Gotchas
+
+Typically the first register in the assembly instruction is the *Destination Register*. With **STI** it is the *Source Register*.
 
 ## LDR
 
+Load Relative
+
 ### LC-3 ISA Format
 
-<LC3Instruction opName="LD" :bitPattern="{OpCode:'0010', DR: '000',PCOffset:'000000000'}" :descriptions="[{OPCode:''},{PCOffset9:'Offset from current PC to branch'}]"  :examples="['LD R3, MyVal1 ; Loads the value from the memory location labeled MyVal1 into Register 3', 'LD R0, MyVal2 ; Loads the value from the memory location labeled MyVal2 into Register 0']"/>
+<LC3Instruction opName="LDR" :bitPattern="{OpCode:'0110', DR: '000',BaseReg: '000', Offset:'000000'}" :descriptions="[{OPCode:''},{DR: 'Destination Register' },{BaseReg: 'Base Register'},{Offset6:'Offset from address in DR'}]"  :examples="['LDR R3, R1, #0 ; Add value in R1 with #0. Use that result as address to load value from Memory into Register 3', 'LDR R0, R1, #2 ; Add value in R1 with #2. Use that result as address to load value from Memory into Register 0']"/>
 
 ### Explanation
 
-LD loads from Memory into a Register. A destination register is provided to receive the value from memory. The address to load from is provided to the Memory Interface. This address is calculated based on the PC during execution of the LD instruction.
+LDR loads from Memory into a Register. A destination register is provided to receive the value from memory. 
+
+The address to load from is calculated using the 16-bit value in BaseReg added to the 6-bit offset. The value at this calculated address is loaded into the destination register.
+
+This load instruction is similar to arrays in high-level languages. The BaseReg is the *Array Name* and the Offset in the *Array Index*.
 
 ### Examples
 
-#### Loads value from memory location MyVal1 into Register 3
-@[code lang=asm{2}](@/Assembly/Commands/ld1.asm)
+@[code lang=asm{3,6}](@/Assembly/Commands/ldr1.asm)
 
+The LEA instruction reads the Memory Address of MyArray1 label. It does not load that value at the Memory Address
+
+1. **Controller** adds value in R1 and *Offset6* (x3002 + 2 in the example)
+1. **Controller** requests value from calculated value (x3004 in the example) from Memory Unit
+1. **Memory Unit** return value at address x3004 (-7 in the example)
+1. **Controller** copies value into Destination Register (R3 in the example)
 
 ### Gotchas
+
+Verify the Offset value does not cause a load beyond the know values being used
 
 ## STR
+Store Relative
 
 ### LC-3 ISA Format
 
-<LC3Instruction opName="NAME" :bitPattern="{OpCode:'0000', DR: '000', SR1:'000',Mode:'1',unused:'00',SR2:'000'}" :descriptions="[{OPCode:''},{DR:'Destination Register'},{SR1:'Source Register 1'}, {Mode:'1 indicates Immediate Mode'}, {unused: 'not used in Register Mode'},{SR2:'Source Register 2' }]"  :examples="['NAME R3, R1, R2 ; sum values in registers 1 and 2, store result in R3', 'NAME R3, R2, R2 ; Add R2 to itself, store result in R3']"/>
+<LC3Instruction opName="SDR" :bitPattern="{OpCode:'0110', SR: '000',BaseReg: '000', Offset:'000000'}" :descriptions="[{OPCode:''},{SR: 'Source Register' },{BaseReg: 'Base Register'},{Offset6:'Offset from address in SR'}]"  :examples="['SDR R3, R1, #0 ; Add value in R1 with #0. Use that result as address to store value to Memory in Register 3', 'SDR R0, R1, #2 ; Add value in R1 with #2. Use that result as address to store value to Memory in Register 0']"/>
 
 ### Explanation
 
+SDR stores a value from a Register into Memory. A source register is provided to provide the value to memory. 
+
+The address to load from is calculated using the 16-bit value in BaseReg added to the 6-bit offset. The the destination register value is stored at this calculated address.
+
+This store instruction is similar to arrays in high-level languages. The BaseReg is the *Array Name* and the Offset in the *Array Index*.
+
 ### Examples
 
-### Gotchas
+@[code lang=asm{4,7}](@/Assembly/Commands/sdr1.asm)
+
+The LEA instruction reads the Memory Address of MyArray1 label. It does not load that value at the Memory Address
+
+1. **Controller** adds value in R1 and *Offset6* (x3002 + 2 in the example)
+1. **Controller** requests the **Memory Unit** store value in R3 into the address it received (store 2<sub>10</sub> into memory address x3004 in the example)
+1. **Memory Unit** stores value at address x3004 (2 in the example)
 
 ## LEA
+Load Effective Address
 
 ### LC-3 ISA Format
 
-<LC3Instruction opName="LD" :bitPattern="{OpCode:'0010', DR: '000',PCOffset:'000000000'}" :descriptions="[{OPCode:''},{PCOffset9:'Offset from current PC to branch'}]"  :examples="['LD R3, MyVal1 ; Loads the value from the memory location labeled MyVal1 into Register 3', 'LD R0, MyVal2 ; Loads the value from the memory location labeled MyVal2 into Register 0']"/>
+<LC3Instruction opName="LEA" :bitPattern="{OpCode:'1110', DR: '000',PCOffset:'000000000'}" :descriptions="[{OPCode:''},{DR: 'Destination Register'},{PCOffset9:'Offset from current PC to branch'}]"  :examples="['LEA R3, MyVal1 ; Loads the memory address of MyVal1 into Register 3', 'LEA R0, MyVal2 ; Loads the memory address of MyVal2 into Register 0']"/>
 
 ### Explanation
 
-LD loads from Memory into a Register. A destination register is provided to receive the value from memory. The address to load from is provided to the Memory Interface. This address is calculated based on the PC during execution of the LD instruction.
+LEA load the address of a label, not the value at that label. This is useful when using LDR/STR and the Trap routine PUTS, where an memory address is needed to perform some other command.
+
+This command does not require any memory reading or writing. The PCOffset9 value is added to the PC and that result is address to store in the DR.
 
 ### Examples
+@[code lang=asm{2}](@/Assembly/Commands/lea1.asm)
 
-#### Loads value from memory location MyVal1 into Register 3
-@[code lang=asm{2}](@/Assembly/Commands/ld1.asm)
+1. **Controller** uses *PCOffset9* value to calculate memory location that contains address to load
+1. **Controller** copies value from calculated value (x3001 in the example) into the Destination Register (R3 in the example)
 
 ### Gotchas
+
+None.
 
 ## Conclusion
