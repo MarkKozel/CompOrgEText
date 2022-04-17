@@ -3,9 +3,9 @@ home: true
 title: CS-131 Computer Organization
 heroImage: /images/CPU-Z-icon.png
 heroText: CS 131 - Computer Organization
-tagline: Transistors to Assembly - A Bottom-up View of Computer Science
-actionText: E-Textbook →
-actionLink: /EText/
+tagline: Transistors to Assembly - A Bottom-Up View of Computer Science
+actionText: Get Started in CS-131 →
+actionLink: /CS131/
 features:
 - title: School
   details: Allan Hancock College, Santa Maria, Ca

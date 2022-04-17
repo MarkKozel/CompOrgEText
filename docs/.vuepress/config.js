@@ -52,6 +52,17 @@ module.exports = {
       },
     ],
     sidebar: {
+      '/CS131/': [
+        {
+          title: 'CS-131',
+          collapsable: false,
+          children: [
+            '',
+            'CourseOrganization',
+            'CourseRational'
+          ]
+        }
+      ],
       '/Assembly/': [
         {
           title: 'Getting Started',
@@ -183,8 +194,6 @@ module.exports = {
           collapsable: false,
           children: [
             '',
-            'CourseOrganization',
-            'CourseRational',
             'Funding',
             'Colophon',
             'GettingStarted',
