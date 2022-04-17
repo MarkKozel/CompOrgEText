@@ -1,28 +1,53 @@
-# CS 131 - Computer Organization
+---
+title: Course Organization
+description: Transistors to Assembly - A Bottom-Up View of Computer Science
+pageClass: Book
+tags: []
+---
 
-**Allan Hancock College - Santa Maria, Ca**
+# {{ $frontmatter.title }}
+**{{ $frontmatter.description }}**
 
-**Computer Science | Mathematics Sciences Department**
+## Introduction
+This course is divided into three (3) sections:
 
-## Course Information
+1. [Introduction](../Introduction/index.md)
+2. [Foundations](../Foundations/index.md)
+1. [Assembly Programming](../Assembly/index.md)
 
-**Introduction to computer architecture and assembly language programming**
 
-**Topics include data representation and conversion, assembly language programming, digital design, and basic processor architecture**
+## History
 
-* **Units**: 3.0
-* **Prerequisite**: CS 111 - Fundamentals of Programming 1
-* **Acceptable for Credit**: Transfer to UC, CSU
-* **C-ID Course Number**: COMP 142
-* **Course Offered**: Fall, Spring
-* **Grading Method**: Letter Grade Only
+We'll learn a bit about the progress of computer technology through the ages. 
 
-## Using these materials
+Understand the core concepts of Abstraction and Algorithms as used in computer organization.
 
-The **Navigation Bar** at the top-right is used to connect to each set of resources. Click on these links to access the desired resource
+Clarify the differences between Analog and Digital computer systems, and how Specific-Use computers gave way to the General-Use computer we use today.
 
-Once a resource is selected, use the **Sidebar** menu at the left of the resource page to select a section and subsection to locate the specific topic desired
+<QuestionMC question="Computers (an any form) have been around since about" answer='A' AChoice="2400 BCE" BChoice="1833" CChoice="1938" DChoice="Bill Gate's Birthday" rightAnswerFeedback="Right! Early computational devices like the abacus have been in use for millennia" wrongAnswerFeedback="well, all of these dates are significant milestones in computer history"/>
 
-Use the **Search** fields at the top-center to find all references to a keyword
+::: details Details for the above question
 
-The **Icon/Title** at the top-left will return you to the CS-131 start page
+[2400 BCE - Earliest Computers](https://en.wikipedia.org/wiki/Computer#Pre-20th_century)
+
+[1833 - First Programmable computer device](https://en.wikipedia.org/wiki/Computer#First_computer)
+
+[1938 - Modern Computers, Integrated Circuits](https://en.wikipedia.org/wiki/Computer#Modern_computers)
+
+[10/28/1955 - Bill Gate's Birthday](https://en.wikipedia.org/wiki/Bill_Gates)
+
+:::
+
+## Foundations
+
+To start, we will build a foundation of computer organization with the pioneers that, across the 20th century, created today's computer technology.
+
+Next we will need to brush up on our knowledge of the basic numeric and logical constructs that drive modern computer systems.
+
+Finally, we will dive down to the lowest levels of computer hardware, transistors. We'll understand how these simple devices create circuits to perform those numeric and logical operations. How those circuits are used to store information, route data, and ultimately create a microarchitecture that can execute complex programs.
+
+## Assembly Programming
+
+Finally, we will use a simple assembly language and development environment to create and run programs.
+
+Using assembly, we will see behind the scenes of simple high-level programming languages (like Java) constructs like *If-Else*, *For* and *While* loops. Calling *Subroutines*, and interacting with *Input*/*Output* devices.
