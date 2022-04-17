@@ -58,7 +58,7 @@ module.exports = {
           collapsable: false,
           children: [
             '',
-            'CourseOrganization',
+            'CourseInformation',
             'CourseRational'
           ]
         }
@@ -86,6 +86,7 @@ module.exports = {
             'Commands/ALUCommands',
             'Commands/BranchingCommands',
             'Commands/MemoryAccessCommands',
+            'Commands/TRAPRoutines',
             'Commands/SubroutineCommands',
           ],
         },

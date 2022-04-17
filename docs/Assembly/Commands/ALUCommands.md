@@ -177,7 +177,7 @@ And the values in R1 to itself (double the original value). Store in R1, overwri
 ## NOT
 
 ### LC-3 ISA Format
-<LC3Instruction opName="NOT (Register Mode)" :bitPattern="{OpCode:'1001', DR: '000', SR:'000',unused:'000000'}" :descriptions="[{OPCode:''},{DR:'Destination Register'},{SR1:'Source Register'}, {unused: 'not used in Register Mode'}]"  :examples="['NOT R3, R3 ; Not value in R3, store result in R3', 'NOT R3, R2 ; Not value in R2, store result in R3']"/>
+<LC3Instruction opName="NOT" :bitPattern="{OpCode:'1001', DR: '000', SR:'000',unused:'000000'}" :descriptions="[{OPCode:''},{DR:'Destination Register'},{SR1:'Source Register'}, {unused: 'not used in Register Mode'}]"  :examples="['NOT R3, R3 ; Not value in R3, store result in R3', 'NOT R3, R2 ; Not value in R2, store result in R3']"/>
 
 ### Explanation
 
