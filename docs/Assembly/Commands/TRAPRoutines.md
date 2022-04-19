@@ -53,17 +53,25 @@ Note that the address in the 1st example is the TRAP Vector, not the Code Addres
 
 ## Routines
 
-### GETC
+### TRAP x20 / GETC
 
 Reads a single character from the keyboard. The character is not echoed to the displays.
 
 The ASCII value of the pressed key is placed in R0 before returning to the user code
 
-### OUT
+@[code lang=asm{2}](@/Assembly/Commands/TRAP_x20.asm)
+
+@[code lang=asm{2}](@/Assembly/Commands/TRAP_GetC.asm)
+
+### TRAP x21 / OUT
 
 Writes a character from R0 to the display. R0 must contain the ASCII value of the character to display.
 
-### PUTS
+@[code lang=asm{3}](@/Assembly/Commands/TRAP_x21.asm)
+
+@[code lang=asm{3}](@/Assembly/Commands/TRAP_Out.asm)
+
+### TRAP x22 / PUTS
 
 Writes a string to the display
 
@@ -71,11 +79,33 @@ The string is a series of ASCII values in contiguous memory. The last memory loc
 
 R0 must contain the address of the first character
 
-### IN
+@[code lang=asm{3}](@/Assembly/Commands/TRAP_x22.asm)
 
-### PUTSP
+@[code lang=asm{3}](@/Assembly/Commands/TRAP_Puts.asm)
 
-### HALT
+### TRAP x23 / IN
+
+Displays a prompt to the user on the display, then waits for a single keypress. The character is stored in R0 and is echoed to the display.
+
+@[code lang=asm{2}](@/Assembly/Commands/TRAP_x23.asm)
+
+@[code lang=asm{2}](@/Assembly/Commands/TRAP_In.asm)
+
+### TRAP x24 / PUTSP
+
+Same function as PUTS, however the upper [bits 15-8] and lower [bits 7-0] 16 bits of each memory location can be loaded to 8-bit ascii values. PUTSP first displays the lower 8 bits, then the upper 8 bits.
+
+@[code lang=asm{3}](@/Assembly/Commands/TRAP_x24.asm)
+
+@[code lang=asm{3}](@/Assembly/Commands/TRAP_PutSp.asm)
+
+### TRAP x25 / HALT
+
+Terminates program execution and displays a message to the console.
+
+@[code lang=asm{3}](@/Assembly/Commands/TRAP_x25.asm)
+
+@[code lang=asm{3}](@/Assembly/Commands/TRAP_HALT.asm)
 
 ## Review TRAP Code in LC-3 Simulate
 

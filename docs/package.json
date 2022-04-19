@@ -25,7 +25,8 @@
   },
   "repository": "https://github.com/MarkKozel/CompOrgEText.git",
   "scripts": {
-    "dev": "vuepress dev . --no-cache",
+    "dev": "vuepress dev .",
+    "devnc": "vuepress dev . --no-cache",
     "build": "vuepress build .",
     "win10": "set NODE_OPTIONS=--openssl-legacy-provider & vuepress dev ."
   },
