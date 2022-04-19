@@ -198,44 +198,7 @@ Things to note:
 
 ### The PUTS Function
 
-```
-.ORIG x0450
-	;;; Save Registers ;;;
-SavRegs	ST R7, R7_Store ; Return Address
-		ST R0, R0_Store ; Pointer to String to Puts
-		ST R1, R1_Store
-		ST R2, R2_Store
-
-Loop	LDR R1, R0, #0; Get address of first char of string
-		BRz Done ;	Char was 0, so we are done
-
-Wait	LDI R2, DSR ;	Console available?
-		BRzp Wait 	;	No, loop back and try again
-
-		STI R1, DDR ;	Write char to console
-
-		ADD R0, R0, #1;	Move pointer to next char in String
-		BRnzp Loop ;	Loop back for next character
-
-	;;; Restore Registers ;;;
-Done	LD R0, R0_Store
-		LD R1, R1_Store
-		LD R2, R2_Store
-		LD R7, R7_Store
-
-		RET
-
-;Data Declarations-------------
-	DSR		.FILL xFE04
-	DDR		.FILL xFE06
-	MX0462		.FILL xF3FD
-	MX0463		.FILL xF3FE
-	R0_Store	.FILL #0
-	R1_Store	.FILL #0
-	R2_Store	.FILL #0
-	R7_Store	.FILL #0
-.END
-```
+@[code lang=asm{}](@/Assembly/Commands/TRAP_PUTSFunction.asm)
 
 Things to note:
 
@@ -255,6 +218,62 @@ Things to note:
     - R7, R0, R1, and R2 original values are copied from memory back to each register
 1. RET is called, and the PC is loaded with the value n R7 (the calling code's next instruction)
 1. Execution continues ate the calling code's next instruction after PUTS was called
+
+## Add Your Own TRAP Routine
+
+You can create your own TRAP routine and load it into Simulate, then call it from your user code
+
+::: tip Three (3) things to Note
+1. You must load two extra obj files before using your TRAP routine
+1. These files must be loaded each time you reinitialize Simulate. The new files do not auto-load when resetting Simulate
+1. Your new TRAP routine can only be called using the ```TRAP xnn``` format
+:::
+
+This example will create a TRAP routine that swaps the values in R0 and R1. It will be called with ```TRAP x2a```. The actual TRAP routine function will loaded into memory starting at address x0700.
+
+### Step 1 - Pick a place in the jump table
+
+When calling a TRAP routine, ```TRAP xnn``` uses **nn** as a look-up address in the jump table. So you must add your own entry into the jump table.
+
+We will be using jump table address x2a. We must modify this address to hold the address to the start of our TRAP routine function
+
+@[code lang=asm{5}](@/Assembly/Commands/TRAP_NewJTEntry.asm)
+
+This code will *FILL* memory location x002a (in the Jump Table) with x0700 (the address of the start of our TRAP routine function)
+
+### Step 2 - Load the TRAP routine function
+
+We must load out new TRAP routine function at address x0700. So the ```.ORIG x700``` is the first line of this function
+
+The function will swap R0 and R1 by using R2 as temporary swap storage. The standard swap algorithm is:
+
+> Move **first** value into **temp** storage
+>
+> Move **second** value into **first** value's spot
+> 
+> Move value in **temp** storage into **second** value's spot
+
+@[code lang=asm{7-10}](@/Assembly/Commands/TRAP_NewFunction.asm)
+
+The function starts by storing R2 to memory. This safeguards any data that teh calling program may have placed there before calling this function. It is standard practice for subroutines and TRAP routines to save all registers that will be changed.
+
+The swap is is made by consecutive copying of data between registers. The use of ```ADD``` using the *immediate value* **0** is a safe way to copy data between registers without knowing what the original value was at the start.
+
+The previously save values from R2 is restored back to R2 from memory.
+
+Finally, ```RET``` causes execution to switch back to the calling program.
+
+### Step 3 - Call the new TRAP routine from your program
+
+The user code calls the new TRAP routine with ```TRAP x2a```. Recall we can't use a name like ```PUTS```. This is because the LC-3 assembler converts any TRAP names to address. There is no way to update the assembler to convert ```SWAP``` to ```TRAP x2a```.
+
+@[code lang=asm{6}](@/Assembly/Commands/TRAP_NewFunctionUserCode.asm)
+
+This example user code places values in R0 and R1, then calls ```TRAP x2a```
+
+Simulate looks up the address in memory location x2a, finds x700. Simulate places x700 in the PC, and starts a new instruction cycle.
+
+The new TRAP routine code runs, swapping R0 and R1, then returns back to the user program at the HALT instruction. R0 and R1 will be swapped as expected.
 
 ## Conclusion
 
