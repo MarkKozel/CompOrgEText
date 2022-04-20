@@ -255,7 +255,7 @@ The function will swap R0 and R1 by using R2 as temporary swap storage. The stan
 
 @[code lang=asm{7-10}](@/Assembly/Commands/TRAP_NewFunction.asm)
 
-The function starts by storing R2 to memory. This safeguards any data that teh calling program may have placed there before calling this function. It is standard practice for subroutines and TRAP routines to save all registers that will be changed.
+The function starts by storing R2 to memory. This safeguards any data that the calling program may have placed there before calling this function. It is standard practice for subroutines and TRAP routines to save all registers that will be changed.
 
 The swap is is made by consecutive copying of data between registers. The use of ```ADD``` using the *immediate value* **0** is a safe way to copy data between registers without knowing what the original value was at the start.
 

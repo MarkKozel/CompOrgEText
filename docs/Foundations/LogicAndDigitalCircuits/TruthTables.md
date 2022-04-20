@@ -37,7 +37,7 @@ All truth tables, and the devices they describe will have a set of inputs, the c
 
 Inputs and Outputs are labeled with letters. The labels typically do not have any meaning associated with the inputs/outputs.
 
-Inputs and Outputs have values as signals in and out of the device being describes by teh truth table.
+Inputs and Outputs have values as signals in and out of the device being describes by the truth table.
 
 All inputs in a given row are applied to the circuit and product the given output
 
@@ -75,6 +75,6 @@ In the above example:
 
 Using Truth Tables, we can understand how different inputs produce different outputs in the circuit being described
 
-Reading a single row os a truth table, we see all the input values into teh circuit and the expected output(s)
+Reading a single row os a truth table, we see all the input values into the circuit and the expected output(s)
 
 If a circuit/truth table produces multiple outputs, each row of inputs will product the expect outputs separately

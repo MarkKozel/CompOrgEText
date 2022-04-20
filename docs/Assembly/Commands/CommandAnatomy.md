@@ -132,7 +132,7 @@ The control unit uses the Opcode to find all the Operands for thew current comma
 1. Based on the specific Load instruction, calculate the address to load using Base Reg, PC Offset, and/or Trap Vector Operands
 1. Retain the resulting address for the next event
 
-If the Opcode will load data from Memory -or- is the TRAP instruction, teh control unit must use sections of the Operands to calculate a 16-bit address from which to read data
+If the Opcode will load data from Memory -or- is the TRAP instruction, the control unit must use sections of the Operands to calculate a 16-bit address from which to read data
 
 - For PC Offset Operands, the address in the PC to added to the PC Offset
 - For Base Reg Operands, the data in the general register identified in the Base Reg Operand is extracted
