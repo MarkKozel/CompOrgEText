@@ -26,7 +26,7 @@ Recall that [ALU Commands](ALUCommands) do not operate on date in memory. Before
 
 This LC-3 program adds 2 values from memory and stores it in a different memory location.
 
-@[code lang=asm{2,3,7}](@/Assembly/Commands/addMemData.asm)
+@[code lang=asm{2,3,7}](.vuepress/public/examples/Assembly/Commands/addMemData.asm)
 
 - The program allocates memory using the labels **MyVal1**, **MyVal2**, and **Result**
 - **MyVal1**, **MyVal2** are assigned values
@@ -60,15 +60,15 @@ LD loads from Memory into a Register. A destination register is provided to rece
 ### Examples
 
 #### Loads value from memory location MyVal1 into Register 3
-@[code lang=asm{2}](@/Assembly/Commands/ld1.asm)
+@[code lang=asm{2}](.vuepress/public/examples/Assembly/Commands/ld1.asm)
 
 #### Loads value from memory location MyVal2 into Register 0
 
-@[code lang=asm{2}](@/Assembly/Commands/ld2.asm)
+@[code lang=asm{2}](.vuepress/public/examples/Assembly/Commands/ld2.asm)
 
 #### Loads value from memory location MyVal2 into Register 0
 
-@[code lang=asm{2}](@/Assembly/Commands/ld3.asm)
+@[code lang=asm{2}](.vuepress/public/examples/Assembly/Commands/ld3.asm)
 
 ### Gotchas
 
@@ -88,7 +88,7 @@ Stores a value in a Register into a Memory location. A source register is provid
 ### Examples
 
 #### Store value from Register 3 into memory location MyVal1
-@[code lang=asm{3}](@/Assembly/Commands/st1.asm)
+@[code lang=asm{3}](.vuepress/public/examples/Assembly/Commands/st1.asm)
 
 ```MyVal1 .BLKW 1``` allocates 1 *word* (16-bit memory slot) and labels it *MyVal1*
 
@@ -116,7 +116,7 @@ Using a 16-bit address to request data from memory allows the program to load fr
 ### Examples
 
 #### Loads value from memory location contained in MyAddr1 into Register 3
-@[code lang=asm{2}](@/Assembly/Commands/ldi1.asm)
+@[code lang=asm{2}](.vuepress/public/examples/Assembly/Commands/ldi1.asm)
 
 ``` asm {4}
 Address   Value
@@ -158,7 +158,7 @@ Using a 16-bit address to request data from memory allows the program to store t
 ### Examples
 
 #### Store value into memory location contained in MyAddr1 from Register 3
-@[code lang=asm{3}](@/Assembly/Commands/sti1.asm)
+@[code lang=asm{3}](.vuepress/public/examples/Assembly/Commands/sti1.asm)
 
 ``` asm {5}
 Before Update           After Update
@@ -196,7 +196,7 @@ This load instruction is similar to arrays in high-level languages. The BaseReg 
 
 ### Examples
 
-@[code lang=asm{3,6}](@/Assembly/Commands/ldr1.asm)
+@[code lang=asm{3,6}](.vuepress/public/examples/Assembly/Commands/ldr1.asm)
 
 The LEA instruction reads the Memory Address of MyArray1 label. It does not load that value at the Memory Address
 
@@ -226,7 +226,7 @@ This store instruction is similar to arrays in high-level languages. The BaseReg
 
 ### Examples
 
-@[code lang=asm{4,7}](@/Assembly/Commands/sdr1.asm)
+@[code lang=asm{4,7}](.vuepress/public/examples/Assembly/Commands/sdr1.asm)
 
 The LEA instruction reads the Memory Address of MyArray1 label. It does not load that value at the Memory Address
 
@@ -248,7 +248,7 @@ LEA load the address of a label, not the value at that label. This is useful whe
 This command does not require any memory reading or writing. The PCOffset9 value is added to the PC and that result is address to store in the DR.
 
 ### Examples
-@[code lang=asm{2}](@/Assembly/Commands/lea1.asm)
+@[code lang=asm{2}](.vuepress/public/examples/Assembly/Commands/lea1.asm)
 
 1. **Controller** uses *PCOffset9* value to calculate memory location that contains address to load
 1. **Controller** copies value from calculated value (x3001 in the example) into the Destination Register (R3 in the example)

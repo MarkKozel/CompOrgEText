@@ -1,7 +1,7 @@
 .ORIG x3000
 
   AND R1, R1, #12 ; Load 12 into R1
-  LEA R4, TwosCompAddr ; Get address of TwosComp subroutine
+  LD R4, TwosCompAddr ; Get address of TwosComp subroutine
   JSRR R4    ; Apply 2's complement conversion
 
   HALT
