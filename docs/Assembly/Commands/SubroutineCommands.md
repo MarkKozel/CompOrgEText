@@ -51,6 +51,10 @@ The main mechanism in *calling a subroutine* is manipulating the PC. Recall the 
 Unconditional Jump
 
 ### LC-3 ISA Format
+
+<LC3Instruction1 opName="JMP" :info={ {name:'OpCode', bits:1100, desc:'The OpCode'},  {name:'unused', bits:000, desc:'not used'},  {name:'BaseR', bits:000, desc:'Register containing the jump address'}} :examples= [ 'JSRR R4 ; Starts executing code at the memory in R4']/>
+
+
 <LC3Instruction opName="JMP" :bitPattern="{OpCode:'1100', unused:'000',BaseR:'000', unused: '00000'}" :descriptions="[{OPCode:''},{unused: 'not used'},{BaseR: 'Register containing the jump address'}]"  :examples="['JMP R3 ; Jump to the address in R3']"/>
 
 ### Explanation
@@ -125,52 +129,85 @@ So, you couple replace all ```RET``` source instruction with ```JMP R7``` and th
 ### Gotchas
 
 ## JSR
+Jump Subroutine
 
 ### LC-3 ISA Format
-<LC3Instruction opName="TRAP" :bitPattern="{OpCode:'1111', unused:'0000', trapvect8: '00000000'}" :descriptions="[{OPCode:''},{unused: 'not used'},{trapvect8: 'Address or Pseudonym of Trap Routine'}]"  :examples="['TRAP x22 ; run PUTS trap routine', 'PUTS ; run PUTS trap routine using pseudonym']"/>
+<LC3Instruction opName="JSR" :bitPattern="{OpCode:'0100', Mode:'1', PCOffset11: '00000000000'}" :descriptions="[{OPCode:''},{Mode: '0 for PCOffset Mode, 1 for Relative Mode'},{PCOffset: 'Offset from current PC to jump'}]"  :examples="['JSR MySub ; Starts executing code at the memory location of MySub']"/>
 
 ### Explanation
+JSR will always jump to the location. CC register is not used to decide to jump or not.
+
+Uses an 11-bit PC Offset to calculate a memory address. It can jump -1024 to +1023 memory location before the current PC.
+
+At the end of the JSR's Fetch-Decode-Execute cycle, R7 is set to the current PC. This is the address used by the **RET** instruction to *return* back to the original program.
+
+After the JSR instruction executes, the instructions at the PCOffset address begin executing.
+
+#### Differences between JSR and BR
+
+- CC Register
+    - BR checked the CC register to decide to branch or not
+    - JSR *always* jumps
+- PC Offset
+    - BR used a 9-bit PC Offset. It can jump -256 to +255 memory location before the current PC
+    - JSR used a 11-bit PC Offset. It can jump -1024 to +1023 memory location before the current PC
+- Returning when done
+    - BR does not have a built-in way to return back to where the code branched
+    - JSR sets R7 to the current PC before jumping. Using the **RET** instruction at the end of a subroutine will return to the instruction *after* the original jump
 
 ### Examples
 
-``` {2}
-LEA R0, MyString
-PUTS
-```
-After loading into R0 the *Effective Address* of the string to print, PUTS is called to do the printing
+@[code lang=asm{4, 8-11}](.vuepress/public/examples/Assembly/Commands/JSR1.asm)
 
-PUTS is a pseudonym for TRAP x22. The assembler to product the same OpCode and Operands for PUTS and TRAP x22
+Lines 9 and 10 apply the 2's complement algorithm to the value in R1, storing the result in R0
 
-``` {2}
-LEA R0, MyString
-TRAP x22
-```
-After loading into R0 the *Effective Address* of the string to print, TRAP x22 is called to do the printing. This runs the same routine as PUTS
+Line 11 is an unconditional jump to the address in R7. See [RET Instruction](#ret)
+
+Line 3 loads a value into R1. R1 is a *parameter* that the subroutine expect to have been loaded
+
+Line 4 calls the subroutine. After the subroutine returns back to the main program, R0 will contain the 2's complement of the value in R1
 
 ### Gotchas
 
+R7 cannot be used in the main program or the subroutine. It is used by Simulate to *remember* the address to return to when the subroutine finished (by calling the **RET** instruction)
+
 ## JSRR
+Jump Subroutine Relative
 
 ### LC-3 ISA Format
-<LC3Instruction opName="TRAP" :bitPattern="{OpCode:'1111', unused:'0000', trapvect8: '00000000'}" :descriptions="[{OPCode:''},{unused: 'not used'},{trapvect8: 'Address or Pseudonym of Trap Routine'}]"  :examples="['TRAP x22 ; run PUTS trap routine', 'PUTS ; run PUTS trap routine using pseudonym']"/>
+<LC3Instruction opName="JSRR" :bitPattern="{OpCode:'0100', Mode:'0', unused1:'00', BaseR:'000', unused2: '000000'}" :descriptions="[{OPCode:''},{Mode: '0 for PCOffset Mode, 1 for Relative Mode'},{BaseR: 'Register containing 16-bit address to jump to'}]"  :examples="['JSRR R4 ; Starts executing code at the memory in R4']"/>
 
 ### Explanation
 
+JSRR works like JSR, but uses a 16-bit register value to jump. JSRR can jump to any memory location in the Simulate memory space.
+
+Note that the OpCode is the same for JSR and JSRR, only the Mode bit is different.
+
+JSRR also sets R7 for the RET instruction and has the same differences to BR as JSR.
+
 ### Examples
 
-``` {2}
-LEA R0, MyString
-PUTS
-```
-After loading into R0 the *Effective Address* of the string to print, PUTS is called to do the printing
+**Call built-in subroutine**
 
-PUTS is a pseudonym for TRAP x22. The assembler to product the same OpCode and Operands for PUTS and TRAP x22
+@[code lang=asm{4, 8-11}](.vuepress/public/examples/Assembly/Commands/JSRR1.asm)
 
-``` {2}
-LEA R0, MyString
-TRAP x22
-```
-After loading into R0 the *Effective Address* of the string to print, TRAP x22 is called to do the printing. This runs the same routine as PUTS
+Lines 10-12 are the subroutine to be called
+
+Line 4 loaded the address of the first line of the subroutine into R4
+
+Line 5 uses the value in R4 to jump to the subroutine
+
+**Call subroutine loaded separately**
+
+@[code lang=asm{4-5, 10, 14-21}](.vuepress/public/examples/Assembly/Commands/JSRR2.asm)
+
+Lines 14-21 are a separate assembly file assembled and loaded into memory location x5000
+
+Line 10 contains the address of the subroutine
+
+Line 4 loaded the address of the subroutine into R4
+
+Line 5 uses the value in R4 to jump to the subroutine
 
 ### Gotchas
 

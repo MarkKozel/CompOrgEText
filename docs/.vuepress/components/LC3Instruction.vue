@@ -4,18 +4,6 @@
       <h3 class="int-title">{{ opName }}</h3>
 
       <table class="int-inner" style="width: 80%">
-        <!-- <thead class=".int-bits">
-          <tr>
-            <th
-              style="text-align: center"
-              v-for="heading in getHeader"
-              :key="heading"
-            >
-              {{ heading }}
-            </th>
-          </tr>
-        </thead> -->
-        <!-- <tbody> -->
         <tr>
           <td
             class="int-bits float-left"
@@ -31,7 +19,6 @@
             {{ bits }}
           </td>
         </tr>
-        <!-- </tbody> -->
       </table>
 
       <p
