@@ -96,7 +96,8 @@ module.exports = {
           collapsable: true,
           sidebarDepth: 4,
           children: [
-            'BasicIO/IO'
+            'BasicIO/StandardIO',
+            'BasicIO/LC3IO'
           ],
         },
         {

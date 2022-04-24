@@ -11,12 +11,8 @@ tags: []
 
 <KeyConcepts :ConceptArray= "[
   {
-    Concept: 'LC-3 uses Vector/Jump Table for calling TRAP code',
-    Details:'The address (i.e. TRAP x22) is the address int the Vector/Jump Table'
-  },
-  {
-    Concept: 'The Vector/Jump table contains code addresses',
-    Details:'Each Vector/Jump table address contains the address of the start of the associated TRAP routine code'
+    Concept: 'to do',
+    Details:'to do'
   }
 ]" />
 
