@@ -27,10 +27,13 @@ tags: [Turing, General Purpose Computer, Theory, State, State Machine]
 
 ## Introduction
 
+Alan Turing (1912 - 1954) was an English mathematician, cryptographer, and creator of theoretic computer science. His legacy as a scientist, philosopher, and world war 2 code breaker lives on in scientific and popular culture.
+
 ::: readmore Life of Alan Turing
 [Alan Turing - Wikipedia](https://en.wikipedia.org/wiki/Alan_Turing) - June 23, 1912 - June 7, 1954
 :::
 
+Among his many contributions to computer science, he imagined a machine that could run any programs, solve any problem, and, without the technology to build one, designed the first draft of the modern computer architecture.
 
 *Turing Machines Explained - Computerphile*
 <p>Turing Machines are the basis of modern computing, but what actually is a Turing Machine?</p> <p>Assistant Professor Mark Jago. Copyright CC BY International</p> 
@@ -38,7 +41,7 @@ tags: [Turing, General Purpose Computer, Theory, State, State Machine]
 
 ## A Theoretical General Purpose Computer
 
-## Maintaining State
+While not a new idea, [the first general purpose digital computers](https://en.wikipedia.org/wiki/History_of_computing_hardware#Advent_of_the_digital_computer) were decades away in the 1930's when Turing described him simple *stored-program computer*. Turing would describe the elements needed and the mechanism to maintain information (states) during program execution.
 
 ## The Turing Machine
 

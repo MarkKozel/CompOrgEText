@@ -1,0 +1,10 @@
+{
+  "OpCode": {
+    "bits": "test1010",
+    "desc": "The OpCode Part"
+  },
+  "More": {
+    "bits": "110011",
+    "desc": "The More Part"
+  }
+}

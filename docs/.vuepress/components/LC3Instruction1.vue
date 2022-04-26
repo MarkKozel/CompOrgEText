@@ -1,17 +1,31 @@
 <template>
   <div class="lc3instruction">
-    <table class="int-outer" style="width: auto">
-      <h3 class="int-title">{{ opName }}</h3>
+    <table
+      class="int-outer"
+      style="width: auto"
+    >
+      <h3 class="int-title">{{ data.InstructionName }}</h3>
 
-      <table class="int-inner" style="width: 80%">
+      <table
+        class="int-inner"
+        style="width: 80%"
+      >
         <tr>
-          <td class="int-bits float-left" v-for="el in info" :key="el.name">
+          <td
+            v-for="el in data.header"
+            :key="el.name"
+            class="int-bits float-left"
+          >
             {{ el.name }}
           </td>
         </tr>
 
         <tr>
-          <td class="int-bits float-left" v-for="el in info" :key="el.name">
+          <td
+            v-for="el in data.header"
+            :key="el.name"
+            class="int-bits float-left"
+          >
             {{ el.bits }}
           </td>
         </tr>
@@ -19,37 +33,46 @@
 
       <p
         class="int-close"
-        v-for="description in descriptions"
-        :key="description"
+        v-for="header in data.header"
+        :key="header.name"
       >
-        <b>{{ formatName(description) }}</b> : {{ formatDesc(description) }}
+        <b>{{ header.name }}</b> : {{ header.desc }}
       </p>
 
-      <div class="int-close" v-if="examples">
-        <br />
+      <div
+        class="int-close"
+        v-if="data.examples"
+      >
+        <!-- <br /> -->
+        <p
+          v-if="data.operation"
+          class="int-example"
+        >Operation:</p>
 
-        <p v-if="operation" class="int-example">Operation:</p>
-        <p class="int-operation">{{ operation }}</p>
+        <p class="int-operation">{{ data.operation }}</p>
 
         <p class="int-example">Examples:</p>
         <p
-          class="int-close int-code"
-          v-for="example in examples"
+          v-for="example in data.examples"
           :key="example"
-        >
-          {{ example }}
-        </p>
+          class="int-close int-code"
+        > {{ example }} </p>
       </div>
     </table>
   </div>
 </template>
 
 <script>
+const path = require("path");
 module.exports = {
   props: {
+    fileName: {
+      type: String,
+      required: false,
+    },
     info: {
       type: Array,
-      required: true,
+      required: false,
     },
     examples: {
       type: Object,
@@ -72,9 +95,34 @@ module.exports = {
     },
   },
 
-  data: function () {
-    return {};
+  mounted: function () {
+    // const p = path.join("..", "public", "instructions", this.fileName);
+    // const p = path.join(".", this.fileName);
+    const data = require("./dataFile.js");
+    this.data = data.default;
+    console.log(this.data);
+    // import(this.fileName)
+    //   .then((data) => {
+    //     console.log("theData: ", data);
+    //     this.data = data;
+    //   })
+    //   .catch((err) => {
+    //     console.error(err);
+    //   });
+    // console.log("theData: ", data);
+
+    // const fileData = require(this.fileName);
+    // console.log("fileData : ", fileData);
+
+    // this.data = data;
   },
+
+  data: function () {
+    return {
+      data: {},
+    };
+  },
+
   methods: {
     formatName(desc) {
       return Object.keys(desc)[0];

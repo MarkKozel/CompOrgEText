@@ -1,5 +1,7 @@
 # Examples Section
 
+<LC3Instruction1 fileName="./dataFile.js" />
+
 <!-- ## MD file from outside (../LC3) folder
 [LC-3 Test Page](../LC3/LC3Test.md) -->
 

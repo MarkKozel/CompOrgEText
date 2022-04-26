@@ -17,3 +17,5 @@ This section will define the concepts and operations used in modern computer sys
 
 ## [Claude Shannon](./shannon)
 ### The use of binary as the default number system
+
+http://computerscience.chemeketa.edu/cs160Reader/index.html

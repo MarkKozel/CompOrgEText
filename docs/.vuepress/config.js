@@ -14,6 +14,7 @@ module.exports = {
     },
   },
 
+  base: '/',
   cache: false,
 
   head: [
@@ -21,6 +22,14 @@ module.exports = {
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
   ],
+
+  // configureWebpack: {
+  //   resolve: {
+  //     alias: {
+  //       '@InstPath': 'components'
+  //     }
+  //   }
+  // },
 
   themeConfig: {
     logo: '/images/CourseLogo.png',
