@@ -42,17 +42,24 @@ When voltage transitions from *low* to *high* it is not a smooth line on a graph
 
 *credit: Introduction to Computer Science using Java by Bradley Kjell (CC BY-NC 3.0)*
 
-
-Claude Shannon recognized four (4) advantages of the binary number system that led to it's adoption into modern digital computers
+Claude Shannon realized that existing information media, such as voltage in a wire, would not suit the incoming digital revolution. He recognized four (4) advantages of the binary number system that led to it's adoption into modern digital computers.
 
 ### Simple
 
-At its heart, binary values are simple. A binary digit being either a **1** or **0** is just about as simple as a number base can be. Because digital circuits were 
+At its heart, binary values are simple. Digital circuits would be simple, needing to send/receive *on* and *off* signals.
+
+A binary digit being either a **1** or **0** is just about as simple as a number system can be. 
 
 ### Unambiguous
 
+Digital information needs to clearly be in one of the two simple states. In-between values would cause performance issues at best and degradation of information at worst.
 
+Binary does not have values between **0** and **1**. There is no *0.1* value in this system. This provides the exactness that digital information needs.
 
 ### Flawless copies
+
+Integrity of the data is a key goal of information theory. Data that cannot be transferred (copied from one storage device to another) reliably has little or no use.
+
+Copying binary values can be performed with simple circuits and, if needed, is simple to verify.
 
 ## Conclusion
