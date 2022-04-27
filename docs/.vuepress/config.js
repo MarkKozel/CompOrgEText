@@ -74,6 +74,12 @@ module.exports = {
       ],
       '/Assembly/': [
         {
+          title: 'The von Neumann Model',
+          path: '/Assembly/vonNeumann',
+          collapsable: true,
+          sidebarDepth: 4,
+        },
+        {
           title: 'Getting Started',
           path: '/Assembly/GettingStarted',
           collapsable: true,
