@@ -23,7 +23,7 @@ And we will learn of a couple of other systems that make it easier for computer 
 
 *A brief history of numerical systems - Alessandra King - TED-Ed*
 <p>1, 2, 3, 4, 5, 6, 7, 8, 9... and 0. With just these ten symbols, we can write any rational number imaginable. But why these particular symbols? Why ten of them? And why do we arrange them the way we do? Alessandra King gives a brief history of numerical systems.</p> <p>Lesson by Alessandra King, animation by Zedem Media. Copyright CC BY–NC–ND 4.0 International</p> 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/cZH0YnFpjwU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+<iframe width="640" height="360"  src="https://www.youtube.com/embed/cZH0YnFpjwU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
 
 ## Decimal Values
 

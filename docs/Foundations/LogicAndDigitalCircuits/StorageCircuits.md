@@ -95,7 +95,7 @@ With two (2) *NOR* gates, this Flip-Flip produces 2 outputs, *Q* and *-Q*. These
 
 *Latches and Flip-Flops 1 - The SR Latch - Computer Science - UK YouTube Provider*
 <p>This is the first in a series of computer science videos about latches and flip-flops..</p> <p>Copyright TODO</p> 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-aQH0ybMd3U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="640" height="360"  src="https://www.youtube.com/embed/-aQH0ybMd3U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Set-Reset Flip-Flop with Enable
 
@@ -132,7 +132,7 @@ A negative effect of managing Flip-Flips in groups like this is that only 1 can 
 
 *Latches and Flip-Flops 2 - The Gated SR Latch - Computer Science - UK YouTube Provider*
 <p>This is the second in a series of computer science videos about latches and flip-flops.  These bi-stable combinations of logic gates form the basis of computer memory, counters, shift registers, and more..</p> <p>Copyright TODO</p> 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/HxAhOETcvr4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="640" height="360"  src="https://www.youtube.com/embed/HxAhOETcvr4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## D (Data) Flip-Flip
 
@@ -148,7 +148,7 @@ The *EN* input working like the enable on the Set-Reset circuit, only allowing t
 
 *Latches and Flip-Flops 3 - The Gated D Latch - Computer Science - UK YouTube Provider*
 <p>This is the third in a series of videos about latches and flip-flops.  These bi-stable combinations of logic gates form the basis of computer memory, counters, shift registers, and more..</p> <p>Copyright TODO</p> 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/y7Zf7Bv_J74" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="640" height="360"  src="https://www.youtube.com/embed/y7Zf7Bv_J74" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Use of Write Enable with Storage
 

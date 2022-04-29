@@ -37,7 +37,7 @@ Among his many contributions to computer science, he imagined a machine that cou
 
 *Turing Machines Explained - Computerphile*
 <p>Turing Machines are the basis of modern computing, but what actually is a Turing Machine?</p> <p>Assistant Professor Mark Jago. Copyright CC BY International</p> 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dNRDvLACg5Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="640" height="360"  src="https://www.youtube.com/embed/dNRDvLACg5Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## A Theoretical General Purpose Computer
 

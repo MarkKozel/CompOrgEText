@@ -92,7 +92,7 @@ Using this effect, we can extract each Binary digit from the Decimal value...but
 
 | Binary 1 - Converting to and from Denary| Computer Science (YouTube Creator)|
 | :-: | :-: |
-| <iframe width="560" height="315" src="https://www.youtube.com/embed/cJNm938Xwao" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> | <p>This is the first in a series of computer science videos about the binary number system which is fundamental to the operation of a digital electronic computer. It covers the need for binary and details of how to convert positive whole numbers in base 10 into 8 bit binary, and vice versa.</p> <p></p> |
+| <iframe width="640" height="360"  src="https://www.youtube.com/embed/cJNm938Xwao" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> | <p>This is the first in a series of computer science videos about the binary number system which is fundamental to the operation of a digital electronic computer. It covers the need for binary and details of how to convert positive whole numbers in base 10 into 8 bit binary, and vice versa.</p> <p></p> |
 
 ## Discrete vs. Analog Values
 
