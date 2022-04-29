@@ -48,11 +48,7 @@ Each Binary value, based on it's place value, is converted to its Decimal equiva
 
 **Algorithm**
 
-Recall that array indexes start at zero(0). Number positions in a number string also start at zero. So the value in the 1st position is said to be in *position 0*
-
-1. Multiply a Binary value by 2 raised to the power if the value's position
-1. Add the result to the final Decimal result
-1. Repeat for all Binary values
+!!!include(TextSnippets/Foundations/Algo_unsigned_bin2dec.md)!!!
 
 ::: tip Order Does Not Matter
 You probably noticed that this algorithm does not require *starting with the least- or greatest-significant Binary value
@@ -67,6 +63,7 @@ Thinking about this, it should be obvious that **0** is any number system base i
 
 In Logic Circuits we will see this property again. A circuit that outputs **0** volts (or **0** binary value) does not need any circuitry
 :::
+
 
 ## Converting from Base 10
 
@@ -90,9 +87,9 @@ Using this effect, we can extract each Binary digit from the Decimal value...but
 1. The result of the division is the new Decimal value to operate upon
 1. Repeat steps until the result of division is 0
 
-| Binary 1 - Converting to and from Denary| Computer Science (YouTube Creator)|
-| :-: | :-: |
-| <iframe width="640" height="360"  src="https://www.youtube.com/embed/cJNm938Xwao" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> | <p>This is the first in a series of computer science videos about the binary number system which is fundamental to the operation of a digital electronic computer. It covers the need for binary and details of how to convert positive whole numbers in base 10 into 8 bit binary, and vice versa.</p> <p></p> |
+| Video | Description |
+|-|-|
+|This is the first in a series of videos about the binary number system which is fundamental to the operation of a digital electronic computer. It covers the need for binary and details of how to convert positive whole numbers in base 10 into 8 bit binary, and vice versa.|<iframe width="560" height="315" src="https://www.youtube.com/embed/cJNm938Xwao" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> |
 
 ## Discrete vs. Analog Values
 
