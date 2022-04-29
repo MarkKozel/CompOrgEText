@@ -31,7 +31,8 @@ Specific-purpose computers solve specific problems, but as science, math, and th
 ## Specific-Purpose Computers
 The predecessor to the common Abacus is an early example of a Specific (or Special) Purpose Computer device. The [Sumerian Abacus](https://en.wikipedia.org/wiki/Abacus#Mesopotamian) dates back to Mesopotamia in 2700 BCE
 
-![Early Chinese Abacus](/assets/img/01_Foundation/220px-Chinese-abacus.jpg)
+![Early Chinese Abacus](/images/Foundations/History/220px-Chinese-abacus.jpg =300x)
+
 Early Chinese Abacus 
 
 The use of specific-purpose computers continued to grow and science and technology evolved. Business, science, and the military became reliant on computing devices. And these industries drove newer innovations and improved accuracy

@@ -66,7 +66,7 @@ More complex systems required special training to operate, maintain, and repair
 :::
 
 <iframe src="https://player.vimeo.com/video/70589461" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-<p><a href="https://vimeo.com/70589461">UCLA&#039;s 1948 Mechanical Computer</a> from <a href="https://vimeo.com/gizmodo">Gizmodo</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+<p>UCLA&#039;s 1948 Mechanical Computer from <a href="https://vimeo.com/gizmodo">Gizmodo</a>.</p>
 
 ::: left
 As seen in this video, electricity is used to turn shafts to move gears as needed
