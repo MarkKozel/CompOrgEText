@@ -243,21 +243,21 @@ There is another reason to store registers in memory...to save the state of your
 The *caller* code (your code) or the *callee* code (TRAP or Sub) can both be responsible for preventing register data loss
 
 It would be a waste of clock-cycles and memory for both *caller* and *callee* to perform this work
-The *caller* code could, but it would have to save all 8 registers becuase it does not know which registers the *callee* code will be using
+The *caller* code could, but it would have to save all 8 registers because it does not know which registers the *callee* code will be using
 
 It is more practice for the *callee* code to save only the registers it knows it will be using, then restore only those registers before returning to the caller code
 
-::: considerit Can the Caller accuratly save all 8 registers?
+::: considerit Can the Caller accurately save all 8 registers?
 The Caller would need to save all 8 register (since it does not know what the TRAP or Sub is going to modify)
 
 However, during the FDE Cycle of the ```JSR``` line, R7 will be changed (to current PC). So, the R7 saved before the JSR is executed will be different than R7 during the FDE cycle for the JSR line
 
-If the TRAP/Sub make its own call to another TRAP or Sub, the state of R7 would further change, likely leading to a loss of information needed to correclty return to the main program
+If the TRAP/Sub make its own call to another TRAP or Sub, the state of R7 would further change, likely leading to a loss of information needed to correctly return to the main program
 :::
 
 Finally, the *caller* code is kept smaller by not having save/restore all 8 registers
 
-<QuestionTF question="It is the Callee's responsiblity to save registers that it changes" answer='true' rightAnswerFeedback="The callee is the only code that knows what it changes" wrongAnswerFeedback="The caller does not know what registers the callee will use"/>
+<QuestionTF question="It is the Callee's responsibility to save registers that it changes" answer='true' rightAnswerFeedback="The callee is the only code that knows what it changes" wrongAnswerFeedback="The caller does not know what registers the callee will use"/>
 
 ### R7 - The Way Back Home
 
@@ -302,7 +302,7 @@ main    ADD R0, R0, #2  ; Set 2 in R0
 ;Adds 1 to value in R0 and stores in R1
 ;   Caller sets R0 with a value before calling
 ;   Sub will add 1 to R0 and store in R1
-addOne  AND R1, R1, #0 ; Clear R1 in case there wa sjunk in it
+addOne  AND R1, R1, #0 ; Clear R1 in case there was junk in it
         ADD R1, R0, #1 ; R1 = R0 + 1
         RET
 
