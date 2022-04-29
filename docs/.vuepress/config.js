@@ -152,8 +152,7 @@ module.exports = {
             'History/05_3rdGen',
             'History/06_4thGen',
             'History/07_Modern',
-            'History/AnalogDigitalComputers',
-            'History/SpecificGeneralUseComputers',
+
           ],
         },
         {
@@ -165,7 +164,8 @@ module.exports = {
             'Concepts/Abstraction',
             'Concepts/Algorithms',
             'Concepts/HardwareSoftware',
-            'Concepts/Programming',
+            'Concepts/AnalogDigitalComputers',
+            'Concepts/SpecificGeneralUseComputers',
           ],
         },
       ],
