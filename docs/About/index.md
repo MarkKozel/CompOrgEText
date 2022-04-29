@@ -1,38 +1,20 @@
-# CS 131 - Computer Organization
+# About this Text
 
-**Allan Hancock College - Santa Maria, Ca**
+This online textbook was initially created for use at Allan Hancock College in Santa Maria, Ca, USA. It is open-source and available to any oen or program per the licensing requirements (below).
 
-**Computer Science | Mathematics Sciences Department**
+::: left
+The intend of this resource is to provide current, clear, free, and interactive information on the subject matter for the growing and diverse computer science student population.
+:::
 
-## Course Information
+It is intended to be used for CS-131, Computer Organization, at Allan Hancock College, but was created to be modified to other college-level Computer Organization courses. Is is provided to students as a live web resource that can be easily updated.
 
-**Introduction to computer architecture and assembly language programming**
+It was created under the CC ECHO grant, funded by the US Department of Education
 
-**Topics include data representation and conversion, assembly language programming, digital design, and basic processor architecture**
+It is licensed under<a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/"></a><br /> <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons BY NC 4.0 International License</a>.
+<img alt="Creative Commons License" style="border-width:0" src="https://licensebuttons.net/l/by-nc/4.0/88x31.png" />
 
-* **Units**: 3.0
-* **Prerequisite**: CS 111 - Fundamentals of Programming 1
-* **Acceptable for Credit**: Transfer to UC, CSU
-* **C-ID Course Number**: COMP 142
-* **Course Offered**: Fall, Spring
-* **Grading Method**: Letter Grade Only
+::: left
+If you have questions, please contact, Mark Kozel (MKozel@HancockCollege.edu) - Math Science - Computer Science - Allan Hancock College, Santa Maria, Ca , USA
+:::
 
-## Using these materials
-
-The **Navigation Bar** at the top-right is used to connect to each set of resources. Click on these links to access the desired resource
-
-Once a resource is selected, use the **Sidebar** menu at the left of the resource page to select a section and subsection to locate the specific topic desired
-
-Use the **Search** fields at the top-center to find all references to a keyword
-
-The **Icon/Title** at the top-left will return you to the CS-131 start page
-
-# About this Textbook
-
-[Funding](Funding/)
-
-[Colophon](Colophon/)
-
-If you are interested in building upon this project see the [Getting Started Guide](GettingStarted/)
-
-Working together using GitHub and Git [Collaboration and Git Info](GitBuildMgmt/)
+> Details of this resource, the program, grant, and funding can be found using the navigation links on the left

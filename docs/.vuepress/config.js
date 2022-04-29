@@ -216,7 +216,7 @@ module.exports = {
           title: 'About This EText',
           collapsable: false,
           children: [
-            '',
+            'CS131Information',
             'Funding',
             'Colophon',
             'GettingStarted',
