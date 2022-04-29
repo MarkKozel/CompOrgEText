@@ -37,9 +37,6 @@ can be packed in much tighter. Early ICs consisted of only a handful of
 transistors, but now days integrated circuits can be made with billions
 of transistors in the space of a fingernail.
 
-::: {.index}
-Third Generation
-:::
 
 The ability to pack more computational power into less space heralded a
 new generation of computers. Computers of the **Third Generation**,
@@ -66,3 +63,9 @@ Commons](https://upload.wikimedia.org/wikipedia/commons/a/a2/PDP-8_%284311206087
 
 The PDP machines of the third generation were enormously influential -
 much early computer science was done on these machines
+
+<hr>
+
+Adapted from Chemeketa Community College's Computer Science Dept's [CS160 Reader](https://computerscience.chemeketa.edu/cs160Reader/index.html) 
+
+&copy; Copyright <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a> This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.

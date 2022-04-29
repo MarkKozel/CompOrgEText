@@ -51,7 +51,7 @@ problems relating to the breaking of codes.
 <p>CHM Exhibition "Revolution: The First 2000 Years of Computing"
 
 The ability to send secret, encoded communications led to ruthless devastation by Nazi troops early in WWII. Allied mathematicians and engineers rushed to build a machine capable of breaking the codes. Here we pay tribute to “Colossus” for helping to end the war and begin the age of computing.</p> 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/7cDeG3hyraA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+<iframe width="640" height="360"  src="https://www.youtube.com/embed/7cDeG3hyraA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
 
 :::
 
@@ -129,3 +129,9 @@ Commons](https://upload.wikimedia.org/wikipedia/commons/3/37/Grace_Hopper_and_UN
 Grace Murray Hopper at the UNIVAC keyboard. Grace Hopper was an American
 mathematician and rear admiral in the U.S. Navy who was a pioneer in
 developing computer technology,
+
+<hr>
+
+Adapted from Chemeketa Community College's Computer Science Dept's [CS160 Reader](https://computerscience.chemeketa.edu/cs160Reader/index.html) 
+
+&copy; Copyright <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a> This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.

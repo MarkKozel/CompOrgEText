@@ -82,3 +82,8 @@ Commons](https://upload.wikimedia.org/wikipedia/commons/a/ac/Leibniz_binary_syst
 
 Leibniz\'s notes on binary numbers
 
+<hr>
+
+Adapted from Chemeketa Community College's Computer Science Dept's [CS160 Reader](https://computerscience.chemeketa.edu/cs160Reader/index.html) 
+
+&copy; Copyright <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a> This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.

@@ -21,7 +21,11 @@ tags: []
 ]" />
 
 ## Introduction
-Humans, by default, understand the world through classifying and grouping information about the world in which we live. Associating items based on similarities and differences helps us communicate our understandings of our world. It could be argued that this capability of humans is something that sets us apart from other animals
+Humans, by default, understand the world through classifying and grouping information about the world in which we live. Associating items based on similarities and differences helps us communicate our understandings of our world. It could be argued that this capability of humans is something that sets us apart from other animals.
+
+A key tool to manage information and our understanding of complex things is Abstraction. In effect, we can group related items by identifying traits that are similar. We then associate items that have that trait, and separate them from items that do not possess that trait
+
+Once divided into groups, each group can be sub-divided based in a more specific trait, further defined the items. This process of sub-dividing can continue with more specific traits until we have reached a level of detail that is useful
 
 ## Why Use Abstraction
 A key element to learning and communicating elements in the physical world is our ability to create abstraction layers. That is, defining different levels of detail about an element to be used in different contexts
@@ -37,36 +41,8 @@ And, to describe email to someone that does not use a computer regularly, you wi
 :::
 
 Abstraction works in layers, each having more details and specific meaning
-## Computer Organization Abstraction Layers
 
-
-## Conclusion
-
-
-# From other Page (merge with above)
-
-<KeyConcepts :ConceptArray= "[
-{
-  Concept:'Natural Language',
-  Details:'Spoken and written communication developed and evolved over time, and used by humans'
-},
-{
-  Concept:'Ambiguity',
-  Details:'Imprecise nature of a construct. For Natural Language, how individuals interprets the meaning or intent of a word or phrase'
-},
-{
-  Concept:'Algorithm',
-  Details:'In the context of Computer Science, re-writing a Problem in a form that minimizes the Ambiguity of Human/Natural Language'
-}
-]" />
-
-## Introduction
-
-A key tool to manage information and our understanding of complex things is Abstraction. In effect, we can group related items by identifying traits that are similar. We then associate items that have that trait, and separate them from items that do not possess that trait
-
-Once divided into groups, each group can be sub-divided based in a more specific trait, further defined the items. This process of sub-dividing can continue with more specific traits until we have reached a level of detail that is useful
-
-### Abstraction Layers of LIfe on Earth
+## Abstraction Layers of Life on Earth
 You have likely encountered the Biological Life Taxonomy layers of abstraction in upper-division grade school
 
 <table>
@@ -83,6 +59,8 @@ You have likely encountered the Biological Life Taxonomy layers of abstraction i
 </table>
 
 Abstraction is a tool used to communication and understand an item or concept. Teaching mathematics in public school relies on abstraction to expose students to the complex world of math, slowly, over several years. From kindergarten, where students learn numbers, to Jr High, where students are exposed to geometry and trigonometry, and on to high school where calculus is taught
+
+## Computer Organization Abstraction Layers
 
 Within Computer Science, there are several places where abstraction is used to organize concepts: Data Abstraction, Object-Oriented Inheritance, Relational Database design
 
@@ -134,3 +112,15 @@ Within Computer Organization we use a set of abstraction levels that start with 
 [Abstraction Layers in Computer Architecture](https://en.wikipedia.org/wiki/Abstraction_layer#Computer_architecture)
 High-level abstraction of computer architecture
 :::
+
+
+
+
+
+
+
+
+
+
+
+## Conclusion

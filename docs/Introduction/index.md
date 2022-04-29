@@ -35,13 +35,5 @@ In this unit we will review the interface between Hardware and Software.
 
 [Connecting Hardware to Software Unit](./HardwareSoftware)
 
-## Programming Approaches and Debugging
-Before *writing code*, software developers must understand the problem, develop a plan, and finally *write code*. There are several approaches to create software.
-
-As part of the *write code* step, problems are likely to occur. Debugging is a process of locating and fixing problems.
-
-In this unit, we will discuss approaches to create software, and how we can use debugging tools to quickly find and fix problems.
-
-[Programming Approach and Debugging Unit](./Programming)
 
 ## Conclusion

@@ -51,6 +51,11 @@ How these fantastically complex microprocessors are manufactured:
 <p>How are microchips made - from sand to semiconductor: Microelectronics usually is hidden to society – however, it is a constant companion in our daily lives. It tremendously contributes to the ongoing development and digitization of our world. But what is actually behind this technology?
 
 In this video we explain how microchips are made and what conditions are necessary for manufacturing.</p> 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/bor0qLifjz4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+<iframe wwidth="640" height="360"  src="https://www.youtube.com/embed/bor0qLifjz4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
 
-:::
+
+<hr>
+
+Adapted from Chemeketa Community College's Computer Science Dept's [CS160 Reader](https://computerscience.chemeketa.edu/cs160Reader/index.html) 
+
+&copy; Copyright <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a> This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.

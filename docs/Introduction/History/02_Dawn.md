@@ -36,7 +36,7 @@ computations was possible and began to focus on that project.
 <p>CHM Exhibition "Revolution: The First 2000 Years of Computing" 
 
 Charles Babbage (1791-1871), computer pioneer, designed the first automatic computing engines. He invented computers but failed to build them. The first complete Babbage Engine was completed in London in 2002, 153 years after it was designed. Difference Engine No. 2, built faithfully to the original drawings, consists of 8,000 parts, weighs five tons, and measures 11 feet long.</p> 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/XSkGY6LchJs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+<iframe width="640" height="360"  src="https://www.youtube.com/embed/XSkGY6LchJs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
 
 
 Whereas the Difference Engine could only calculate the values of
@@ -104,3 +104,9 @@ other companies to become International Business Machines (IBM).
 Commons](https://upload.wikimedia.org/wikipedia/commons/3/3f/1902_Hollerith_electric_tabulating_machine.jpg)
 
 The Hollerith tabulating machine
+
+<hr>
+
+Adapted from Chemeketa Community College's Computer Science Dept's [CS160 Reader](https://computerscience.chemeketa.edu/cs160Reader/index.html) 
+
+&copy; Copyright <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a> This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
