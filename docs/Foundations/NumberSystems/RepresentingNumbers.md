@@ -43,11 +43,11 @@ The number of decimal values that can be represented in a fix number of binary d
 
 To be truly useful, we need to be able to represent negative (signed) values in binary. In order to accomplish this, we will sacrifice 1 bit to stand in for the +/- sign.
 
-Before proceeding, we need to understand how to add 1 binary values. It is just like adding 2 decimal numbers:
+Before proceeding, we need to understand how to add 1 binary values. We will explore this moreIt is just like adding 2 decimal numbers:
 
 ::: left
-!!!include(TextSnippets/Foundations/add_binary_numbers.md)!!!
-
+A Full Adder
+!!!include(TextSnippets/Foundations/full_adder_table.md)!!!
 :::
 
 ### The Sign Bit
@@ -90,9 +90,48 @@ Use the above algorithm to test yourself
 
 :::
 
-**Twos complement: Negative numbers in binary - Ben Eater**
-<iframe width="640" height="360"  src="https://www.youtube.com/embed/4qH4unVtJkE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+**Computer Science Series** - Binary 2 - Two's Complement Representation of Negative Numbers
+<p>This is the second in a series of videos about the binary number system which is fundamental to the operation of a digital electronic computer. It covers the two's complement system of representing positive and negative integers in binary. It demonstrates how two's complement allows computers to perform subtraction operations, and explains with examples three different methods that can be used to convert negative denary numbers into binary</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mRvcGijXI9w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Sign Extension
+
+It is probably second nature to you that **25<sub>10</sub>** and **00000025<sub>10</sub>** are the same value. The most significant zeros do not change the value of the number. They are unnecessary.
+
+**-25<sub>10</sub>** and **-00000025<sub>10</sub>** are also the same and unnecessary.
+
+2's complement binary values have a similar property, but a little different that decimal values.
+
+>  6<sub>10</sub> = 0110<sub>2</sub> = 00000110<sub>2</sub>
+
+We can lengthen a positive binary value by adding zeros (0) to the most significant bits without changing the value.
+
+> -6<sub>10</sub> = 1010<sub>2</sub> = 111111010<sub>2</sub>
+
+We can lengthen a negative binary value by adding one (1) to the most significant bits without changing the value.
+
+In effect, the additional ones or zeros are extending the sign bit. When removing the extra bits, the original sign bit *must* be retained so that the value keeps its original sign
+
+In computer architecture, sign extension is *not* unnecessary. As we will see in logic circuits, sometimes binary value of 16 or 32, or 64 bits long is required, even if the original bit string was shorter. A hardware circuit can copy the sign bit as many time as needed to create the desired length bit string before executing certain instructions.
 
 ## Fixed-Point
+
+In order to represent fractional values in binary, a fixed number of the least significate bits can be designated as the fractional part. The remaining most significant bits are the whole number part
+
+![Fixed Point](/images/NumberSystems/Base2_FixedPoint.png)
+
+An architecture will define how many bits are used for the fractional and whole-number part. There is no bit used to hold the *decimal point* in memory. The hardware is configured to always, in teh case of this example, use the 3 least significant bits.
+
+### **Computer Science Series** - Binary 3 – Fixed Point Binary Fractions
+<p>This is the third in a series of videos about the binary number system which is fundamental to the operation of a digital electronic computer. It covers the representation of real numbers in binary using a fixed size, fixed point, register. It explains with examples how to convert both positive and negative denary numbers to and from fixed point binary format. It also covers the advantages and limitations of processors that make use of fixed point registers.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QFlbvSeBkwY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+The conversion from fixed point binary to base 10 fractional is the same as a whole number, however the fractions bits are multiplied by a fractional power of 2.
+
+In base 10 we refer to the fractional digits as *10<sup>ths</sup>*,*100<sup>ths</sup>*, *1000<sup>ths</sup>* 
+
+In binary, maybe we call these fraction bits *1-2<sup>th</sup>*,*2-2<sup>ths</sup>*, *3-2<sup>ths</sup>*. Maybe not, since these parts do not have true names.
+
+Regardless of the names, It falls to the assembly programmer to identify bits strings that represent fixed-point values. Then the architecture can apply the correct conversion to generate the correct decimal value.
 
 ## Conclusion
