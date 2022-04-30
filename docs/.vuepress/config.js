@@ -140,6 +140,12 @@ module.exports = {
       ],
       '/Introduction/': [
         {
+          title: 'Diversity',
+          path: '/Introduction/CSDiversity',
+          collapsable: true,
+          sidebarDepth: 4,
+        },
+        {
           title: 'History',
           path: '/Introduction/History',
           collapsable: true,
@@ -152,7 +158,6 @@ module.exports = {
             'History/05_3rdGen',
             'History/06_4thGen',
             'History/07_Modern',
-
           ],
         },
         {
