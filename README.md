@@ -52,6 +52,8 @@ The VuePress site is built into a static web site that can be deployed to variou
 The Documentation Source will be available on GitHub to allow others to instructors to modify and deploy their own version of the documentation. Other instructors couple then deploy their modified documentation to their own web sites for their students to access
 
 ## Development Log
+22020501 - Completed first draft. Ready for Peer Review for Grant
+
 20220430 - Completing first draft/80%. Coordinating with reviewers as part of grant activities. 
 
 20220131 - Upgraded to VuePress 1.9.2 -> 1.9.7. Removed unneeded plugin installs (since they are built-in) [Out of the Box](https://vuepress.vuejs.org/plugin/#out-of-the-box)
