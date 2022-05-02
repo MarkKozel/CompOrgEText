@@ -8,13 +8,38 @@ tags: []
 # {{ $frontmatter.title }}
 **{{ $frontmatter.description }}**
 
+## How to use this Textbook
+
+![How to Use this Textbook](/images/UseTheTextbook.png)
+
+**Home** icon on the top-left will take you back to the start page
+
+**Site Search** box in the top-center will present a list of pages containing a word or phrase
+
+**NavBar** on the top-right lets you choose a section. The highlight notes which section is currently open in the *Main Content Area*
+
+**Sidebar Menu** Navigation on left side of page. Contains Topics that can be expanded
+
+**Topic** Main page for each Topic
+
+**Topic Units** Unit pages under a given Topic
+
+**Main Content Area** Topic or Unit page is displayed here
+
+The three (3) sections are available in the top-right Nav Menu. You will be presented with the Section Main Page
+
+To the left of the Section Main Page is the Sidebar Menu. Each Unit and Topic is accessible here by clicking on a name to expand or open a page
+
 ## Introduction
-This course is divided into three (3) sections:
+This Text is divided into three (3) sections:
 
 1. [Introduction](../Introduction/index.md)
-2. [Foundations](../Foundations/index.md)
+1. [Foundations](../Foundations/index.md)
 1. [Assembly Programming](../Assembly/index.md)
 
+Each Section contains Topics. For example, the Introduction Section contains three Topics: Diversity, History, and Concents
+
+Each Topic contains one (1) or more Units. These are full page information for that Unit. Example, the History Topic contains seven (7) Units: Prehistory, Dawn of Computers, 1st-4th Generation Computers, and Modern Computers.
 
 ## History
 
