@@ -120,7 +120,7 @@ In order to represent fractional values in binary, a fixed number of the least s
 
 ![Fixed Point](/images/NumberSystems/Base2_FixedPoint.png)
 
-An architecture will define how many bits are used for the fractional and whole-number part. There is no bit used to hold the *decimal point* in memory. The hardware is configured to always, in teh case of this example, use the 3 least significant bits.
+An architecture will define how many bits are used for the fractional and whole-number part. There is no bit used to hold the *decimal point* in memory. The hardware is configured to always, in the case of this example, use the 3 least significant bits.
 
 ### **Computer Science Series** - Binary 3 – Fixed Point Binary Fractions
 <p>This is the third in a series of videos about the binary number system which is fundamental to the operation of a digital electronic computer. It covers the representation of real numbers in binary using a fixed size, fixed point, register. It explains with examples how to convert both positive and negative denary numbers to and from fixed point binary format. It also covers the advantages and limitations of processors that make use of fixed point registers.</p>

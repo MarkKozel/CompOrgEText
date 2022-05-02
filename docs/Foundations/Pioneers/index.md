@@ -1,21 +1,20 @@
 ---
 title: Pioneers
-shorttitle: People and events that shaped the modern computer
-tags: []
+description: People and events that shaped the modern computer
+pageClass: Unit
+tags: [Turing, von Nuemann, Shannon]
 ---
 
 # {{ $frontmatter.title }}
-{{ $frontmatter.shorttitle }}
+**{{ $frontmatter.description }}**
 
-This section will define the concepts and operations used in modern computer systems
+This section will introduce a few of the key people that shaped modern computer organization
 
-## [Alan Turing](./turing)
-### Theories and Influence of Alan Turing
+## Alan Turing
+Visionary mathematician that, without the technology to verify it, envisioned the elements needed to create a general-purpose computer.
 
-## [John von Nuemann](./vonNeumann)
-### A high-level implementation of Turing's Machine
+## John von Nuemann
+Building on Turing's designs, this Hungarian mathematician layed out the parts of a modern computer and help implement it into a working computer hardware.
 
-## [Claude Shannon](./shannon)
-### The use of binary as the default number system
-
-http://computerscience.chemeketa.edu/cs160Reader/index.html
+## Claude Shannon
+IBM engineer and technology hobbiest that recognized the power boolean logic and binary as the core data format for today's computer storage and transmission.

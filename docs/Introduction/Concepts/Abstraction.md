@@ -113,14 +113,4 @@ Within Computer Organization we use a set of abstraction levels that start with 
 High-level abstraction of computer architecture
 :::
 
-
-
-
-
-
-
-
-
-
-
 ## Conclusion

@@ -73,6 +73,7 @@ module.exports = {
         }
       ],
       '/Assembly/': [
+        '/Assembly/',
         {
           title: 'The von Neumann Model',
           path: '/Assembly/vonNeumann',
@@ -139,6 +140,7 @@ module.exports = {
         }
       ],
       '/Introduction/': [
+        '/Introduction/',
         {
           title: 'Diversity',
           path: '/Introduction/CSDiversity',
@@ -175,6 +177,7 @@ module.exports = {
         },
       ],
       '/Foundations/': [
+        '/Foundations/',
         {
           title: 'Pioneers',
           path: '/Foundations/Pioneers',

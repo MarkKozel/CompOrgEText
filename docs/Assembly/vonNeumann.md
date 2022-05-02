@@ -42,7 +42,7 @@ The ALU contains complex circuits to perform mathematic operations such as addit
 ALUs can contain other capabilities like additional math functions and more complex logic operations. The Control Unit must know all of the ALU's capabilities and how to control the entire system when processing these operations.
 
 ### Cache
-In order to maintain data from previous instruction or to allow buffering of data, the CPUs cache registers are used. Buffered data can improve performance when the CPU us performing several operations in teh same data. The Control Unit does not need to load the same data before each instruction.
+In order to maintain data from previous instruction or to allow buffering of data, the CPUs cache registers are used. Buffered data can improve performance when the CPU us performing several operations in the same data. The Control Unit does not need to load the same data before each instruction.
 
 ### Sign Ext
 
@@ -78,7 +78,7 @@ If the Control Unit is storing data to Memory, it places the destination RAM add
 ### MDR
 The Memory Data Register is used to hold a value. If the Control Unit is storing data into a RAM location, it copied the destination address into the MAR and the new value for that address in the MDR. It then directs Memory to update RAM
 
-When requesting data from Memory, the address of the requested RAMlocation is copied into the MAR. After Memory reads teh value at the address, it is copied into the MAR for the Control Unit to retrieve.
+When requesting data from Memory, the address of the requested RAMlocation is copied into the MAR. After Memory reads the value at the address, it is copied into the MAR for the Control Unit to retrieve.
 
 ## Input/Output
 ![von Neumann Model - I/O](/images/Foundations/vonNeumann/vonNeumannModel_IO.png)

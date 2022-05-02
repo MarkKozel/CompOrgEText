@@ -9,31 +9,12 @@ tags: []
 # {{ $frontmatter.title }}
 **{{ $frontmatter.description }}**
 
-## Introduction
+## Diversity in Computer Science
+Featuring some current programs and organizations that support inclusions of all people in computing fields.
 
-## Abstraction
-A key element to learning and communicating elements in the physical world is our ability to create abstraction layers. That is, defining different levels of detail about an element to be used in different contexts.
+## History
+A brief look at the elements and devices that have coalesced into todays general-purpose computer hardware.
 
-In this unit we will discuss Abstraction in general and introduce the Abstraction Hierarchy of Computer Organization.
+## Concepts
 
-[Abstraction Unit](./Abstraction)
-
-## Algorithms
-
-Our daily life is filled with step-by-step procedures we follow to efficient and effective complete tasks. From logging in to your college course Canvas site to calculating the expected trajectory of an orbiting satellite, algorithms keep order and consistency in many things we do.
-
-In this unit, we will understand Algorithms as a device to discuss and understand what is going on at each level at each Computer Organization Abstraction Layer.
-
-[Algorithms Unit](./Algorithms)
-
-## Connecting Hardware and Software
-Software developers typically focus on software and programming languages to solve problems. Computer engineers focus on hardware, peripherals, and networks to solve problems.
-
-Computer Organization connects those two (2) worlds, and explores how they work together to provide today's modern computer systems.
-
-In this unit we will review the interface between Hardware and Software.
-
-[Connecting Hardware to Software Unit](./HardwareSoftware)
-
-
-## Conclusion
+Discuss concepts like Abstraction and Algorithms as used in computer organization. Bridge the gap between software and hardware, and define analog/digital computer and general/specific use hardware.

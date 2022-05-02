@@ -36,53 +36,30 @@ tags: []
 </table>
 
 ## Truth Tables
-
-TODO:
-
-[Truth Tables](TruthTables)
+Learn how to discuss and document digital logic circuit behaviors.
 
 ## The Transistor
-
 This microscopic physical device combines simple chemistry with the properties of electric potentials (voltage) to enable modern computers to perform with speed, accuracy, and reliability.
 
-[The Transistor](TheTransistor)
-
 ## Basic Logic
-
 Logic drives the decision-making capabilities of computers. From high-level programming language comparisons to low-level hardware data flow, logic enables computers to react to the dynamic nature of real-world inputs.
 
 We review simple logic function used not only in computer science, but in everyday situations.
 
-[Basic Logic](BasicLogic)
-
 ## Basic Circuits
-
 Arraigning sets of transistors into parallel and series configurations they behave electronically like Basic Logic functions. These simple 4 and 6 transistor circuits create digital logic that drive the lowest levels of the digital computer hardware
 
-[Basic Circuits](BasicCircuits)
-
-## Control Circuits
-
-Combining basic logic circuits, we create higher-level digital control circuits that can manage data flow, move information, and orchestrate higher-level digital hardware capabilities.
+## Basic Logic Circuits
+Combine transistors to implement basic logic functions, such as AND and NOT.
 
 ## Designing Circuits
-
 Creating digital circuits starts with a Truth Table, listing all digital inputs and the required outputs for each possible set of inputs. Using a simple algorithm, an equitant circuit can be created to match the starting Truth Table. 
 
-[Designing Circuits](DesigningCircuits)
-
 ## Control Circuits
-
-[Control Circuits](ControlCircuits)
+Combining basic logic circuits, we create higher-level digital control circuits that can manage data flow, move information, and orchestrate higher-level digital hardware capabilities.
 
 ## Arithmetic Circuits
-
-[Arithmetic Circuits](ArithmeticCircuits)
+Understand how basic logic circuits can implement math operations like addition and subtraction.
 
 ## Storage Circuits
 Basic logic circuits can also be arraigned to maintain digital information between computer clock-cycles. This allows modern computer hardware to retain information through more complex operations that take multiple operations to complete.
-
-[Storage Circuits](StorageCircuits)
-
-
-

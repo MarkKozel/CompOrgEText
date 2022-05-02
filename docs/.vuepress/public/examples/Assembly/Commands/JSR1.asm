@@ -8,5 +8,5 @@
 ; 2's complement R1 and store in R0
 TwosComp NOT R0, R1     ; Flip the bit
          ADD R0, R0, #1 ; Add 1
-         RET            ; return back to teh main program
+         RET            ; return back to the main program
 .END
