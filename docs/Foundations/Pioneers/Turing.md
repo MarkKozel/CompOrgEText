@@ -17,7 +17,7 @@ tags: [Turing, General Purpose Computer, Theory, State, State Machine]
 },
 {
   Concept:'Maintaining State',
-  Details:'The state machine is the heart of Turings theory, allowing computer to execute based on changing inputs and internal events'
+  Details:'The state machine is the heart of Turing\'s theory, allowing computer to execute based on changing inputs and internal events'
 },
 {
   Concept:'The Turing Machine',
@@ -104,3 +104,9 @@ The purple bar shows the instruction being executes.
 Source: https://www.futurelearn.com/info/courses/how-computers-work/0/steps/49259
 
 ## Conclusion
+
+Turing defined a theoretical general purpose computer with the basic components used in today's actual computers.
+
+Using a State Machine made the design general. Changing the state machine (effectively a program) made the Turing Machine a general purpose system.
+
+Use of a Tape to supply data into the computer and update data as the program ran was a key to simple design.

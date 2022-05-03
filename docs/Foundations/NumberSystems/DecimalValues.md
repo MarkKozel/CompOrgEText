@@ -99,3 +99,22 @@ There is no particular importance of 10 as a number system, it is just the syste
 :::
 
 ## Conclusion
+
+Decimal (base 10) number system is the de-facto standard number system used by humans. It is the system taught to children and used in business, finance, and day-to-day tasks. The metric system is based on this system.
+
+We use other number systems for some tasks. One interesting (and complex) number system is used for Data and Time. Time is a mix of systems: 
+::: left
+1 millennia = 1000 years
+
+1 year = 12 months
+
+1 month = 28 or 29 or 30 or 31 days
+
+1 day = 24 hours
+
+1 hour = 60 minutes
+
+1 minutes = 60 seconds
+:::
+
+It is impressive that most of us can follow this system with base 1000, 12, 24, and 60.

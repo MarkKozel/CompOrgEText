@@ -11,12 +11,12 @@ tags: []
 
 <KeyConcepts :ConceptArray= "[
 {
-  Concept:'Concept 1',
-  Details:'  '
+  Concept:'Numbers are used to represent letters',
+  Details:'ASCII provides a standard way to map numbers to alphanumeric values, as well as punctuation and special characters'
 },
 {
-  Concept:'Concept 2',
-  Details:'  '
+  Concept:'Computer architectures are number based',
+  Details:'To present ASCII (or UniCode) characters, the architecture and the assembly program must manage the numbers they intended to represent characters'
   },
 ]" />
 
@@ -52,3 +52,7 @@ As of Unicode version 14.0, September 2021, the standard represents 159 differen
 :::
 
 ## Conclusion
+
+Computer architectures can convert numbers to characters when instructed by the assembly program. The architecture does not store actual characters, but numbers that refer to characters on the ASCII or UniCode standard.
+
+Assembly programmers must be aware of how an architecture converts between numbers and characters to ensure it is performed when required by the program.

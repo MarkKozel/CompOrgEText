@@ -114,3 +114,9 @@ Examples:
 > Student attending a class meeting
 
 ## Conclusion
+
+The algorithms we use for everyday base 10 conversion still apply, but with a small modification for the different base
+
+The base value (Base 10 or Base 2) indicates how many unique symbols in that system. In base 10 we can count 0 to 9 before running out of symbols. We then create a new *place* in the number, set it to 1, and start counting from 0 again.
+
+Base 2 follows these same practices, we just run out of symbols faster and have to add *place* values much more often.

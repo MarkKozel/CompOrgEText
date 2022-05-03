@@ -13,7 +13,11 @@ tags: [von Neumann, von Neumann model]
 <KeyConcepts :ConceptArray= "[
 {
   Concept:'The von Neumann Model',
-  Details:''
+  Details:'While designing a new computer in 1945, John von Neumann defined the core components used in modern computers'
+},
+{
+  Concept:'Computers are more like us than we realize',
+  Details:'von Neumann\'s model referes to \'organs\' and \'sensory\' inputs, suggesting he modeled his architecture after the human body'
 },
 ]" />
 
@@ -65,5 +69,10 @@ Output devices (referred to as **O**) store or show final results. Devices such 
 
 > Recall the *Memory* is for partial results or intermediate information created during the process of solving a complex operation
 
-
 ## Conclusion
+
+von Neumann's model, based on the human nervous system, re-defined computer architecture. Th interactions between *Control*, *CPU* and *Memory* are paramount in the success of computer technology.
+
+Today's computers contain the same core elements, albeit, considerably faster and smaller.
+
+The concepts or using a single memory system for *data* and *programs* fundamentally change how computer are built, simplifying the hardware and the architecture complexity.

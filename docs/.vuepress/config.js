@@ -199,7 +199,6 @@ module.exports = {
             'NumberSystems/DecimalValues',
             'NumberSystems/BinaryValues',
             'NumberSystems/HexadecimalValues',
-            'NumberSystems/Others',
             'NumberSystems/RepresentingNumbers',
             'NumberSystems/RepresentingNonNumbers',
           ],

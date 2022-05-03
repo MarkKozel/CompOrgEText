@@ -11,9 +11,13 @@ tags: [Claude Shannon, Binary]
 #### {{ $frontmatter.description }}
 
 <KeyConcepts :ConceptArray= "[
+  {
+  Concept:'Choosing the right data type for digital computers',
+  Details:'Claude Shannon recognized the important traits required for digital data processing'
+},
 {
-  Concept:'Key elements of Binary',
-  Details:''
+  Concept:'Binary becomes the core data type',
+  Details:'Based on the needs to digital computers to handles are share data, binary was the best option'
 },
 ]" />
 
@@ -63,3 +67,9 @@ Integrity of the data is a key goal of information theory. Data that cannot be t
 Copying binary values can be performed with simple circuits and, if needed, is simple to verify.
 
 ## Conclusion
+
+Identifying binary as the data type for digital computer made the data *simple*, allowing for digital circuit fast.
+
+Binary, by its nature, is unambiguous with only two (2) possible values. 
+
+Because Shannon was working on Information Theory, he insisted digital data flawlessly copied. Binary allowed simple circuits to move data easily and reliably.

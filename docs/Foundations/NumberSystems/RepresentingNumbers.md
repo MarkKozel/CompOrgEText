@@ -11,12 +11,12 @@ tags: []
 
 <KeyConcepts :ConceptArray= "[
 {
-  Concept:'Concept 1',
-  Details:'  '
+  Concept:'We can use Binary to represent whole and fractional numbers',
+  Details:'Organizing bits into standard formats, we can represent integers, fix- and floating-point fractional numbers. Each architecture defines how it maintains these values/'
 },
 {
-  Concept:'Concept 2',
-  Details:'  '
+  Concept:'Representing negative and positive numbers requires some additional processing',
+  Details:'Number systems do not contain a symbol for negative values. When using numbers in any system we agree upon a format to indicate negative numbers. In computer architectures the use of a \'sign bit\' is the agreed upon process to including negative and positive states of a number.'
   }
 ]" />
 
@@ -135,3 +135,7 @@ In binary, maybe we call these fraction bits *1-2<sup>th</sup>*,*2-2<sup>ths</su
 Regardless of the names, It falls to the assembly programmer to identify bits strings that represent fixed-point values. Then the architecture can apply the correct conversion to generate the correct decimal value.
 
 ## Conclusion
+
+Based on the architecture's design, integer and fractional values can be represented in binary. Because digital circuits do not have a decimal-place indication, the assembly program must use the architecture's rules on using fractional values.
+
+Binary and digital circuits no have have a way to represent a negative value...only positive numbers. Using one of the value's bits to indicate the *sign* and the 2's Complement algorithm, binary values can be stored, used, and modified.

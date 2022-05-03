@@ -13,6 +13,10 @@ tags: []
 {
   Concept:'Base 16 is a compact means to representing binary values',
   Details:'With a little understanding, hardware and software practitioners can translate between Hex and Binary '
+},
+{
+  Concept:'Hexadecimal and Binary have a helpful association',
+  Details:'16 is a power of 2...2^4. This property means each 4 binary digits concert to 1 Hex symbol, making conversions a bit simpler '
 }
 ]" />
 
@@ -72,12 +76,8 @@ Each Hex value represent 1 4-bit Binary string. And a 4-bit Binary value can be 
 |0110|6|6||1110|14|E|
 |0111|7|7||1111|15|F|
 
-
-
-
-
-
-
-
-
 ## Conclusion
+
+Converting from Hexadecimal to Decimal is the same algorithm and Binary to Decimal, just using a different base number in the conversions.
+
+Hexadecimal is useful in expressing binary values in a compact format. Each Hex symbol represents exactly four (4) binary numbers.
