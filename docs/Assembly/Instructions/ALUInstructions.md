@@ -1,6 +1,6 @@
 ---
-title: ALU Commands
-parent: Commands
+title: ALU Instructions
+parent: Instructions
 description: 
 pageClass: Topic
 tags: []
@@ -11,10 +11,20 @@ tags: []
 
 <KeyConcepts :ConceptArray= "[
 {
-  Concept:'Software in much more useful if it can interacts with users and other systems',
-  Details:'Accepting input and providing outputs to/from a user or other system allows software to solve more complicated problems.'
+  Concept:'The LC-3 ALU is a very simple unit with three (3) instructions',
+  Details:'As a teaching ISA, the LC-3 has limited capabilities. Modern ALUs are capable of 50 or more instructions'
+}, 
+{
+  Concept:'AND and ADD instruction have two (2) different modes',
+  Details:'The instruction process 2 16-bit values, but can also process a 16-bit value and a hard-coded value. This second mode is convenient for simple instruction like subtracting 1 from a stored value'
 }
 ]" />
+
+## Introductions
+
+The LC-3 ALU is capable of executing three (3) operations: ADD, AND, and NOT. Although limited, when combined, these three (3) operations can be used to do many more things that add and compare.
+
+In this section we will review the ALU instructions, options for each, and look at some simple example code.
 
 ## ADD
 ### LC-3 ISA Format
@@ -217,6 +227,10 @@ Not the value in R1. Store in R0, overwriting the original value in R1
 
 **NOT** is one of the simplest instruction, so does not have any gotchas of note.
 
-
-
 ## Conclusion
+
+The LC-3 Arithmetic Logic Unit (ALU) is capable of performing one (1) arithmetic instruction, ADD, and two (2) logic functions (AND, NOT).
+
+ADD and AND have two (2) modes that define the input data elements to use. Register mode pulls data from two (2) registers. Immediate mode pulls data from one (1) register and a hard-coded value that is defined in the instruction.
+
+Once the CPU Controller has all the information to complete an ALU instruction, it send the data and operation to the ALU to complete. Results are send back to the Controller to store.

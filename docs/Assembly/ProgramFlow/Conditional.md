@@ -27,6 +27,8 @@ tags: []
 
 ## Introduction
 
+Programs can react to data or user inputs during execution, and *decide* to execute a different set of instruction based on the input. The ability to make these decisions allows the program to be dynamic, reacting to various inputs and producing appropriate outputs
+
 ## Conditional Flow
 
 In conditional flow, the program can execute or skip 1 or more lines of code based on a condition. The condition is evaluated while the program is running. In this way, the same program can execute differently, based on data or user inputs, each time it runs
@@ -136,5 +138,6 @@ badAge .STRINGZ "You entered an invalid age"
 
 Other conditionals constructs, such as Switch, While, and Do/While are based on these same Condition check and change in flow
 
-
 ## Conclusion
+
+Conditional flow, like If/Else are decision points in the program. The decision point makes the react better in dynamic inputs

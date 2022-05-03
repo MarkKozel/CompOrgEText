@@ -1,6 +1,6 @@
 ---
-title: Branching Commands
-parent: Commands
+title: Branching Instructions
+parent: Instructions
 description: 
 pageClass: Topic
 tags: []
@@ -11,13 +11,22 @@ tags: []
 
 <KeyConcepts :ConceptArray= "[
 {
-  Concept:'Software in much more useful if it can interacts with users and other systems',
-  Details:'Accepting input and providing outputs to/from a user or other system allows software to solve more complicated problems.'
+  Concept:'Branching allows the program to make decisions',
+  Details:'A branch instruction is a decision point in the program. Based on some criteria, the code may continue executing normally, or branch elsewhere to change the flow'
+},
+{
+  Concept:'Create control behaviors with branching',
+  Details:'Behavior like looping and if/else can be created by branching'
 }
 ]" />
 
 ## Introduction
 
+The LC-3 has 1 command for branching (jumping to different lines of code). It can be used to create loops, if/else, and while loop behavior. This command is a decision point in the code. It will branch based on a register that remembers the sign of the previous instruction's result. 
+
+If the previous instruction resulted in a negative value, a BRn instruction will branch. If the register was zero or positive, the branch would not occur and normal sequential execution continues.
+
+In this section we will review the BR instruction and look at some simple example code.
 
 ## BR
 
@@ -74,5 +83,8 @@ Conditions can be grouped on a single BR instruction
 
 - When using multiple conditions, they must be in the order *nzp*. Swapping the order will cause an error when assembling. This is quirk of the assembler
 
-
 ## Conclusion
+
+Branch instruction may or may not be *taken*, depending on the current value in the **Condition Code* register. The CC register is set each time ALU or Memory Load instruction execute. The CC from the previous instruction will be used by Branch instructions.
+
+If/Else and looping behavior can be created using labels, a control value, and the BR instruction.

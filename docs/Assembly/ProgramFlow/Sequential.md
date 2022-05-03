@@ -27,9 +27,10 @@ tags: []
 
 ## Introduction
 
+A program executing in sequence is not changing flow. It is executing each instruction in order from first to last
 ## Sequential Flow
 
-A program executing in sequence is not changing flow. It is executing each instruction in order from first to last
+Without any influence from user or data, a program will execute each instruction in order.
 
 While the program is performing operations on data from user input and/or data stored in memory, it is not jumping around in the code based on the data
 
@@ -65,6 +66,6 @@ These two code examples run top to bottom with no change in flow
 
 ![Sequential Flow Diagram](/images/AssemblyProgramming/ProgramFlow/Diagram_Sequential.png)
 
-
-
 ## Conclusion
+
+Sequential flow is the default. This occurs with there are no decisions being made in the code.

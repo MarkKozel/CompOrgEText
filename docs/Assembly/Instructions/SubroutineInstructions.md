@@ -1,6 +1,6 @@
 ---
-title: Subroutines Commands
-parent: Commands
+title: Subroutines Instructions
+parent: Instructions
 description: 
 pageClass: Topic
 tags: []
@@ -11,8 +11,12 @@ tags: []
 
 <KeyConcepts :ConceptArray= "[
   {
-    Concept: 'to do',
-    Details:'to do'
+    Concept: 'Subroutines are like Java functions',
+    Details:'They are small, self-contained code segments that perform a simple operation. They can take in data and send results back'
+  }, 
+  {
+    Concept: 'Main program and subroutines share the same registers',
+    Details:'LC-3 subroutines do not pass in parameters. The are written to expect the main program to pre-load one or more registers with data before calling. If there is an result to return, it is also placed ina register that the main program uses after returning'
   }
 ]" />
 

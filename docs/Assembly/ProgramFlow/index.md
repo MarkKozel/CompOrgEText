@@ -11,15 +11,10 @@ tags: []
 **{{ $frontmatter.description }}**
 
 ## Sequential Program Flow
-[Sequential Program Flow](Sequential)
+This is normal program execution. each instruction in order
 
 ## Conditional Program Flow
-[Conditional Program Flow](Conditional)
-
-- [IF Conditional Program Flow](Conditional_If)
+Programs can decide, while executing, to jump to a different section of the programs. If/Else is a common conditional flow example
 
 ## Iterative Program Flow
-[Iterative Program Flow](Iterative)
-
-- [For Loop Iterative Program Flow](Iterative_ForLoop)
-- [While Loop Iterative Program Flow](Iterative_WhileLoop)
+Based on some value, a program make execute the same set of instruction several times, until something changes. This is seen in loop flows like for-loop and while-loop behavior

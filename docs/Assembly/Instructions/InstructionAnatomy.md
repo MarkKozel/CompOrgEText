@@ -1,6 +1,6 @@
 ---
-title: Command Anatomy
-parent: Commands
+title: Instruction Anatomy
+parent: Instructions
 description: 
 pageClass: Topic
 tags: []
@@ -11,8 +11,16 @@ tags: []
 
 <KeyConcepts :ConceptArray= "[
 {
-  Concept:'Software in much more useful if it can interacts with users and other systems',
-  Details:'Accepting input and providing outputs to/from a user or other system allows software to solve more complicated problems.'
+  Concept:'Each instruction in LC-3 uses 16 bits',
+  Details:'Because the LC-3 is a 16-bit architecture, each instruction is 16 bits. These bits for each instruction are divided into parts that the CPU Controller can reference to orchestrate the CPU to complete each instruction'
+},
+{
+  Concept:'Each instruction takes multiple clock cycles to complete',
+  Details:'Depending on the complexity of each instruction, it will take varying clock cycles to complete an instruction'
+},
+{
+  Concept:'The CPU Controller follows a Fetch-Decode-Execute routine to execute instructions',
+  Details:'The CPU Controller follows a fix set of steps to complete each instruction. Starting with Fetching the instruction, decoding the 16 bits of the instruction, and executing it'
 }
 ]" />
 
@@ -186,3 +194,11 @@ For TRAP commands, the data returned from the Memory Interface is the address of
         1. Wait for Memory Interface to complete
 
 ## Conclusion
+
+Assembly instructions are made up of bit patterns that define the instruction (opcode) and parameters (operands). All LC-3 instructions are 16 bits in length, with the first 4 bits defining the opcode. The remaining bits can be used to identify data or modes used for that opcode
+
+Not all 16 bits are used in every instruction.
+
+The controller in the CPU requires multiple cycles to execute a single instruction. The number of cycles depends on the instructions. Simpler instructions take less cycles
+
+All ISAs follow a Fetch-Decode-Execute cycle to complete each instruction. Some instructions include additional steps, typically to interface to memory for data management.

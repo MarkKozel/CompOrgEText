@@ -128,3 +128,5 @@ Data is exchanged via special memory locations. This memory *buffer* is populate
 | Size of data exchanged can vary |  |
 
 ## Conclusion
+
+Standard input/output devices connect a computer to sensors, users, and other computers. To successfully share data, I/O devices must conform to standard protocols. These protocols are usually defined in each device's drives software.

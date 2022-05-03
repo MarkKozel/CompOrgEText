@@ -1,6 +1,6 @@
 ---
-title: Memory Access Commands
-parent: Commands
+title: Memory Access Instructions
+parent: Instructions
 description: 
 pageClass: Topic
 tags: []
@@ -11,8 +11,12 @@ tags: []
 
 <KeyConcepts :ConceptArray= "[
 {
-  Concept:'Software in much more useful if it can interacts with users and other systems',
-  Details:'Accepting input and providing outputs to/from a user or other system allows software to solve more complicated problems.'
+  Concept:'LC-3 has limited register space for ALU operations',
+  Details:'For long-term storage, memory is used as it is more plentiful than registers'
+},
+{
+  Concept:'Commonly, data is read from memory, processed, and stored back out',
+  Details:'The ALU can only operate on data in a register. So it is common to load a register with data, direct the ALU to modify that register, the write the results back to memory'
 }
 ]" />
 
@@ -258,3 +262,12 @@ This command does not require any memory reading or writing. The PCOffset9 value
 None.
 
 ## Conclusion
+
+Long-term data will be stored in memory. The CPU have limited register slots to retain values after an operation completes.
+
+A common procedure is:
+1. Read a value from memory into a register
+1. Use or modify that data while in the register
+1. Copy the update dat form register to memory
+
+LC-3 has 3 variations in loading and storing values ot memory. Each has a utility based on how you will be accessing memory (where the data is in memory). ```LD``` and ```ST``` are the common instruction. The other two (2) are used in some special situations.

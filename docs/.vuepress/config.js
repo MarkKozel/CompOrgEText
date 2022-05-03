@@ -94,27 +94,17 @@ module.exports = {
           ],
         },
         {
-          title: 'Commands',
-          path: '/Assembly/Commands',
+          title: 'Instructions',
+          path: '/Assembly/Instructions',
           collapsable: true,
           sidebarDepth: 4,
           children: [
-            'Commands/CommandAnatomy',
-            'Commands/ALUCommands',
-            'Commands/BranchingCommands',
-            'Commands/MemoryAccessCommands',
-            'Commands/TRAPRoutines',
-            'Commands/SubroutineCommands',
-          ],
-        },
-        {
-          title: 'BasicIO',
-          path: '/Assembly/BasicIO',
-          collapsable: true,
-          sidebarDepth: 4,
-          children: [
-            'BasicIO/StandardIO',
-            'BasicIO/LC3IO'
+            'Instructions/InstructionAnatomy',
+            'Instructions/ALUInstructions',
+            'Instructions/BranchingInstructions',
+            'Instructions/MemoryAccessInstructions',
+            'Instructions/TRAPRoutines',
+            'Instructions/SubroutineInstructions',
           ],
         },
         {
@@ -126,6 +116,16 @@ module.exports = {
             'ProgramFlow/Sequential',
             'ProgramFlow/Conditional',
             'ProgramFlow/Iterative',
+          ],
+        },
+        {
+          title: 'BasicIO',
+          path: '/Assembly/BasicIO',
+          collapsable: true,
+          sidebarDepth: 4,
+          children: [
+            'BasicIO/StandardIO',
+            'BasicIO/LC3IO'
           ],
         },
         {

@@ -11,8 +11,12 @@ tags: []
 
 <KeyConcepts :ConceptArray= "[
 {
-  Concept:'Software in much more useful if it can interacts with users and other systems',
-  Details:'Accepting input and providing outputs to/from a user or other system allows software to solve more complicated problems.'
+  Concept:'LC-3 has a Keyboard and Display device',
+  Details:'The keyboard allows a user to enter data into a user program. The display can show user prompts or resulting data'
+},
+{
+  Concept:'LC-3 devices are Synchronous and Polled',
+  Details:'When a user program interacts with a device, it must stop doing anything else, and wait for the device to be available. The user program can send or receive data, then continue executing other instructions'
 }
 ]" />
 
@@ -102,3 +106,7 @@ If a program did not check the KBSR before reading data from the KBDR, it may re
 Skipping the DSR check may result in corrupting the last data sent to the display, that is still being processed by the display device yet
 
 ## Conclusion
+
+LC-3 has a display output device and a keyboard input device. These I/O devices must be polled by user program to ensure they are ready to send/receive data with the user program.
+
+Each device has a well-known pair of *Status* and *Data* registers, defined by memory addresses. The user program and the devices reference these addresses to share status and data.
