@@ -10,9 +10,13 @@ tags: []
 **{{ $frontmatter.description }}**
 
 <KeyConcepts :ConceptArray= "[
+  {
+  Concept:'Programming Languages contain common elements',
+  Details:'Defining data, adding instructions, and commenting code are standard in programming languages'
+},
 {
-  Concept:'Natural Language',
-  Details:'Spoken and written communication developed and evolved over time, and used by humans'
+  Concept:'Programs include information used by the computer to execute correctly',
+  Details:'Program source code includes special instructions that identify the beginning and end of a program. This is required to enable the computer to know where to start and when to stop executing'
 }]" />
 
 ## Introduction
@@ -116,3 +120,7 @@ Line variable names in high-level programming languages, the developer can choos
 ![Anatomy Labels](/images/AssemblyProgramming/GettingStarted/Anatomy_Labels.png)
 
 ## Conclusion
+
+Like most programming languages, LC-3 has standard elements that make up a program's source code. Defining data, including instructions, and adding comments to code are common parts of a program.
+
+Identifying the start and end of the program are crucial for the environment that runs the program. Without these operations, the computer could not reliably execute the program.

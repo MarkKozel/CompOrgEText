@@ -12,21 +12,16 @@ tags: [LC-3, Editor, Simulate, hello world]
 This section uses the LC-3 Edit and Simulate tools to create, assemble, run, and debug assembly programs written to the LC-3 ISA specification.
 
 ## Download and Install LC-3
-[Download And Install LC-3](./DownloadAndInstall)
-Setup the LC-3 Tools for this Section
+Setup the LC-3 Tools for this course
 
 ## LC-3 Editor
-[LC-3 Editor](./LC3Edit)
-Creating and Assembling Source Code
+An introduction to the editing tools used to create LC-3 assembly programs
 
 ## LC-3 Simulate Environment
-[LC-3 Simulate](./LC3Simulate)
-Running and Examining Object Code
+Overview of the simulated LC-3 Hardware and Instruction Set Architecture (ISA)
 
 ## Your First LC-3 Program
-[Hello World](./HelloWorld)
 Creating and Assembling Your First LC-3 Program
 
 ## Anatomy of an LC-3 Program
-[Program Anatomy](./ProgramAnatomy.md)
 Breakdown of an LC-3 Program

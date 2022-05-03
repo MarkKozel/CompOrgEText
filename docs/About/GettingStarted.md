@@ -4,9 +4,9 @@
 
 The project uses [NodeJS (LTS version)](https://nodejs.org/en/download/), [VuePress 2.x](https://vuepress.vuejs.org/guide/getting-started.html), VueJS 2x (built in to VuePress), Markdown (built in to VuePress) git (latest version), [GitHub (online service)](https://github.com/), and [Netlify](https://www.netlify.com/) for basic development/modification workflows
 
-[Project GitHub site](https://github.com/MarkKozel/Comp142-EText)
+[Project GitHub site](https://github.com/MarkKozel/CompOrgEText)
 
-[Project Netlify Deployment Site](https://cs131.netlify.app/)
+[Project Netlify Deployment Site](https://comp-org-etext.netlify.app/)
 
 [Project Prototype Netlify Deployment Site](https://cs-131.netlify.app) - For Reference Only
 

@@ -11,6 +11,10 @@ tags: []
 
 <KeyConcepts :ConceptArray= "[
 {
+  Concept:'Modern computers continue to use a design from the 1940s',
+  Details:'John von Neumann designed a digital computer architecture, mimicking the human body, that is still used in todays computers.'
+},
+{
   Concept:'Software in much more useful if it can interacts with users and other systems',
   Details:'Accepting input and providing outputs to/from a user or other system allows software to solve more complicated problems.'
 }
@@ -84,3 +88,7 @@ When requesting data from Memory, the address of the requested RAMlocation is co
 ![von Neumann Model - I/O](/images/Foundations/vonNeumann/vonNeumannModel_IO.png)
 
 ## Conclusion
+
+Modern computer architecture is based primarily on John von Neumann's designed. It is made up of five (5) components that manage program execution, memory access, performing math and logic operations, interfacing to the outside world.
+
+With this simple and elegant configuration, this 1945's design continues to prevail. Only as we begin the next phase, quantum computers, are we likely to see von Neumann's design fade into history.

@@ -2,7 +2,7 @@
 title: Your First LC-3 Program
 description: Creating and Assembling Your First LC-3 Program
 pageClass: Topic
-tags: []
+tags: [hello world, first program, lc-3 example]
 ---
 
 # {{ $frontmatter.title }}
@@ -10,9 +10,13 @@ tags: []
 **{{ $frontmatter.description }}**
 
 <KeyConcepts :ConceptArray= "[
+    {
+  Concept:'Test Your Development Tools',
+  Details:'A simple program that outputs a string to the display is a quick way to test that the development tools are working'
+},
 {
-  Concept:'Natural Language',
-  Details:'Spoken and written communication developed and evolved over time, and used by humans'
+  Concept:'Hello, World! is a classic first program',
+  Details:'First recorded in 1978 in the C Programming Language Reference textbook. It is an ad-hoc standard first program'
 }]" />
 
 ## Introduction
@@ -33,18 +37,23 @@ Additionally, you will be exposed to a few of the standard conventions used in o
     .END
     ```
 
-    ::: whatsgoingon
-        Line 1 Defines the start of the program -and-
-               the starting memory location in to which the program will be loaded
-        Line 6 Defines the end of the program
-        Line 5 Created a memory reference called HW -and-
-               fills the memory locations with the characters "Hello, World !"
-        Lines 2 - 4 are the main program
-           Line 2 Loads the address of HW into the R0 register
-           Line 3 Prints "Hello, World !" into the LC-3 Console
-           Line 4 Ends the program
-    :::
-1. Save .asm source code file
+::: left
+Line 1 Defines the start of the program -and- the starting memory location in to which the program will be loaded
+
+Line 6 Defines the end of the program
+
+Line 5 Created a memory reference called HW -and- fills the memory locations with the characters "Hello, World !"
+
+Lines 2 - 4 are the main program...
+
+  Line 2 Loads the address of HW into the R0 register
+
+Line 3 Prints "Hello, World !" into the LC-3 Console
+
+Line 4 Ends the program
+:::
+
+3. Save .asm source code file
     1. Click File|Save
     1. Navigate to desired folder
     1. In File name: field, enter ‘HelloWorld.asm’, then click Save button
@@ -61,7 +70,7 @@ Assembling LC-3 Source Code converts it to Object code that the Simulate program
     Starting Pass 2…
     Pass 2 - 0 error(s)
     ```
-    :::whatsgoingon
+    :::whatsgoingon Assembler Passes
     The LC-s Editor includes an assembler, similar to the Java compiler, that converts your assembly code source (.asm file) into a runnable LC-3 object file (.obj)
 
     The assembler makes the first pass through the source code to verify the syntax is correct, find variable definitions, and ensure any pseudo-ops (like .ORIG) are in the right place
@@ -99,7 +108,7 @@ This indicates the program successfully ran because it output the “Hello, Worl
 “----- Halting the processor -----” is displayed as a result of the HALT command in the source code
 
 ### Re-Run the Hello World Program
-1. Click File | Reinitialze Machine
+1. Click File | Reinitialize Machine
     >All registers and counters are reset, and returns to memory location x3000
 
     >The Hello World program is no longer in memory.
@@ -107,3 +116,5 @@ This indicates the program successfully ran because it output the “Hello, Worl
 1. Repeat the Load and Run instructions, above
 
 ## Conclusion
+
+Entering source code into the editor, then assembling it results in and object file. This file is loaded into Simulate and run to execute it

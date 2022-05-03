@@ -90,6 +90,7 @@ module.exports = {
             'GettingStarted/LC3Edit',
             'GettingStarted/LC3Simulate',
             'GettingStarted/HelloWorld',
+            'GettingStarted/ProgramAnatomy',
           ],
         },
         {

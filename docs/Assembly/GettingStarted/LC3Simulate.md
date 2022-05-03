@@ -10,12 +10,18 @@ tags: []
 **{{ $frontmatter.description }}**
 
 <KeyConcepts :ConceptArray= "[
+  {
+  Concept:'LC-3 Virtual Machine',
+  Details:'The Simulate tool is a virtual hardware and architecture environment that allows students to peer into the hardware and low-level software to watch what is changing'
+},
 {
-  Concept:'Natural Language',
-  Details:'Spoken and written communication developed and evolved over time, and used by humans'
+  Concept:'Simulate is a Debugging Environment',
+  Details:'With the debugging tools, a student can execute single instructions, pausing between each to see what has changed in memory, IO devices, and in the registers. This set of tools is invaluable for both understanding the environment and finding bugs'
 }]" />
 
 ## Introduction
+
+Simulate is the part of LC-3 that actually executes your LC-3 programs. After assembling your source code in the LC-3 Editor, the resulting object file (.obj) is loaded into Simulate. The user can the run and step over each assembly instruction to see what is changing.
 
 ## Starting the Tools
 Double click on Simulate.exe to start the programs.
@@ -82,3 +88,7 @@ Random Access Memory (RAM) contains the program code and data. It also contains 
 - Reverse-engineered LC-3 Source Instruction
 
 ## Conclusion
+
+Simulate is a virtual environment for executing LC-3 programs. It has the capability to both Run programs and Debug them. Debugging is an important options for developers when testing programs or fixing problems.
+
+Simulate allows users to see what is happening in memory, general purpose registers, and the controller unit.
