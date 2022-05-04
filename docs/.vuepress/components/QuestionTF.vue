@@ -86,8 +86,10 @@ module.exports = {
         this.result = "Correct!";
         this.resultFeedback = `${this.rightAnswerFeedback}`;
       } else {
-        this.result = `Incorrect. The correct answer is ${this.answer}`;
-        this.resultFeedback = `${this.wrongAnswerFeedback}`;
+        this.result = `Incorrect`;
+        this.resultFeedback = this.wrongAnswerFeedback
+          ? this.wrongAnswerFeedback
+          : this.rightAnswerFeedback;
       }
     },
   },
