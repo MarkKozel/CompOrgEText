@@ -11,12 +11,12 @@ tags: []
 
 <KeyConcepts :ConceptArray= "[
 {
-  Concept:'Concept 1',
-  Details:'Details of concept 1'
+  Concept:'Analog is infinite',
+  Details:'Measurements such as voltage or temperature effectively have and infinite set of possible values. Digital, by contrast, is fixed at two (2) distinct possibilities'
 },
 {  
-  Concept:'Concept 2',
-  Details:'Details of concept 2' 
+  Concept:'Digital signals are best suited for modern computers',
+  Details:'Creating circuits to use digital signals and store binary values is a core component of modern computer architecture' 
 }
 ]" />
 
@@ -113,3 +113,7 @@ Transistors were, however, cheaper, more energy-efficient, and far more reliable
 <QuestionMC question="Which of the following is made up of digital values?" answer='D' AChoice="The tension of a spring" BChoice="Your current interest level in this reading" CChoice="Pressure you can apply to a car's break pedal" DChoice="Number of students on this class's Wait List" rightAnswerFeedback="Right! Since we can't have 1/2 students signing up for classes, this value is digital" wrongAnswerFeedback="Incorrect. That value can have ever an infinite amount of variations. Students on a wait list can only be a count of whole students, and never a number in-between"/>
 
 ## Conclusion
+
+Analog signals have an infinite number of possible values. Each may be a tiny bit different that the next, but they are measurably different.
+
+Digital signals have a fixed number of values, two (2). Digital signals are well suited for electronic circuits and can easily represent binary values.
