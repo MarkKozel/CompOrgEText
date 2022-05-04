@@ -1,6 +1,9 @@
 <template>
   <div class="question-mc">
-    <table class="questionTable" style="width: 100%">
+    <table
+      class="questionTable"
+      style="width: 100%"
+    >
       <tr>
         <!-- <td class="questionTd"> -->
         <p class="header"><b>Quick Question:</b> Choose One</p>
@@ -39,7 +42,10 @@
 
       <tr>
         <td>
-          <label v-if="CChoice" class="PossibleAnswers">
+          <label
+            v-if="CChoice"
+            class="PossibleAnswers"
+          >
             <input
               type="radio"
               name="radio"
@@ -52,7 +58,10 @@
           </label>
         </td>
         <td>
-          <label v-if="DChoice" class="PossibleAnswers">
+          <label
+            v-if="DChoice"
+            class="PossibleAnswers"
+          >
             <input
               type="radio"
               name="radio"
@@ -66,11 +75,14 @@
         </td>
       </tr>
 
-      <button v-if="picked" v-on:click="checkAnswer">Submit</button>
-      <p v-if="result">{{ result }}</p>
-      <!-- </td> -->
-      <!-- <td></td> -->
-      <!-- </tr> -->
+      <button
+        v-if="picked"
+        v-on:click="checkAnswer"
+      >Submit</button>
+      <div v-if="result">
+        <p class="mcresult"> {{ result }} </p>
+        <p class="mcresultfb">{{ resultFeedback }} </p>
+      </div>
     </table>
   </div>
 </template>
@@ -118,14 +130,17 @@ module.exports = {
       answered: false,
       picked: "",
       result: "",
+      resultFeedback: "",
     };
   },
   methods: {
     checkAnswer() {
       if (this.answer.toLowerCase() === this.picked.toLowerCase()) {
-        this.result = "Correct! " + this.rightAnswerFeedback;
+        this.result = "Correct!";
+        this.resultFeedback = `${this.rightAnswerFeedback}`;
       } else {
-        this.result = "Incorrect. " + this.wrongAnswerFeedback;
+        this.result = `Incorrect. The correct answer is ${this.answer}`;
+        this.resultFeedback = `${this.wrongAnswerFeedback}`;
       }
     },
   },
@@ -133,5 +148,14 @@ module.exports = {
 </script>
 
 <style scoped>
+.mcresult {
+  font-size: 20px;
+  padding: 5px 15px;
+}
+.mcresultfb {
+  font-size: 16px;
+  text-align: center;
+  padding: 5px 60px;
+}
 </style>
 

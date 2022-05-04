@@ -1,12 +1,15 @@
 <template>
   <div class="question-tf">
-    <table class="questionTable" style="width: 100%">
+    <table
+      class="questionTable"
+      style="width: 100%"
+    >
       <tr>
         <!-- <td> -->
         <p class="header"><b>Quick Question:</b> True/False</p>
 
         <p class="question">{{ question }}</p>
-<tr>
+      <tr>
         <td>
           <label class="PossibleAnswers">
             True
@@ -33,11 +36,15 @@
             <span class="checkmark"></span>
           </label>
         </td>
-</tr>
-        <button v-if="picked" v-on:click="checkAnswer">Submit</button>
-        <p v-if="result">{{ result }}</p>
-        <!-- </td> -->
-        <!-- <td></td> -->
+      </tr>
+      <button
+        v-if="picked"
+        v-on:click="checkAnswer"
+      >Submit</button>
+      <div v-if="result">
+        <p class="tfresult"> {{ result }} </p>
+        <p class="tfresultfb">{{ resultFeedback }} </p>
+      </div>
       </tr>
     </table>
   </div>
@@ -70,14 +77,17 @@ module.exports = {
       answered: false,
       picked: "",
       result: "",
+      resultFeedback: "",
     };
   },
   methods: {
     checkAnswer() {
       if (this.answer.toLowerCase() === this.picked.toLowerCase()) {
-        this.result = "Correct! " + this.rightAnswerFeedback;
+        this.result = "Correct!";
+        this.resultFeedback = `${this.rightAnswerFeedback}`;
       } else {
-        this.result = "Incorrect. " + this.wrongAnswerFeedback;
+        this.result = `Incorrect. The correct answer is ${this.answer}`;
+        this.resultFeedback = `${this.wrongAnswerFeedback}`;
       }
     },
   },
@@ -85,5 +95,14 @@ module.exports = {
 </script>
 
 <style scoped>
+.tfresult {
+  font-size: 20px;
+  padding: 5px 15px;
+}
+.tfresultfb {
+  font-size: 16px;
+  text-align: center;
+  padding: 5px 60px;
+}
 </style>
 
