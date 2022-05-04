@@ -11,16 +11,18 @@ tags: []
 
 <KeyConcepts :ConceptArray= "[
 {
-  Concept:'Concept 1',
-  Details:'Details of concept 1'
+  Concept:'Adder circuits combine bits',
+  Details:'A complex adder circuit performs 2\'s complement addition on 2 sets of bit strings. In the Full Adder configuration, this circuit manages the carry function'
 },
 {  
-  Concept:'Concept 2',
-  Details:'Details of concept 2' 
+  Concept:'Subtractor circuits reduce bits',
+  Details:'A complex subtractor circuit performs 2\'s complement subtraction on 2 sets of bit strings. In the Full Subtractor configuration, this circuit manages the borrow function' 
 }
 ]" />
 
 ## Introduction
+
+Performing mathematical operations is a fundamental capability for computers. In this section we review Addition and Subtraction circuits. There are other circuits to performs other basic and complex math operations.
 
 > [Download this example circuits](/downloads/Logisim/Arithmetic.circ) to examine in [Logisim Circuit Simulation Tool](http://www.cburch.com/logisim/)
 
@@ -164,5 +166,8 @@ Ripple Subtractor can be shown on a circuit diagram with multi-bit inputs and ou
 
 ![Half Adder Circuit](/images/Circuits/Arithmetic_RippleSubtractorComponent.png)
 
-
 ## Conclusion
+
+Single-bit addition and subtraction circuits are combined into multi-bit circuits that cas operate on multiple bit strings. And, these complex circuits can carry an borrow when needed.
+
+The *Ripple* effect of information flowing though these complex circuits quickly settle out to produce a final answer.

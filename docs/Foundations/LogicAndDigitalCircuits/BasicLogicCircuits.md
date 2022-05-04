@@ -11,8 +11,16 @@ tags: []
 
 <KeyConcepts :ConceptArray= "[
 {
-  Concept:'Transistors Are used to Construct Simple Logic Gate',
+  Concept:'Transistors are used to construct simple logic gate',
   Details:'Connecting 2, 4, or 6 Transistors in series and parallel, we have Basic Logic Circuits that behave like well-known logic functions'
+},
+{
+  Concept:'Basic circuits implement well-known logic operations',
+  Details:'AND, OR, and NOT logical operations are implements using transistors to create digital computers'
+},
+{
+  Concept:'Basic building blocks of digital computers',
+  Details:'Using a few different basic circuits, computer logic, storage, and control structures are created'
 }
 ]" />
 
@@ -200,3 +208,7 @@ Inverting the inputs to an AND gate, then inverting the output produces the same
 So, with only NOT and OR gates, you can produce a circuit that outputs AND results. Using NOT and AND gates will, similarly produce OR outputs.
 
 ## Conclusion
+
+Simple logic circuits are constructed of transistors. They behave like the boolean logic operations. AND, OR, and NOT are the core logic circuits. Variations of these circuits include NAND, NOR, and XOR
+
+Two (2) input circuits can be constructed to allow additional inputs into the logic calculation. By manipulating input and output signals, one logic circuit can be made to change it's behavior.

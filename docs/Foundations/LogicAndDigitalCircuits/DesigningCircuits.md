@@ -11,12 +11,12 @@ tags: []
 
 <KeyConcepts :ConceptArray= "[
 {
-  Concept:'Concept 1',
-  Details:'Details of concept 1'
+  Concept:'Truth table to Digital Circuit',
+  Details:'A truth table describing a complex set of interactions can be created in hardware using a 3-step algorithm'
 },
 {  
-  Concept:'Concept 2',
-  Details:'Details of concept 2' 
+  Concept:'Circuits can change behaviors',
+  Details:'Changing the inputs and outputs of a circuit can change how the circuit behaves' 
 }
 ]" />
 
@@ -190,3 +190,7 @@ To optimize the circuit diagram
 The remaining 1, 1, 0 AND Gate produces the *Product* for the 7th line of the truth table. The output of that AND gate it connected to both OR gates, producing the correct *Sum* result for each output on the truth table.
 
 ## Conclusion
+
+More complex circuits can be created from a truth table, using the 3-step algorithm. The resulting circuit will implement the truth table.
+
+Complex circuits can be optimized, primarily by removing redundant sections and decreasing unneeded components.

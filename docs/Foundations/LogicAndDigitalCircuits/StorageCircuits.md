@@ -11,12 +11,12 @@ tags: []
 
 <KeyConcepts :ConceptArray= "[
 {
-  Concept:'Concept 1',
-  Details:'Details of concept 1'
+  Concept:'Storing data requires \'remembering\' information',
+  Details:'While control circuits purposefully do not retain state, storage circuits must retain the value across clock cycles '
 },
 {  
-  Concept:'Concept 2',
-  Details:'Details of concept 2' 
+  Concept:'Storage circuits must reliably \'remember\' and \'forget\' values on demand',
+  Details:'It is important that these circuits can be set and rest, as required by the controlling logic. Storage circuits have built-in safeguards to retain and reset information' 
 }
 ]" />
 
@@ -195,3 +195,9 @@ And, NOT Gates must be in an odd-number configuration, to ensure the pulse occur
 :::
 
 ## Conclusion
+
+Storage 'memory' circuits retain the bit values between clock cycles. This required the controlling logic to reset these circuits if required.
+
+There are several basic flip-flop types that retain data. 
+
+Including write-enable circuits, a flip-flop can be protected from unexpected update.

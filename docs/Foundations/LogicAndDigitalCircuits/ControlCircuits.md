@@ -12,7 +12,7 @@ tags: []
 <KeyConcepts :ConceptArray= "[
 {
   Concept:'Control circuits manage data flow',
-  Details:''
+  Details:'To create an orderly flow of data, complex circuits are constructed to combine data, act as switchboards, and restrict data flow'
 },
 {  
   Concept:'Statelessness',
@@ -171,3 +171,9 @@ We can use the simpler multiplexer symbol keep our diagram clean
 Input value and selection signals work the same as above
 
 ## Conclusion
+
+Control circuits do not retain their state between clock cycles. In each cycles control circuits reset to a neutral state and react to the new set of inputs.
+
+Decoder circuits use input bits to select one and only one output. These devices effectively select one form several options
+
+Multiplexer (Mux) circuits are used to pick one of several external signals to allow through this circuit.
