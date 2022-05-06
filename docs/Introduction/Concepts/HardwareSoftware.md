@@ -12,12 +12,12 @@ tags: []
 <KeyConcepts :ConceptArray= "[
 {
   Concept:'High-Level vs Assembly Languages',
-  Details:'Details of concept 1'
+  Details:'An instruction in a High_Level language is typically compiled tinto many separate assembly language instructions'
 },
 {  
-  Concept:'Basic Assembly',
-  Details:'Details of concept 2' 
-}
+  Concept:'Software and Hardware work together at the Microarchitecture/ISA level',
+  Details:'At these low levels transistors, combined into circuits, are used in an orderly fashion to execute each instruction' 
+} 
 ]" />
 
 ## Introduction
@@ -68,5 +68,6 @@ In the above assembly program, the programmer must:
 1. End the program at line 25
 :::
 
-
 ## Conclusion
+
+All programs at any level are executed as assembly code by the microarchitecture. High-level languages allow programs to use complex instruction that are compiled into a set of assembly instructions before they can be executed.

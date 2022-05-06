@@ -1,9 +1,9 @@
 ---
 title: Analog and Digital Computers
 parent: Foundations
-description: TODO
+description: 
 pageClass: Topic
-tags: []
+tags: [Analog, Digital, Voltage, ]
 ---
 
 # {{ $frontmatter.title }}

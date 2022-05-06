@@ -20,7 +20,7 @@ tags: []
 },
 {
   Concept:'Algorithm',
-  Details:'In the context of Computer Science, re-writing a Problem in a form that minimizes the Ambiguity of Human/Natural Language'
+  Details:'In the context of Computer Science, describe the solution to a Problem in a form that minimizes the Ambiguity of Human/Natural Language'
 }
 ]" />
 
@@ -124,3 +124,7 @@ Algorithm to Make a Bagel
 1. Serve bagel halves
 
 ## Conclusion
+
+A general algorithm describes a procedure without using ambiguous terminology. It orders steps to successfully complete a procedure consistently.
+
+In Computer Science and algorithm is a high-level description of a solution that will be written in a programming language. The nouns used in this type of algorithm are likely names of data or functions. The verbs are commands or instructions that modify the data or execute functions
