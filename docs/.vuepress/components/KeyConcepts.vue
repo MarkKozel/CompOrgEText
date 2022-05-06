@@ -2,22 +2,38 @@
   <div class="key-concepts">
     <table style="border:none">
       <tr>
-        <td class="border" style="10%">
-          <p class="header">Key Concepts</p>
+        <td
+          class="KCborder"
+          style="10%"
+        >
+          <p class="KCheader">Key Concepts</p>
         </td>
 
-          <table class="inner" cellspacing="0" cellpadding="0">
-            <tr class="inner" v-for="concept in ConceptArray" :key="concept.Concept">
-              <td class="inner">
-                <p :id="concept.Concept" class="concept">{{ concept.Concept }}</p>
-              </td>
-              <td class="inner">
-                <p :id="concept.Concept" class="details">{{ concept.Details }}</p>
-              </td>
-            </tr>
-          </table>
+        <table
+          class="KCinner"
+          cellspacing="0"
+          cellpadding="0"
+        >
+          <tr
+            class="KCinner"
+            v-for="concept in ConceptArray"
+            :key="concept.Concept"
+          >
+            <td class="KCinner">
+              <p
+                :id="concept.Concept"
+                class="KCconcept"
+              >{{ concept.Concept }}</p>
+            </td>
+            <td class="KCinner">
+              <p
+                :id="concept.Concept"
+                class="KCdetails"
+              >{{ concept.Details }}</p>
+            </td>
+          </tr>
+        </table>
 
-        
       </tr>
     </table>
   </div>
@@ -29,38 +45,38 @@ module.exports = {
   props: {
     ConceptArray: {
       type: Array,
-      required: true
-    }
+      required: true,
+    },
   },
 
-  data: function() {
+  data: function () {
     return {
       rawData: {},
-      concepts: []
+      concepts: [],
     };
-  }
+  },
 };
 </script>
 
 <style scoped>
-.concept {
+.KCconcept {
   text-align: center;
   font-size: 16px;
   font-weight: bold;
   color: rgb(15, 22, 22);
   word-wrap: normal;
 }
-.details {
+.KCdetails {
   text-align: left;
   font-size: 16px;
   font-weight: normal;
   font-style: italic;
   color: black;
   word-wrap: normal;
-  margin:0px;
-  padding:0px;
+  margin: 0px;
+  padding: 0px;
 }
-.header {
+.KCheader {
   writing-mode: vertical-lr;
   /* text-orientation:sideways; */
   transform: rotate(180deg);
@@ -68,17 +84,17 @@ module.exports = {
   font-weight: bold;
   text-align: center;
   color: #0000ff;
-    margin:0px;
-  padding:0px;
+  margin: 0px;
+  padding: 1px;
 }
 
-.border {
+.KCborder {
   border-color: black;
   border-style: solid;
   border-width: 1px;
   border-spacing: 1px;
-  margin:0px;
-  padding:10px;
+  margin: 0px;
+  padding: 10px;
 }
 /* td.outer {
     border-color: black;
@@ -89,12 +105,12 @@ module.exports = {
   padding:25px;
 } */
 
-.inner {
+.KCinner {
   /* border-color: grey;
   border-style: solid;
   border-width: 0px; 
   border-spacing: 1px;*/
-  border:none;
+  border: none;
   /* margin:5px;
   padding:25px; */
   /* margin-left:50px */
