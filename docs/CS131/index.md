@@ -12,34 +12,30 @@ tags: []
 
 ![How to Use this Textbook](/images/UseTheTextbook.png)
 
-**Home** icon on the top-left will take you back to the start page.
+**Home** icon is located on the top-left and will take you back to the start page.
 
-**Site Search** field in the top-center will present a list of pages containing a word or phrase.
+**Site Search** field is located in the top-center and will present a list of pages containing text that match the search criteria.
 
-**NavBar** on the top-right allows you to choose a section. The underlined word notes which section is currently open in the *Main Content Area*
+**NavBar** is located on the top-right and allows you to choose a section. The underlined word denotes which section is currently open in the *Main Content Area*. Upon clicking a section, the *Main Content Area* displays the section's main page.
 
-**Sidebar Menu** Navigation on left side of page. Contains Topics that can be expanded
+**Sidebar Menu** is located on the left side of page. It contains a navigation tree to topics and topic units.
 
-**Topic** Main page for each Topic
+**Topics** are links that display content in the *Main Content Area*.
 
-**Topic Units** Unit pages under a given Topic
+**Topic Units** are anchor links to subsections within a topic in the *Main Content Area*.
 
-**Main Content Area** Topic or Unit page is displayed here
-
-The three (3) sections are available in the top-right Nav Menu. You will be presented with the Section Main Page
-
-To the left of the Section Main Page is the Sidebar Menu. Each Unit and Topic is accessible here by clicking on a name to expand or open a page
+**Main Content Area** displays the topic or topic unit content.
 
 ## Introduction
-This Text is divided into three (3) sections:
+This Text is divided into the following sections:
 
 1. [Introduction](../Introduction/index.md)
 1. [Foundations](../Foundations/index.md)
 1. [Assembly Programming](../Assembly/index.md)
 
-Each Section contains Topics. For example, the Introduction Section contains three Topics: Diversity, History, and Concents
+Each section contains topics. For example, the Introduction section contains the following topics: Diversity, History, and Concepts.
 
-Each Topic contains one (1) or more Units. These are full page information for that Unit. Example, the History Topic contains seven (7) Units: Prehistory, Dawn of Computers, 1st-4th Generation Computers, and Modern Computers.
+Each topic contains one (1) or more topic units. For example, the History Topic contains the following topic units: Prehistory, Dawn of Computers, 1st Generation Computers, 2nd Generation Computers, 3rd Generation Computers, 4th Generation Computers, and Modern Computers.
 
 ## History
 
