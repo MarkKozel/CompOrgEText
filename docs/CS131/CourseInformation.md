@@ -19,10 +19,10 @@
 
 ## Using these materials
 
-The **Navigation Bar** at the top-right is used to connect to each set of resources. Click on these links to access the desired resource
+Click resource links in the **Navigation Bar** at the top-right of the **Main Content Area** to access a set of topics.
 
-Once a resource is selected, use the **Sidebar** menu at the left of the resource page to select a section and subsection to locate the specific topic desired
+Once a resource link is selected, use the **Sidebar menu** at the left of the **Main Content Area** to select a topic and topic unit to review.
 
-Use the **Search** fields at the top-center to find all references to a keyword
+Use the **Search** field at the top-center to find all references to a keyword.
 
-The **Icon/Title** at the top-left will return you to the CS-131 start page
+The **Home icon/Title** at the top-left will return you to the CS 131 start page.
