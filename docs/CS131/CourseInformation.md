@@ -19,9 +19,9 @@
 
 ## Using these materials
 
-Click resource links in the **NavBar** at the top-right of the **Main Content Area** to access a set of topics.
+Click section links in the **NavBar** at the top-right of the **Main Content Area** to access a set of topics.
 
-Once a resource link is selected, use the **Sidebar menu** at the left of the *Main Content Area* to select a topic and topic unit to review.
+Once a section link is selected, use the **Sidebar menu** at the left of the *Main Content Area* to select a topic and topic unit to review.
 
 Use the **Site Search** field at the top-center to find all references to a keyword.
 
