@@ -12,11 +12,11 @@ tags: []
 
 ![How to Use this Textbook](/images/UseTheTextbook.png)
 
-**Home** icon on the top-left will take you back to the start page
+**Home** icon on the top-left will take you back to the start page.
 
-**Site Search** box in the top-center will present a list of pages containing a word or phrase
+**Site Search** field in the top-center will present a list of pages containing a word or phrase.
 
-**NavBar** on the top-right lets you choose a section. The highlight notes which section is currently open in the *Main Content Area*
+**NavBar** on the top-right allows you to choose a section. The underlined word notes which section is currently open in the *Main Content Area*
 
 **Sidebar Menu** Navigation on left side of page. Contains Topics that can be expanded
 
