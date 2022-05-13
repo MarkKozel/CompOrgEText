@@ -1,10 +1,9 @@
 # Diversity in Computer Science
-
-Currently...
-
-- Women make up 1/4 of computer and mathematics jobs
-- African Americans hold only 8% of computer and mathematics jobs
-- Hispanic or Latino people hold 7.5% of these same jobs
+**MARK: Please update this topic with more current information!!! Also, I'd like to review it again after you make these updates**
+The current makeup of computer and mathmatics jobs among these diverse groups are:
+- 25% women
+- 8% African Americans 
+- 7.5% Hispanic or Latino people
 
 As you may have noticed, the history of modern computer science is dominated by male scientists and mathematicians primarily from western countries. While this was likely driven by social norms and educational barriers from the mid 20th century, there are purposeful efforts to changes those norms, and to encourage gender, ethnicity, and class diversity in technology fields.
 
@@ -20,7 +19,7 @@ As of spring 2022, there are 14 BGC chapters in the US and 1 in Johannesburg, So
 
 [CDC](https://www.cdc-computing.org/)
 
-A joint project by Association for Computing Machinery (ACM) and Computing Research Association (CRA).  The CDC supports various initiatives to support minorities, women, and under-represented groups in technology fields. The support education, empowerment, and training to improve the diversity in computer-related fields.
+A joint project by Association for Computing Machinery (ACM) and Computing Research Association (CRA). The CDC supports various initiatives to support minorities, women, and under-represented groups in technology fields. The support education, empowerment, and training to improve the diversity in computer-related fields.
 
 ## Association for Computing Machinery (ACM)
 
