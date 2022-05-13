@@ -27,7 +27,7 @@ tags: []
 **Main Content Area** displays the topic or topic unit content.
 
 ## Introduction
-This Text is divided into the following sections:
+This text is divided into the following sections:
 
 1. [Introduction](../Introduction/index.md)
 1. [Foundations](../Foundations/index.md)
@@ -35,17 +35,17 @@ This Text is divided into the following sections:
 
 Each section contains topics. For example, the Introduction section contains the following topics: Diversity, History, and Concepts.
 
-Each topic contains one (1) or more topic units. For example, the History Topic contains the following topic units: Prehistory, Dawn of Computers, 1st Generation Computers, 2nd Generation Computers, 3rd Generation Computers, 4th Generation Computers, and Modern Computers.
+Each topic contains one or more topic units. For example, the History topic contains the following topic units: Prehistory, Dawn of Computers, 1st Generation Computers, 2nd Generation Computers, 3rd Generation Computers, 4th Generation Computers, and Modern Computers.
 
 ## History
 
-We'll learn a bit about the progress of computer technology through the ages. 
+We'll learn about:
+<bullet> The progress of computer technology through the ages
+<bullet> The core concepts of abstraction and algorithms as used in computer organization
+<bullet> The differences between analog and digital computer systems
+<bullet> How specific-use computers gave way to the general-use computer we use today
 
-Understand the core concepts of Abstraction and Algorithms as used in computer organization.
-
-Clarify the differences between Analog and Digital computer systems, and how Specific-Use computers gave way to the General-Use computer we use today.
-
-<QuestionMC question="Computers (an any form) have been around since about" answer='A' AChoice="2400 BCE" BChoice="1833" CChoice="1938" DChoice="Bill Gate's Birthday" rightAnswerFeedback="Right! Early computational devices like the abacus have been in use for millennia" wrongAnswerFeedback="well, all of these dates are significant milestones in computer history"/>
+<QuestionMC question="Computers (in any form) have been around since about" answer='A' AChoice="2400 BCE" BChoice="1833" CChoice="1938" DChoice="Bill Gate's Birthday" rightAnswerFeedback="Right! Early computational devices like the abacus have been in use for millennia" wrongAnswerFeedback="well, all of these dates are significant milestones in computer history!"/>
 
 ::: details Details for the above question
 
@@ -63,12 +63,14 @@ Clarify the differences between Analog and Digital computer systems, and how Spe
 
 To start, we will build a foundation of computer organization with the pioneers that, across the 20th century, created today's computer technology.
 
-Next we will need to brush up on our knowledge of the basic numeric and logical constructs that drive modern computer systems.
+Next, we'll need to brush up on our knowledge of the basic numeric and logical constructs that drive modern computer systems.
 
-Finally, we will dive down to the lowest levels of computer hardware, transistors. We'll understand how these simple devices create circuits to perform those numeric and logical operations. How those circuits are used to store information, route data, and ultimately create a microarchitecture that can execute complex programs.
+Finally, we will dive down to the lowest levels of computer hardware: transistors. We'll understand:
+<number 1> How transistors create circuits to perform numeric and logical operations. 
+<number 2> How circuits are used to store information, route data, and ultimately create a microarchitecture that can execute complex programs.
 
 ## Assembly Programming
 
-Finally, we will use a simple assembly language and development environment to create and run programs.
+In this part of the class, we'll use a basic assembly language and development environment to create and run programs.
 
-Using assembly, we will see behind the scenes of simple high-level programming languages (like Java) constructs like *If-Else*, *For* and *While* loops. Calling *Subroutines*, and interacting with *Input*/*Output* devices.
+Using assembly programming, we'll see the basic constructs of high-level programming languages (like Java), for example: *If-Else*, *For* and *While* loops, calling *Subroutines*, and interacting with *Input*/*Output* devices.
