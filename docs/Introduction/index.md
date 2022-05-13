@@ -1,7 +1,7 @@
 ---
 title: Introduction to Computer Organization Section
 parent: Computer Organization EText
-description: Description of main topics to be covered in this course
+description: This section describes the main topics to be covered in this course.
 pageClass: Section
 tags: []
 ---
@@ -10,11 +10,10 @@ tags: []
 **{{ $frontmatter.description }}**
 
 ## Diversity in Computer Science
-Featuring some current programs and organizations that support inclusions of all people in computing fields.
+The topic features some current programs and organizations that support inclusions of all people in computing fields.
 
 ## History
-A brief look at the elements and devices that have coalesced into todays general-purpose computer hardware.
+This topic takes a brief look at the elements and devices that have coalesced into today’s general-purpose computer hardware.
 
 ## Concepts
-
-Discuss concepts like Abstraction and Algorithms as used in computer organization. Bridge the gap between software and hardware, and define analog/digital computer and general/specific use hardware.
+This topic discusses concepts like abstraction and algorithms as used in computer organization. It bridges the gap between software and hardware, and defines analog/digital computer and general-/specific-use hardware.
