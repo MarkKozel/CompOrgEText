@@ -8,39 +8,97 @@ tags: [computer; history, pre, Pascaline, Antikythera Mechanism]
 # {{ $frontmatter.title }}
 **{{ $frontmatter.description }}**
 
+ Devices have been used to aid computation for thousands of years. The earliest known counting devices are clay tokens that were in use before 4000 BC. A given token might represent one sheep or ten sheep. To represent a count of 32 sheep, you would take three 10-sheep tokens and two 1-sheep tokens and seal them in a clay container.
 
-Devices have been used to aid computation for thousands of years. The earliest known counting devices are clay tokens that were in use before 4000 BC. A given token might represent one sheep or ten sheep. To represent a count of 32 sheep, you would take three 10-sheep tokens and two 1-sheep tokens and seal them in a clay container.
+<table>
+  <tr>
+    <td colspan="2">Counting stones</td>
+  </tr>
+  <td style="width:60%">
+  <figure>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Accountancy_clay_envelope_Louvre_Sb1932.jpg" /> 
+    <figcaption> &copy; Marie-Lan Nguyen / Wikimedia Commons </figcaption>
+    </figure>
+  </td>
+  </tr>
+</table>
 
-![Marie-Lan Nguyen / Wikimedia Commons](https://upload.wikimedia.org/wikipedia/commons/0/0a/Accountancy_clay_envelope_Louvre_Sb1932.jpg  =300x)
 
-**Counting stones**
+
+
+### Abacus
 
 By about 2500 BC, counting devices had been abstracted away from counting a particular thing and abacuses first appeared in Sumeria. These devices rely on the user moving beads or stones to represent numbers and to do arithmetic on them. Since then, many other forms of reckoning boards or tables have been invented. In a medieval European counting house, a checkered cloth would be placed on a table, and markers moved around on it according to certain rules, as an aid to calculating sums of money.
 
-![Wikimedia Commons](https://upload.wikimedia.org/wikipedia/commons/5/58/Traditional_Chinese_abacus_illustrating_the_suspended_bead_use.jpg  =450x)
 
-**An Abacus**
+<table>
+  <tr>
+    <td style="width:40%" >
+      Abaci were used in the ancient Near East, Europe, China, and Russia, centuries before the adoption of the Hindu-Arabic numeral system. The exact origin of the abacus has not yet emerged. It consists of rows of movable beads, or similar objects, strung on a wire. They represent digits. One of the two numbers is set up, and the beads are manipulated to perform an operation such as addition, or even a square or cubic root. 
+    </td>
+    <td style="width:60%">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/58/Traditional_Chinese_abacus_illustrating_the_suspended_bead_use.jpg " style="max-height:100%; max-width:100%"/> 
+      <figcaption> &copy; Jccsvq, Wikimedia Commons CC0 1.0 Universal (CC0 1.0) (PH-3, BG-3)</figcaption>
+    </td>
+  </tr>
+</table>
 
 
 
-The ancient Greeks used complex devices to compute the timing of astrological events Antikythera mechanism and the astrolabe from ancient Greece. The **Antikythera mechanism** was a clockwork device of complexity that would not be seen again until the 14th century.
 
-![Wikimedia Commons](/images/History/800px-Antikythera_model_front_panel_Mogi_Vicentini_2007.JPG =450px)  
-By I, <a href="//commons.wikimedia.org/w/index.php?title=User:Mogi&amp;action=edit&amp;redlink=1" class="new" title="User:Mogi (page does not exist)">Mogi</a>, <a href="https://creativecommons.org/licenses/by/2.5" title="Creative Commons Attribution 2.5">CC BY 2.5</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=2523740">Link</a>
+### Antikythera Mechanism 
+The ancient Greeks used complex devices to compute the timing of astrological events and the astrolabe from ancient Greece. The [The Antikythera Mechanism](http://en.wikipedia.org/wiki/Antikythera_mechanism) was a clockwork device of complexity that would not be seen again until the 14th century. It was an ancient Greek hand-powered orrery, described as the oldest example of an analogue computer used to predict astronomical positions and eclipses decades in advance. It could also be used to track the four-year cycle of athletic games which was similar to an Olympiad, the cycle of the ancient Olympic Games.
+
+<table>
+  <tr>
+    <td style="width:70%" >
+      A 2007 recreation of the Antikythera Mechanism, thought to have been created just around 200 BCE
+    </td>
+    <td style="width:30%">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Antikythera_model_front_panel_Mogi_Vicentini_2007.JPG/220px-Antikythera_model_front_panel_Mogi_Vicentini_2007.JPG" style="max-height:100%; max-width:100%"/> 
+      <figcaption> &copy; I, Mogi, CC BY 2.5</figcaption>
+    </td>
+  </tr>
+</table>
 
 
-[The Antikythera Mechanism](http://en.wikipedia.org/wiki/Antikythera_mechanism)
+### The Pascaline
+In the 1600s, the first mechanical calculators were developed. A teenager named Blaise Pascal (later to become a famous mathematician) was one of their inventors. Pascal began to work on his calculator in 1642 when he was only 19 years old. He had been assisting his father, who worked as a tax commissioner and sought to produce a device that could reduce his workload. The device he built, called  
 
 
-In the 1600s, the first mechanical calculators were developed. A teenager named Blaise Pascal (later to become a famous mathematician) was one of their inventors. Pascal began to work on his calculator in 1642 when he was only 19 years old. He had been assisting his father, who worked as a tax commissioner and sought to produce a device that could reduce his workload. The device he built, called the **Pascaline** could do addition and subtraction including automatically carrying from one place to the next. Many other mathematicians of the 17th century tried their hand at building their own calculators, including [Gottfried Leibniz](http://en.wikipedia.org/wiki/Gottfried_Leibniz) who described a machine that would be implemented using `binary numbers`.
+<table>
+  <tr>
+    <td style="width:60%" >
+      The Pascaline could do addition and subtraction including automatically carrying from one place to the next.
+    </td>
+    <td style="width:40%">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Pascaline-CnAM_00823-0003-IMG_6509.JPG" style="max-height:100%; max-width:100%"/> 
+      <figcaption> &copy; Rama, CC BY-SA 3.0 FR, via Wikimedia Commons </figcaption>
+    </td>
+  </tr>
+</table>
 
-![Rama, CC BY-SA 3.0 FR, via Wikimedia Commons](https://upload.wikimedia.org/wikipedia/commons/4/4d/Pascaline-CnAM_00823-0003-IMG_6509.JPG =450x)
 
-**The Pascaline**
+### Binary Numbers
 
-![Gottfried Wilhelm Leibniz, Public domain, via Wikimedia Commons](https://upload.wikimedia.org/wikipedia/commons/a/ac/Leibniz_binary_system_1703.png =450x)
+Many other mathematicians of the 17th century tried their hand at building their own calculators, including [Gottfried Leibniz](https://en.wikipedia.org/wiki/Gottfried_Leibniz) who described a machine that would be implemented using `binary numbers`.
 
-**Leibniz's notes on binary numbers**
+<table>
+  <tr>
+    <td colspan="2">Leibniz's notes on binary numbers</td>
+  </tr>
+  <tr>
+    <td style="width:50%" >
+      Leibniz also refined the binary number system, which is the foundation of nearly all digital (electronic, solid-state, discrete logic) computers, including the Von Neumann architecture
+    </td>
+    <td style="width:50%">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Leibniz_binary_system_1703.png" style="max-height:100%; max-width:100%"/> 
+      <figcaption> Public domain, via Wikimedia Commons </figcaption>
+    </td>
+  </tr>
+</table>
+
+
 
 <hr>
 
