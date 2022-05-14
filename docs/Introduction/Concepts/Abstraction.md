@@ -12,23 +12,23 @@ tags: []
 <KeyConcepts :ConceptArray= "[
 {
   Concept:'Why Use Abstraction',
-  Details:'Abstraction help understand complex systems'
+  Details:'Abstraction helps understand complex systems'
 },
 {  
   Concept:'Computer Organization Abstraction Layers',
-  Details:'Starting with the Problem a computer can solve we can define the layers of abstraction that end with circuits and transistors' 
+  Details:'Starting with the problem a computer can solve, we can define the layers of abstraction that end with circuits and transistors' 
 }
 ]" />
 
 ## Introduction
-Humans, by default, understand the world through classifying and grouping information about the world in which we live. Associating items based on similarities and differences helps us communicate our understandings of our world. It could be argued that this capability of humans is something that sets us apart from other animals.
+Humans understand the world through classifying and grouping information, associating items based on similarities and differences. This form of organization, called abstraction, helps us communicate concepts and ideas for ourselves and between each other. 
 
-A key tool to manage information and our understanding of complex things is Abstraction. In effect, we can group related items by identifying traits that are similar. We then associate items that have that trait, and separate them from items that do not possess that trait
+Dividing larger groups into smaller groups based on similar traits is know as abstraction layering, Once divided into groups, each group can be sub-divided into other groups, based on a more specific trait shared among items, further defining them. This process of sub-dividing can continue with more specific traits until we have reached a level of detail that is useful...FOR WHAT?
 
-Once divided into groups, each group can be sub-divided based in a more specific trait, further defined the items. This process of sub-dividing can continue with more specific traits until we have reached a level of detail that is useful
+It could be argued that thinking in abstraction is a capability that sets humans apart from other animals.
 
 ## Why Use Abstraction
-A key element to learning and communicating elements in the physical world is our ability to create abstraction layers. That is, defining different levels of detail about an element to be used in different contexts
+A key element to learning and communicating elements in the physical world is our ability to create abstraction layers. That is, defining different levels of detail about an element to be used in different contexts.
 
 ::: details Abstraction Example
 If you were describing email to a person, if would be helpful to know their understanding of things like the Internet, computers, web browsers, office memos, etc
@@ -58,11 +58,11 @@ You have likely encountered the Biological Life Taxonomy layers of abstraction i
     </tr>
 </table>
 
-Abstraction is a tool used to communication and understand an item or concept. Teaching mathematics in public school relies on abstraction to expose students to the complex world of math, slowly, over several years. From kindergarten, where students learn numbers, to Jr High, where students are exposed to geometry and trigonometry, and on to high school where calculus is taught.
+Abstraction is a tool used to communicate and understand an item or concept. Teaching mathematics in public school relies on abstraction to expose students to the complex world of math, slowly, over several years. From kindergarten, where students learn numbers, to junior high school, where students are exposed to geometry and trigonometry, and on to high school where calculus is taught.
 
-When moving between layers, you can express the transition in one (1) or two (2) ways:
+When moving between layers, we can express the transition in one (1) or two (2) ways:
 
-- Moving to a more specific layer (down), say the Higher level *has* Lower level in it
+- Moving to a more specific layer (down), say the Higher level *has* Lower levels in it
 >A Kingdom *has* Phylums
 - Moving to a less specific layer (up), say the Lower level *is part of the* Higher level
 >A Phylum *is* part of the Kingdom
