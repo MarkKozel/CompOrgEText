@@ -1,7 +1,7 @@
 ---
 title: Foundations Section
 parent: Computer Organization EText
-description: Building an understanding of core computer hardware/software concepts, standards, and components present on modern-day computers
+description: This section provides an understanding of core computer hardware/software concepts, standards, and components present on modern-day computers
 pageClass: Section
 tags: []
 ---
@@ -10,7 +10,7 @@ tags: []
 **{{ $frontmatter.description }}**
 
 ## Pioneers
-While computers have been evolving since the humans developed numbers and counting in fingers, modern computers have their roots in 20th century.
+While computers have been evolving since the humans developed numbers and counting on fingers, modern computers have their roots in the 20th century.
 
 Even before the technology existed to build a digital computer, scientists were developing the theories and designs that would eventual create the modern computer. Among these scientists are a few key people that layed the foundation upon which today's technology-rich world is built.
 
