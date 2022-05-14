@@ -15,7 +15,7 @@ tags: [concepts]
 ## Abstraction
 A key element to learning and communicating elements in the physical world is our ability to create abstraction layers, that is: defining different levels of detail about an element to be used in different contexts.
 
-In this unit, we will discuss #abstraction# in general terms, and, introduce the Abstraction Hierarchy of Computer Organization.
+In this unit, we will discuss abstraction in general terms, and, introduce the Abstraction Hierarchy of Computer Organization.
 
 [Abstraction Unit](./Abstraction)
 
