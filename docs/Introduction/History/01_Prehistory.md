@@ -61,7 +61,7 @@ The ancient Greeks used complex devices to compute the timing of astrological ev
 
 
 ### The Pascaline
-In the 1600s, the first mechanical calculators were developed. A teenager named Blaise Pascal (later to become a famous mathematician) was one of their inventors. Pascal began to work on his calculator in 1642 when he was only 19 years old. He had been assisting his father, who worked as a tax commissioner and sought to produce a device that could reduce his workload. The device he built, called  
+In the 1600s, the first mechanical calculators were developed. A teenager named Blaise Pascal (later to become a famous mathematician) was one of their inventors. Pascal began to work on his calculator in 1642 when he was only 19 years old. He had been assisting his father, who worked as a tax commissioner and sought to produce a device that could reduce his workload. 
 
 
 <table>
