@@ -44,15 +44,13 @@ By about 2500 BC, counting devices had been abstracted away from counting a part
 </table>
 
 
-
-
 ### Antikythera Mechanism 
 The ancient Greeks used complex devices to compute the timing of astrological events and the astrolabe from ancient Greece. The [The Antikythera Mechanism](http://en.wikipedia.org/wiki/Antikythera_mechanism) was a clockwork device of complexity that would not be seen again until the 14th century. It was an ancient Greek hand-powered orrery, described as the oldest example of an analogue computer used to predict astronomical positions and eclipses decades in advance. It could also be used to track the four-year cycle of athletic games which was similar to an Olympiad, the cycle of the ancient Olympic Games.
 
 <table>
   <tr>
     <td style="width:70%" >
-      A 2007 recreation of the Antikythera Mechanism, thought to have been created just around 200 BCE
+      A 2007 recreation of the Antikythera Mechanism, thought to have been originally created just around 200 BCE
     </td>
     <td style="width:30%">
       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Antikythera_model_front_panel_Mogi_Vicentini_2007.JPG/220px-Antikythera_model_front_panel_Mogi_Vicentini_2007.JPG" style="max-height:100%; max-width:100%"/> 
