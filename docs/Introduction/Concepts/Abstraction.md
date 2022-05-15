@@ -74,16 +74,16 @@ Within Computer Organization, we use a set of abstraction levels that start with
 
 |Abstraction Layer|Description|Move Down|Move Up|
 |-|-|-|-|
-|Problem|Defining a thing to solve using Natural Language|A Program can be *Stated* as an Algorithm|-|
-|Algorithm|Set of steps that that solve a Problem without the ambiguity of Human Language|An Algorithm is *Implemented* as a Program|An Algorithm ** a Problem|
-|Program|Data, Functions, and Syntax of a chosen programming language that executes an Algorithm|A Program is *Rendered* into an Instruction Set Architecture|A Program *Realizes* an Algorithm|
+|Problem|Defining a thing to solve using Natural Language|A Program can be *stated* as an Algorithm|-|
+|Algorithm|Set of steps that that solve a Problem without the ambiguity of Human Language|An Algorithm is *implemented* as a Program|An Algorithm ** a Problem|
+|Program|Data, functions, and syntax of a chosen programming language that executes an Algorithm|A Program is *Rendered* into an Instruction Set Architecture|A Program *realizes* an Algorithm|
 |||||
-|Instruction Set Architecture|Instructions and Data of an Assembly Language that implements a Program|An Instruction Set Architecture is *Orchestrated* by a Microarchitecture|A Instruction Set Architecture *Executes* a Program|
-|Microarchitecture|Logic, Storage, and Control that executes ISA instructions|A Microarchitecture *Manages* Circuits|A Microarchitecture *Implement* an Instruction Set Architecture|
-|Circuits|Components that are combined to Construct Microarchitecture elements|Circuits are *Made* from Devices|Circuits *Implement* a Microarchitecture|
-|Devices|Electrical structures that Provide digital representations of Circuit functions and behaviors|-|Devices *Implement* Circuits|
+|Instruction Set Architecture|Instructions and data of an Assembly Language that implements a Program|An Instruction Set Architecture (ISA) is *orchestrated* by a Microarchitecture|An Instruction Set Architecture *executes* a Program|
+|Microarchitecture|Logic, storage, and control that executes ISA instructions|A Microarchitecture *manages* Circuits|A Microarchitecture *implements* an ISA|
+|Circuits|Components that are combined to construct Microarchitecture elements|Circuits are *made* from Devices|Circuits *implement* a Microarchitecture|
+|Devices|Electrical structures that provide digital representations of Circuit functions and behaviors|-|Devices *implement* Circuits|
 
-There is a gap in these abstraction layers between **Program** and **Instruction Set Architecture**. This is because the first three (3) are a specific thing and the last four (4) are general-purpose things
+The gap in between **Program** and **Instruction Set Architecture** exists because the first three abstraction layers are specific things and the last four are general-purpose things.
 
 Problem, Algorithm, and Programs might be a specific item that calculates the next prime number.
 
@@ -91,11 +91,11 @@ The Instruction Set Architecture down to Devices are all a set of fixed software
 
 In addition, The transition from Problem to Algorithm is interesting. A problem is expressed as a deficiency or need, whereas the Algorithm describes a way to avoid or fix that Problem.
 
-In Computer Organization will will focus on the Instruction Set Architecture (ISA) layer, But first we needs to understand how Devices create Circuits, that make the Microarchitecture needed to support the ISA.
+In Computer Organization, we'll focus on the Instruction Set Architecture (ISA) layer. But first, we need to understand how Devices create Circuits, that make the Microarchitecture needed to support the ISA.
 
 
 ## Conclusion
 
-We used abstraction to explain complex things at an appropriate level. That level depends on the current understanding of the audience. In a classroom, the instructor might choose to introduce a new topic by discussing a high-level aspect of the topic, then add detail to the discussion to slowly reveal the more subtile aspects.
+We learned that using abstraction explains complex concepts to the current understanding of a specific audience. For example, in a classroom, the instructor might choose to introduce a new topic by discussing a high-level aspect of the topic, then add detail to the discussion to slowly reveal the more subtile aspects.
 
-Abstraction layers in Computer Organization start with a Problem to be solved and expends that problem (given that the problem is solved using a computer) to a Program that is rendered in the computer's ISA that ultimately gets represented in Devices
+Abstraction layers in Computer Organization start with a Problem to be solved and presents that problem (given that the problem is solved using a computer) to a Program that is rendered in the computer's ISA that ultimately gets represented in Devices.
