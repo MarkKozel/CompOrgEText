@@ -16,7 +16,7 @@ tags: []
 },
 {
   Concept:'Ambiguity',
-  Details:'Imprecise nature of a construct. For Natural Language, how individuals interprets the meaning or intent of a word or phrase'
+  Details:'Imprecise nature of a construct. For Natural Language, how individuals interpret the meaning or intent of a word or phrase'
 },
 {
   Concept:'Algorithm',
@@ -26,19 +26,21 @@ tags: []
 
 ## Introduction
 
-Our world functions on sets of ordered steps, organized is an efficient and effective sequence to reach some solution. Changing the order and the result is likely to be different
+Computers function on sets of ordered steps, organized in an efficient and effective sequence to reach some solution. Changing the order will likely result with a different solution.
 
-These groups of steps make up an algorithm that complete a cycle
+These groups of steps make up an Algorithm that completes a cycle.
 
 ### Everyday College Course Example
 
 ::: details Algorithm Example
-They typical college class flow can be described as the following algorithm. This cycle would repeat for each new chapter or topic
+They typical college class flow can be described as the following Algorithm: 
 1. Instructor lectures on new material
 2. Students complete quiz to see they understand
 3. Instructor provide feedback on commonly missed questions
 4. Students complete assignment to put their understanding to the test
 5. Instructor provides feedback on assignment to ensure students understanding
+
+This cycle would repeat for each new chapter or topic.
 :::
 
 Algorithms can be written at different levels of detail (Abstraction Levels) depending on the audience or purpose of the algorithm
