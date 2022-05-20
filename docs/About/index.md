@@ -6,7 +6,7 @@ This online textbook was initially created for use at Allan Hancock College in S
 The intend of this resource is to provide current, clear, free, and interactive information on the subject matter for the growing and diverse computer science student population.
 :::
 
-It is intended to be used for CS-131, Computer Organization, at Allan Hancock College, but was created to be modified to other college-level Computer Organization courses. Is is provided to students as a live web resource that can be easily updated.
+It is intended to be used for CS 131, Computer Organization, at Allan Hancock College, but was created to be modified to other college-level Computer Organization courses. Is is provided to students as a live web resource that can be easily updated.
 
 It was created under the CC ECHO grant, funded by the US Department of Education
 

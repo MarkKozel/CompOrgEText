@@ -1,15 +1,20 @@
 # First Impression Main Page:
 
-CS 131 and CS-131 and other classes you refer to use inconsistent dashing. You’ll need to decide how you want to use the dash when referring to class name and number.
+**Fixed**
+CS 131 and CS 131 and other classes you refer to use inconsistent dashing. You’ll need to decide how you want to use the dash when referring to class name and number.
 
 There are just way too many dashes happening on this page - just sayin’.
 
+**I will consider changing**
 Thumbnail graphic for main page is too busy. I can’t see what it is or how it relates to computer science. The graphic should communicate where it will take me.
 
+**Fixed**
 Inconsistent use of acronyms. For example, you have Associate of Arts (AA) but you don’t put an acronym for Associate of Science. In some of the pages throughout the text book, you use acronyms and yet you do not spell them out.
 
+**Fixed**
 On the main page, I’m not sure why you say Degree / Course of Study. What’s the difference? Is this lingo I’m unfamiliar with? In the text following you use “-or-“ and I’m not sure why you do that. You can either explain it to me or you can change it.
 
+**Fixed - removed (), can't make make links on this page**
 The Author’s email address should not be in parentheses and should be a clickable link. Also under Author is Math Science - Computer Science. I don’t understand why that is there and not under another title called Department. These should probably also link to the department page/pages.
 
 First Impression Get Started:

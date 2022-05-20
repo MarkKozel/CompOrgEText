@@ -8,14 +8,14 @@
 |[Doc Review Site](https://comp-org-etext-doc-review.netlify.app/)|[![Netlify Status](https://api.netlify.com/api/v1/badges/924c0833-cb75-495d-b875-f49bcf844bc7/deploy-status)](https://app.netlify.com/sites/comp-org-etext-doc-review/deploys)|
 
 ## Project
-Create a set of online resources to replace current textbook for CS-131, Computer Organization at Allan Hancock
+Create a set of online resources to replace current textbook for CS 131, Computer Organization at Allan Hancock
 
 Use [VuePress](https://vuepress.vuejs.org/) Vue-based static site generator, [Markdown](https://daringfireball.net/projects/markdown/), and [Vue](https://vuejs.org/) interactive element to create an online, interactive, and searchable set of resources for college students pursuing a degree in Computer Science
 
 Additionally, this project will be structures to make integration into other college Computer Science programs simpler and flexible
 
 **Proposal**
-## CS-131 Course Info:
+## CS 131 Course Info:
 Basics of computer Number Systems, Logic Operations, Computer Electronics from transistors to CPUs
 
 Instruction Set Architecture (ISA) and Assembly Language Programming using the Little Computer 3 (LC-3) ISA emulator run on Windows PCs
@@ -82,7 +82,7 @@ Reverted to VuePress 1 as the beta is still a problem
 
 Created basic VuePress site with images and styles from prototype site. Created new Netlify site w/ Auto Deploy from Github push
 
-20210901 - CC ECHO Grant awarded for completion of COMP-142/CS-131 OER Course Material
+20210901 - CC ECHO Grant awarded for completion of COMP-142/CS 131 OER Course Material
 
          - Adding Jest fro Vue Component Testing. Will look into Cypress for E2E testing for CI/CD testing
 
