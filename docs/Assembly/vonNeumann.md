@@ -2,7 +2,7 @@
 title: von Neumann Model
 parent: Assembly
 description: Interacting with devices outside of the ISA
-pageClass: Topic
+pageClass: Unit
 tags: []
 ---
 

@@ -20,35 +20,38 @@ The Author’s email address should not be in parentheses and should be a clicka
 First Impression Get Started:
 
 The layout introduced in Course Organization needs to adhere all the way through the book, specifically the color scheme. Here are some of the pages I noticed that weren’t styled to the colors:
-•	Course Organization
-•	Course Rationale
-•	Diversity and it’s topic units/subtopics
-•	All topic units in Introduction > History
-•	All topic units in Introduction > Concepts
-•	The von Neumann Model
-•	Program Flow
-•	All the pages under About
+•	Course Organization **Fixed**
+•	Course Rationale **Fixed**
+•	Diversity and it’s topic units/subtopics **Fixed**
+•	All topic units in Introduction > History **Fixed**
+•	All topic units in Introduction > Concepts **Fixed**
+•	The von Neumann Model **Fixed**
+•	Program Flow **TODO. Not working as expcted**
+•	All the pages under About **Won't Do. These pags of not part of the book's course materials, only nomenclature**
 
-Call objects on the page by their designated term consistently. For example, you have a graphic in Course Organization that indicates the top right as the NavBar. In the same page, you call that same object a Nav Menu and in the next topic, Course Information, you call it the Navigation Bar.
+Diversity - MARK: Please update this topic with more current information!!! Also, I'd like to review it again after you make these updates
 
-Definitions for the objects on the page can be improved. I will work on these.
 
-Under History, the Answer to the Question doesn’t match what you said in the section on History under Introduction. You say 2400 BCE is the answer when in History, it says 5000 years of technological advancement and in the Prehistory subsection, you say the clay counting tool was used…which was in 4000 BCE. Also, the question has a typo in the parentheses. 
+**I thnk you already did this** Call objects on the page by their designated term consistently. For example, you have a graphic in Course Organization that indicates the top right as the NavBar. In the same page, you call that same object a Nav Menu and in the next topic, Course Information, you call it the Navigation Bar.
 
-It’s really hard to get back to this page from another page.
+**OK, cool** Definitions for the objects on the page can be improved. I will work on these.
+
+**Fixed** Under History, the Answer to the Question doesn’t match what you said in the section on History under Introduction. You say 2400 BCE is the answer when in History, it says 5000 years of technological advancement and in the Prehistory subsection, you say the clay counting tool was used…which was in 4000 BCE. Also, the question has a typo in the parentheses. 
+
+**Fixed, I think after correcting an error** It’s really hard to get back to this page from another page.
 
 First Impression of Introduction
-The sidebar menu is different from other sidebar menus: spacing and the font. Please correct.
+**TODO I will think about this one. It is not part of the course materals** The sidebar menu is different from other sidebar menus: spacing and the font. Please correct.
 
-The format of Introduction, Main, and Conclusion is not used here. Navigation within the History page to the linked topic unit pages are different, too.
+**It is not part of the course materals** The format of Introduction, Main, and Conclusion is not used here. Navigation within the History page to the linked topic unit pages are different, too.
 
-Under Diversity, you have bulleted list of three items that discuss metrics of women and people of color. The first bullet uses a fraction, the second use percentages. You need to stick to one type of unit when listing these, as they share a list, and therefore, are somewhat related (parallelism).
+**Fixed by you** Under Diversity, you have bulleted list of three items that discuss metrics of women and people of color. The first bullet uses a fraction, the second use percentages. You need to stick to one type of unit when listing these, as they share a list, and therefore, are somewhat related (parallelism).
 
-For Prehistory, you need to define what that is because if I asked students what the difference between Prehistory and History, how confident are you that they’d know? 
+**TODO - redesigning** For Prehistory, you need to define what that is because if I asked students what the difference between Prehistory and History, how confident are you that they’d know? 
 
-Concepts has a Conclusion title, but no content beneath it.
+**TODO** Concepts has a Conclusion title, but no content beneath it.
 
-The Concepts Key’s sideways text overlaps the definitions and are difficult to read in my browser (Safari). 
+**Fixed, please check in Safari again** The Concepts Key’s sideways text overlaps the definitions and are difficult to read in my browser (Safari). 
 
 
 # Getting Started and Introduction 
@@ -62,18 +65,19 @@ Course Organization > Introduction: Do you want to call a section “Assembly”
 
 Course > Introduction: Diversity in Computer Science <-This topic unit does not match the topic title.
 
+**Fixed**
 Course Organization > History: I didn’t know how to put bullets into the text, but you’ll see where I wanted you to put bullets:
 #History
 We'll learn about:
-<bullet> The progress of computer technology through the ages
-<bullet> The core concepts of abstraction and algorithms as used in computer organization
-<bullet> The differences between analog and digital computer systems
-<bullet> How specific-use computers gave way to the general-use computer we use today
+- The progress of computer technology through the ages
+- The core concepts of abstraction and algorithms as used in computer organization
+- The differences between analog and digital computer systems
+- How specific-use computers gave way to the general-use computer we use today
 
 Course > Foundations: I didn’t know how to put numbered items in the text, but you’ll see where I wanted to put them:
 Finally, we will dive down to the lowest levels of computer hardware: transistors. We'll understand:
-<number 1> How transistors create circuits to perform numeric and logical operations. 
-<number 2> How circuits are used to store information, route data, and ultimately create a microarchitecture that can execute complex programs.
+1. How transistors create circuits to perform numeric and logical operations. 
+1. How circuits are used to store information, route data, and ultimately create a microarchitecture that can execute complex programs.
 
 Diversity in Computer Science
 The current makeup: is that in the U.S. or in the world?
