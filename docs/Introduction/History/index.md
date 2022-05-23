@@ -2,7 +2,7 @@
 title: History
 parent: Introduction
 description: 5000 years of technological Advancement
-pageClass: Section
+pageClass: Unit
 tags: [history]
 ---
 

@@ -63,7 +63,7 @@ module.exports = {
     sidebar: {
       '/CS131/': [
         {
-          title: 'CS-131',
+          title: 'CS 131',
           collapsable: false,
           children: [
             '',

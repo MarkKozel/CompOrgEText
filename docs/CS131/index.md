@@ -1,12 +1,4 @@
----
-title: Course Organization
-description: Transistors to Assembly - A Bottom-Up View of Computer Science
-pageClass: Book
-tags: []
----
-
-# {{ $frontmatter.title }}
-**{{ $frontmatter.description }}**
+# Course Organization
 
 ## How to use this Textbook
 
@@ -40,12 +32,12 @@ Each topic contains one or more topic units. For example, the History topic cont
 ## History
 
 We'll learn about:
-<bullet> The progress of computer technology through the ages
-<bullet> The core concepts of abstraction and algorithms as used in computer organization
-<bullet> The differences between analog and digital computer systems
-<bullet> How specific-use computers gave way to the general-use computer we use today
+- The progress of computer technology through the ages
+- The core concepts of abstraction and algorithms as used in computer organization
+- The differences between analog and digital computer systems
+- How specific-use computers gave way to the general-use computer we use today
 
-<QuestionMC question="Computers (in any form) have been around since about" answer='A' AChoice="2400 BCE" BChoice="1833" CChoice="1938" DChoice="Bill Gate's Birthday" rightAnswerFeedback="Right! Early computational devices like the abacus have been in use for millennia" wrongAnswerFeedback="well, all of these dates are significant milestones in computer history!"/>
+<QuestionMC question="Computers (in any form) have been around since about" answer='A' AChoice="4000 BCE or Earlier" BChoice="1833" CChoice="1938" DChoice="Bill Gate's Birthday" rightAnswerFeedback="Right! Early computational devices like the abacus have been in use for millennia" wrongAnswerFeedback="well, all of these dates are significant milestones in computer history!"/>
 
 ::: details Details for the above question
 

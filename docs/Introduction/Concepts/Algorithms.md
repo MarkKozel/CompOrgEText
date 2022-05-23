@@ -16,50 +16,52 @@ tags: []
 },
 {
   Concept:'Ambiguity',
-  Details:'Imprecise nature of a construct. For Natural Language, how individuals interprets the meaning or intent of a word or phrase'
+  Details:'Imprecise nature of a construct. For Natural Language, how individuals interpret the meaning or intent of a word or phrase'
 },
 {
   Concept:'Algorithm',
-  Details:'In the context of Computer Science, describe the solution to a Problem in a form that minimizes the Ambiguity of Human/Natural Language'
+  Details:'In the context of Computer Science, describe the solution to a Problem in a form that minimizes the Ambiguity of Natural Language'
 }
 ]" />
 
 ## Introduction
 
-Our world functions on sets of ordered steps, organized is an efficient and effective sequence to reach some solution. Changing the order and the result is likely to be different
+Computers function on sets of ordered steps, organized in an efficient and effective sequence to reach some solution. Changing the order would likely result with a different solution.
 
-These groups of steps make up an algorithm that complete a cycle
+These groups of steps make up an Algorithm that completes a Cycle.
 
 ### Everyday College Course Example
 
 ::: details Algorithm Example
-They typical college class flow can be described as the following algorithm. This cycle would repeat for each new chapter or topic
-1. Instructor lectures on new material
-2. Students complete quiz to see they understand
-3. Instructor provide feedback on commonly missed questions
-4. Students complete assignment to put their understanding to the test
-5. Instructor provides feedback on assignment to ensure students understanding
+They typical college class flow can be described as the following Algorithm: 
+1. Instructor lectures on new material.
+2. Students complete quiz to see they understand.
+3. Instructor provide feedback on commonly missed questions.
+4. Students complete assignment to put their understanding to the test.
+5. Instructor provides feedback on assignment to ensure students understanding.
+
+This cycle repeats for each new chapter or topic.
 :::
 
-Algorithms can be written at different levels of detail (Abstraction Levels) depending on the audience or purpose of the algorithm
+Algorithms can be written at different levels of detail (Abstraction Levels) depending on the audience or purpose of the Algorithm.
 
 
 ## Algorithms
-*Algorithm* is a common term associated with technology today. The common use if *Algorithm* typically referring to software that takes in historic data and turns out recommendations for the next movie or series to binge. This meaning is a specific type of software that applies statistical analysis to known or historic data, and returns probabilities of future choices or preferences
+An Algorithm is a common term associated with technology today. A common example of an Algorithm is using a specific type of software that takes in historic viewing data, applies statistical analysis to that data, and then turns out recommendations for the next movie or series to binge.
 
-In general, algorithms are a **sequence** of steps that **solve a problem** with a **reliable** result. So the above movie recommendation algorithm solves the *problem* of location streaming media you might like, based on previous viewing history. A different algorithm may predict rocket trajectories based on expected trajectory and wind changes during powered flight
+In general, algorithms are a **sequence** of steps that **solve a problem** with a **reliable** result. So the above movie recommendation algorithm solves the *problem* of location streaming media you might like, based on previous viewing history.
 
 ### Algorithms in Computer Organization
-We will use algorithms to understand how common analog procedures are executed in the digital world. If I ask you to add two (2) multi-digit numbers, you can likely complete the task without much step-by-step thought. However, we will need to think of simple math operations as an algorithm in order to implement them in digital logic and assembly language
+We will use Algorithms to understand how common analog procedures are executed in the digital world. If we were to add two multi-digit numbers, we can likely complete the task without much step-by-step thought. However, if we were to explain it in using digital logic and assembly language, we would need to think of how to use simple math operations as part of an Algorithm.
 
 ::: considerit Quick Thought Experiment
-Think about how you would teach a first grade student how to add 2 multi-digit numbers
+Think about how you would teach a first grade student how to add two multi-digit numbers:
 
-First, Think of the steps to add 1234 and 4321 (note, there are no carries)
+First, think of the steps to add 1234 and 4321 (note, there are no carries).
 
-Next, Think of the steps to add 1234 and 9999 (note, there are carries)
+Next, think of the steps to add 1234 and 9999 (note, there are carries).
 
-Finally, Think of the steps to describe how to add any set of 2 multi-digit numbers (there may or may not be carries)
+Finally, think of the steps to describe how to add any set of two multi-digit numbers (there may or may not be carries).
 :::
 
 In addition, we will also create algorithms that describe at a higher level of abstraction, what our assembly program will do. *Sketching out* or *prototyping* code before writing it will help:

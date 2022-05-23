@@ -1,5 +1,15 @@
-# Diversity in Computer Science
-**MARK: Please update this topic with more current information!!! Also, I'd like to review it again after you make these updates**
+---
+title: Diversity in Computer Science
+parent: Computer Organization EText
+description: Introduction
+pageClass: Section
+tags: []
+---
+
+# {{ $frontmatter.title }}
+**{{ $frontmatter.description }}**
+
+
 The current makeup of computer and mathmatics jobs among these diverse groups are:
 - 25% women
 - 8% African Americans 
