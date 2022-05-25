@@ -63,7 +63,7 @@ Introduction to computer architecture and assembly language programming. Topics 
 
 **Fixed, Assembly**Course Organization > Introduction: Do you want to call a section “Assembly” as it is now, or do you want to call it “Assembly Programming” as it is called in the text of this section?
 
-Course > Introduction: Diversity in Computer Science <-This topic unit does not match the topic title.
+**Fixed** Course > Introduction: Diversity in Computer Science <-This topic unit does not match the topic title.
 
 **Fixed** Course Organization > History: I didn’t know how to put bullets into the text, but you’ll see where I wanted you to put bullets:
 #History
@@ -73,12 +73,12 @@ We'll learn about:
 - The differences between analog and digital computer systems
 - How specific-use computers gave way to the general-use computer we use today
 
-Course > Foundations: I didn’t know how to put numbered items in the text, but you’ll see where I wanted to put them:
+**Fixed** Course > Foundations: I didn’t know how to put numbered items in the text, but you’ll see where I wanted to put them:
 Finally, we will dive down to the lowest levels of computer hardware: transistors. We'll understand:
 1. How transistors create circuits to perform numeric and logical operations. 
 1. How circuits are used to store information, route data, and ultimately create a microarchitecture that can execute complex programs.
 
-Diversity in Computer Science
+**TODO** Diversity in Computer Science
 The current makeup: is that in the U.S. or in the world?
 This section needs to be update and cited, like with information in this article in 2018: https://www.pewresearch.org/social-trends/2018/01/09/diversity-in-the-stem-workforce-varies-widely-across-jobs/
 
@@ -86,11 +86,16 @@ Or this article from 2021: https://www.pewresearch.org/science/2021/04/01/stem-j
 
 Check out the table in this report (you gotta scroll down a bit): https://cse-climate.engin.umich.edu/reports/climate-dei-reports/cse-climate-dei-report-20-21/
 
+
+**Reformatting the History Pages**
+*Fixed Prehistory, Dawn, 1st Generation*
 History > Prehistory: Some sections are lacking content or have some strange links showing that could go somewhere or should be a graphic. Also, why is “binary numbers” in a different font/appearance here?
 
 History > Prehistory: This section needs a complete revamp. It’s repetitive and can be shortened to the essential points. I’d like to rewrite it if you are open to it. Also, there’s whole topic content missing.
 
 I can’t seem to open the pages for all the different computer generations on the actual web page.
+
+
 ============
 Introduction section and the Foundations section can be combined. The Introduction talk about Pascale and Babbage and so forth, while Foundations talks about Pioneers, all of whom could be considered “Pioneers”. The devices can be interwoven as part of your intro text about using fingers in the Pioneers topic. If you want, I can help you smoosh those together, or give you tips where you can put them together, make for some quick reading and keep the bulk of the information as talking points in your class.
 ===================
