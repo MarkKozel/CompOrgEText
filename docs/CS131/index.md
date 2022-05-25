@@ -58,8 +58,8 @@ To start, we will build a foundation of computer organization with the pioneers 
 Next, we'll need to brush up on our knowledge of the basic numeric and logical constructs that drive modern computer systems.
 
 Finally, we will dive down to the lowest levels of computer hardware: transistors. We'll understand:
-<number 1> How transistors create circuits to perform numeric and logical operations. 
-<number 2> How circuits are used to store information, route data, and ultimately create a microarchitecture that can execute complex programs.
+1. How transistors create circuits to perform numeric and logical operations. 
+2. How circuits are used to store information, route data, and ultimately create a microarchitecture that can execute complex programs.
 
 ## Assembly
 
