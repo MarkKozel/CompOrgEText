@@ -9,7 +9,7 @@ tags: []
 # {{ $frontmatter.title }}
 **{{ $frontmatter.description }}**
 
-## Diversity in Computer Science
+## Diversity
 The topic features some current programs and organizations that support inclusions of all people in computing fields.
 
 ## History

@@ -59,14 +59,13 @@ First Impression of Introduction
 In this class book, should it contain the Hancock course description? Here is what I see:
 Introduction to computer architecture and assembly language programming. Topics include data representation and conversion, assembly language programming, digital design, and basic processor architecture.
 
-Course Organization - The graphic text needs to be updated. The “NavBar Selection with Underline” should be changed to “NavBar Section with Underline”.
+**Fixed** Course Organization - The graphic text needs to be updated. The “NavBar Selection with Underline” should be changed to “NavBar Section with Underline”.
 
-Course Organization > Introduction: Do you want to call a section “Assembly” as it is now, or do you want to call it “Assembly Programming” as it is called in the text of this section?
+**Fixed, Assembly**Course Organization > Introduction: Do you want to call a section “Assembly” as it is now, or do you want to call it “Assembly Programming” as it is called in the text of this section?
 
 Course > Introduction: Diversity in Computer Science <-This topic unit does not match the topic title.
 
-**Fixed**
-Course Organization > History: I didn’t know how to put bullets into the text, but you’ll see where I wanted you to put bullets:
+**Fixed** Course Organization > History: I didn’t know how to put bullets into the text, but you’ll see where I wanted you to put bullets:
 #History
 We'll learn about:
 - The progress of computer technology through the ages

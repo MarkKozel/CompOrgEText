@@ -1,5 +1,5 @@
 ---
-title: Diversity in Computer Science
+title: Diversity
 parent: Computer Organization EText
 description: Introduction
 pageClass: Section
@@ -10,7 +10,7 @@ tags: []
 **{{ $frontmatter.description }}**
 
 
-The current makeup of computer and mathmatics jobs among these diverse groups are:
+The current makeup of computer and mathematics jobs among these diverse groups are:
 - 25% women
 - 8% African Americans 
 - 7.5% Hispanic or Latino people
