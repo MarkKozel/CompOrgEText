@@ -1,6 +1,6 @@
 ---
 title: Instructions
-parent: Assembly Programming
+parent: Assembly
 description: Reference and Example of LC-3 Assembly
 pageClass: Unit
 tags: []

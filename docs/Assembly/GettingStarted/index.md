@@ -1,6 +1,6 @@
 ---
 title: Getting Started with the LC-3 Assembly Tools
-parent: Assembly Programming
+parent: Assembly
 description: Get aquatinted with the tools
 pageClass: Unit
 tags: [LC-3, Editor, Simulate, hello world]

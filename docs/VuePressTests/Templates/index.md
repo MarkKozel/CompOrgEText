@@ -13,7 +13,7 @@ A **Topic** is the detailed information to cover
 - Foundations Section
 - Number Systems Section
 - Logic/Digital Circuits Section
-- Assembly Programming Section
+- Assembly Section
 
 Each **Topic** is a page of information for that *topic*
 

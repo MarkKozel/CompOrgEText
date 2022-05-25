@@ -12,7 +12,7 @@ tags: [download, install, setup]
 <KeyConcepts :ConceptArray= "[
   {
   Concept:'Little Computer 3 (LC-3) is an educational environment',
-  Details:'We will be using a very simple environment to learn assembly programming. Is is highly simplified, but contains plenty of instructions to expose students to the level of programming'
+  Details:'We will be using a very simple environment to learn assembly. Is is highly simplified, but contains plenty of instructions to expose students to the level of programming'
 },
   {
   Concept:'LC-3 is Windows-only',
@@ -27,7 +27,7 @@ tags: [download, install, setup]
 
 The Little Computer 3 (LC-3) assembly environment is an emulated Instruction Set Architecture (ISA) used to learn the basics of assembly language programming
 
-The ISA is limited to 20+ actual instructions, but contains enough capability to learn and experiment with assembly programming
+The ISA is limited to 20+ actual instructions, but contains enough capability to learn and experiment with assembly
 
 
 LC-3 is a simulated Von Neumann computer Instruction Set Architecture (ISA). Its purpose is solely for teaching Assembly programming and underlining control micro architecture

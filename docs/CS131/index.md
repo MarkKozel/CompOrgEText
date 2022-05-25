@@ -23,7 +23,7 @@ This text is divided into the following sections:
 
 1. [Introduction](../Introduction/index.md)
 1. [Foundations](../Foundations/index.md)
-1. [Assembly Programming](../Assembly/index.md)
+1. [Assembly](../Assembly/index.md)
 
 Each section contains topics. For example, the Introduction section contains the following topics: Diversity, History, and Concepts.
 
@@ -61,8 +61,8 @@ Finally, we will dive down to the lowest levels of computer hardware: transistor
 <number 1> How transistors create circuits to perform numeric and logical operations. 
 <number 2> How circuits are used to store information, route data, and ultimately create a microarchitecture that can execute complex programs.
 
-## Assembly Programming
+## Assembly
 
 In this part of the class, we'll use a basic assembly language and development environment to create and run programs.
 
-Using assembly programming, we'll see the basic constructs of high-level programming languages (like Java), for example: *If-Else*, *For* and *While* loops, calling *Subroutines*, and interacting with *Input*/*Output* devices.
+Using assembly, we'll see the basic constructs of high-level programming languages (like Java), for example: *If-Else*, *For* and *While* loops, calling *Subroutines*, and interacting with *Input*/*Output* devices.

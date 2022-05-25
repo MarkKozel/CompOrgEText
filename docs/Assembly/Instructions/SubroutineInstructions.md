@@ -49,7 +49,7 @@ In ```addOne``` the parameter is incremented and returns back to the main progra
 
 Java handles moving the parameter date to the subroutine, switching to the subroutine code, and returning the results back to the main program
 
-In LC-3, we can perform the same behavior, but, like most things in assembly programming, it is a litter more *hands-on*.
+In LC-3, we can perform the same behavior, but, like most things in assembly, it is a litter more *hands-on*.
 
 The main mechanism in *calling a subroutine* is manipulating the PC. Recall the PC controls the next instruction to execute. Without manipulation, the next line wil always be execute. But, by change it, another instruction can be executed next.
 

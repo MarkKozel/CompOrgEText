@@ -26,13 +26,13 @@ The layout introduced in Course Organization needs to adhere all the way through
 •	All topic units in Introduction > History **Fixed**
 •	All topic units in Introduction > Concepts **Fixed**
 •	The von Neumann Model **Fixed**
-•	Program Flow **TODO. Not working as expcted**
+•	Program Flow **TODO. Not working as expected**
 •	All the pages under About **Won't Do. These pags of not part of the book's course materials, only nomenclature**
 
 Diversity - MARK: Please update this topic with more current information!!! Also, I'd like to review it again after you make these updates
 
 
-**I thnk you already did this** Call objects on the page by their designated term consistently. For example, you have a graphic in Course Organization that indicates the top right as the NavBar. In the same page, you call that same object a Nav Menu and in the next topic, Course Information, you call it the Navigation Bar.
+**I think you already did this** Call objects on the page by their designated term consistently. For example, you have a graphic in Course Organization that indicates the top right as the NavBar. In the same page, you call that same object a Nav Menu and in the next topic, Course Information, you call it the Navigation Bar.
 
 **OK, cool** Definitions for the objects on the page can be improved. I will work on these.
 
@@ -43,7 +43,7 @@ Diversity - MARK: Please update this topic with more current information!!! Also
 First Impression of Introduction
 **TODO I will think about this one. It is not part of the course materals** The sidebar menu is different from other sidebar menus: spacing and the font. Please correct.
 
-**It is not part of the course materals** The format of Introduction, Main, and Conclusion is not used here. Navigation within the History page to the linked topic unit pages are different, too.
+**It is not part of the course materials** The format of Introduction, Main, and Conclusion is not used here. Navigation within the History page to the linked topic unit pages are different, too.
 
 **Fixed by you** Under Diversity, you have bulleted list of three items that discuss metrics of women and people of color. The first bullet uses a fraction, the second use percentages. You need to stick to one type of unit when listing these, as they share a list, and therefore, are somewhat related (parallelism).
 

@@ -1,6 +1,6 @@
 ---
 title: Standard Input/Output (I/O)
-parent: Assembly Programming
+parent: Assembly
 description: Interacting with devices outside of the ISA
 pageClass: Topic
 tags: []
