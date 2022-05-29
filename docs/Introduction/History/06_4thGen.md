@@ -9,26 +9,76 @@ tags: [microprocessor, Fourth Generation, IBM PC, Apple I]
 # {{ $frontmatter.title }}
 **{{ $frontmatter.description }}**
 
-**Microprocessors**
-
-![Thomas Nguyen, CC BY-SA 4.0, via Wikimedia
-Commons](https://upload.wikimedia.org/wikipedia/commons/b/b9/Intel_D4004.jpg =400x)
-
-The Intel 4004: the first commercial microprocessor consisted of 2,300 transistors
+## Microprocessors
 
 The next major advance in fundamental computer technology was the **microprocessor**. These devices are integrated circuits that combine thousands of transistors that perform the logic needed to run a computer into one chip. In 1971, Intel released the 4004 microprocessor and the **Fourth Generation** of computers had begun.
 
-In the late 1970\'s computers like the Altair, Apple and Commodore were the first computers widely sold to individual users. In 1981 IBM released the first PC and the personal computer revolution had begun. Although the machines we use are millions of times more powerful than those early personal computers they are direct descendants of these machines.
+<table>
+  <tr>
+    <td colspan="2">Early System-On-A-Chip</td>
+  </tr>
 
-![Ed Uthman, CC BY-SA 2.0, via Wikimedia
-Commons](https://upload.wikimedia.org/wikipedia/commons/a/a1/Apple_I_Computer.jpg)
+  <tr>
+  <td style="width:40%">
+    <p>The Intel 4004: the first commercial microprocessor consisted of 2,300 transistors</p>
+  </td>
+    <td style="width:60%">
+    <figure>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Intel_D4004.jpg" /> 
+      <figcaption> &copy; Thomas Nguyen, CC BY-SA 4.0, via Wikimedia
+Commons </figcaption>
+      </figure>
+    </td>
+  </tr>
+</table>
 
-The Apple I computer was sold as a kit for which people had to buildtheir own case
+The microprocessor and decreasing costs created markets for hobbyist and commercial personal computers. Do-It-Yourself computer kits and clubs helped refine computer capabilities. For-profit companies helped create a market for computers in the home.
 
-![Ruben de Rijcke, CC BY-SA 3.0, via Wikimedia
-Commons](https://upload.wikimedia.org/wikipedia/commons/f/f1/Ibm_pc_5150.jpg)
+In the late 1970\'s computers like the Altair, Apple and Commodore were the first computers widely sold to individual users. 
 
-The first IBM PC was the 5150
+In 1981 IBM released the first PC and the personal computer revolution had begun. Although the machines we use are millions of times more powerful than those early personal computers they are direct descendants of these machines.
+
+These two (2) apparently opposing interests created the modern technology computer boon.
+
+<table>
+  <tr>
+    <td colspan="2">DIY Computers</td>
+  </tr>
+
+  <tr>
+  <td style="width:40%">
+    <p>The Apple I computer was sold as a kit for which people had to build their own case</p>
+  </td>
+    <td style="width:60%">
+    <figure>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Apple_I_Computer.jpg" /> 
+      <figcaption> &copy; Ed Uthman, CC BY-SA 2.0, via Wikimedia
+Commons </figcaption>
+      </figure>
+    </td>
+  </tr>
+</table>
+
+
+
+<table>
+  <tr>
+    <td colspan="2">Commercial PC Computers</td>
+  </tr>
+
+  <tr>
+  <td style="width:40%">
+    <p>The first IBM PC was the 5150</p>
+  </td>
+    <td style="width:60%">
+    <figure>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Ibm_pc_5150.jpg" /> 
+      <figcaption> &copy; Ruben de Rijcke, CC BY-SA 3.0, via Wikimedia
+Common </figcaption>
+      </figure>
+    </td>
+  </tr>
+</table>
 
 <hr>
 
