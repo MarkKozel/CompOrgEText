@@ -88,6 +88,7 @@ Check out the table in this report (you gotta scroll down a bit): https://cse-cl
 
 
 **Reformatting the History Pages**
+**Fixed all pages**
 *Fixed Prehistory, Dawn, 1st Generation*
 History > Prehistory: Some sections are lacking content or have some strange links showing that could go somewhere or should be a graphic. Also, why is “binary numbers” in a different font/appearance here?
 
@@ -97,13 +98,17 @@ I can’t seem to open the pages for all the different computer generations on t
 
 
 ============
+**Won't Do - Intro is not part of the course, but exists to set the stage. Foundations cover topics and concepts that are part of the course, tests, and assignments**
+
 Introduction section and the Foundations section can be combined. The Introduction talk about Pascale and Babbage and so forth, while Foundations talks about Pioneers, all of whom could be considered “Pioneers”. The devices can be interwoven as part of your intro text about using fingers in the Pioneers topic. If you want, I can help you smoosh those together, or give you tips where you can put them together, make for some quick reading and keep the bulk of the information as talking points in your class.
+
+
 ===================
 Introduction Section > Concepts
 
 You use both these terms and I’m unsure if they are the same thing: Abstraction Hierarchy of Computer Organization and Computer Organization Abstraction Layers.
 
-Introduction is missing information?
+Introduction is missing information? **Fixed**
 
 Abstraction topic unit: What is the difference between Natural Language and Human Language and Assembly Language? You’ll need to define those somewhere before you use them in the table, so when they come up, we know what you mean. BTW, I do see you define Natural Language on the Algorithm page, but that is too late.
 
