@@ -27,9 +27,9 @@ tags: []
 ## Introduction
 We start with a tool to describe logic functions
 
-The Truth Table is a notation that shows binary inputs and resulting outputs for a logic circuit. The circuit can be a basic circuit (with 2 inputs and 1 output) or a complex circuit made up of many individual logic devices
+The Truth Table is a notation that shows binary inputs and resulting outputs for a logic circuit. The circuit can be a basic circuit (with 2 inputs and 1 output) or a complex circuit made up of many individual logic devices.
 
-All truth tables, and the devices they describe will have a set of inputs, the circuit that modifies the inputs, and the outputs. For simplicity, we will consider that outputs are instantaneously generated when the inputs are applied
+All truth tables, and the devices they describe will have a set of inputs, the circuit that modifies the inputs, and the outputs. For simplicity, outputs are consider instantaneously generated when the inputs are applied.
 
 ## Anatomy of a Truth Table
 
@@ -39,7 +39,7 @@ Inputs and Outputs are labeled with letters. The labels typically do not have an
 
 Inputs and Outputs have values as signals in and out of the device being describes by the truth table.
 
-All inputs in a given row are applied to the circuit and product the given output
+All inputs in a given row are applied to the circuit and product the given output.
 
 In the above example:
  > when **a** inputs a *0* and **b** inputs a *0*, the **z** output will be *0*
@@ -67,7 +67,7 @@ In the above example:
 
  ![Complex Truth Table](/images/Circuits/TruthTable_Anatomy_Complex2.png)
 
- When creating a physical circuit based on this diagram, you will need to remember that this is one circuit and the **a** and **b** inputs are from the same source
+ When creating a physical circuit based on this diagram, remember that this is one circuit and the **a** and **b** inputs are from the same source
 
  We will learn how to crate physical circuits, using a virtual circuit design adn simulation tool later
 

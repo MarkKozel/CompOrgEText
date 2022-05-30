@@ -96,7 +96,7 @@ Use the above algorithm to test yourself
 
 ## Sign Extension
 
-It is probably second nature to you that **25<sub>10</sub>** and **00000025<sub>10</sub>** are the same value. The most significant zeros do not change the value of the number. They are unnecessary.
+It is probably second nature that **25<sub>10</sub>** and **00000025<sub>10</sub>** are the same value. The most significant zeros do not change the value of the number. They are unnecessary.
 
 **-25<sub>10</sub>** and **-00000025<sub>10</sub>** are also the same and unnecessary.
 

@@ -91,4 +91,4 @@ When requesting data from Memory, the address of the requested RAMlocation is co
 
 Modern computer architecture is based primarily on John von Neumann's designed. It is made up of five (5) components that manage program execution, memory access, performing math and logic operations, interfacing to the outside world.
 
-With this simple and elegant configuration, this 1945's design continues to prevail. Only as we begin the next phase, quantum computers, are we likely to see von Neumann's design fade into history.
+With this simple and elegant configuration, this 1945's design continues to prevail. Only as we begin the next phase, quantum computers, is von Neumann's design likely fade into history.

@@ -48,7 +48,7 @@ Newer technologies, such as Bluetooth, USB, and high definition video devices ma
 
 These newer devices likely require a driver to act as an interface to the CPU. Drivers interpret input and output communications, so that the CPU can send/receive data.
 
-<QuestionTF question="Drivers are needed for any new I/O device that the CPU does not know how to 'talk' to already." answer='true' rightAnswerFeedback="Yes, this is a pretty good systems allowing computers to use new devices without needing a new CPU" wrongAnswerFeedback="Incorrect. Driver are effectively 'translators' between teh device and the CPU. Using a translator for a new device, the CPU will be able to 'understand' it"/>
+<QuestionTF question="Drivers are needed for any new I/O device that the CPU does not know how to 'talk' to already." answer='true' rightAnswerFeedback="Yes, this is a pretty good systems allowing computers to use new devices without needing a new CPU" wrongAnswerFeedback="Incorrect. Driver are effectively 'translators' between the device and the CPU. Using a translator for a new device, the CPU will be able to 'understand' it"/>
 
 Drivers are typically software designed for the devices and a particular CPU family. The access special memory areas and CPU connections to facility the communication. Drivers may be software installed on the system hard drive and manages by the operating system, or firmware burned into special integrated circuits and installed on the motherboard.
 

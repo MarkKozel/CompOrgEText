@@ -52,7 +52,7 @@ Also, we will be raising 16 to the power of the position, because the original n
 1. Repeat for all Hex values
 
 ::: tip You'll Need a Calculator for this
-Raising 16 to increasing powers is not easy to do in your head. And, in the above example, you may notice each Hex place value grows substantially. This is why Base 16 results in very compact numbers that represent large Decimal values
+Raising 16 to increasing powers is not easy to do in your head. And, in the above example, notice each Hex place value grows substantially. This is why Base 16 results in very compact numbers that represent large Decimal values
 :::
 
 16^2

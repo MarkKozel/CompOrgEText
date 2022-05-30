@@ -25,4 +25,4 @@ Once a section link is selected, use the **Sidebar menu** at the left of the *Ma
 
 Use the **Site Search** field at the top-center to find all references to a keyword.
 
-The **Home icon/Title** at the top-left will return you to the CS 131 start page.
+The **Home icon/Title** at the top-left will return to the CS 131 start page.

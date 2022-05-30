@@ -47,7 +47,7 @@ Also, formatting (tabs vs. spaces) tend to get mangles between new IDE editors a
 :::
 
 ### LC-3 Edit with Code
-In this example, source code has been entered into the Editing Area. The code was assembled and teh success messages are displayed in the Output Area
+In this example, source code has been entered into the Editing Area. The code was assembled and the success messages are displayed in the Output Area
 
 ![LC-3 Edit Main Window](/images/AssemblyProgramming/GettingStarted/LC3EditMain.png)
 

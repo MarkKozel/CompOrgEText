@@ -23,7 +23,7 @@ Review the mechanics for general IO devices and protocols:
 - Data Exchange Timing (Synchronous vs Asynchronous)]
 
 ## LC-3 Input/Output
-Here is how we interface with LC-3's Polled IO.
+Here is how to interface with LC-3's Polled IO.
 
 LC-3 has 2 IO Devices:
 - Keyboard

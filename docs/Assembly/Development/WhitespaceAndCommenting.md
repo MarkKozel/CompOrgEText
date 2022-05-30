@@ -22,9 +22,9 @@ tags: [whitespace, comments, tabs, formatting, maintenance]
 
 ## Introduction
 
-Use of formatting of source code will make it easier to understand and updates. Including comments adds another level of built-in help for future updates
+Use of formatting of source code will make it easier to understand and updates. Including comments adds another level of built-in help for future updates.
 
-These elements are your code are purely for humans. Compilers and assemblers ignore these parts of the code when generating the executable. As a result, it will not make the final program any larger
+These elements are your code are purely for humans. Compilers and assemblers ignore these parts of the code when generating the executable. As a result, it will not make the final program any larger.
 
 ## Whitespace
 
@@ -34,16 +34,16 @@ Using blank section or lines in source code makes it more readable for others. I
 
 ### Indenting
 
-Use Space or Tab indents in code shows how code it organized within a construct like a for-loop. It is visually obvious that code indented run inside the loop and code that is not indented is outside
+Use Space or Tab indents in code shows how code it organized within a construct like a for-loop. It is visually obvious that code indented run inside the loop and code that is not indented is outside.
 
 @[code lang=java{2-3}](@/Assembly/Development/javaForLoop.java)
 
-It is visually obvious that each array elements are doubles, the increments by 1 inside the loop
+It is visually obvious that each array elements are doubles, the increments by 1 inside the loop.
 
 
 ### Blank Lines
 
-Use blank lines to group associate code. This will make it visually easy to see that several line of code exist for some associated purpose
+Use blank lines to group associate code. This will make it visually easy to see that several line of code exist for some associated purpose.
 
 @[code js{1-2,4-9,11-12}](@/Assembly/Development/jsForLoop.js)
 
@@ -55,25 +55,25 @@ The blank lines in this code separate Initialization, Processing Loop, and Outpu
 
 ## Comments
 
-Comments are included to help other developers understand the organization and important parts of the code. This will help simplify future updates
+Comments are included to help other developers understand the organization and important parts of the code. This will help simplify future updates.
 
 ### [LC-3 Commenting Examples](../../../LC3/Development/WhitespaceAndCommenting/index.md#comments) 
 
 ### Function Comments
 
-An overall description of the code helps developers understand the big-picture purpose of the program. Block and Inline comments will clarify particular sections
+An overall description of the code helps developers understand the big-picture purpose of the program. Block and Inline comments will clarify particular sections.
 
 @[code js{1-4}](@/Assembly/Development/jsForLoop1.js)
 
 ### Block Comments
 
-Adding a comment to the beginning of a block can help other developers understand the purpose of group of code
+Adding a comment to the beginning of a block can help other developers understand the purpose of group of code.
 
 @[code js{6,10,18}](@/Assembly/Development/jsForLoop2.js)
 
 ### Inline Comments
 
-Adding a comment to the end of a single line of code helps make clear what the line does
+Adding a comment to the end of a single line of code helps make clear what the line does.
 
 @[code js{12,20}](@/Assembly/Development/jsForLoop3.js)
 
@@ -81,6 +81,6 @@ Adding a comment to the end of a single line of code helps make clear what the l
 
 ## Conclusion
 
-Using whitespace, troubleshooting and modifying code (by you or another developer) can be easier as code is visually organized in groups and blocks
+Using whitespace, troubleshooting and modifying code (by you or another developer) can be easier as code is visually organized in groups and blocks.
 
-Adding comments that describe overall function and specific *important* sections will also help with understanding and modifying the program
+Adding comments that describe overall function and specific *important* sections will also help with understanding and modifying the program.

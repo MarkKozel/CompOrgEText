@@ -85,7 +85,7 @@ Learn how trivial bit of ambiguity caused the Mars Climate Orbiter that burned u
 ### An Algorithm to Create Algorithms
 1. Understand the Problem Statement
     - This may require research or asking questions of the author
-    - Note the Ambiguities in the Problem Statement. Clarify the intended meaning, even if you fairly certain you understand (if you think this is unnecessary, please review the Mars Climate Orbiter article)
+    - Note the Ambiguities in the Problem Statement. Clarify the intended meaning, even if fairly certain you understand (if you think this is unnecessary, please review the Mars Climate Orbiter article)
 1. Declare any *given* situations
     - Elements that are already available
     - Options/capabilities that already exist

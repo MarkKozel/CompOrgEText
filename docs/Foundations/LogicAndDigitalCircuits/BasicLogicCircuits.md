@@ -12,7 +12,7 @@ tags: []
 <KeyConcepts :ConceptArray= "[
 {
   Concept:'Transistors are used to construct simple logic gate',
-  Details:'Connecting 2, 4, or 6 Transistors in series and parallel, we have Basic Logic Circuits that behave like well-known logic functions'
+  Details:'Connecting 2, 4, or 6 Transistors in series and parallel creates a Basic Logic Circuits that behave like well-known logic functions'
 },
 {
   Concept:'Basic circuits implement well-known logic operations',
@@ -112,7 +112,7 @@ When applied to binary values, OR compare two bits. If either bit is *1* the res
 
 NAND is referred to as **NOT AND**. It negates the results of the AND output. In effect it only output a *0* if both inputs are *1*
 
-It is not a common logic operation we apply to everyday situation, but it has utility in the logic and computer circuits
+It is not a common logic operation applied to everyday situation, but it has utility in the logic and computer circuits
 
 #### NAND Truth Table
 |a|b|c|
@@ -178,7 +178,7 @@ XOR is referred to as **Exclusive OR**. The difference between XOR and OR is the
 
 ## Logic Circuit Constructs
 
-There are a couple of interesting things we can do with the simple logic circuits to made them more versatile or to change their behavior.
+There are a couple of interesting things  simple logic circuits can do to be made more versatile or to change their behavior.
 
 ### Adding Inputs to a Logic Circuit
 

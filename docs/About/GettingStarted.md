@@ -24,7 +24,7 @@ Other will not be able to see these updates
 You will clone the repo from GitHub. Switch to the ```docs``` directory. And install the required node modules
 1. Install git command-line tools from [git-scm](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 1. Install NodeJS [NodeJS Download page](https://nodejs.org/en/download/)
-1. Open a command windows and switch to the location you want the project folder to exist
+1. Open a command windows and switch to the project folder
 1. ```git clone https://github.com/MarkKozel/CompOrgEText.git``` to pull master branch of repo to your system
 1. ```cd CompOrgEText/docs``` to switch to the document root folder
 1. ```npm install``` to install required NodeJS modules

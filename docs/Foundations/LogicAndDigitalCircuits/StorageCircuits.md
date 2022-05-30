@@ -38,9 +38,9 @@ Storage Circuits also propagate the output value during a single clock cycle. Ho
 
 Because storage circuits hold their state, the input/inputs do not need to be maintained for the entire clock cycle. They only need to be held high or low enough to allow the value to propagate through the circuit. We will refer to this a a *pulse* or *pulsing* an input.
 
-When examining storage circuits in Logisim, you can click an input to make it high, them click again to make the input low. The circuit will maintain the overall output, even after removing the high input.
+When examining storage circuits in Logisim, click an input to make it high, them click again to make the input low. The circuit will maintain the overall output, even after removing the high input.
 
-Notice that, starting with the Set-Reset Flip-Flop circuit, we use **1** on the *Set* to cause the circuit to output a **1**. We use **1** on the *Reset* to cause the circuit to output **0**.
+Notice that, starting with the Set-Reset Flip-Flop circuit, a **1** is applied on the *Set* to cause the circuit to output a **1**. We use **1** on the *Reset* to cause the circuit to output **0**.
 
 ## Basic Flip-Flip 
 
@@ -180,7 +180,7 @@ Quickly after the input changes, the NOT Gate will settle to *0* and the AND Gat
 
 What this circuit does, using the delayed propagation, is to detect the Leading Edge (start) of an event. The change of an input in this example.
 
-If, instead is connecting an input to this circuit, we connect the clock, we can detect the Leading Edge of the clock cycle.
+If, instead is connecting an input to this circuit, we connect the clock, the Leading Edge of the clock cycle is detected.
 
 ![Data Flip Flip](/images/Circuits/Storage_LeadingEdgeExample.png)
 

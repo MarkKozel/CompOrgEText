@@ -56,7 +56,7 @@ Combine transistors to implement basic logic functions, such as AND and NOT.
 Creating digital circuits starts with a Truth Table, listing all digital inputs and the required outputs for each possible set of inputs. Using a simple algorithm, an equitant circuit can be created to match the starting Truth Table. 
 
 ## Control Circuits
-Combining basic logic circuits, we create higher-level digital control circuits that can manage data flow, move information, and orchestrate higher-level digital hardware capabilities.
+Combining basic logic circuits creates higher-level digital control circuits that can manage data flow, move information, and orchestrate higher-level digital hardware capabilities.
 
 ## Arithmetic Circuits
 Understand how basic logic circuits can implement math operations like addition and subtraction.

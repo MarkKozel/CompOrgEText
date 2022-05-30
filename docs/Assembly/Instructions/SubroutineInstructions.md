@@ -49,7 +49,7 @@ In ```addOne``` the parameter is incremented and returns back to the main progra
 
 Java handles moving the parameter date to the subroutine, switching to the subroutine code, and returning the results back to the main program
 
-In LC-3, we can perform the same behavior, but, like most things in assembly, it is a litter more *hands-on*.
+In LC-3, assembly can perform the same behavior, but, like most things in assembly, it is a litter more *hands-on*.
 
 The main mechanism in *calling a subroutine* is manipulating the PC. Recall the PC controls the next instruction to execute. Without manipulation, the next line wil always be execute. But, by change it, another instruction can be executed next.
 
@@ -137,7 +137,7 @@ When source code with a ```JMP R2``` instruction, the assembler will generate th
 
 When source code with a ```RET``` instruction, the assembler will generate the 16-bit instruction, setting the BaseR to *111* (referencing R7, even though it is not present in the source instruction)
 
-So, you couple replace all ```RET``` source instruction with ```JMP R7``` and the assembled object code would be identical. ```RET``` is an instruction in LC-3 solely to make the source code easier to understand by humans.
+So, you can replace all ```RET``` source instruction with ```JMP R7``` and the assembled object code would be identical. ```RET``` is an instruction in LC-3 solely to make the source code easier to understand by humans.
 
 :::
 

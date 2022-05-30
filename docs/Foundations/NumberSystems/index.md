@@ -12,9 +12,9 @@ tags: [number systems, binary, data, digital, analog, hexadecimal, hex]
 
 The advent and evolution of number systems were essential to keep pace with human's needs for understanding and classifying the work around us. Creating a common system to show and calculate quantities is the framework or mathematics...and, more specific to our interests, computer science.
 
-In this section, we will review our understanding of the Base 10/Decimal number system as likely you learned in early elementary school.
+In this section, we will review our understanding of the Base 10/Decimal number system as you likely learned in early elementary school.
 
-We will see how a different number system, built on the same rules and constructs you learned in primary grades, is best suited for modern computer systems.
+We will see how a different number system, built on the same rules and constructs learned in primary grades, is best suited for modern computer systems.
 
 And we will learn of a couple of other systems that make it easier for computer scientists to discuss numbers in software and hardware.
 

@@ -1,6 +1,6 @@
 The Program Counter (PC) register is used my Simulate to control which like of LC-3 code in a program gets executed next
 
-The PC is initially set to the address in the ```.ORIG xnnnn``` when you load your assembled program
+The PC is initially set to the address in the ```.ORIG xnnnn``` when to load the assembled program
 
 @[code lang=asm{5-6}](@/TextSnippets/LC3/PCExample.asm)
 

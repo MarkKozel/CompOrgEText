@@ -41,7 +41,7 @@ There are two (2) types of basic transistors:
 
 ![P- and N-Type](/images/Circuits/PNTypeElectricalFunctions.png)
 
-Above we see that a P-Type with 2.9 volts input on the *Control* line to output 0 volts on the *Reference* line
+Above a P-Type with 2.9 volts input on the *Control* line to output 0 volts on the *Reference* line.
 
 N-Type transistors output 0 volts with 0 volts are input, and 2.9 volts out when 2.9 volts are input.
 

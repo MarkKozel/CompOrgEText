@@ -9,7 +9,7 @@ SavRegs	ST R7, R7_Store ; Return Address
 	ST R2, R2_Store
 
 Loop	LDR R1, R0, #0 	; Get address of first char of string
-	BRz Done 					;	Char was 0, so we are done
+	BRz Done 					;	Char was 0, done
 
 Wait	LDI R2, DSR 		;	Console available?
 	BRzp Wait 				;	No, loop back and try again
