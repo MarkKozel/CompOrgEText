@@ -65,6 +65,23 @@ Abstraction builds relationships among layers. So, when moving between layers, w
 - Moving to a less specific layer (up), we would say the Lower level *is part of the* Higher level:
 >A Phylum *is part of the* Kingdom
 
+::: details Natural Language
+Spoken, written, and signed communication that evolved along with humans. The natural languages we use today exist by common use and repetition, without formal planning or design.
+
+[Natural Language](https://en.wikipedia.org/wiki/Natural_language)
+:::
+
+::: details Ambiguity
+Words, phrases, and other communication elements that are not strictly defined. Information having ambiguity has some level of vagueness, and can be interpreted differently by each consumer.
+
+[Ambiguity](https://en.wikipedia.org/wiki/Ambiguity)
+:::
+
+
+<QuestionTF question="Computer programs can have ambiguity in the source code" answer='false' rightAnswerFeedback="Ambiguity would lead to some pretty unreliable programs" wrongAnswerFeedback="Any unclear instructions typically lead to errors or buggy programs"/>
+
+<QuestionTF question="A programmer translates problems initially described in Natural Language into a programming language that has little or no ambiguity" answer='true' rightAnswerFeedback="In effect, programs are translators, and must clear up any vagueness in the problem description" wrongAnswerFeedback="Translating is a primary function when programmers solving a problem"/>
+
 
 ## Computer Organization Abstraction Layers
 
@@ -75,7 +92,7 @@ Within Computer Organization, we use a set of abstraction levels that start with
 |Abstraction Layer|Description|Move Down|Move Up|
 |-|-|-|-|
 |Problem|Defining a thing to solve using Natural Language|A Program can be *stated* as an Algorithm|-|
-|Algorithm|Set of steps that that solve a Problem without the ambiguity of Human Language|An Algorithm is *implemented* as a Program|An Algorithm ** a Problem|
+|Algorithm|Set of steps that that solve a Problem without the ambiguity of Natural Language|An Algorithm is *implemented* as a Program|An Algorithm ** a Problem|
 |Program|Data, functions, and syntax of a chosen programming language that executes an Algorithm|A Program is *Rendered* into an Instruction Set Architecture|A Program *realizes* an Algorithm|
 |||||
 |Instruction Set Architecture|Instructions and data of an Assembly Language that implements a Program|An Instruction Set Architecture (ISA) is *orchestrated* by a Microarchitecture|An Instruction Set Architecture *executes* a Program|
@@ -83,16 +100,38 @@ Within Computer Organization, we use a set of abstraction levels that start with
 |Circuits|Components that are combined to construct Microarchitecture elements|Circuits are *made* from Devices|Circuits *implement* a Microarchitecture|
 |Devices|Electrical structures that provide digital representations of Circuit functions and behaviors|-|Devices *implement* Circuits|
 
-The gap in between **Program** and **Instruction Set Architecture** exists because the first three abstraction layers are specific things and the last four are general-purpose things.
 
-Problem, Algorithm, and Programs might be a specific item that calculates the next prime number.
+Problem, Algorithm, and Program layers are focused on a solution to a specific problem. 
+
+::: tip Specific Layers
+The top three (3) layers are focused on a specific problem and solution.
+
+Example:
+  - **Problem**: Test a number for prime
+  - **Algorithm**: Mathematical formula to verify number is prime
+  - **Program**: User inputs a number, executes algorithm on number, display result to user
+
+In this example, a specific problem is solved
+:::
+
+::: tip General Layers
+The bottom four (4) layers provide a general platform to execute any program created within the rules of the computer
+
+The connection between the *specific* and *general* layers is the programming language compiler/interpreter
+
+  - **Instruction Set Architecture**: Assembly language instructions that implement the compiled/interpreted Program
+  - **Microarchitecture**: Control instructions that execute each assembly instruction
+  - **Circuits**: Digital elements that control/stores information
+  - **Devices**: Transistors that form circuits
+
+These layers work the same way each time they are used. The only thing that changes is the compiled/interpreted Program
+:::
 
 The Instruction Set Architecture down to Devices are all a set of fixed software and hardware elements that can be used to solve many different problems.
 
 In addition, The transition from Problem to Algorithm is interesting. A problem is expressed as a deficiency or need, whereas the Algorithm describes a way to avoid or fix that Problem.
 
 In Computer Organization, we'll focus on the Instruction Set Architecture (ISA) layer. But first, we need to understand how Devices create Circuits, that make the Microarchitecture needed to support the ISA.
-
 
 ## Conclusion
 

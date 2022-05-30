@@ -47,7 +47,7 @@ Algorithms can be written at different levels of detail (Abstraction Levels) dep
 
 
 ## Algorithms
-An Algorithm is a common term associated with technology today. A common example of an Algorithm is using a specific type of software that takes in historic viewing data, applies statistical analysis to that data, and then turns out recommendations for the next movie or series to binge.
+An Algorithm is a common term associated with technology today. An example of an Algorithm is using a specific type of software that takes in historic viewing data, applies statistical analysis to that data, and then turns out recommendations for the next movie or series to binge.
 
 In general, algorithms are a **sequence** of steps that **solve a problem** with a **reliable** result. So the above movie recommendation algorithm solves the *problem* of location streaming media you might like, based on previous viewing history.
 

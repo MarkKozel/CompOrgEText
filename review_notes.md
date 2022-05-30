@@ -110,11 +110,11 @@ You use both these terms and I’m unsure if they are the same thing: Abstractio
 
 Introduction is missing information? **Fixed**
 
-Abstraction topic unit: What is the difference between Natural Language and Human Language and Assembly Language? You’ll need to define those somewhere before you use them in the table, so when they come up, we know what you mean. BTW, I do see you define Natural Language on the Algorithm page, but that is too late.
+**Fixed** Abstraction topic unit: What is the difference between Natural Language and Human Language and Assembly Language? You’ll need to define those somewhere before you use them in the table, so when they come up, we know what you mean. BTW, I do see you define Natural Language on the Algorithm page, but that is too late.
 
-Abstraction topic unit: An Algorithm is ** a Problem. Missing a word between asterisks?
+**Fixed, I think. I don't see the issue**Abstraction topic unit: An Algorithm is ** a Problem. Missing a word between asterisks?
 
-The two sentences below don’t really help me understand anything. I don’t know what you’re trying to say about the first three layers, while you eventually get to what you mean about “general-purpose things”. I don’t think you should use “thing” within the definition. and “might be” seems off if you are defining something and now saying it “might be” the next prime number calculator…are you saying that’s an example of what the first three could do? I’m confused. Here are the sentences: 
+**Fixed. Yep, that was kinda messy. Made a more specific example** The two sentences below don’t really help me understand anything. I don’t know what you’re trying to say about the first three layers, while you eventually get to what you mean about “general-purpose things”. I don’t think you should use “thing” within the definition. and “might be” seems off if you are defining something and now saying it “might be” the next prime number calculator…are you saying that’s an example of what the first three could do? I’m confused. Here are the sentences: 
 
 The gap in between **Program** and **Instruction Set Architecture** exists because the first three abstraction layers are specific things and the last four are general-purpose things.
 
@@ -130,6 +130,6 @@ In Computer Organization, we'll focus on the Instruction Set Architecture (ISA) 
 
 This last sentence has a lot to say, so we need to talk on how to unpack it better: Abstraction layers in Computer Organization start with a Problem to be solved and presents that problem (given that the problem is solved using a computer) to a Program that is rendered in the computer's ISA that ultimately gets represented in Devices.
 ===========
-Key point from editing: be consistent with using “we”. When you use “you”, you are changing the point of view. Stay with “we”.
+**Will Do** Key point from editing: be consistent with using “we”. When you use “you”, you are changing the point of view. Stay with “we”.
 ===========
 
