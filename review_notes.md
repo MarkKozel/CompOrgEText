@@ -41,15 +41,15 @@ Diversity - MARK: Please update this topic with more current information!!! Also
 **Fixed, I think after correcting an error** It’s really hard to get back to this page from another page.
 
 First Impression of Introduction
-**TODO I will think about this one. It is not part of the course materals** The sidebar menu is different from other sidebar menus: spacing and the font. Please correct.
+**TODO I will think about this one. It is not part of the course materials** The sidebar menu is different from other sidebar menus: spacing and the font. Please correct.
 
 **It is not part of the course materials** The format of Introduction, Main, and Conclusion is not used here. Navigation within the History page to the linked topic unit pages are different, too.
 
 **Fixed by you** Under Diversity, you have bulleted list of three items that discuss metrics of women and people of color. The first bullet uses a fraction, the second use percentages. You need to stick to one type of unit when listing these, as they share a list, and therefore, are somewhat related (parallelism).
 
-**TODO - redesigning** For Prehistory, you need to define what that is because if I asked students what the difference between Prehistory and History, how confident are you that they’d know? 
+**Won't Do - I'm going to retain the structure from Chemeketa Community College** For Prehistory, you need to define what that is because if I asked students what the difference between Prehistory and History, how confident are you that they’d know? 
 
-**TODO** Concepts has a Conclusion title, but no content beneath it.
+**Fixed - removed Intro/Conclusion to match other Section pages** Concepts has a Conclusion title, but no content beneath it.
 
 **Fixed, please check in Safari again** The Concepts Key’s sideways text overlaps the definitions and are difficult to read in my browser (Safari). 
 
@@ -129,7 +129,7 @@ In addition, The transition from Problem to Algorithm is interesting. A problem 
 In Computer Organization, we'll focus on the Instruction Set Architecture (ISA) layer. But first, we need to understand how Devices create Circuits, that make the Microarchitecture needed to support the ISA.
 
 This last sentence has a lot to say, so we need to talk on how to unpack it better: Abstraction layers in Computer Organization start with a Problem to be solved and presents that problem (given that the problem is solved using a computer) to a Program that is rendered in the computer's ISA that ultimately gets represented in Devices.
-===========
-**Will Do** Key point from editing: be consistent with using “we”. When you use “you”, you are changing the point of view. Stay with “we”.
-===========
+
+**Fixed amd will be aware when updating** Key point from editing: be consistent with using “we”. When you use “you”, you are changing the point of view. Stay with “we”.
+
 

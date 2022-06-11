@@ -41,3 +41,5 @@ US-based non-profit society for computing leads international computing science 
 - Celebration of Diversity networking for under-represented groups
 - CSTA teaching association to focus on K-12 support of future computing professionals
 
+<!-- Most Diverse Computer Science Programs for 2022
+https://www.computerscience.org/degrees/most-diverse-schools-computer-science/ -->
