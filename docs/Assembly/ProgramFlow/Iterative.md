@@ -12,30 +12,38 @@ tags: []
 
 <KeyConcepts :ConceptArray= "[
 {
-  Concept:'Sequential Flow',
-  Details:'Program execution in order, without any variation'
-},
-{
-  Concept:'Conditional Flow',
-  Details:'A single decision point in the program that will execute or skip a section of the code'
-},
-{
   Concept:'Iterative Flow',
   Details:'Repeating a section of code more than once, often with different data each time'
+},
+{
+  Concept:'Repeating code blocks',
+  Details:'During execution a program can execute the same code block repeatedly'
+},
+{
+  Concept:'Knowing when to stop iterating',
+  Details:'In order to know when to stop, a control variable is used to track iterations and is checked each cycle. If the variable reaches a preset value, the loop terminates'
 }
 ]" />
 
+::: details Terms
+!!!include(TextSnippets/Assembly/ProgramFlow_Terms.md)!!!
+:::
+
 ## Introduction
 
+Beyond executing sequential and conditional instructions, computers reliably execute the same set.
 
+!!!include(TextSnippets/Assembly/Conditional.md)!!!
 
 ## Iterative Flow
 
-A program can execute a section of code multiple times. This is common in arithmetic function and database processing
+A program can execute a section of code multiple times. This is common in arithmetic function and database processing.
 
-The number of iteration (number of times the section runs) can be a built-in value or based on user or external inputs
+The number of iteration (number of times the section runs) can be a built-in value or based on user or external inputs.
 
 ![Iterative Flow Diagram](/images/AssemblyProgramming/ProgramFlow/Diagram_Iterative.png)
+
+Iterative loops must have some **control** criteria to determine when to stop looping. This is typically a data element that tracks the loop cycles and reaches a value that indicates the loop should terminate. 
 
 ## For Loop
 <!-- For Loop file 
@@ -119,3 +127,6 @@ myLoop
 ```
 
 ## Conclusion
+One or more instructions are executed more that one time. Each time the instructions are executed, data can be updated to new values.
+
+Iterative constructs use a Control value to mange the looping and is used to decide when to exit the loop

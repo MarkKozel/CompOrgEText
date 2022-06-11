@@ -42,4 +42,11 @@ US-based non-profit society for computing leads international computing science 
 - CSTA teaching association to focus on K-12 support of future computing professionals
 
 <!-- Most Diverse Computer Science Programs for 2022
-https://www.computerscience.org/degrees/most-diverse-schools-computer-science/ -->
+https://www.computerscience.org/degrees/most-diverse-schools-computer-science/ 
+
+Women in Computer Science: Getting Involved in STEM
+https://www.computerscience.org/resources/women-in-computer-science/ 
+
+Gender Diversity in Computer Science
+https://www.computerscience.org/resources/diversity-in-computer-science/
+-->

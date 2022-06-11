@@ -10,11 +10,14 @@ tags: []
 
 **{{ $frontmatter.description }}**
 
+### Terms Used in this Section
+!!!include(TextSnippets/Assembly/ProgramFlow_Terms.md)!!!
+
 ## Sequential Program Flow
-This is normal program execution. each instruction in order
+This is normal program execution. Each instruction in order.
 
 ## Conditional Program Flow
-Programs can decide, while executing, to jump to a different section of the programs. If/Else is a common conditional flow example
+Programs can decide, while executing, to jump to a different section of the programs. If/Else is a common conditional flow example.
 
 ## Iterative Program Flow
-Based on some value, a program make execute the same set of instruction several times, until something changes. This is seen in loop flows like for-loop and while-loop behavior
+Based on some value, a program make execute the same set of instruction several times, until something changes. This is seen in loop flows like for-loop and while-loop behavior.

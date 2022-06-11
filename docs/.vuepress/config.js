@@ -32,7 +32,7 @@ module.exports = {
   // },
 
   themeConfig: {
-    logo: '/images/CourseLogo.png',
+    logo: '/images/th-1438664806.jpg',
     repo: '',
     editLinks: false,
     docsDir: '',

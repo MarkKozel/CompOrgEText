@@ -1,7 +1,7 @@
 ---
 title: Sequential Program Flow
 parent: Assembly
-description: Controlling the flow of a program from within the program is a big part of Turing initial General Purpose computer. It allows a program to execute in various orders, based on internal changes and external data
+description: Executing instructions in-order
 pageClass: Topic
 tags: []
 ---
@@ -16,18 +16,18 @@ tags: []
   Details:'Program execution in order, without any variation'
 },
 {
-  Concept:'Conditional Flow',
-  Details:'A single decision point in the program that will execute or skip a section of the code'
-},
-{
-  Concept:'Iterative Flow',
-  Details:'Repeating a section of code more than once, often with different data each time'
+  Concept:'Predictable Execution',
+  Details:'Without any variation is execution, sequential program flow is predictable'
 }
 ]" />
 
-## Introduction
+::: details Terms
+!!!include(TextSnippets/Assembly/ProgramFlow_Terms.md)!!!
+:::
 
-A program executing in sequence is not changing flow. It is executing each instruction in order from first to last
+## Introduction
+A sequential group of instructions (code block) is executing each instruction in order from first to last. Each time the program runs, the code block executes in the same order and with the same results.
+
 ## Sequential Flow
 
 Without any influence from user or data, a program will execute each instruction in order.

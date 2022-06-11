@@ -12,44 +12,43 @@ tags: []
 
 <KeyConcepts :ConceptArray= "[
 {
-  Concept:'Sequential Flow',
-  Details:'Program execution in order, without any variation'
-},
-{
   Concept:'Conditional Flow',
   Details:'A single decision point in the program that will execute or skip a section of the code'
 },
 {
-  Concept:'Iterative Flow',
-  Details:'Repeating a section of code more than once, often with different data each time'
+  Concept:'Program makes decisions based in outside information',
+  Details:'During execution a program can change program flow based on data or user inputs'
+},
+{
+  Concept:'Either/Or Decisions',
+  Details:'Beyond executing or skipping instructions, a program make a mutually-exclusive decision to execute one (1) set of instruction or another'
 }
 ]" />
 
+::: details Terms
+!!!include(TextSnippets/Assembly/ProgramFlow_Terms.md)!!!
+:::
+
 ## Introduction
 
-Programs can react to data or user inputs during execution, and *decide* to execute a different set of instruction based on the input. The ability to make these decisions allows the program to be dynamic, reacting to various inputs and producing appropriate outputs
+Programs can react to data or user inputs during execution, and *decide* to execute a different set of instruction based on the input. The ability to make these decisions allows the program to be dynamic, reacting to various inputs and producing appropriate outputs.
+
+The standard conditional flow has two (2) types: 1) IF, where instructions are executed or skipped and , 2) IF/ELSE, where one (1) set of instructions are executed or an different set are executed.
+
+
+!!!include(TextSnippets/Assembly/Conditional.md)!!!
+
 
 ## Conditional Flow
 
 In conditional flow, the program can execute or skip 1 or more lines of code based on a condition. The condition is evaluated while the program is running. In this way, the same program can execute differently, based on data or user inputs, each time it runs
 
-**Conditions** are the result of comparing data with another data items, or to a range of values. The condition typically results in a true/false state
-
-::: details Example Comparisons
-- data is the same as a single value  ```x = 17```
-- data is larger that a value         ```x > 16```
-- data within a range of values       ```x > 16 && x < 87```
-
-In each case, the comparison is either true or false
-:::
-
-With the Condition evaluated, the program will execute or skip certain code if the condition is ```true```. Otherwise, the program will continue executing in a sequential flow
 
 ![Conditional Flow Diagram](/images/AssemblyProgramming/ProgramFlow/Diagram_Conditional.png)
 
 <!-- If Branch md file 
 !!!include(Assembly/ProgramFlow/Conditional_If.md)!!!-->
-### IF Branch
+### If Branch
 A program can evaluate a condition, such as an arithmetic or logical comparison between values. Based on that condition, the code may skip a section of code that does not pertain to the condition
 
 *Simple conditional 'if'  program in Java and LC-3 Assembly*
