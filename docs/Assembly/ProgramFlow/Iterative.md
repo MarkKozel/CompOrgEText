@@ -51,24 +51,9 @@ Iterative loops must have some **control** criteria to determine when to stop lo
 
 ### For Loop Example
 
-```java
-int x = 0;
-for(int i = 0; i < 10; i++) {
-x += i; //Add current value if i to x
-}
-```
+@[code lang=java{3}](.vuepress/public/examples/Assembly/ProgramFlow/ForLoop.java)
 
-``` 
-.ORIG x3000
-  ADD R1, R1, #0; int x = 0
-  ADD R2, R2, #0; int i = 0;
-loop   
-
-  Done HALT
-.END
-
-
-```
+@[code lang=asm{7-10}](.vuepress/public/examples/Assembly/ProgramFlow/ForLoop.asm)
 
 ## While Loop
 
@@ -82,15 +67,9 @@ A while loop much update the condition variable inside the loop, so that when te
 !!!include(Assembly/ProgramFlow/Iterative_WhileLoop.md)!!!-->
 
 ### While Loop Example
-```java
-//Condition: Keep looping until i is 10 or more
-//Action: Starting at 0, add 2 to i each loop
+@[code lang=java{5-7}](.vuepress/public/examples/Assembly/ProgramFlow/While.java)
 
-int i = 0; //data to update in the loop
-while(i <= 10){
-  i += 2; //Add 2 to the data
-}
-```
+@[code lang=asm{6-10}](.vuepress/public/examples/Assembly/ProgramFlow/While.asm)
 
 ::: details Breakdown of code
   **i** is both the data to be acted on and the condition variable used to control the loop
@@ -109,22 +88,6 @@ while(i <= 10){
 :::
 
 <QuestionMC question="After the While Loop completes i will contain what number?" answer='D' AChoice="2" BChoice="8" CChoice="10" DChoice="12" rightAnswerFeedback="Right! It will loop 6 times total" wrongAnswerFeedback="Incorrect. Because the condition is 'greater than or equal to', when i = 10 the loop is entered 1 last time, adding 2 more"/>
-
-``` 
-.ORIG x3000
-  ADD R1, R1, #0; int i = 0
-
-;Condition: Keep looping until R1 is 10 or more
-;Action: Starting at 0, add 2 to R1 each loop
-myLoop   
-  ADD R2, R1, #-10 ; Test R1 <= 10. Store in R2 so we don't affect the data
-  BRnz Done        ; R1 + (-10) is zero or negative, jump out of loop
-  ADD R1, R1, #2   ; Add 2 to the data
-  BRnzp myLoop     ; Go back and possible loop again
-
-  Done HALT
-.END
-```
 
 ## Conclusion
 One or more instructions are executed more that one time. Each time the instructions are executed, data can be updated to new values.
