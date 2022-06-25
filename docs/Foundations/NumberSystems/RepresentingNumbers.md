@@ -20,6 +20,10 @@ tags: []
   }
 ]" />
 
+::: details Terms
+!!!include(TextSnippets/Foundations/NumberSystems_Terms.md)!!!
+:::
+
 ## Introduction
 
 The following table is a quick reference between binary and decimal numbers 0 - 15. For unsigned decimal numbers, 4 bits is all that in needed to represent 0 - 15

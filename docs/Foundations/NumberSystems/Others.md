@@ -16,6 +16,12 @@ tags: []
 }
 ]" />
 
+::: details Terms
+!!!include(TextSnippets/Foundations/NumberSystems_Terms.md)!!!
+:::
+
+## Introduction
+
 ## Base 8
 
 ::: bythenumbers Base 8 Number System

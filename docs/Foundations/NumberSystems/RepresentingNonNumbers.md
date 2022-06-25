@@ -20,6 +20,10 @@ tags: []
   },
 ]" />
 
+::: details Terms
+!!!include(TextSnippets/Foundations/NumberSystems_Terms.md)!!!
+:::
+
 ## Introduction
 
 ## ASCII

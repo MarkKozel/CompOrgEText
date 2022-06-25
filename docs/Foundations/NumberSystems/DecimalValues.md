@@ -24,6 +24,10 @@ tags: []
 }
 ]" />
 
+::: details Terms
+!!!include(TextSnippets/Foundations/NumberSystems_Terms.md)!!!
+:::
+
 ## Introduction
 
 ## What is **Base 10**?

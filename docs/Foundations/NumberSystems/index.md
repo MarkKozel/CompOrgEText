@@ -8,6 +8,9 @@ tags: [number systems, binary, data, digital, analog, hexadecimal, hex]
 # {{ $frontmatter.title }}
 **{{ $frontmatter.description }}**
 
+### Terms Used in this Section
+!!!include(TextSnippets/Foundations/NumberSystems_Terms.md)!!!
+
 ## Introduction
 
 The advent and evolution of number systems were essential to keep pace with human's needs for understanding and classifying the work around us. Creating a common system to show and calculate quantities is the framework or mathematics...and, more specific to our interests, computer science.

@@ -20,6 +20,12 @@ tags: []
 }
 ]" />
 
+::: details Terms
+!!!include(TextSnippets/Foundations/NumberSystems_Terms.md)!!!
+:::
+
+## Introduction
+
 ## What is **Base 16**?
 
 ::: bythenumbers Base 16 Number System
