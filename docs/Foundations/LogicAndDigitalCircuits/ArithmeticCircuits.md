@@ -20,6 +20,10 @@ tags: []
 }
 ]" />
 
+::: details Terms
+!!!include(TextSnippets/Foundations/LogicAndDigitalCircuits_Terms.md)!!!
+:::
+
 ## Introduction
 
 Performing mathematical operations is a fundamental capability for computers. In this section we review Addition and Subtraction circuits. There are other circuits to performs other basic and complex math operations.

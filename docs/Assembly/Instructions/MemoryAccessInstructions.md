@@ -20,6 +20,10 @@ tags: []
 }
 ]" />
 
+::: details Terms
+!!!include(TextSnippets/Assembly/Instructions_Terms.md)!!!
+:::
+
 ## Introduction
 
 Memory Access Commands proved capability to move data between Registers and Memory (RAM). 

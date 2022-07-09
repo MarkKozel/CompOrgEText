@@ -20,6 +20,10 @@ tags: []
 }
 ]" />
 
+::: details Terms
+!!!include(TextSnippets/Foundations/LogicAndDigitalCircuits_Terms.md)!!!
+:::
+
 ## Introduction
 
 Transistors are electronic devices constructed to *control* or *amplify* electrical input. In computer organization, we are interested in the *control* version as they will represent the *1* and *0* values of binary numbers

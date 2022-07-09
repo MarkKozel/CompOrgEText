@@ -20,6 +20,10 @@ tags: []
 }
 ]" />
 
+::: details Terms
+!!!include(TextSnippets/Foundations/LogicAndDigitalCircuits_Terms.md)!!!
+:::
+
 ## Introduction
 
 Control or Combination circuits are used to manage the flow of information from clock cycle to clock cycle. These groups of <a href="./BasicLogicCircuits" target="_blank">Basic Logic Circuits</a> consist of input/control bits, and one or more output bits.

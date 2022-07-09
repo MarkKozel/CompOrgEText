@@ -24,6 +24,10 @@ tags: []
 },
 ]" />
 
+::: details Terms
+!!!include(TextSnippets/Assembly/BasicIO_Terms.md)!!!
+:::
+
 ## Introduction
 
 A program with hard-coded data (values defined in the source code) can only perform calculations on that data. To change data requires modifying the source code and re-compiling and assembling the code

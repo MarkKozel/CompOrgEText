@@ -20,6 +20,10 @@ tags: []
 }
 ]" />
 
+::: details Terms
+!!!include(TextSnippets/Foundations/LogicAndDigitalCircuits_Terms.md)!!!
+:::
+
 ## Introduction
 
 The primary function of storage circuits is to retain information between clock cycles. This is commonly called **Statefulness** as these circuits *remember* their last state for future clock cycles.

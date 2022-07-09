@@ -20,6 +20,10 @@ tags: []
 }
 ]" />
 
+::: details Terms
+!!!include(TextSnippets/Foundations/LogicAndDigitalCircuits_Terms.md)!!!
+:::
+
 ## Introduction
 
 Using [Truth Tables](TruthTables.md) a circuit's function is documented. The complete set of possible inputs and outputs are declared and the expected behavior is defined.

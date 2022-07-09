@@ -9,6 +9,9 @@ tags: []
 # {{ $frontmatter.title }}
 **{{ $frontmatter.description }}**
 
+### Terms Used in this Section
+!!!include(TextSnippets/Assembly/Instructions_Terms.md)!!!
+
 ## Anatomy of LC-3 Instructions
 Breakdown of LC-3 instructions and hwo they are processed
 

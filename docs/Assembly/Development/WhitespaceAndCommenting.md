@@ -20,6 +20,10 @@ tags: [whitespace, comments, tabs, formatting, maintenance]
 },
 ]" />
 
+::: details Terms
+!!!include(TextSnippets/Assembly/Development_Terms.md)!!!
+:::
+
 ## Introduction
 
 Use of formatting of source code will make it easier to understand and updates. Including comments adds another level of built-in help for future updates.

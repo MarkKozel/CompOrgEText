@@ -24,6 +24,10 @@ tags: []
 }
 ]" />
 
+::: details Terms
+!!!include(TextSnippets/Assembly/Instructions_Terms.md)!!!
+:::
+
 ## Introduction
 
 All commands are 16-bits in length. The bits are partitioned into OpCodes and Operands. During execution of an LC-3 command, the Simulate's control unit examines the instruction (which was loaded into the IR at the start of execution)

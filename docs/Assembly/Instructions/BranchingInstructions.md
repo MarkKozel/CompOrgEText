@@ -20,6 +20,10 @@ tags: []
 }
 ]" />
 
+::: details Terms
+!!!include(TextSnippets/Assembly/Instructions_Terms.md)!!!
+:::
+
 ## Introduction
 
 The LC-3 has 1 command for branching (jumping to different lines of code). It can be used to create loops, if/else, and while loop behavior. This command is a decision point in the code. It will branch based on a register that remembers the sign of the previous instruction's result. 

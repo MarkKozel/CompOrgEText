@@ -8,6 +8,10 @@ tags: []
 
 # {{ $frontmatter.title }}
 **{{ $frontmatter.description }}**
+
+### Terms Used in this Section
+!!!include(TextSnippets/Foundations/LogicAndDigitalCircuits_Terms.md)!!!
+
 <table>
     <tr>
         <td style="width:80%" >

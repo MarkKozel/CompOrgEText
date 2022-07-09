@@ -24,6 +24,10 @@ tags: []
 }
 ]" />
 
+::: details Terms
+!!!include(TextSnippets/Foundations/LogicAndDigitalCircuits_Terms.md)!!!
+:::
+
 ## Introduction
 
 *Introduction to Logic Gates - Kevin Drumm - UK YouTube Provider*

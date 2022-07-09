@@ -20,6 +20,10 @@ tags: []
 }
 ]" />
 
+::: details Terms
+!!!include(TextSnippets/Assembly/Instructions_Terms.md)!!!
+:::
+
 ## Introductions
 
 The LC-3 ALU is capable of executing three (3) operations: ADD, AND, and NOT. Although limited, when combined, these three (3) operations can be used to do many more things that add and compare.

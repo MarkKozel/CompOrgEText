@@ -9,6 +9,8 @@ tags: []
 # {{ $frontmatter.title }}
 **{{ $frontmatter.description }}**
 
+### Terms Used in this Section
+!!!include(TextSnippets/Assembly/BasicIO_Terms.md)!!!
 
 ## Introduction
 

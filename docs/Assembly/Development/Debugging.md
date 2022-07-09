@@ -28,6 +28,10 @@ tags: [Debugging, Step Through, Errors, Syntactic, Functional, Program Flow]
 }
 ]" />
 
+::: details Terms
+!!!include(TextSnippets/Assembly/Development_Terms.md)!!!
+:::
+
 ## Introduction
 
 While developing software, a developer can run a program and note the results.

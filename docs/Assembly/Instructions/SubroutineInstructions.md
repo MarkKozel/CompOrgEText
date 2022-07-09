@@ -20,6 +20,10 @@ tags: []
   }
 ]" />
 
+::: details Terms
+!!!include(TextSnippets/Assembly/Instructions_Terms.md)!!!
+:::
+
 ## Introduction
 The ability to write small, single-purpose blocks of code that can be used repeatably is a minimal requirement for modern programming languages. It is unlikely that new programming language would succeed today without methods/subroutines
 

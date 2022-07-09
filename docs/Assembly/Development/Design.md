@@ -25,6 +25,10 @@ tags: []
 },
 ]" />
 
+::: details Terms
+!!!include(TextSnippets/Assembly/Development_Terms.md)!!!
+:::
+
 ## Introduction
 Software engineering is the methodical process of building software that
 1. solves a prescribed problem
