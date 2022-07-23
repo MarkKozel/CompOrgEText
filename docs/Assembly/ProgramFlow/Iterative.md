@@ -53,7 +53,7 @@ Iterative loops must have some **control** criteria to determine when to stop lo
 
 @[code lang=java{3}](.vuepress/public/examples/Assembly/ProgramFlow/ForLoop.java)
 
-@[code lang=asm{7-10}](.vuepress/public/examples/Assembly/ProgramFlow/ForLoop.asm)
+@[code lang=arm-asm{7-10}](.vuepress/public/examples/Assembly/ProgramFlow/ForLoop.asm)
 
 ## While Loop
 
@@ -69,7 +69,7 @@ A while loop much update the condition variable inside the loop, so that when te
 ### While Loop Example
 @[code lang=java{5-7}](.vuepress/public/examples/Assembly/ProgramFlow/While.java)
 
-@[code lang=asm{6-10}](.vuepress/public/examples/Assembly/ProgramFlow/While.asm)
+@[code lang=arm-asm{6-10}](.vuepress/public/examples/Assembly/ProgramFlow/While.asm)
 
 ::: details Breakdown of code
   **i** is both the data to be acted on and the condition variable used to control the loop

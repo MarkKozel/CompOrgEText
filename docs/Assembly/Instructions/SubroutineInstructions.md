@@ -185,7 +185,7 @@ After the JSR instruction executes, the instructions at the PCOffset address beg
 
 ### Examples
 
-@[code lang=asm{4, 8-11}](.vuepress/public/examples/Assembly/Commands/JSR1.asm)
+@[code lang=arm-asm{4, 8-11}](.vuepress/public/examples/Assembly/Commands/JSR1.asm)
 
 Lines 9 and 10 apply the 2's complement algorithm to the value in R1, storing the result in R0
 
@@ -217,7 +217,7 @@ JSRR also sets R7 for the RET instruction and has the same differences to BR as 
 
 **Call built-in subroutine**
 
-@[code lang=asm{4, 8-11}](.vuepress/public/examples/Assembly/Commands/JSRR1.asm)
+@[code lang=arm-asm{4, 8-11}](.vuepress/public/examples/Assembly/Commands/JSRR1.asm)
 
 Lines 10-12 are the subroutine to be called
 
@@ -227,7 +227,7 @@ Line 5 uses the value in R4 to jump to the subroutine
 
 **Call subroutine loaded separately**
 
-@[code lang=asm{4-5, 10, 14-21}](.vuepress/public/examples/Assembly/Commands/JSRR2.asm)
+@[code lang=arm-asm{4-5, 10, 14-21}](.vuepress/public/examples/Assembly/Commands/JSRR2.asm)
 
 Lines 14-21 are a separate assembly file assembled and loaded into memory location x5000
 
@@ -281,7 +281,7 @@ The callee code is expected to save/restore R7 always. Should the TRAP/User Func
 
 The following Subroutine, _mySub_ will use R1 and R2 internally. As the Callee, it is responsible for saving R1 and R2 before using those registers. Once complete, it will restore both registers, then return to tha Caller
 
-@[code lang=asm{4-5, 10, 14-21}](.vuepress/public/examples/Assembly/Commands/CalleeStorage.asm)
+@[code lang=arm-asm{4-5, 10, 14-21}](.vuepress/public/examples/Assembly/Commands/CalleeStorage.asm)
 
 ## Java vs LC-3 Subroutines
 

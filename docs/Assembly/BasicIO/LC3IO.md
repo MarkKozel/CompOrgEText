@@ -64,7 +64,7 @@ Reading the value is simply loading the data from the KBDR address
 
 ### Example Code
 
-@[code lang=asm{4, 8-11}](.vuepress/public/examples/Assembly/BasicIO/getChar.asm)
+@[code lang=arm-asm{4,8-11}](.vuepress/public/examples/Assembly/BasicIO/getChar.asm)
 
 - Lines 4 and 5 are a simple loop, waiting for KBSR to become negative
 - Once KBSR[15] is set to 1, and the entire KBSR is negative, the code falls through to line 6, where the KBDR is read into R0
@@ -98,7 +98,7 @@ The display device will detect the change in DDR and write the character out to 
 
 ### Example Code
 
-@[code lang=asm{4, 8-11}](.vuepress/public/examples/Assembly/BasicIO/setChar.asm)
+@[code lang=arm-asm{4, 8-11}](.vuepress/public/examples/Assembly/BasicIO/setChar.asm)
 
 - Lines 5 and 6 are a simple loop, waiting for DSR to become negative
 - Once DSR[15] is set to 1, and the entire DSR is negative, the code falls through to line 7, where the ascii value in R0 is written to DDR
