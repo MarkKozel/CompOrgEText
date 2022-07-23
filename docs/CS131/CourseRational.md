@@ -3,9 +3,6 @@ In this course, students will peer into the lowest levels of a general-purpose c
 
 This course will cover what computers consist of, how computers work, how they are organized internally, what are the design tradeoffs, and how design affects programming and applications.
 
-## Student Learning Outcomes
-Allan Hancock College has identified the expected outcomes for students completing CS 131/COMP 142
-
 ## Course Objectives
 1. Demonstrate ability to perform binary logic and arithmetic operations.
 1. Comprehend how high-level languages correspond to assembly and machine code.
