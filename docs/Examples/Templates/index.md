@@ -23,9 +23,9 @@ Initial page for a Book
 
 [Book Page](BookPage)
 
-<!-- <<< @/VuePressTests/Templates/BookPage.md -->
+<!-- <<< @/Examples/Templates/BookPage.md -->
 
-@[code lang=markdown](@/VuePressTests/Templates/BookPage.md)
+@[code lang=markdown](@/Examples/Templates/BookPage.md)
 
 ## Section Pages
 
@@ -34,7 +34,7 @@ Sections will contain 1 or more [topics](#topic-pages) that present details info
 
 [Section Page](SectionPage)
 
-<<< @/VuePressTests/Templates/SectionPage.md
+<<< @/Examples/Templates/SectionPage.md
 
 Main page for a Unit, which presents an overview of a complex concept, like *binary numbers* or *logic gates*
 Units will contain 1 or more [sections](#section-pages) that present more detailed information
@@ -43,7 +43,7 @@ Units will contain 1 or more [sections](#section-pages) that present more detail
 
 [Unit Page](UnitPage)
 
-<<< @/VuePressTests/Templates/UnitPage.md
+<<< @/Examples/Templates/UnitPage.md
 
 Main page for a Unit, which presents an overview of a complex concept, like *binary numbers* or *logic gates*
 Units will contain 1 or more [sections](#section-pages) that present more detailed information
@@ -52,10 +52,10 @@ Units will contain 1 or more [sections](#section-pages) that present more detail
 
 [Topic Page](TopicPage)
 
-<<< @/VuePressTests/Templates/TopicPage.md
+<<< @/Examples/Templates/TopicPage.md
 
 ## Topic Page (LC3 Instructions)
 
 [Topic Page (LC-3 Instruction)](TopicPageLC3Instruction)
 
-<<< @/VuePressTests/Templates/TopicPageLC3Instruction.md
+<<< @/Examples/Templates/TopicPageLC3Instruction.md

@@ -7,21 +7,21 @@
 
 ## Import Code Snippets
 
-```<<< @/VuePressTests/Examples/Another.md```
+```<<< @/Examples/Examples/Another.md```
 
-<<< @/VuePressTests/Examples/Another.md
+<<< @/Examples/Examples/Another.md
 
 
-```@[code lang=markdown](@/VuePressTests/Templates/BookPage.md)```
+```@[code lang=markdown](@/Examples/Templates/BookPage.md)```
 
-@[code lang=markdown](@/VuePressTests/Templates/BookPage.md)
+@[code lang=markdown](@/Examples/Templates/BookPage.md)
 
 
 ## Inject MD Snippets using markdown-it-include
 
 ```
 !!!
-include(VuePressTests/Examples/Another.md)
+include(Examples/Examples/Another.md)
 !!!
 
 All on 1 line
@@ -30,7 +30,7 @@ Must use forward slashes, otherwise build on live site will fail
 ```
 
 *start md injected into this page*
-!!!include(VuePressTests/Examples/Another.md)!!!
+!!!include(Examples/Examples/Another.md)!!!
 
 *end md injected into this page*
 
@@ -245,16 +245,16 @@ Here's the 411 on the thing, above...
 
 ```md
 ::: bythenumbers Test Table
-|table|data|
-|-|-|
-|1|2|
+| table | data |
+| ----- | ---- |
+| 1     | 2    |
 :::
 ```
 
 ::: bythenumbers Test Table
-|table|data|
-|-|-|
-|1|2|
+| table | data |
+| ----- | ---- |
+| 1     | 2    |
 :::
 
 

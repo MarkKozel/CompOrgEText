@@ -55,10 +55,10 @@ module.exports = {
         text: 'About',
         link: '/about/',
       },
-      {
-        text: 'Examples',
-        link: '/VuePressTests/',
-      },
+      // {
+      //   text: 'Examples',
+      //   link: '/Examples/',
+      // },
     ],
     sidebar: {
       '/CS131/': [
@@ -229,6 +229,7 @@ module.exports = {
             'Colophon',
             'GettingStarted',
             'GitBuildMgmt',
+            'Contributors',
           ]
         }
       ],
