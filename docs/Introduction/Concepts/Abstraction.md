@@ -65,19 +65,6 @@ Abstraction builds relationships among layers. So, when moving between layers, w
 - Moving to a less specific layer (up), we would say the Lower level *is part of the* Higher level:
 >A Phylum *is part of the* Kingdom
 
-::: details Natural Language
-Spoken, written, and signed communication that evolved along with humans. The natural languages we use today exist by common use and repetition, without formal planning or design.
-
-[Natural Language](https://en.wikipedia.org/wiki/Natural_language)
-:::
-
-::: details Ambiguity
-Words, phrases, and other communication elements that are not strictly defined. Information having ambiguity has some level of vagueness, and can be interpreted differently by each consumer.
-
-[Ambiguity](https://en.wikipedia.org/wiki/Ambiguity)
-:::
-
-
 <QuestionTF question="Computer programs can have ambiguity in the source code" answer='false' rightAnswerFeedback="Ambiguity would lead to some pretty unreliable programs" wrongAnswerFeedback="Any unclear instructions typically lead to errors or buggy programs"/>
 
 <QuestionTF question="A programmer translates problems initially described in Natural Language into a programming language that has little or no ambiguity" answer='true' rightAnswerFeedback="In effect, programs are translators, and must clear up any vagueness in the problem description" wrongAnswerFeedback="Translating is a primary function when programmers solving a problem"/>
@@ -89,16 +76,16 @@ Within Computer Science, there are several places where abstraction is used to o
 
 Within Computer Organization, we use a set of abstraction levels that start with a _Problem_ at the top-most level, down to _Devices_ at the lowest level.
 
-|Abstraction Layer|Description|Move Down|Move Up|
-|-|-|-|-|
-|Problem|Defining a thing to solve using Natural Language|A Program can be *stated* as an Algorithm|-|
-|Algorithm|Set of steps that that solve a Problem without the ambiguity of Natural Language|An Algorithm is *implemented* as a Program|An Algorithm ** a Problem|
-|Program|Data, functions, and syntax of a chosen programming language that executes an Algorithm|A Program is *Rendered* into an Instruction Set Architecture|A Program *realizes* an Algorithm|
-|||||
-|Instruction Set Architecture|Instructions and data of an Assembly Language that implements a Program|An Instruction Set Architecture (ISA) is *orchestrated* by a Microarchitecture|An Instruction Set Architecture *executes* a Program|
-|Microarchitecture|Logic, storage, and control that executes ISA instructions|A Microarchitecture *manages* Circuits|A Microarchitecture *implements* an ISA|
-|Circuits|Components that are combined to construct Microarchitecture elements|Circuits are *made* from Devices|Circuits *implement* a Microarchitecture|
-|Devices|Electrical structures that provide digital representations of Circuit functions and behaviors|-|Devices *implement* Circuits|
+| Abstraction Layer            | Description                                                                                   | Move Down                                                                      | Move Up                                              |
+| ---------------------------- | --------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ | ---------------------------------------------------- |
+| Problem                      | Defining a thing to solve using Natural Language                                              | A Program can be *stated* as an Algorithm                                      | -                                                    |
+| Algorithm                    | Set of steps that that solve a Problem without the ambiguity of Natural Language              | An Algorithm is *implemented* as a Program                                     | An Algorithm ** a Problem                            |
+| Program                      | Data, functions, and syntax of a chosen programming language that executes an Algorithm       | A Program is *Rendered* into an Instruction Set Architecture                   | A Program *realizes* an Algorithm                    |
+|                              |                                                                                               |                                                                                |                                                      |
+| Instruction Set Architecture | Instructions and data of an Assembly Language that implements a Program                       | An Instruction Set Architecture (ISA) is *orchestrated* by a Microarchitecture | An Instruction Set Architecture *executes* a Program |
+| Microarchitecture            | Logic, storage, and control that executes ISA instructions                                    | A Microarchitecture *manages* Circuits                                         | A Microarchitecture *implements* an ISA              |
+| Circuits                     | Components that are combined to construct Microarchitecture elements                          | Circuits are *made* from Devices                                               | Circuits *implement* a Microarchitecture             |
+| Devices                      | Electrical structures that provide digital representations of Circuit functions and behaviors | -                                                                              | Devices *implement* Circuits                         |
 
 
 Problem, Algorithm, and Program layers are focused on a solution to a specific problem. 

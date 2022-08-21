@@ -45,7 +45,6 @@ This cycle repeats for each new chapter or topic.
 
 Algorithms can be written at different levels of detail (Abstraction Levels) depending on the audience or purpose of the Algorithm.
 
-
 ## Algorithms
 An Algorithm is a common term associated with technology today. An example of an Algorithm is using a specific type of software that takes in historic viewing data, applies statistical analysis to that data, and then turns out recommendations for the next movie or series to binge.
 
@@ -75,7 +74,23 @@ In addition, we will also create algorithms that describe at a higher level of a
 ### Creating an Algorithm
 To create an algorithm, we typically start with the problem or *Problem Statement*. A problem statement will capture an issue that, hopefully, can be solved by computer and some clever code. It will be written in the author's native language
 
-This means it will likely include *Ambiguity* that is understandable to most people that are fluent in the native language. However, software engineers must remove all ambiguity somewhere between the problem statement and the final program, as computers do not handle any ambiguity. We are going to removal all ambiguity when converting the problem statement to an algorithm
+::: details Natural Language
+Spoken, written, and signed communication that evolved along with humans. The natural languages we use today exist by common use and repetition, without formal planning or design.
+
+[Natural Language](https://en.wikipedia.org/wiki/Natural_language)
+:::
+
+This means it will likely include *Ambiguity* that is understandable to most people that are fluent in the native language.
+
+::: details Ambiguity
+Words, phrases, and other communication elements that are not strictly defined. Information having ambiguity has some level of vagueness, and can be interpreted differently by each consumer.
+
+[Ambiguity](https://en.wikipedia.org/wiki/Ambiguity)
+:::
+
+However, software engineers must remove all **ambiguity** somewhere between the problem statement and the final program, as computers do not handle any ambiguity. In addition, any **Natural language** terms must be converted to generally-understood words/phrases.
+
+We are going to removal all **ambiguity** and **natural language** when converting the problem statement to an algorithm.
 
 ::: right
 Learn how trivial bit of ambiguity caused the Mars Climate Orbiter that burned up in Mars' atmosphere
