@@ -9,11 +9,14 @@ tags: []
 # {{ $frontmatter.title }}
 **{{ $frontmatter.description }}**
 
-## Diversity
+**Diversity**
+
 The topic features some current programs and organizations that support inclusions of all people in computing fields.
 
-## History
+**History**
+
 This topic takes a brief look at the elements and devices that have coalesced into today’s general-purpose computer hardware.
 
-## Concepts
+**Concepts**
+
 This topic discusses concepts like abstraction and algorithms as used in computer organization. It bridges the gap between software and hardware, and defines analog/digital computer and general-/specific-use hardware.
