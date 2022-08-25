@@ -186,8 +186,8 @@ module.exports = {
           collapsable: true,
           children: [
             'Pioneers/Turing',
-            'Pioneers/Shannon',
             'Pioneers/vonNeumann',
+            'Pioneers/Shannon',
           ],
         },
         {
