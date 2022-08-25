@@ -49,6 +49,11 @@ In 1936, Turing revealed his theoretical *automatic machine* or *a-machine*. It 
 
 Without the technology to build a prototype, Turing defines components that we recognize today as a modern computer
 
+![Physical Turing Machine](/images/Foundations/Turing/1080px-Turing_Machine_Model_Davey_2012.jpg)
+<center>Physical model of a Turing Machine</center>
+
+By Rocky Acosta - Own work, CC BY 3.0, https://commons.wikimedia.org/w/index.php?curid=24369879
+
 ### Tape
 The *Tape* is an infinitely long read/write ledger of data. It is made up of cells, each containing a single symbol that the machine understands.
 
@@ -78,17 +83,17 @@ The Turing Machine instruction system is as follows:
     - Move *Head* Mv direction
     - Set *State Register* to S<sub>1</sub>
 
-|S<sub>0</sub>|Rd|Wt|Mv|S<sub>1</sub>|Description|
-|-|-|-|-|-|-|
-|A|-|-|Lt|B|If in state **A** -and- **blank** is read from the Tape: <br>1) Write *blank* to the tape, <br>2) Move Head to the Left 1 space, and <br>3) Switch to B State|
-|A|0|-|Rt|A|If in state **A** -and- **0** is read from the Tape: <br>1) Write *blank* to the tape, <br>2) Move Head to the Right 1 space, and <br>3) Stay in A State|
-|A|1|-|Rt|A|If in state **A** -and- **1** is read from the Tape: <br>1) Write *blank* to the tape, <br>2) Move Head to the Right 1 space, and <br>3) Stay in A State|
-|B|-|1|Rt|C|If in state **B** -and- **blank** is read: <br>Write *1*, Move Right, Switch to C State|
-|B|0|1|Lf|C|If in state **B** -and- **0** is read: <br>Write *1*, Move Left, Switch to C State|
-|B|1|0|Lf|B|If in state **B** -and- **1** is read: <br>Write *0*, Move Left, Switch to C State|
-|C|-|-|Lf|HALT|If in state **C** -and- **blank** is read: <br>Write *blank*, Move Left, **HALT**|
-|C|0|-|Rt|C|If in state **C** -and- **0** is read: <br>Write *blank*, Move Right, Stay in C State|
-|C|1|-|Rt|B|If in state **C** -and- **1** is read: <br>Write *blank*, Move Right, Stay in C State|
+| S<sub>0</sub> | Rd  | Wt  | Mv  | S<sub>1</sub> | Description                                                                                                                                                   |
+| ------------- | --- | --- | --- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| A             | -   | -   | Lt  | B             | If in state **A** -and- **blank** is read from the Tape: <br>1) Write *blank* to the tape, <br>2) Move Head to the Left 1 space, and <br>3) Switch to B State |
+| A             | 0   | -   | Rt  | A             | If in state **A** -and- **0** is read from the Tape: <br>1) Write *blank* to the tape, <br>2) Move Head to the Right 1 space, and <br>3) Stay in A State      |
+| A             | 1   | -   | Rt  | A             | If in state **A** -and- **1** is read from the Tape: <br>1) Write *blank* to the tape, <br>2) Move Head to the Right 1 space, and <br>3) Stay in A State      |
+| B             | -   | 1   | Rt  | C             | If in state **B** -and- **blank** is read: <br>Write *1*, Move Right, Switch to C State                                                                       |
+| B             | 0   | 1   | Lf  | C             | If in state **B** -and- **0** is read: <br>Write *1*, Move Left, Switch to C State                                                                            |
+| B             | 1   | 0   | Lf  | B             | If in state **B** -and- **1** is read: <br>Write *0*, Move Left, Switch to C State                                                                            |
+| C             | -   | -   | Lf  | HALT          | If in state **C** -and- **blank** is read: <br>Write *blank*, Move Left, **HALT**                                                                             |
+| C             | 0   | -   | Rt  | C             | If in state **C** -and- **0** is read: <br>Write *blank*, Move Right, Stay in C State                                                                         |
+| C             | 1   | -   | Rt  | B             | If in state **C** -and- **1** is read: <br>Write *blank*, Move Right, Stay in C State                                                                         |
 
 
 ## Animated Turing Machine
