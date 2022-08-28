@@ -108,6 +108,21 @@ The purple bar shows the instruction being executes.
 
 Source: https://www.futurelearn.com/info/courses/how-computers-work/0/steps/49259
 
+## Turing Machine Simulator
+
+Check out this simple simulator by Anthony Morphett
+[Morphett.info Turing Machine Simulator](http://morphett.info/turing/turing.html)
+
+1. Select *Load and Example Program* and select **Binary Addition**
+1. In the *Initial Input* field, enter **100 1110** (4 and 14 in base 10, note the space between the two values)
+1. Click *Reset*
+2. Click *Run*
+3. The machine will execute the programs and the Tape should display **10010** (18 in base 10)
+
+Repeat the steps, but use the *Step* button to see each *Instruction Cycle* of teh Turing Machine
+
+[Link to GitHub project](https://github.com/awmorp/turing)
+
 ## Conclusion
 
 Turing defined a theoretical general purpose computer with the basic components used in today's actual computers.
