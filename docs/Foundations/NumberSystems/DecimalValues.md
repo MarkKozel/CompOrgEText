@@ -29,16 +29,38 @@ tags: []
 :::
 
 ## Introduction
+Number System: System for expressing numbers and relationships between numbers in written form. Number System start a zero (0) and end with (Base – 1)
+
+We are taught and use the Base 10/Decimal system almost without thinking. However, we use several other number systems at times:
+- Donut shop number system (12)
+  - Based on a *dozen* base value
+  - And sometimes you get 13 donuts, a baker's dozen, but this is primarily a marketing tactic
+- College schedule (3 semesters / 4 quarter)
+  - If someone says "I'm taking *Calc I* the 2nd semester, you probably understand that to be in the spring
+- College grading system (A – F)
+  - You know that an *A* is better than a *B*
+- Date and Time
+  - 12 months in a year
+  - 100 years in a century
+  - 28 or 29 or 30 or 31 days in a month
+  - 60 minutes in an hour
+  - 12 or 25 hours in a day
+
+We all pretty competently work in all these numbers systems. In Computer Organization we will primarily focus on three (3) systems:
+- Base 10 / Decimal
+- Base 2 / Binary
+- Base 16 / Hexadecimal
+
 
 ## What is **Base 10**?
 
 ::: bythenumbers Base 10 Number System
-|Property|Value|
-|-|-:|
-|# of symbols|10|
-|Symbol Range|0 - 9|
-|Symbols|0 1 2 3 4 5 6 7 8 9|
-|Place Value Factor|10|
+| Property           |               Value |
+| ------------------ | ------------------: |
+| # of symbols       |                  10 |
+| Symbol Range       |               0 - 9 |
+| Symbols            | 0 1 2 3 4 5 6 7 8 9 |
+| Place Value Factor |                  10 |
 :::
 
 Also referred to as Decimal and Denary system, *Base 10* is a system commonly used by humans to refer to integer values or quantities
