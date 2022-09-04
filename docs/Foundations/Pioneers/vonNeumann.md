@@ -71,7 +71,7 @@ Output devices (referred to as **O**) store or show final results. Devices such 
 
 ## Conclusion
 
-von Neumann's model, based on the human nervous system, re-defined computer architecture. Th interactions between *Control*, *CPU* and *Memory* are paramount in the success of computer technology.
+von Neumann's model, based on the human nervous system, re-defined computer architecture. The interactions between *Control*, *CPU* and *Memory* are paramount in the success of computer technology.
 
 Today's computers contain the same core elements, albeit, considerably faster and smaller.
 
