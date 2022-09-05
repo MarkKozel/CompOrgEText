@@ -67,3 +67,5 @@ Understand how basic logic circuits can implement math operations like addition 
 
 ## Storage Circuits
 Basic logic circuits can also be arraigned to maintain digital information between computer clock-cycles. This allows modern computer hardware to retain information through more complex operations that take multiple operations to complete.
+
+!!!include(TextSnippets/GetStartedByExpandingTheSidebar.md)!!!

@@ -26,3 +26,5 @@ Develop a working understanding of how basic program flow, like If/Else is creat
 
 **Development**
 Tools and practices from creating, document, and modifying source code
+
+!!!include(TextSnippets/GetStartedByExpandingTheSidebar.md)!!!

@@ -20,3 +20,5 @@ This topic takes a brief look at the elements and devices that have coalesced in
 **Concepts**
 
 This topic discusses concepts like abstraction and algorithms as used in computer organization. It bridges the gap between software and hardware, and defines analog/digital computer and general-/specific-use hardware.
+
+!!!include(TextSnippets/GetStartedByExpandingTheSidebar.md)!!!
