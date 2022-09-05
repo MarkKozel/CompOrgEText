@@ -52,6 +52,10 @@ module.exports = {
         link: '/Assembly/',
       },
       {
+        text: 'Add\'l Info',
+        link: '/AdditionalMaterials/',
+      },
+      {
         text: 'About',
         link: '/about/',
       },
@@ -61,6 +65,18 @@ module.exports = {
       // },
     ],
     sidebar: {
+      '/AdditionalMaterials/': [
+        {
+          title: 'Add\'l Info',
+          collapsable: true,
+          sidebarDepth: 3,
+          children: [
+            '',
+            'Links',
+            'Videos',
+          ]
+        }
+      ],
       '/CS131/': [
         {
           title: 'CS 131',
