@@ -44,7 +44,7 @@ We are taught and use the Base 10/Decimal system almost without thinking. Howeve
   - 100 years in a century
   - 28 or 29 or 30 or 31 days in a month
   - 60 minutes in an hour
-  - 12 or 25 hours in a day
+  - 12 or 24 hours in a day
 
 We all pretty competently work in all these numbers systems. In Computer Organization we will primarily focus on three (3) systems:
 - Base 10 / Decimal

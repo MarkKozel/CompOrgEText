@@ -86,11 +86,11 @@ These conversions are generated using the 2's complement algorithm:
 Use the above algorithm to test yourself
 ::: details What is the 2's complement value for +25<sub>10</sub> (011001<sub>2</sub>)
 
-| Step | bit value | decimal value |
-|-|-|-|
-|Starting Value| 011001 | 25 |
-|Flip the Bits|100110| n/a |
-|Add 1|100111| -25|
+| Step           | bit value | decimal value |
+| -------------- | --------- | ------------- |
+| Starting Value | 011001    | 25            |
+| Flip the Bits  | 100110    | n/a           |
+| Add 1          | 100111    | -25           |
 
 :::
 
@@ -126,7 +126,7 @@ In order to represent fractional values in binary, a fixed number of the least s
 
 An architecture will define how many bits are used for the fractional and whole-number part. There is no bit used to hold the *decimal point* in memory. The hardware is configured to always, in the case of this example, use the 3 least significant bits.
 
-### **Computer Science Series** - Binary 3 – Fixed Point Binary Fractions
+#### **Computer Science Series** - Binary 3 – Fixed Point Binary Fractions
 <p>This is the third in a series of videos about the binary number system which is fundamental to the operation of a digital electronic computer. It covers the representation of real numbers in binary using a fixed size, fixed point, register. It explains with examples how to convert both positive and negative denary numbers to and from fixed point binary format. It also covers the advantages and limitations of processors that make use of fixed point registers.</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QFlbvSeBkwY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
