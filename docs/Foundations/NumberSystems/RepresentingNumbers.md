@@ -3,7 +3,7 @@ title: Representing Numbers in Binary
 parent: Number Systems
 description: IN WORK, DO NOT USE YET
 pageClass: Topic
-tags: []
+tags: [2's complement, unsigned, fixed point, sign bit, ]
 ---
 
 # {{ $frontmatter.title }}

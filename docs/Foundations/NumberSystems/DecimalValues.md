@@ -3,7 +3,7 @@ title: Decimal Values
 parent: Number Systems
 description: Review base 10 number system and recall how you learned to perform arithmetic operations
 pageClass: Topic
-tags: []
+tags: [decimal base10 place value]
 ---
 
 # {{ $frontmatter.title }}

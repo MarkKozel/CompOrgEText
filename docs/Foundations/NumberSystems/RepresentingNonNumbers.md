@@ -3,7 +3,7 @@ title: Representing Non-Numbers in Binary
 parent: Number Systems
 description: IN WORK, DO NOT USE YET
 pageClass: Topic
-tags: []
+tags: [ascii, unicode, text]
 ---
 
 # {{ $frontmatter.title }}
