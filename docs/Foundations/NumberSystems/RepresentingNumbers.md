@@ -1,7 +1,7 @@
 ---
 title: Representing Numbers in Binary
 parent: Number Systems
-description: IN WORK, DO NOT USE YET
+description: Using bits to represent useful numeric type
 pageClass: Topic
 tags: [2's complement, unsigned, fixed point, sign bit, ]
 ---

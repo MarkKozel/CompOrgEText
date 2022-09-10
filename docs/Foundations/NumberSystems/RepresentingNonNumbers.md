@@ -1,7 +1,7 @@
 ---
 title: Representing Non-Numbers in Binary
 parent: Number Systems
-description: IN WORK, DO NOT USE YET
+description: Using bits to represent useful non-numeric data
 pageClass: Topic
 tags: [ascii, unicode, text]
 ---
