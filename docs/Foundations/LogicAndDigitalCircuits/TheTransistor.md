@@ -34,7 +34,12 @@ There are 2 general types of transistors used in computer hardware. They are mad
 <p>A detailed look at semiconductor materials and diodes..</p> <p>Copyright TODO</p> 
 <iframe width="640" height="360"  src="https://www.youtube.com/embed/33vbFFFn04k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-> This video describe the movement of electrons through the two (2) silicon mixtures. It is not within the scope of this course, but is a great description of how electrons move through silicon materials. If you are interested in understanding transistors at the lowest levels, check it out
+
+<iframe width="640" height="360"  src="https://www.youtube.com/embed/DXvAlwMAxiA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+> The first video describe the movement of electrons through the two (2) silicon mixtures to act as a diode. The second video builds on the first, showing how a three-layer sandwich of doped silicon behaves like a binary 0 or 1. 
+> 
+> It is not within the scope of this course, but is a great description of how electrons move through silicon materials. If you are interested in understanding transistors at the lowest levels, check it out
 
 ## P- and N-Type Transistors
 Semiconductor transistors act as switches in the core of modern computers. Constructed with layers of slight variations of silicon (mixed or doped with other elements). Transistors have a control connector that provides an input into the device. The input voltage will cause the transistor to output 1) the same voltage as its input, or 2) the opposite of its input voltage
