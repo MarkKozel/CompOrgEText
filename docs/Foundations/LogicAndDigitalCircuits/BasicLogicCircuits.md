@@ -40,10 +40,10 @@ Basic logic operations
 
 ### NOT
 
-|a|b|
-|-|-|
-|0|1|
-|1|0|
+| a   | b   |
+| --- | --- |
+| 0   | 1   |
+| 1   | 0   |
 
 ![NOT Gate](/images/Circuits/Gate_NOT.png =150x)
 
@@ -61,12 +61,12 @@ NOT is the only operation we will discuss that takes 1 input. It operates on a s
 
 #### NOR Truth Table
 
-|a|b|a OR b|NOT(a OR b)|
-|-|-|:-:|:-:|
-|0|0|0|1|
-|0|1|1|0|
-|1|0|1|0|
-|1|1|1|0|
+| a   | b   | a OR b | NOT(a OR b) |
+| --- | --- | :----: | :---------: |
+| 0   | 0   |   0    |      1      |
+| 0   | 1   |   1    |      0      |
+| 1   | 0   |   1    |      0      |
+| 1   | 1   |   1    |      0      |
 
 
 
@@ -86,12 +86,12 @@ We simplify the transistor diagram into a simple circuit symbol.
 
 #### OR Truth Table
 
-|a|b|c|
-|-|-|-|
-|0|0|0|
-|0|1|1|
-|1|0|1|
-|1|1|1|
+| a   | b   | c   |
+| --- | --- | --- |
+| 0   | 0   | 0   |
+| 0   | 1   | 1   |
+| 1   | 0   | 1   |
+| 1   | 1   | 1   |
 
 #### OR Transistors
 
@@ -119,12 +119,12 @@ NAND is referred to as **NOT AND**. It negates the results of the AND output. In
 It is not a common logic operation applied to everyday situation, but it has utility in the logic and computer circuits
 
 #### NAND Truth Table
-|a|b|c|
-|-|-|-|
-|0|0|1|
-|0|1|1|
-|1|0|1|
-|1|1|0|
+| a   | b   | c   |
+| --- | --- | --- |
+| 0   | 0   | 1   |
+| 0   | 1   | 1   |
+| 1   | 0   | 1   |
+| 1   | 1   | 0   |
 
 It is interesting that the result is *1* unless both inputs are *1*
 
@@ -148,12 +148,12 @@ Applying AND to something typically means considering all situations must occur 
 In this example both things must be true: traffic is low as well as there is an alternative way to get to the destination without driving in heavy traffic. If either one of the things is not true then no park trip. If both things are not true, the trip is also off
 
 #### AND Truth Table
-|a|b|c|
-|-|-|-|
-|0|0|0|
-|0|1|0|
-|1|0|0|
-|1|1|1|
+| a   | b   | c   |
+| --- | --- | --- |
+| 0   | 0   | 0   |
+| 0   | 1   | 0   |
+| 1   | 0   | 0   |
+| 1   | 1   | 1   |
 
 #### AND Transistors
 
@@ -169,12 +169,12 @@ When applied to binary values, AND compare two bits. If either bit is *0* the re
 
 ### XOR
 
-|a|b|c|
-|-|-|-|
-|0|0|0|
-|0|1|1|
-|1|0|1|
-|1|1|0|
+| a   | b   | c   |
+| --- | --- | --- |
+| 0   | 0   | 0   |
+| 0   | 1   | 1   |
+| 1   | 0   | 1   |
+| 1   | 1   | 0   |
 
 ![XOR Gate](/images/Circuits/Gate_XOR.png =150x)
 
@@ -190,18 +190,20 @@ At this point all of our logic circuits have 2 inputs (with the exception of NOT
 
 While the diagram for a 3 or 4 input AND circuit seems simple, under-the-hood it is a set of 2-input AND circuits with the output of 1 feeding an input of the next. The logical behavior still works as expected. 
 
+![XOR Gate](/images/Circuits/BasicCircuit_MultipleInputs.png =500x)
+
 ### DeMorgan's Laws
 
 Augustus De Morgan proposed a pair of comparisons in the field of boolean algebra that have an interesting application to computer organization. When applying *negation* (NOT) transformations to solution sets of AND and OR functions, he realized that negating inputs and output of one set resulted in the other.
 
 Inverting the inputs to an OR gate, then inverting the output produces the same truth table as an AND gate.
 
-|a|b| NOT a | NOT b| NOT a AND NOT b| NOT(NOT a AND NOT b)| a OR b|
-|-|-|:-:|:-:|:-:|:-:|:-:
-|0|0|1|1|1|0|0|
-|0|1|1|0|0|1|1|
-|1|0|0|1|0|1|1|
-|1|1|0|0|0|1|1|
+| a   | b   | NOT a | NOT b | NOT a AND NOT b | NOT(NOT a AND NOT b) | a OR b |
+| --- | --- | :---: | :---: | :-------------: | :------------------: | :----: |
+| 0   | 0   |   1   |   1   |        1        |          0           |   0    |
+| 0   | 1   |   1   |   0   |        0        |          1           |   1    |
+| 1   | 0   |   0   |   1   |        0        |          1           |   1    |
+| 1   | 1   |   0   |   0   |        0        |          1           |   1    |
 
 ![XOR Gate](/images/Circuits/DeMorgans_AndToOr.png =500x)
 
