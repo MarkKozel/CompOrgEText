@@ -79,7 +79,7 @@ We will refer to *rise* and *fall* time intervals generally as *settle time*. Th
 
 Likewise, when a transistor it set ot *off* or *0*, there is brief *fall* time where the voltage dissipates from the transistor.
 
-The purpose of the clock in modern computers is to orchestrate the settle time* of all transistors in the system. It synchronizes part of the hardware to send control signals with the transistors that receive the control signals. During a part of a clock cycle, control signals are send out to transistors. During another part of the clock system, activity is prevented so those transistors have time to *settle*.
+The purpose of the clock in modern computers is to orchestrate the settle time of all transistors in the system. It synchronizes part of the hardware to send control signals with the transistors that receive the control signals. During a part of a clock cycle, control signals are send out to transistors. During another part of the clock system, activity is prevented so those transistors have time to *settle*.
 
 The clock cycle provides other essential duties in modern computer hardware. In computer organization, we rely on it to keep transistors synchronized to maintain reliable binary values.
 

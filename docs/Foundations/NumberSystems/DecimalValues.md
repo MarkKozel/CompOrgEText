@@ -77,7 +77,7 @@ AKA *Place Value*
 
 In order to  represent values larger than 9 in **Base 10** without adding new symbols, there needs to be a rule it calculate the value of an adjacent digit in a group of digits (number string)
 
-The position of a are essentially a weighting (factor) of each single digit according to it's position in the number string
+The position of each symbol are essentially a weighting (factor) of each single digit according to it's position in the number string
 
 The rule is:
 - digits to the left are a lessor value
