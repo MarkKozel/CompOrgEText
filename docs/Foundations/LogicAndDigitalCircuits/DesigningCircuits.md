@@ -54,16 +54,16 @@ The OR gate *sums* the individual *Products* into the correct output value.
 
 Below is a truth table for a circuit to build
 
-|A|B|C|Z<sub>out</sub>|
-|-|-|-|-|
-|0|0|0|0|
-|0|0|1|1|
-|0|1|0|0|
-|0|1|1|0|
-|1|0|0|0|
-|1|0|1|0|
-|1|1|0|1|
-|1|1|1|0|
+| A   | B   | C   | Z<sub>out</sub> |
+| --- | --- | --- | --------------- |
+| 0   | 0   | 0   | 0               |
+| 0   | 0   | 1   | 1               |
+| 0   | 1   | 0   | 0               |
+| 0   | 1   | 1   | 0               |
+| 1   | 0   | 0   | 0               |
+| 1   | 0   | 1   | 0               |
+| 1   | 1   | 0   | 1               |
+| 1   | 1   | 1   | 0               |
 
 #### Add an AND gate for each 1 output
 
@@ -121,16 +121,16 @@ Truth tables may have more than one (1) output for the same inputs. In this case
 
 Below is a truth table for a circuit to build
 
-|A|B|C|Y<sub>out</sub>|Z<sub>out</sub>|
-|-|-|-|-|-|
-|**0**|**0**|**0**|**1**|0|
-|**0**|**0**|**1**|0|**1**|
-|0|1|0|0|0|
-|0|1|1|0|0|
-|1|0|0|0|0|
-|1|0|1|0|0|
-|**1**|**1**|**0**|**1**|**1**|
-|1|1|1|0|0|
+| A     | B     | C     | Y<sub>out</sub> | Z<sub>out</sub> |
+| ----- | ----- | ----- | --------------- | --------------- |
+| **0** | **0** | **0** | **1**           | 0               |
+| **0** | **0** | **1** | 0               | **1**           |
+| 0     | 1     | 0     | 0               | 0               |
+| 0     | 1     | 1     | 0               | 0               |
+| 1     | 0     | 0     | 0               | 0               |
+| 1     | 0     | 1     | 0               | 0               |
+| **1** | **1** | **0** | **1**           | **1**           |
+| 1     | 1     | 1     | 0               | 0               |
 
 Two circuit diagrams will be created. The first is for A,B,C -> Y<sub>out</sub>. The other is for A,B,C -> Z<sub>out</sub>.
 
@@ -159,22 +159,28 @@ With two (2) outputs, two (2) OR gates are added, each connected to the associat
 
 ## Optimizations
 
-After implementing a circuit diagram from a truth table, some elements may be simplified and still produce the correct outputs.
+After implementing a circuit diagram from a truth table using the 3-Step Algorithm, some elements *may* be simplified and still produce the correct outputs. 
 
-> Optimization is not required. The algorithm will produce the correct circuit
->
-> However, it is cheaper and more efficient to reduce parts of a circuit. By removing gates, the final circuit will have fewer transistors needed
+Examining the Truth Table and the resulting Circuit can reveal redundancies and unnecessary sections that can be removed and/or recombined to simplify the circuit.
 
-|A|B|C|Y<sub>out</sub>|Z<sub>out</sub>|
-|-|-|-|-|-|
-|0|0|0|1|0|
-|0|0|1|0|1|
-|0|1|0|0|0|
-|0|1|1|0|0|
-|1|0|0|0|0|
-|1|0|1|0|0|
-|**1**|**1**|**0**|**1**|**1**|
-|1|1|1|0|0|
+> [Download this example circuit](/downloads/Logisim/Design.circ) to examine in [Logisim Circuit Simulation Tool](http://www.cburch.com/logisim/)
+
+>> Optimization is not required. The algorithm will produce the correct circuit
+>>
+>> However, it is cheaper and more efficient to reduce parts of a circuit. By removing gates, the final circuit will have fewer transistors needed
+
+### Redundancies
+Looking at the truth table, there is a row where the same inputs result in a **1** to both outputs
+|     | A     | B     | C     | Y<sub>out</sub> | Z<sub>out</sub> |
+| --- | ----- | ----- | ----- | --------------- | --------------- |
+|     | 0     | 0     | 0     | 1               | 0               |
+|     | 0     | 0     | 1     | 0               | 1               |
+|     | 0     | 1     | 0     | 0               | 0               |
+|     | 0     | 1     | 1     | 0               | 0               |
+|     | 1     | 0     | 0     | 0               | 0               |
+|     | 1     | 0     | 1     | 0               | 0               |
+| ->  | **1** | **1** | **0** | ***1***         | ***1***         |
+|     | 1     | 1     | 1     | 0               | 0               |
 
 Note that the 7th line of the truth table produces a *1* for both outputs when the inputs are 1, 1, 0.
 
@@ -182,7 +188,7 @@ Looking at the circuit diagram there are two AND gates, there are two (2) AND ga
 
 ![Truth Table Algorithm Optimize- Step 1](/images/Circuits/TTAlgorithm_Optimize1.png)
 
-Each of these AND gates is connected to a different outputs device
+Above the circuit diagram includes two (2) AND gates that handle the 1 1 0 inputs. They are *redundant* parts. These two AND gates is connected to a different outputs device
 
 To optimize the circuit diagram
 
@@ -193,8 +199,41 @@ To optimize the circuit diagram
 
 The remaining 1, 1, 0 AND Gate produces the *Product* for the 7th line of the truth table. The output of that AND gate it connected to both OR gates, producing the correct *Sum* result for each output on the truth table.
 
+### Unnecessary Sections/Ambiguities
+Examining the truth table may show that an input has no actually effect on the outputs
+
+|     | A   | B     | C   | Z<sub>out</sub> |
+| --- | --- | ----- | --- | --------------- |
+|     | 0   | 0     | 0   | 0               |
+| ->  | 0   | **0** | 1   | 1               |
+|     | 0   | 1     | 0   | 0               |
+| ->  | 0   | **1** | 1   | 1               |
+| ->  | 1   | **0** | 0   | 1               |
+|     | 1   | 0     | 1   | 0               |
+| ->  | 1   | **1** | 0   | 1               |
+|     | 1   | 1     | 1   | 0               |
+
+#### Circuit Diagram using the 3-Step Algorithm
+
+![Truth Table Algorithm Optimize- Step 1](/images/Circuits/TTAlgorithm_Optimize3.png)
+
+#### Examine the rows with a **1** output
+The circuit outputs a 1 when C -> 1 and (B -> 1 or B-> 0)
+
+The circuit outputs a 1 when A -> 1 and (B -> 1 or B-> 0)
+
+It appears that B does not influence the output. Only A and B cause a 1 output
+
+#### Remove the B input and reduce the inputs to each and gate
+
+![Truth Table Algorithm Optimize- Step 1](/images/Circuits/TTAlgorithm_Optimize4.png)
+
+The AND gates only need 2 inputs each, so the number of transistors has been reduced, resulting in a simpler and cheaper circuit to build.
+
+> Looking at this circuit diagram, it appears there are some Redundancies that can also be further optimized to reduce the circuit's complexity and cost.
+
 ## Conclusion
 
 More complex circuits can be created from a truth table, using the 3-step algorithm. The resulting circuit will implement the truth table.
 
-Complex circuits can be optimized, primarily by removing redundant sections and decreasing unneeded components.
+Complex circuits can be optimized, primarily by examining the Truth Table and the resulting Circuit. It may be possible to removing redundant sections in the circuit, delete unused inputs, and/or decreasing unneeded components.
