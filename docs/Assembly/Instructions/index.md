@@ -30,4 +30,4 @@ Built-in functions and how to use in programs
 ## Subroutine Instruction
 Explanation and examples of subroutine instructions
 
-
+!!!include(TextSnippets/GetStartedByExpandingTheSidebar.md)!!!

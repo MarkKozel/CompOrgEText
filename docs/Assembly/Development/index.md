@@ -23,3 +23,5 @@ Procedures and strategies for creating software
 
 ## Debugging
 Troubleshooting problems in software
+
+!!!include(TextSnippets/GetStartedByExpandingTheSidebar.md)!!!

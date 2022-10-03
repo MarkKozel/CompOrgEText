@@ -25,3 +25,5 @@ Creating and Assembling Your First LC-3 Program
 
 ## Anatomy of an LC-3 Program
 Breakdown of an LC-3 Program
+
+!!!include(TextSnippets/GetStartedByExpandingTheSidebar.md)!!!

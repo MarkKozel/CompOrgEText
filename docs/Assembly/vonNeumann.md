@@ -2,8 +2,8 @@
 title: von Neumann Model
 parent: Assembly
 description: Interacting with devices outside of the ISA
-pageClass: Unit
-tags: []
+pageClass: Topic
+tags: [von Neumann Model, CPU, Control Unit, ALU, RAM, MAR, MDR, IO]
 ---
 
 # {{ $frontmatter.title }}
