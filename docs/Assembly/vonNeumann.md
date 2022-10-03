@@ -35,6 +35,25 @@ These are the key elements of the von Neumann as related to the LC-3 architectur
 >
 > Red Lines - Control Signals
 
+## Control Unit
+The Control Unit is the central hub of activity in the von Neumann model. As noted on the above diagram, is it the only major component that is connected to everything else. It, in effect, orchestrates the execution of programs, requesting ALU functions, accessing Memory, and interacting with IO devices
+
+![von Neumann Model - Control Unit](/images/Foundations/vonNeumann/vonNeumannModel_ControlUnit.png)
+
+### Controller
+The Control knows *when* and *how* to interact to parts of the overall system to execute assembly instruction. At its heart if a **State Machine** containing all control and data signals that need to be issued for each ISA command
+
+::: details State Machine Entry Example
+!!!include(TextSnippets/Assembly/StateMachineExample.md)!!!
+:::
+
+### Program Counter (PC)
+### Instruction Register (IP)
+### Condition Code Register (CC)
+### General Purpose Registers
+
+
+
 ## CPU
 The Central Processing Unit (CPU) contains the devices and register needed to complete math and logic operations. Note that this model does not include data connected directly from Memory to the CPU. Any data in Memory that is needed for the CPU must ne first loaded into the Control Unit's registers.
 
