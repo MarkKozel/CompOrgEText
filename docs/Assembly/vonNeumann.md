@@ -47,12 +47,57 @@ The Control knows *when* and *how* to interact to parts of the overall system to
 !!!include(TextSnippets/Assembly/StateMachineExample.md)!!!
 :::
 
+The Controller is built and configured at the same time as the ISA/Assembly instructions. It must be able to recognize and execute every assembly instruction in the ISA. That is to say, it must have state procedures for every instruction.
+
+Managing instructions, decoding  and executing them, and moving data around the system is solely the job of the Controller.
+
 ### Program Counter (PC)
-### Instruction Register (IP)
+Assembly instructions (refereed to as *instructions* for the remainder rof this page) are stored in Memory in a contiguous block. The controller must get instructions, one-at-a-time, so that it can execute the program. 
+
+The PC contains the address in Memory of the *Next Instruction*. When the Controller starts the process of executing an instruction, it must first load that instruction from Memory. The PC contains the address of the next instruction.
+
+The Controller uses the address in the PC to direct Memory to load the instruction. The Controller receives the instruction into the IR register.
+
+Finally, the Controller increments the PC by 1, changing the address to the next address, before actually executing the instruction.
+
+### Instruction Register (IR)
+
+The IR hold the actual bits of the current instruction being executed. Once the controller requests the next instruction, using the PC, it receives that instruction into the IR. Now the Controller can begin examining the instruction to decide which state process to use.
+
+The Controller may need to referent different parts of the instruction while executing the state process. It can refer to the IR as needed, so that it does not need to reload the instruction from Memory
+
+:::tip Why not just reload the instruction?
+
+At the ISA/Microcontoller level, Memory access it slow. Depending on how the ISA interfaces with Memory, it may take multiple clock cycles to move 1 set of bit to/from Memory
+
+Also, to reload an instruction, the controller would need to save its current state so that it can *switch gears* to reload the instruction. It would then need to restore the previous state to *get back to work* on executing the current instruction
+
+Lastly, because the Controller advanced the PC, expecting to execute the next instruction when it completes the current one, the Controller would need to request the instruction at address **PC - 1**. When we discuss **Branching** and **Subroutines** we will see that doing this is not always a safe thing to do
+:::
+
 ### Condition Code Register (CC)
+
+After complete several ALU instructions and all Memory Read instructions, the Controller will update the CC register to indicate the nature of the data that was just processed. It sets internal flags to indicate wether the data was *negative*, *positive, or *zero**.
+
+While this is a fairly basic collection of information about the data, the program can use the CC to decide to loop, jump, and other actions to change program flow.
+
+:::tip
+This is what the LC-3 ISA does. Modern ISAs will have other elements to the CC register, including *Under/Overflow*, *Borrow/Carry*, and others
+:::
+
 ### General Purpose Registers
+The GP registers are available for the program to use to for storing data while executing. The Controller also uses the registers with some commands, so and assembly programmer must the aware to avoid endless looping or runaway programs.
 
+As shown in the diagram at the top, the ALU and I.O devices do not access Memory directly. Only the Control Unit can access it. So an assembly programmer must write code to move data between Memory and GP registers before passing that data to the ALU or I/O.
 
+:::tip Update Data in RAM
+A common pattern in assembly programs to update Memory is:
+
+1. Load data from Memory to a GP register
+1. Execute the ALU instruction to modify the data
+      - The result from the ALU is stored in a GP register
+1. Store the result from the GP register to Memory
+:::
 
 ## CPU
 The Central Processing Unit (CPU) contains the devices and register needed to complete math and logic operations. Note that this model does not include data connected directly from Memory to the CPU. Any data in Memory that is needed for the CPU must ne first loaded into the Control Unit's registers.
