@@ -75,7 +75,7 @@ Also, to reload an instruction, the controller would need to save its current st
 Lastly, because the Controller advanced the PC, expecting to execute the next instruction when it completes the current one, the Controller would need to request the instruction at address **PC - 1**. When we discuss **Branching** and **Subroutines** we will see that doing this is not always a safe thing to do
 :::
 
-### Condition Code Register (CC)
+### Condition Code (CC) Register 
 
 After complete several ALU instructions and all Memory Read instructions, the Controller will update the CC register to indicate the nature of the data that was just processed. It sets internal flags to indicate wether the data was *negative*, *positive, or *zero**.
 
@@ -85,7 +85,7 @@ While this is a fairly basic collection of information about the data, the progr
 This is what the LC-3 ISA does. Modern ISAs will have other elements to the CC register, including *Under/Overflow*, *Borrow/Carry*, and others
 :::
 
-### General Purpose Registers
+### General Purpose (GP) Registers
 The GP registers are available for the program to use to for storing data while executing. The Controller also uses the registers with some commands, so and assembly programmer must the aware to avoid endless looping or runaway programs.
 
 As shown in the diagram at the top, the ALU and I.O devices do not access Memory directly. Only the Control Unit can access it. So an assembly programmer must write code to move data between Memory and GP registers before passing that data to the ALU or I/O.
