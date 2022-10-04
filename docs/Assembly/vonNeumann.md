@@ -81,8 +81,10 @@ After complete several ALU instructions and all Memory Read instructions, the Co
 
 While this is a fairly basic collection of information about the data, the program can use the CC to decide to loop, jump, and other actions to change program flow.
 
-:::tip
-This is what the LC-3 ISA does. Modern ISAs will have other elements to the CC register, including *Under/Overflow*, *Borrow/Carry*, and others
+:::note
+This is how the LC-3 processes data condition codes
+
+Modern ISAs will have other elements to the CC register, including *Under/Overflow*, *Borrow/Carry*, and others
 :::
 
 ### General Purpose (GP) Registers
@@ -148,8 +150,21 @@ The Memory Data Register is used to hold a value. If the Control Unit is storing
 
 When requesting data from Memory, the address of the requested RAMlocation is copied into the MAR. After Memory reads the value at the address, it is copied into the MAR for the Control Unit to retrieve.
 
-## Input/Output
+## Input/Output (I/O)
+
+To make computers truly useful they need to have a mechanism for interfacing with the outside world. I/O devices send/receive data to/from the controller. The data can be inputs into a running program, and the program can outputs results to a device.
+
 ![von Neumann Model - I/O](/images/Foundations/vonNeumann/vonNeumannModel_IO.png)
+
+:::note
+Looking at the above diagram, note that there are no control lines. To simplify the interface, only registers are used to share status and data
+:::
+
+I/O devices are designed and built independent of any ISA, and are typically made to operate with many different computers/ISA. That means the interface between I/O and the Controller must be simple and generic.
+
+The generic interface requires a Status and Data register to facilitate data exchange. The **Status** register is set to *ready* by the I/O device when it wants to exchange data with the Controller. The **Data** register is used to hold the data being exchanged.
+
+This simple interface allows any device to talk with any computers without requiring a shared clock signal or synchronization. The Control Unit can check an output device's **Status** register anytime, and upon finding it is *Ready* can copy data int o the **Data** register. Some time later (asynchronously) the output device will notice the new data and process it according to it's function.
 
 ## Conclusion
 
