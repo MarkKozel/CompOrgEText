@@ -41,7 +41,7 @@ The Control Unit is the central hub of activity in the von Neumann model. As not
 ![von Neumann Model - Control Unit](/images/Foundations/vonNeumann/vonNeumannModel_ControlUnit.png)
 
 ### Controller
-The Control knows *when* and *how* to interact to parts of the overall system to execute assembly instruction. At its heart if a **State Machine** containing all control and data signals that need to be issued for each ISA command
+The Control knows *when* and *how* to interact to parts of the overall system to execute assembly instruction. At its heart is a **State Machine** containing all control and data signals that need to be issued for each ISA command
 
 ::: details State Machine Entry Example
 !!!include(TextSnippets/Assembly/StateMachineExample.md)!!!
