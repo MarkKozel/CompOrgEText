@@ -77,7 +77,7 @@ Lastly, because the Controller advanced the PC, expecting to execute the next in
 
 ### Condition Code (CC) Register 
 
-After complete several ALU instructions and all Memory Read instructions, the Controller will update the CC register to indicate the nature of the data that was just processed. It sets internal flags to indicate wether the data was *negative*, *positive, or *zero**.
+After ALU or Memory Read instructions, the Controller will update the CC register to indicate the nature of the data that was just processed. It sets internal flags to indicate wether the data was *negative*, *positive, or *zero**.
 
 While this is a fairly basic collection of information about the data, the program can use the CC to decide to loop, jump, and other actions to change program flow.
 
