@@ -79,6 +79,12 @@ Lastly, because the Controller advanced the PC, expecting to execute the next in
 
 After ALU or Memory Read instructions, the Controller will update the CC register to indicate the nature of the data that was just processed. It sets internal flags to indicate wether the data was *negative*, *positive, or *zero**.
 
+:::whatsgoingon CC Set for future instructions
+The CC value is updates at the end of an assembly instruction execution. It can be used by the next instruction to make decisions
+
+If the next instruction does not alter the CC, it will remain as-is for other instructions, until one is executed that changes it
+:::
+
 While this is a fairly basic collection of information about the data, the program can use the CC to decide to loop, jump, and other actions to change program flow.
 
 :::note
@@ -99,6 +105,14 @@ A common pattern in assembly programs to update Memory is:
 1. Execute the ALU instruction to modify the data
       - The result from the ALU is stored in a GP register
 1. Store the result from the GP register to Memory
+
+In Java:
+
+@[code lang=java{3}](.vuepress/public/examples/Assembly/Patterns/UpdateRAMPatternJava.asm)
+
+In LC-3 Assembly:
+
+@[code lang=arm-asm{3}](.vuepress/public/examples/Assembly/Patterns/UpdateRAMPattern.asm)
 :::
 
 ## CPU
@@ -130,7 +144,7 @@ This model has one (1) memory device. The Control Unit and the program now must 
 
 The large storage array for retaining groups of bits. 
 
-Each RAM location contains a number of bits. Each location contains the same number of bits. We'll refer to this amount as a *word*. Different architectures may use different word length. Modern computers use a power of 2 value, such as 8, 16, 32, or 64 bit work lengths.
+Each RAM location contains a number of bits. Each location contains the same number of bits. We'll refer to this amount as a *word*. Different architectures may use different word length. Modern computers use a power of 2 value, such as 8, 16, 32, or 64 bit word lengths.
 
 > The LC-3 has a 16-bit word length.
 
@@ -153,6 +167,12 @@ When requesting data from Memory, the address of the requested RAMlocation is co
 ## Input/Output (I/O)
 
 To make computers truly useful they need to have a mechanism for interfacing with the outside world. I/O devices send/receive data to/from the controller. The data can be inputs into a running program, and the program can outputs results to a device.
+
+:::note A Little Perspective
+Input and Output is from the Program’s perspective:
+- A program receives data *in* from the keyboard (Input Device)
+- A program sends data *out* to the monitor (Output Device)
+:::
 
 ![von Neumann Model - I/O](/images/Foundations/vonNeumann/vonNeumannModel_IO.png)
 
