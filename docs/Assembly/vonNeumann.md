@@ -112,7 +112,7 @@ In Java:
 
 In LC-3 Assembly:
 
-@[code lang=arm-asm{3}](.vuepress/public/examples/Assembly/Patterns/UpdateRAMPattern.asm)
+@[code lang=arm-asm{4,9}](.vuepress/public/examples/Assembly/Patterns/UpdateRAMPattern.asm)
 :::
 
 ## CPU
