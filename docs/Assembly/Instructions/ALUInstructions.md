@@ -32,9 +32,9 @@ In this section we will review the ALU instructions, options for each, and look 
 
 ## ADD
 ### LC-3 ISA Format
-<LC3Instruction opName="ADD (Immediate Mode)" :bitPattern="{OpCode:'0001', DR: '000', SR1:'000',Mode:'1',unused:'00',SR2:'000'}" :descriptions="[{OPCode:''},{DR:'Destination Register'},{SR1:'Source Register 1'}, {Mode:'1 indicates Immediate Mode'}, {unused: 'not used in Register Mode'},{SR2:'Source Register 2' }]"  :examples="['ADD R3, R1, R2 ; sum values in registers 1 and 2, store result in R3', 'ADD R3, R2, R2 ; Add R2 to itself, store result in R3', 'ADD R3, R3, R3 ; Add value in R3 to itself, store result in R3']"/>
+<LC3Instruction opName="ADD (Immediate Mode)" :bitPattern="{OpCode:'0001', DR: '000', SR1:'000',Mode:'1',unused:'00',SR2:'000'}" :descriptions="[{OPCode:''},{DR:'Destination Register'},{SR1:'Source Register 1'}, {Mode:'1 indicates Immediate Mode'}, {unused: 'not used in Register Mode'},{SR2:'Source Register 2' }]"  :examples="['ADD R3, R1, #1 ; add values in register 1 with 1, store result in R3', 'ADD R3, R2, #-4 ; add values in register 2 with -4, store result in R3', 'ADD R3, R3, xB ; Add value in R3 to hex value B, store result in R3', 'ADD R3, R3, b0111 ; Add value in R3 to binary value 7, store result in R3']"/>
 
-<LC3Instruction opName="ADD (Register Mode)" :bitPattern="{OpCode:'0001', DR: '000', SR1:'000',Mode:'0',IMM5:'00000'}" :descriptions="[{OPCode:''},{DR:'Destination Register'},{SR1:'Source Register 1'}, {Mode:'0 indicates Register Mode'}, {IMM5: '5-bit immediate value' }]"  :examples="['ADD R3, R1, #1 ; add values in register 1 with 1, store result in R3', 'ADD R3, R2, #-4 ; add values in register 2 with -4, store result in R3', 'ADD R3, R3, xB ; Add value in R3 to hex value B (11 in base 10)), store result in R3']"/>
+<LC3Instruction opName="ADD (Register Mode)" :bitPattern="{OpCode:'0001', DR: '000', SR1:'000',Mode:'0',IMM5:'00000'}" :descriptions="[{OPCode:''},{DR:'Destination Register'},{SR1:'Source Register 1'}, {Mode:'0 indicates Register Mode'}, {IMM5: '5-bit immediate value' }]"  :examples="['ADD R3, R1, R2 ; sum values in registers 1 and 2, store result in R3', 'ADD R3, R2, R2 ; Add R2 to itself, store result in R3', 'ADD R3, R3, R3 ; Add value in R3 to itself, store result in R3']"/>
 
 ### Explanation
 
@@ -113,9 +113,9 @@ Add the values in R1 to itself (double the original value). Store in R1, overwri
 ## AND
 
 ### LC-3 ISA Format
-<LC3Instruction opName="AND (Immediate Mode)" :bitPattern="{OpCode:'0101', DR: '000', SR1:'000',Mode:'1',unused:'00',SR2:'000'}" :descriptions="[{OPCode:''},{DR:'Destination Register'},{SR1:'Source Register 1'}, {Mode:'1 indicates Immediate Mode'}, {unused: 'not used in Register Mode'},{SR2:'Source Register 2' }]"  :examples="['AND R3, R1, R2 ; And values in registers 1 and 2, store result in R3', 'AND R3, R2, R2 ; And R2 to itself, store result in R3', 'AND R3, R3, R3 ; And value in R3 to itself, store result in R3']"/>
+<LC3Instruction opName="AND (Immediate Mode)" :bitPattern="{OpCode:'0101', DR: '000', SR1:'000',Mode:'1',unused:'00',SR2:'000'}" :descriptions="[{OPCode:''},{DR:'Destination Register'},{SR1:'Source Register 1'}, {Mode:'1 indicates Immediate Mode'}, {unused: 'not used in Register Mode'},{SR2:'Source Register 2' }]"  :examples="['AND R3, R1, #1 ; and values in register 1 with 1, store result in R3', 'AND R3, R2, #-4 ; and values in register 2 with -4, store result in R3', 'AND R3, R3, xB ; And value in R3 to hex value B, store result in R3', 'AND R3, R3, b0111 ; Add value in R3 to binary value 7, store result in R3']"/>
 
-<LC3Instruction opName="AND (Register Mode)" :bitPattern="{OpCode:'0101', DR: '000', SR1:'000',Mode:'0',IMM5:'00000'}" :descriptions="[{OPCode:''},{DR:'Destination Register'},{SR1:'Source Register 1'}, {Mode:'0 indicates Register Mode'}, {IMM5: '5-bit immediate value' }]"  :examples="['AND R3, R1, #1 ; and values in register 1 with 1, store result in R3', 'AND R3, R2, #-4 ; and values in register 2 with -4, store result in R3', 'AND R3, R3, xB ; And value in R3 to hex value B (11 in base 10)), store result in R3']"/>
+<LC3Instruction opName="AND (Register Mode)" :bitPattern="{OpCode:'0101', DR: '000', SR1:'000',Mode:'0',IMM5:'00000'}" :descriptions="[{OPCode:''},{DR:'Destination Register'},{SR1:'Source Register 1'}, {Mode:'0 indicates Register Mode'}, {IMM5: '5-bit immediate value' }]"  :examples="['AND R3, R1, R2 ; And values in registers 1 and 2, store result in R3', 'AND R3, R2, R2 ; And R2 to itself, store result in R3', 'AND R3, R3, R3 ; And value in R3 to itself, store result in R3']"/>
 
 ### Explanation
 
@@ -223,7 +223,7 @@ Not the value in R1. Store in R0, overwriting the original value in R1
 
 ### Gotchas
 
-**NOT** is one of the simplest instruction, so does not have any gotchas of note.
+The LC-3 Simulate tool shows Hex and Decimal values of 16-bit data stored in Memory and Registers. Simulate does this 'to be helpful' to the developer. When storing data for logical operations, it falls to the developer to remember that the bits are representing bits.
 
 ## Conclusion
 

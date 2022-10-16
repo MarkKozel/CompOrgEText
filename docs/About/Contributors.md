@@ -13,4 +13,4 @@ Instructor, Hancock College Math Sciences Department, Computer Science
 ## Student Contributors:
 The following Classes/Students provided comments that fixed errors and made the text more understandable
 
-**CS-131 Fall 2022**: Aidan Soares, Ryan Kozel, Mikayla Lopez
+**CS-131 Fall 2022**: Aidan Soares, Ryan Kozel, Mikayla Lopez, Paul Motter
