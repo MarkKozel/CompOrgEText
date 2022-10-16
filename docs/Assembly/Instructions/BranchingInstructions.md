@@ -38,6 +38,18 @@ In this section we will review the BR instruction and look at some simple exampl
 
 <LC3Instruction opName="BR" :bitPattern="{OpCode:'0000', N: 'n', Z:'z',P:'p',PCOffset9:'000000000'}" :descriptions="[{OPCode:''},{N:'Negative Condition'},{Z:'Zero Condition'}, {P:'Positive Condition'}, {PCOffset9: 'Offset from current PC to branch'}]"  :examples="['BRn MyLabel1 ; If CC is in Negative Condition, branch to MyLabel1', 'BRz MyLabel2 ; If CC is in Zero Condition, branch to MyLabel2','BRp MyLabel3 ; If CC is in Positive Condition, branch to MyLabel3', 'BRnz MyLabel4 ; If CC is in Negative or Zero Condition, branch to MyLabel4']"/>
 
+### State Machine
+
+![BR Example](/images/AssemblyProgramming/Commands/StateMachine_BR.png)
+
+During the Decode phase, the Control Unit will determine it needs to reference the CC register. It logically compares the CC with the Instructions bits [11:9]. If any instruction bits match the CC, the BEN internal register will be set to true. This will be used during Execute.
+
+In the Execute phase, the BEN is checked. If true, the PC register will be modifies. The instruction's PCOffset9, bits [8:0] are added to the PC and the result written back into the PC
+
+> Recall that the LC-3 Assembler will have calculated the PCOffset9, knowing that during the PC is incremented during Fetch. The value it calculates will be expecting the PC to already be referencing the next instruction in memory
+>
+> If you are trying to guess what Simulate will do when it executes a BR instruction, you must also factor in the PC was incremented during fetch
+
 ### Explanation
 
 BR change the flow of an LC-3 program during execution. It is used to create behaviors like If/Else and While loops. Assembly languages typically do not have these instructions, but the code can flow like an If/Else or loop using BR.
@@ -52,8 +64,6 @@ The least-significant 9 bits of the BR command is a 9-bit PCOffset values. As de
 
 !!!include(TextSnippets/LC3/PCOffset.md)!!!
 
-
-
 #### Condition Code Register
 
 BR reacts to the Condition Code (CC) register, which is set by the previous ALU or Memory Load instruction. After one of these instructions completes, BR will change the program flow 
@@ -62,15 +72,21 @@ BR reacts to the Condition Code (CC) register, which is set by the previous ALU 
 
 Conditions can be grouped on a single BR instruction
 
-|Instruction|Conditions to Branch|
-|-|-|
-|BRnz|Branch is **CC** is *Negative* or *Zero*|
-|BRzp|Branch is **CC** is *Zero* or *Positive*|
-|BRnzp|Branch is **CC** is *Negative* or *Zero* or *Positive*|
+| Instruction | Conditions to Branch                                   |
+| ----------- | ------------------------------------------------------ |
+| BRnz        | Branch is **CC** is *Negative* or *Zero*               |
+| BRzp        | Branch is **CC** is *Zero* or *Positive*               |
+| BRnzp       | Branch is **CC** is *Negative* or *Zero* or *Positive* |
 
 > BRnzp is an *unconditional* branch, because it will always branch, regardless of the CC
 >
 >A shorthand for this is BR. The assembler will add the nzp for you
+
+>***Condition Code Gotcha*** 
+>
+>When using multiple **CC** references with a **BR** instruction, they must appear in the *n-z-p* order
+>
+> e.g. **BRpz** will cause an assembler error. This must be coded as **BRzp** to assemble and run
 
 **Simple Example**
 ![BR Example](/images/AssemblyProgramming/Commands/PCOffset9_Branch.png)
