@@ -61,6 +61,10 @@ Load
 
 <LC3Instruction opName="LD" :bitPattern="{OpCode:'0010', DR: '000',PCOffset:'000000000'}" :descriptions="[{OPCode:''},{DR:'Destination Register'},{PCOffset9:'Offset from current PC to branch'}]"  :examples="['LD R3, MyVal1 ; Loads the value from memory location labeled MyVal1 into Register 3', 'LD R0, MyVal2 ; Loads the value from memory location labeled MyVal2 into Register 0']"/>
 
+### State Machine
+
+![BR Example](/images/AssemblyProgramming/Commands/StateMachine_LD.png)
+
 ### Explanation
 
 LD loads from Memory into a Register. A destination register is provided to receive the value from memory. The address to load from is provided to the Memory Interface. This address is calculated based on the PC during execution of the LD instruction.
@@ -89,6 +93,10 @@ Store
 
 <LC3Instruction opName="ST" :bitPattern="{OpCode:'0011', SR: '000',PCOffset:'000000000'}" :descriptions="[{OPCode:''},{SR:'Source Register'},{PCOffset9:'Offset from current PC to branch'}]"  :examples="['ST R3, MyVal1 ; Store value from Register 3 into memory location labeled MyVal1', 'ST R0, MyVal2 ; Loads the value from Register 0 into memory location labeled MyVal2']"/>
 
+### State Machine
+
+![BR Example](/images/AssemblyProgramming/Commands/StateMachine_ST.png)
+
 ### Explanation
 
 Stores a value in a Register into a Memory location. A source register is provided to supply the value to memory. The address to store to is provided to the Memory Interface. This address is calculated based on the PC during execution of the LD instruction.
@@ -99,6 +107,23 @@ Stores a value in a Register into a Memory location. A source register is provid
 @[code lang=arm-asm{3}](.vuepress/public/examples/Assembly/Commands/st1.asm)
 
 ```MyVal1 .BLKW 1``` allocates 1 *word* (16-bit memory slot) and labels it *MyVal1*
+
+
+**Add 1 to a value in Memory**
+![LD/ST Example](/images/AssemblyProgramming/Commands/LD-ST_Example.png)
+
+<QuestionTF question="We could make the program simpler by adding 1 directly into the value at Result (x3004)" answer='false' rightAnswerFeedback="There are no ALU instructions that access values directly in Memory. All data to be used in an ALU instruction must be ina Register" wrongAnswerFeedback="rightAnswerFeedback"/>
+
+::: details Review what the code is doing after answering the question
+- The value in **Result** (x3004) is loaded into R2 so it can be modified
+    - ALU instruction cannot access Memory directly, so the value must be loaded into a register
+- 1 is added to the value in R1 using **ADD**'s *immediate* mode
+- The updated value in R2 wit written back out to **Result** (x3004)
+    - **Result** (x3004) is overwritten by the ST instruction
+    - The programmer could have preserved the starting value by storing into a different memory location
+:::
+
+<QuestionMC question="What would the programmer need to add in order to save Result in a different Memory location?" answer='B' AChoice="Use one of the other Memory Access instructions" BChoice="Add another Memory location with the .FILL PseudoOp" CChoice="Another register" DChoice="A newer version of LC-3" rightAnswerFeedback="Yes, and change the label in the ST instruction to the new label name"/>
 
 ### Gotchas
 
