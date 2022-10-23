@@ -45,7 +45,7 @@
         <p class="tfresult"> {{ result }} </p>
         <p class="tfresultfb">{{ resultFeedback }} </p>
       </div>
-      </tr>
+      <!-- </tr> -->
     </table>
   </div>
 </template>
@@ -87,9 +87,10 @@ module.exports = {
         this.resultFeedback = `${this.rightAnswerFeedback}`;
       } else {
         this.result = `Incorrect`;
-        this.resultFeedback = this.wrongAnswerFeedback
-          ? this.wrongAnswerFeedback
-          : this.rightAnswerFeedback;
+        this.resultFeedback =
+          this.wrongAnswerFeedback !== "rightAnswerFeedback"
+            ? `${this.wrongAnswerFeedback}`
+            : `${this.rightAnswerFeedback}`;
       }
     },
   },
