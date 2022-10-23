@@ -21,7 +21,7 @@
               id="A"
               v-model="picked"
             />
-            {{ AChoice }}
+            <b>A</b>. {{ AChoice }}
             <span class="checkmark"></span>
           </label>
         </td>
@@ -34,7 +34,7 @@
               id="B"
               v-model="picked"
             />
-            {{ BChoice }}
+            <b>B</b>. {{ BChoice }}
             <span class="checkmark"></span>
           </label>
         </td>
@@ -53,7 +53,7 @@
               id="C"
               v-model="picked"
             />
-            {{ CChoice }}
+            <b>C</b>. {{ CChoice }}
             <span class="checkmark"></span>
           </label>
         </td>
@@ -69,7 +69,7 @@
               id="D"
               v-model="picked"
             />
-            {{ DChoice }}
+            <b>D</b>. {{ DChoice }}
             <span class="checkmark"></span>
           </label>
         </td>
