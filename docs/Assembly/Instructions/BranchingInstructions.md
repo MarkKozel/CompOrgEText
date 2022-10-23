@@ -88,16 +88,28 @@ Conditions can be grouped on a single BR instruction
 >
 > e.g. **BRpz** will cause an assembler error. This must be coded as **BRzp** to assemble and run
 
-**Simple Example**
-![BR Example](/images/AssemblyProgramming/Commands/PCOffset9_Branch.png)
+**Unconditional Branch Example**
+![BR Unconditional Example](/images/AssemblyProgramming/Commands/BR_Example.png)
 
-- **LOOP** label is declared at Memory Address/PC x3001
-- **LOOP** label is references at x3002
-- The **BR** instruction at PC x3002 will branch back up to x3001 if the **CC** is *zero*
-- The **PCOffset9** is calculated for the BR instruction as follows:
-    - **PC** will be x3003 when BR instruction is executing (*recall that the PC is incremented during the *Fetch* phase, so the PC will be referencing the next instruction at x3003*)
-    - x3003 - x3001 = -2 (negative indicates the branch is back to a previous line)
-    - -2<sub>10</sub> converted to 2's complement binary is 111111110<sub>2</sub>
+<QuestionTF question="-5 gets stored into Result when this code runs" answer='false' rightAnswerFeedback="The unconditional branch to Done jumps around the instruction at x3001, skipping the ADD" wrongAnswerFeedback="rightAnswerFeedback"/>
+
+::: details Review what the code is doing after answering the question
+- Code unconditionally branches to **Done** (x3002), skipping the instruction at X3001
+- Stores the value in **R0** (zero if the program was just loaded) into **Result** (memory location x3004)
+:::
+
+**Conditional Branch Example**
+![BR Conditional Example](/images/AssemblyProgramming/Commands/BR_Example1.png)
+
+<QuestionTF question="-5 gets stored into Result when this code runs" answer='true' rightAnswerFeedback="The ADD instruction will set the CC register to N. When the BRzp instruction executes, the program will not branch to Done" wrongAnswerFeedback="rightAnswerFeedback"/>
+
+::: details Review what the code is doing after answering the question
+- R0 is set to -5
+    - The CC register wi set to N, indicating the value was negative
+- The **BRzp** instruction at x3001 will not cause the PC to me changes
+    - In effect, this instruction does nothing
+- The **ST** instruction at x3002 executes, updating Result (x3004)
+:::
 
 ### Gotchas
 
