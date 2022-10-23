@@ -105,7 +105,7 @@ Conditions can be grouped on a single BR instruction
 
 ::: details Review what the code is doing after answering the question
 - R0 is set to -5
-    - The CC register wi set to N, indicating the value was negative
+    - The CC register we set to N, indicating the value was negative
 - The **BRzp** instruction at x3001 will not cause the PC to me changes
     - In effect, this instruction does nothing
 - The **ST** instruction at x3002 executes, updating Result (x3004)
