@@ -78,7 +78,7 @@ LD loads from Memory into a Register. A destination register is provided to rece
 
 @[code lang=arm-asm{2}](.vuepress/public/examples/Assembly/Commands/ld2.asm)
 
-#### Loads value from memory location MyVal2 into Register 0
+#### Loads value from memory location MyVal3 into Register 0
 
 @[code lang=arm-asm{2}](.vuepress/public/examples/Assembly/Commands/ld3.asm)
 
