@@ -5,6 +5,7 @@
 
 int i = 0; //data to update in the loop
 while(i <= 10){
+  //Code to do 'work'
   i += 2; //Add 2 to the data
 }
 ```

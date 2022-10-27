@@ -89,6 +89,31 @@ A while loop much update the condition variable inside the loop, so that when te
 
 <QuestionMC question="After the While Loop completes i will contain what number?" answer='D' AChoice="2" BChoice="8" CChoice="10" DChoice="12" rightAnswerFeedback="Right! It will loop 6 times total" wrongAnswerFeedback="Incorrect. Because the condition is 'greater than or equal to', when i = 10 the loop is entered 1 last time, adding 2 more"/>
 
+### Do-While Loop Example
+@[code lang=java{5-7}](.vuepress/public/examples/Assembly/ProgramFlow/DoWhile.java)
+
+@[code lang=arm-asm{6-10}](.vuepress/public/examples/Assembly/ProgramFlow/DoWhile.asm)
+
+::: details Breakdown of code
+  **i** is both the data to be acted on and the condition variable used to control the loop
+
+  > It is possible to use a different variable for controlling the do-while loop, however, this makes it function for like a *For Loop*
+
+  The Do-While Loop starts by doing the work for the first cycle. It then checks the control variable against a logical operations. The result will be *true* or *false*. If *true*, the loop executes again. If *false* the loop is ended.
+
+  > Do-While loops will execute one (1) or more times. If the condition is *true* at the start, it will not be entered
+  >
+  > This is their primary different between **While** and **Do-While** loops
+
+  In the loop, the condition variable is modified. Other things can also occur within the loop, however updating the condition variable must occur each time
+
+  The loop iterated back to the start, where the work is preformed again before updating the loop counter and re-evaluating decision to loop again or bypass the loop is made
+
+  The cycle continues until the condition is *false*
+:::
+
+<QuestionMC question="After the Do-While Loop completes i will contain what number?" answer='A' AChoice="2" BChoice="8" CChoice="10" DChoice="12" rightAnswerFeedback="Right! It will loop 6 times total" wrongAnswerFeedback="Incorrect. Because the condition is 'greater than or equal to', when i = 10 the loop is entered 1 last time, adding 2 more"/>
+
 ## Conclusion
 One or more instructions are executed more that one time. Each time the instructions are executed, data can be updated to new values.
 
