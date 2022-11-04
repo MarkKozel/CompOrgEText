@@ -29,9 +29,10 @@ do {
   The cycle continues until the condition is *false*
 :::
 
-<QuestionMC question="After the Do-While Loop completes i will contain what number?" answer='A' AChoice="2" BChoice="8" CChoice="10" DChoice="12" rightAnswerFeedback="Right! It will loop 6 times total" wrongAnswerFeedback="Incorrect. Because the condition is 'greater than or equal to', when i = 10 the loop is entered 1 last time, adding 2 more"/>
+<QuestionMC question="After the Do-While Loop completes i will contain what number?" answer='A' AChoice="2" BChoice="8" CChoice="10" DChoice="12" rightAnswerFeedback="Right! It will loop 1 time total" wrongAnswerFeedback="Incorrect. Because the condition is 'greater than or equal to', when i = 10 the loop is entered 1 last time, adding 2 more"/>
 
 ``` 
+;Updated 11/3/2022
 .ORIG x3000
   ADD R1, R1, #0; int i = 0
 
@@ -39,7 +40,7 @@ do {
 ;Action: Starting at 0, add 2 to R1 each loop
 myLoop   
   ADD R1, R1, #2   ; Add 2 to the data
-  ADD R2, R1, #-1  ; Test R1 <= 1. Store in R2 so data is not affected
+  ADD R2, R1, #-2  ; Test R1 <= 1. Store in R2 so data is not affected
   BRnz Done        ; R1 + (-10) is zero or negative, jump out of loop
   BRnzp myLoop     ; Go back and possible loop again
 
