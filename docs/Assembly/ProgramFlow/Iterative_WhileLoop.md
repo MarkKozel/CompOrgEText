@@ -29,6 +29,7 @@ while(i <= 10){
 <QuestionMC question="After the While Loop completes i will contain what number?" answer='D' AChoice="2" BChoice="8" CChoice="10" DChoice="12" rightAnswerFeedback="Right! It will loop 6 times total" wrongAnswerFeedback="Incorrect. Because the condition is 'greater than or equal to', when i = 10 the loop is entered 1 last time, adding 2 more"/>
 
 ``` 
+;Updated 11/3/2022
 .ORIG x3000
   ADD R1, R1, #0; int i = 0
 
@@ -36,7 +37,7 @@ while(i <= 10){
 ;Action: Starting at 0, add 2 to R1 each loop
 myLoop   
   ADD R2, R1, #-10 ; Test R1 <= 10. Store in R2 so data is not affected
-  BRnz Done        ; R1 + (-10) is zero or negative, jump out of loop
+  BRp Done        ; R1 + (-10) is positive, jump out of loop
   ADD R1, R1, #2   ; Add 2 to the data
   BRnzp myLoop     ; Go back and possible loop again
 
