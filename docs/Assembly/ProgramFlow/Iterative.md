@@ -46,73 +46,26 @@ The number of iteration (number of times the section runs) can be a built-in val
 Iterative loops must have some **control** criteria to determine when to stop looping. This is typically a data element that tracks the loop cycles and reaches a value that indicates the loop should terminate. 
 
 ## For Loop
-<!-- For Loop file 
-!!!include(Assembly/ProgramFlow/Iterative_ForLoop.md)!!!-->
+Iteration using a *For Loop* is doing the work a set number of times. The work can use the number of times the loop has been run as a reference. An example is using the count as an array index
 
-### For Loop Example
-
-@[code lang=java{3}](.vuepress/public/examples/Assembly/ProgramFlow/ForLoop.java)
-
-@[code lang=arm-asm{7-10}](.vuepress/public/examples/Assembly/ProgramFlow/ForLoop.asm)
+!!!include(Assembly/ProgramFlow/Iterative_ForLoop.md)!!!
 
 ## While Loop
-
 Rather than looping a set number of times, a While Loop will loop as long as a condition is true. 
 
 Iterating until a condition is met (true) causes a While Loop to execute zero (0) or more times. The number of iterations depends on the condition and when it is finally met.
 
 A while loop much update the condition variable inside the loop, so that when tested at the start of the next iteration it may make the condition true, and exit the loop.
 
-<!-- While Loop file 
-!!!include(Assembly/ProgramFlow/Iterative_WhileLoop.md)!!!-->
+!!!include(Assembly/ProgramFlow/Iterative_WhileLoop.md)!!!
 
-### While Loop Example
-@[code lang=java{5-7}](.vuepress/public/examples/Assembly/ProgramFlow/While.java)
 
-@[code lang=arm-asm{6-10}](.vuepress/public/examples/Assembly/ProgramFlow/While.asm)
+## Do-While Loop
+Unlike the *While* loop, a *Do-While* will complete the loop one (1) time before checking the condition. The condition test is at the bottom of the loop.
 
-::: details Breakdown of code
-  **i** is both the data to be acted on and the condition variable used to control the loop
+This is useful when the work performed in the loop must be, such as in processing a user action. Also useful when the work performed in the loop changes the condition test.
 
-  > It is possible to use a different variable for controlling the while loop, however, this makes it function for like a *For Loop*
-
-  The While Loop starts by checking the control variable against a logical operations. The result will be *true* or *false*. If *true*, the loop in entered. If *false* the loop is bypassed.
-
-  > While loops will execute zero (0) or more times. If the condition is *true* at the start, it will not be entered
-
-  In the loop, the condition variable is modified. Other things can also occur within the loop, however updating the condition variable must occur each time
-
-  The loop iterated back to the start, where the condition is re-evaluated and the decision to loop again or bypass the loop is made
-
-  The cycle continues until the condition is *false*
-:::
-
-<QuestionMC question="After the While Loop completes i will contain what number?" answer='D' AChoice="2" BChoice="8" CChoice="10" DChoice="12" rightAnswerFeedback="Right! It will loop 6 times total" wrongAnswerFeedback="Incorrect. Because the condition is 'greater than or equal to', when i = 10 the loop is entered 1 last time, adding 2 more"/>
-
-### Do-While Loop Example
-@[code lang=java{5-7}](.vuepress/public/examples/Assembly/ProgramFlow/DoWhile.java)
-
-@[code lang=arm-asm{6-10}](.vuepress/public/examples/Assembly/ProgramFlow/DoWhile.asm)
-
-::: details Breakdown of code
-  **i** is both the data to be acted on and the condition variable used to control the loop
-
-  > It is possible to use a different variable for controlling the do-while loop, however, this makes it function for like a *For Loop*
-
-  The Do-While Loop starts by doing the work for the first cycle. It then checks the control variable against a logical operations. The result will be *true* or *false*. If *true*, the loop executes again. If *false* the loop is ended.
-
-  > Do-While loops will execute one (1) or more times. If the condition is *true* at the start, it will not be entered
-  >
-  > This is their primary different between **While** and **Do-While** loops
-
-  In the loop, the condition variable is modified. Other things can also occur within the loop, however updating the condition variable must occur each time
-
-  The loop iterated back to the start, where the work is preformed again before updating the loop counter and re-evaluating decision to loop again or bypass the loop is made
-
-  The cycle continues until the condition is *false*
-:::
-
-<QuestionMC question="After the Do-While Loop completes i will contain what number?" answer='A' AChoice="2" BChoice="8" CChoice="10" DChoice="12" rightAnswerFeedback="Right! It will loop 6 times total" wrongAnswerFeedback="Incorrect. Because the condition is 'greater than or equal to', when i = 10 the loop is entered 1 last time, adding 2 more"/>
+!!!include(Assembly/ProgramFlow/Iterative_DoWhileLoop.md)!!!
 
 ## Conclusion
 One or more instructions are executed more that one time. Each time the instructions are executed, data can be updated to new values.

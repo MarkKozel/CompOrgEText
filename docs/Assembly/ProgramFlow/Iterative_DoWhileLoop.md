@@ -1,15 +1,6 @@
 ### Do-While Loop Example
-```java
-//Condition: Keep looping until i is 10 or more
-//Action: Starting at 0, add 2 to i each loop
 
-int i = 0; //data to update in the loop
-do {
-  //Code to do 'work'
-  i += 2; //Add 2 to the data
-} while(i <= 1)
-
-```
+@[code lang=java{5-7}](.vuepress/public/examples/Assembly/ProgramFlow/DoWhile.java)
 
 ::: details Breakdown of code
   **i** is both the data to be acted on and the condition variable used to control the loop
@@ -31,19 +22,22 @@ do {
 
 <QuestionMC question="After the Do-While Loop completes i will contain what number?" answer='A' AChoice="2" BChoice="8" CChoice="10" DChoice="12" rightAnswerFeedback="Right! It will loop 1 time total" wrongAnswerFeedback="Incorrect. Because the condition is 'greater than or equal to', when i = 10 the loop is entered 1 last time, adding 2 more"/>
 
-``` 
+@[code lang=arm-asm{6-10}](.vuepress/public/examples/Assembly/ProgramFlow/DoWhile.asm)
+
+<!-- ``` 
 ;Updated 11/3/2022
 .ORIG x3000
   ADD R1, R1, #0; int i = 0
+  ADD R2, R2, #0; temp to use for comparing i with exit condition
 
 ;Condition: Keep looping until R1 is 10 or more
 ;Action: Starting at 0, add 2 to R1 each loop
 myLoop   
-  ADD R1, R1, #2   ; Add 2 to the data
+  ADD R1, R1, #2   ; Work: Add 2 to the data
   ADD R2, R1, #-2  ; Test R1 <= 1. Store in R2 so data is not affected
   BRnz Done        ; R1 + (-10) is zero or negative, jump out of loop
-  BRnzp myLoop     ; Go back and possible loop again
+  BRnzp myLoop     ; Go back and  loop again
 
   Done HALT
 .END
-```
+``` -->

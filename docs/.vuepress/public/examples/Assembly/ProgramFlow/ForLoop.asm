@@ -5,7 +5,7 @@
 
   ; for(i = 0; i < 10; i++)
   ForLoop 
-          ADD R0, R0, #1    ;Do work...x += 1
+          ADD R0, R0, #1    ;Work: x += 1
           ADD R1, R0, #-10  ;Test to loop again...Update i with x - 10
           BRn ForLoop       ;Loop again if i is negative
                             ;Fall through to Done if i is 0 or positive

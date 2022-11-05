@@ -1,14 +1,7 @@
 ### While Loop Example
-```java
-//Condition: Keep looping until i is 10 or more
-//Action: Starting at 0, add 2 to i each loop
+@[code lang=java{5-7}](.vuepress/public/examples/Assembly/ProgramFlow/While.java)
 
-int i = 0; //data to update in the loop
-while(i <= 10){
-  //Code to do 'work'
-  i += 2; //Add 2 to the data
-}
-```
+@[code lang=arm-asm{6-10}](.vuepress/public/examples/Assembly/ProgramFlow/While.asm)
 
 ::: details Breakdown of code
   **i** is both the data to be acted on and the condition variable used to control the loop
@@ -26,21 +19,5 @@ while(i <= 10){
   The cycle continues until the condition is *false*
 :::
 
-<QuestionMC question="After the While Loop completes i will contain what number?" answer='D' AChoice="2" BChoice="8" CChoice="10" DChoice="12" rightAnswerFeedback="Right! It will loop 6 times total" wrongAnswerFeedback="Incorrect. Because the condition is 'greater than or equal to', when i = 10 the loop is entered 1 last time, adding 2 more"/>
+<QuestionMC question="After the While Loop completes i will contain what number?" answer='D' AChoice="2" BChoice="8" CChoice="10" DChoice="12" rightAnswerFeedback="Right! It will loop 5 times total" wrongAnswerFeedback="Incorrect. Because the condition is 'greater than or equal to', when i = 10 the loop is entered 1 last time, adding 2 more"/>
 
-``` 
-;Updated 11/3/2022
-.ORIG x3000
-  ADD R1, R1, #0; int i = 0
-
-;Condition: Keep looping until R1 is 10 or more
-;Action: Starting at 0, add 2 to R1 each loop
-myLoop   
-  ADD R2, R1, #-10 ; Test R1 <= 10. Store in R2 so data is not affected
-  BRp Done        ; R1 + (-10) is positive, jump out of loop
-  ADD R1, R1, #2   ; Add 2 to the data
-  BRnzp myLoop     ; Go back and possible loop again
-
-  Done HALT
-.END
-```
