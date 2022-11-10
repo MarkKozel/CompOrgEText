@@ -30,7 +30,8 @@ The ability to write small, single-purpose blocks of code that can be used repea
 Advantages of using subroutines include:
 
 - Reuse - can be used many times in a program without needing to copy/paste code in multiple places in main program
-- Testing - once a subroutine is tested, it can be
+- Testing - once a subroutine is tested, it can be skipped when troubleshooting the overall program
+- Bottom-Up Design - When creating a program, the developer can create and test each function/capability separately. Then built the main program that calls the functions as needed to solve the program
 
 Subroutine instructions in LC-3 provide a capability similar to Java's function calls
 
@@ -80,7 +81,7 @@ Unconditional Jump
 
 ### LC-3 ISA Format
 
-<LC3Instruction1 opName="JMP" :info={ {name:'OpCode', bits:1100, desc:'The OpCode'},  {name:'unused', bits:000, desc:'not used'},  {name:'BaseR', bits:000, desc:'Register containing the jump address'}} :examples= [ 'JSRR R4 ; Starts executing code at the memory in R4']/>
+<!-- <LC3Instruction1 opName="JMP" :info={ {name:'OpCode', bits:1100, desc:'The OpCode'},  {name:'unused', bits:000, desc:'not used'},  {name:'BaseR', bits:000, desc:'Register containing the jump address'}} :examples= [ 'JSRR R4 ; Starts executing code at the memory in R4']/> -->
 
 
 <LC3Instruction opName="JMP" :bitPattern="{OpCode:'1100', unused:'000',BaseR:'000', unused: '00000'}" :descriptions="[{OPCode:''},{unused: 'not used'},{BaseR: 'Register containing the jump address'}]"  :examples="['JMP R3 ; Jump to the address in R3']"/>
