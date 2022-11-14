@@ -33,10 +33,10 @@ Both devices are Synchronous and Polled
 ## Keyboard Input
 The built-in keyboard input device uses 2 memory-mapped addresses within the LC-3's memory space. Both addresses are near the end of memory space
 
-| Register Mnemonic | Address | Purpose |
-|-|-|-|
-| KBSR | 0xFE00 | Keyboard Status Register |
-| KBDR | 0xFE02 | Keyboard Data Register |
+| Register Mnemonic | Address | Purpose                  |
+| ----------------- | ------- | ------------------------ |
+| KBSR              | 0xFE00  | Keyboard Status Register |
+| KBDR              | 0xFE02  | Keyboard Data Register   |
 
 <QuestionTF question="These Registers are shared by all programs running in Simulate" answer='true' rightAnswerFeedback="These registers are two memory address, and as such, and accessible by all programs" wrongAnswerFeedback=""/> 
 
@@ -64,7 +64,7 @@ Reading the value is simply loading the data from the KBDR address
 
 ### Example Code
 
-@[code lang=arm-asm{4,8-11}](.vuepress/public/examples/Assembly/BasicIO/getChar.asm)
+@[code lang=arm-asm{4-5,6,11-12}](.vuepress/public/examples/Assembly/BasicIO/getChar.asm)
 
 - Lines 4 and 5 are a simple loop, waiting for KBSR to become negative
 - Once KBSR[15] is set to 1, and the entire KBSR is negative, the code falls through to line 6, where the KBDR is read into R0
@@ -73,10 +73,10 @@ Reading the value is simply loading the data from the KBDR address
 ## Display Output
 The display works very similar to the keyboard, but, being an output device, the polling loop is checking for something different
 
-| Register Mnemonic | Address | Purpose |
-|-|-|-|
-| DSR | 0xFE04 | Display Status Register |
-| DDR | 0xFE06 | Display Data Register |
+| Register Mnemonic | Address | Purpose                 |
+| ----------------- | ------- | ----------------------- |
+| DSR               | 0xFE04  | Display Status Register |
+| DDR               | 0xFE06  | Display Data Register   |
 
 With a polled output device, the program must check with the device to see it it is ready for data. Once ready, the program provides the data and the display is updated
 
@@ -98,11 +98,11 @@ The display device will detect the change in DDR and write the character out to 
 
 ### Example Code
 
-@[code lang=arm-asm{4, 8-11}](.vuepress/public/examples/Assembly/BasicIO/setChar.asm)
+@[code lang=arm-asm{5-6,7,13-14}](.vuepress/public/examples/Assembly/BasicIO/setChar.asm)
 
-- Lines 5 and 6 are a simple loop, waiting for DSR to become negative
+- Lines 4 and 5 are a simple loop, waiting for DSR to become negative
 - Once DSR[15] is set to 1, and the entire DSR is negative, the code falls through to line 7, where the ascii value in R0 is written to DDR
-- Lines 14 and 15 are data declaration to the Display Registers
+- Lines 13 and 14 are data declaration to the Display Registers
 
 ## Why check the Status Register?
 Checking the KBSR or DSR are necessary for the program to maintain the synchronous interface agreement the LC-3 defines for Keyboard and Display IO operations.
