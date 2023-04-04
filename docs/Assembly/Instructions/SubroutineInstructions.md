@@ -302,7 +302,7 @@ public int addOne(int value){
 
 In LC-3, the code sets R0. It then jumps to _addOne_ label (subroutine name). \*addOne code adds 1 to the value in R0, and stores it in R1. Control is returned to the main code for further execution
 
-```
+```asm
 .ORIG x3000
 
 main    ADD R0, R0, #2  ; Set 2 in R0
