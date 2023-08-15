@@ -26,6 +26,10 @@ tags: [binary, binary conversion]
 
 ## Introduction
 
+From the Decimal Values section of the text, as well as from your early educational with numbers, you have an intuitive understanding of the *Base 10* or *Decimal* number system. In elementary school you learned counting,  *Place Value* (representing numbers larger that 9), and arithmetic operations (addition, subtractions, etc). You also learned about special situations, such as carrying when adding large numbers ans borrowing when subtracting them
+
+Modern computers are designed to use a different number system...*Binary* or *Base 2*...to represent numbers. *Base 2* numbers have all the same functions and operations. The processes for *Base 2* are the same as for *Base 10*, but may not be as obvious or intuitive without a little practice
+
 ## What is **Base 2**?
 
 ::: bythenumbers Base 2 Number System
@@ -37,9 +41,7 @@ tags: [binary, binary conversion]
 | Place Value Factor |     2 |
 :::
 
-Also referred to as Binary system, *Base 2* is a system commonly used by humans to refer to integer values or quantities
-
-*Base 10* is a mathematical term for the system of counting humans have standardized on for counting things. The **2** is the number of symbols used to represent quantities
+Also referred to as Binary system, *Base 2* is a system used by computers to refer to all data, including numbers
 
 The *2* in **Base 2** identifies the largest value that can be represented in a single digit (symbol)
 > Base - 1, Therefore, the largest value is a single digit is 1

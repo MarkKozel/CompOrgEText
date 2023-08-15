@@ -128,6 +128,7 @@ There is no particular importance of 10 as a number system, it is just the syste
 
 Decimal (base 10) number system is the de-facto standard number system used by humans. It is the system taught to children and used in business, finance, and day-to-day tasks. The metric system is based on this system.
 
+### Another Common Number System
 We use other number systems for some tasks. One interesting (and complex) number system is used for Data and Time. Time is a mix of systems: 
 ::: left
 1 millennia = 1000 years
@@ -143,4 +144,7 @@ We use other number systems for some tasks. One interesting (and complex) number
 1 minutes = 60 seconds
 :::
 
-It is impressive that most of us can follow this system with base 1000, 12, 24, and 60.
+It is impressive that most of us can follow this system with base 1000, 12, 24, and 60
+
+### Thinking in Binary
+In the next section we will use our understanding of Decimal/Base 10 numbers to consider the computer's primary number system...*Binary*. By understanding the math behind Decimal *Positional Notation*, making the switch to *Binary* is fairly...it is the same formula with one (1) tweak
