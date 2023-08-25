@@ -136,8 +136,8 @@ Algorithm to Make a Bagel
 1. Spread gathered cream cheese into toasted surface of 1 bagel half
 1. Swipe knife across surface of cream cheese, gathering approximately 1 ounce on the knife
 1. Spread gathered cream cheese into toasted surface of other bagel half
-1. Return cream cheese tube to refrigerator
-1. Please bagel haves on plate
+1. Return cream cheese tub to refrigerator
+1. Place bagel haves on plate
 1. Serve bagel halves
 
 ## Conclusion
