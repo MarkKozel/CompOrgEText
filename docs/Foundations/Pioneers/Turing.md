@@ -119,7 +119,7 @@ Check out this simple simulator by Anthony Morphett
 2. Click *Run*
 3. The machine will execute the programs and the Tape should display **10010** (18 in base 10)
 
-Repeat the steps, but use the *Step* button to see each *Instruction Cycle* of teh Turing Machine
+Repeat the steps, but use the *Step* button to see each *Instruction Cycle* of the Turing Machine
 
 [Link to GitHub project](https://github.com/awmorp/turing)
 

@@ -1,11 +1,11 @@
 # Computer Organization E-Textbook
 ## Online Open Educational Resources (OER) / Zero Cost Textbook (ZCT)
 
-|Link|Build Status|
-|-|-|
-|[Master Site](https://comp-org-etext.netlify.app/)|[![Netlify Status](https://api.netlify.com/api/v1/badges/f3989d12-377f-4c71-9d7f-9970711129b9/deploy-status)](https://app.netlify.com/sites/comp-org-etext/deploys)|
-|[Dev Site](https://comp-org-etext-dev.netlify.app/)|[![Netlify Status](https://api.netlify.com/api/v1/badges/c805c9e1-1cb6-443b-b135-44b21528c680/deploy-status)](https://app.netlify.com/sites/comp-org-etext-dev/deploys)|
-|[Doc Review Site](https://comp-org-etext-doc-review.netlify.app/)|[![Netlify Status](https://api.netlify.com/api/v1/badges/924c0833-cb75-495d-b875-f49bcf844bc7/deploy-status)](https://app.netlify.com/sites/comp-org-etext-doc-review/deploys)|
+| Link                                                              | Build Status                                                                                                                                                                   |
+| ----------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [Master Site](https://comp-org-etext.netlify.app/)                | [![Netlify Status](https://api.netlify.com/api/v1/badges/f3989d12-377f-4c71-9d7f-9970711129b9/deploy-status)](https://app.netlify.com/sites/comp-org-etext/deploys)            |
+| [Dev Site](https://comp-org-etext-dev.netlify.app/)               | [![Netlify Status](https://api.netlify.com/api/v1/badges/c805c9e1-1cb6-443b-b135-44b21528c680/deploy-status)](https://app.netlify.com/sites/comp-org-etext-dev/deploys)        |
+| [Doc Review Site](https://comp-org-etext-doc-review.netlify.app/) | [![Netlify Status](https://api.netlify.com/api/v1/badges/924c0833-cb75-495d-b875-f49bcf844bc7/deploy-status)](https://app.netlify.com/sites/comp-org-etext-doc-review/deploys) |
 
 ## Project
 Create a set of online resources to replace current textbook for CS 131, Computer Organization at Allan Hancock
@@ -52,6 +52,8 @@ The VuePress site is built into a static web site that can be deployed to variou
 The Documentation Source will be available on GitHub to allow others to instructors to modify and deploy their own version of the documentation. Other instructors couple then deploy their modified documentation to their own web sites for their students to access
 
 ## Development Log
+20230825 - Typo fixes
+
 22020501 - Completed first draft. Ready for Peer Review for Grant
 
 20220430 - Completing first draft/80%. Coordinating with reviewers as part of grant activities. 
