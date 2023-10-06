@@ -58,7 +58,7 @@ In the above example:
 
 ![Complex Truth Table](/images/Circuits/TruthTable_Anatomy_Complex.png)
 
-Truth tables can have more that 2 inputs and 1 output. In cases of multiple outputs, all inputs in a given row produce each output signal separately
+Truth tables can have more than 2 inputs and 1 output. In cases of multiple outputs, all inputs in a given row produce each output signal separately
 
 In the above example:
  > when **a** inputs a *0* and **b** inputs a *0*, the **z1** output will be *0* and **z2** output will be *0*
@@ -71,7 +71,7 @@ In the above example:
 
  ![Complex Truth Table](/images/Circuits/TruthTable_Anatomy_Complex2.png)
 
- When creating a physical circuit based on this diagram, remember that this is one circuit and the **a** and **b** inputs are from the same source
+ When creating a physical circuit based on this diagram, remember this is one circuit and the **a** and **b** inputs are from the same source
 
  We will learn how to crate physical circuits, using a virtual circuit design adn simulation tool later
 
