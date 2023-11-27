@@ -1,0 +1,29 @@
+{
+  "name": "comp-org-etext",
+  "version": "0.0.2",
+  "description": "Computer Organization online textbook",
+  "main": "index.js",
+  "type": "module",
+  "authors": {
+    "name": "Mark Kozel",
+    "email": "Development@markkozel.net"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://www.buymeacoffee.com/MarkKozel"
+  },
+  "homepage": "https://github.com/MarkKozel/CompOrgEText#readme",
+  "bugs": {
+    "url": "https://github.com/MarkKozel/CompOrgEText/issues"
+  },
+  "repository": "https://github.com/MarkKozel/CompOrgEText.git",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  },
+  "license": "CC-BY-NC-4.0",
+  "devDependencies": {
+    "vitepress": "^1.0.0-rc.31"
+  }
+}
