@@ -52,6 +52,8 @@ The VuePress site is built into a static web site that can be deployed to variou
 The Documentation Source will be available on GitHub to allow others to instructors to modify and deploy their own version of the documentation. Other instructors couple then deploy their modified documentation to their own web sites for their students to access
 
 ## Development Log
+20231126 - Building VitePress version in separate *vitedocs* folder. Starting to build a new Getting Started set of pages to improve the first week of assembly
+
 20230825 - Typo fixes
 
 22020501 - Completed first draft. Ready for Peer Review for Grant
