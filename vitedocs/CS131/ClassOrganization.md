@@ -19,11 +19,11 @@
 **Main Content Area** displays the Topic or Topic Unit content.
 
 ## Introduction
-This text is divided into the following Sections:
+<!-- This text is divided into the following Sections:
 
 1. [Introduction](../Introduction/index.md)
 1. [Foundations](../Foundations/index.md)
-1. [Assembly](../Assembly/index.md)
+1. [Assembly](../Assembly/index.md) -->
 
 Each Section contains Topics. For example, the Introduction Section contains the following Topics: Diversity, History, and Concepts.
 
