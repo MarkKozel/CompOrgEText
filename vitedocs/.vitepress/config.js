@@ -5,6 +5,9 @@ const pkg = require('../package.json')
 export default defineConfig({
   title: "CS-131 Textbook",
   description: "Computer Organization online textbook",
+  markdown: {
+    lineNumbers: true
+  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: { src: '/images/HeroImage.jpg', width: 24, height: 24 },
@@ -44,6 +47,7 @@ function sidebarGS() {
         { text: 'Install Tools', link: 'InstallTools' },
         { text: 'Source Code', link: 'SourceCode' },
         { text: 'Running', link: 'Running' },
+        { text: 'Hello World Example', link: 'HelloWorld' },
       ]
     },
   ]
