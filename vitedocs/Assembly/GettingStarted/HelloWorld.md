@@ -65,7 +65,7 @@ LC-3 provides 8 General Purpose Registers, numbered R0 - R7. An assembly program
 When data in a Register is stored into memory, the register still contains the data. It is up to the programmer to clear Registers if they desire. Or they can let the data remain
 
 ::: warning Reminder About Assembly Values
-Except for typos, this text refers to values in Memory and Registers as **Data**. This is intentional as way of illustrating that this data is a string of *1's* and *0's*. It has no type or meaningful state until it us used
+Except for typos, this text refers to values in Memory and Registers as **Data**. This is intentional as way of illustrating that this data is a string of *1's* and *0's*. It has no type or meaningful state until it is used
 
 When the *ADD* instruction uses data, it treats the data as an integer value. If the monitor received a data element, it uses it as a character. A Load or Store instruction will use the data as an memory address to access
 

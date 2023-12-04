@@ -5,6 +5,7 @@ const pkg = require('../package.json')
 export default defineConfig({
   title: "CS-131 Textbook",
   description: "Computer Organization online textbook",
+  lastUpdate: true,
   markdown: {
     lineNumbers: true
   },
