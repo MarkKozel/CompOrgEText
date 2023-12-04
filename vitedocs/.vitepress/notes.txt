@@ -1,0 +1,4 @@
+<img src="/images/mono-line-line-arrow-begin.png" width="30">
+
+<!--@include: @/TextSnippets/GetStartedByExpandingTheSidebar.md-->
+

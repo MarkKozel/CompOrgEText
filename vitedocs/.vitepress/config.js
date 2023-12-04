@@ -15,6 +15,12 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Assembly', link: '/Assembly/', activeMatch: 'Assembly/' },
+      { text: 'About', link: '/about/', activeMatch: 'about/' },
+      {
+        text: 'Add\'l Info',
+        link: '/AdditionalMaterials/',
+        activeMatch: 'AdditionalMaterials/',
+      },
       {
         text: `EText Ver ${pkg.version}`,
         items: [
@@ -34,7 +40,26 @@ export default defineConfig({
     },
 
     sidebar: {
-      '/Assembly/GettingStarted/': { base: '/Assembly/GettingStarted/', items: sidebarGS() }
+      '/Assembly/GettingStarted/': {
+        base: '/Assembly/GettingStarted/', items: sidebarGS()
+      },
+      '/About/': { base: '/About/', items: sidebarAbout() },
+      '/AdditionalMaterials/': [
+        {
+          text: 'Add\'l Info',
+          collapsable: true,
+          sidebarDepth: 3,
+          base: '/AdditionalMaterials/',
+          items: [
+            // { text: 'Add\'l Info', link: '.' },
+            { text: 'Links', link: 'Links' },
+            { text: 'Videos', link: 'Videos' },
+            '',
+            '',
+            'Videos',
+          ]
+        }
+      ],
     },
   }
 })
@@ -53,3 +78,20 @@ function sidebarGS() {
     },
   ]
 };
+
+function sidebarAbout() {
+  return [
+    {
+      text: 'About This EText',
+      collapsable: false,
+      items: [
+        { text: 'CS131 Information', link: '/CS131Information' },
+        { text: 'Funding', link: '/Funding' },
+        { text: 'Colophon', link: '/Colophon' },
+        { text: 'Getting Started', link: '/GettingStarted' },
+        { text: 'Git Build Mgmt', link: '/GitBuildMgmt' },
+        { text: 'Contributors', link: '/Contributors' },
+      ]
+    }
+  ]
+}
