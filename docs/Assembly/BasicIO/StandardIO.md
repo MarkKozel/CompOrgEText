@@ -142,7 +142,7 @@ Data is exchanged via special memory locations. This memory *buffer* is populate
 
 |Pros|Cons|
 |-|-|
-| Program does nto need to wait for data | Buffer can be overwritten before being received |
+| Program does not need to wait for data | Buffer can be overwritten before being received |
 | Size of data exchanged can vary |  |
 
 ## Conclusion
