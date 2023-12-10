@@ -34,7 +34,8 @@ The built-in dev server allows you to render and view the entire site on a local
 
 1. In the command windows ```cd CompOrgEText/vitdocs``` to switch to the document root folder
 1. ```npm run dev``` to start the dev server
-1. Once the final ```success``` message appears, open a browser to the address shown in that message (typically http://localhost:8080)
+1. Once the final ```success``` message appears, open a browser to the address shown in that message 
+> typically ```http://localhost:8080```
 
 Editing files in the *working files* and saving will trigger the dev server to restart, and saved changes will appear in the browser
 
@@ -60,6 +61,7 @@ You can use any editing environment to update and push changes. This section cov
     >
     >wait for *success* message
     >
-    >Note the web address on this line (something like http://localhost:5173)
+    >Note the web address on this line
+    >> something like  ```http://localhost:5173```
 1. Open a web browser and enter the web address
 1. You will, if everything worked, the opening page of the project
