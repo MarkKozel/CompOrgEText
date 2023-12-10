@@ -29,10 +29,10 @@ The **Icon/Title** at the top-left will return to the CS 131 start page
 
 # About this Textbook
 
-[Funding](Funding/)
+[Funding](Funding)
 
-[Colophon](Colophon/)
+[Colophon](Colophon)
 
-If you are interested in building upon this project see the [Getting Started Guide](GettingStarted/)
+If you are interested in building upon this project see the [Getting Started Guide](GettingStarted)
 
-Working together using GitHub and Git [Collaboration and Git Info](GitBuildMgmt/)
+Working together using GitHub and Git [Collaboration and Git Info](GitBuildMgmt)
