@@ -15,7 +15,7 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Assembly', link: '/Assembly/', activeMatch: 'Assembly/' },
-      { text: 'About', link: '/about/', activeMatch: 'about/' },
+      { text: 'About', link: '/About/', activeMatch: 'About/' },
       {
         text: 'Add\'l Info',
         link: '/AdditionalMaterials/',
