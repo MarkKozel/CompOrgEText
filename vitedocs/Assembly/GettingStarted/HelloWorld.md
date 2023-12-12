@@ -16,12 +16,12 @@ We will start with the classic *first program*, **Hello, World**, to discuss the
 While the .asm and .java file output the same characters to the screen, they are quite different
 
 ::: code-group
-<<< @/Assembly/_CodeSnippets/HelloWorld.asm
-<<< @/Assembly/_CodeSnippets/HelloWorld.java
+<<< @/Assembly/_CodeSnippets/HelloWorld.asm {3,9-11,5,15,29}
+<<< @/Assembly/_CodeSnippets/HelloWorld.java {3}
 :::
 
 ::: tip Why are these two programs so different?
-Java provides libraries of functions that do the *dirty work* you done see. ```System.out.println``` is a function in the **System** library that handles processing characters, interfaces with the monitor device, and adds a new line to the end of the output
+Java provides libraries of functions that do the *dirty work* you done see. ```System.out.println``` (line 3) is a function in the **System** library that handles processing characters, interfaces with the monitor device, and adds a new line to the end of the output
 
 The assembly environment provides only basic function, such as 
   - a command to read the beginning of a string (line 3)
