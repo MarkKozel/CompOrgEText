@@ -6,30 +6,18 @@ export default defineConfig({
   title: "CS-131 Textbook",
   description: "Computer Organization online textbook",
   lastUpdate: true,
+  head: [
+    ['link', { rel: 'icon', href: '/favicon.png' }]
+  ],
   markdown: {
     lineNumbers: true
   },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: { src: '/images/HeroImage.jpg', width: 24, height: 24 },
-    nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Assembly', link: '/Assembly/', activeMatch: 'Assembly/' },
-      { text: 'About', link: '/About/', activeMatch: 'About/' },
-      {
-        text: 'Add\'l Info',
-        link: '/AdditionalMaterials/',
-        activeMatch: 'AdditionalMaterials/',
-      },
-      {
-        text: `EText Ver ${pkg.version}`,
-        items: [
-          { text: 'Class Organization', link: '/CS131/ClassOrganization' },
-          { text: 'CS-131 Course Info', link: '/CS131/CourseInformation' },
-          { text: 'CS-131 Course Rational', link: '/CS131/CourseRational' },
-        ]
-      },
-    ],
+
+    nav: nav(),
+
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/MarkKozel/CompOrgEText' }
@@ -40,40 +28,113 @@ export default defineConfig({
     },
 
     sidebar: {
-      '/Assembly/GettingStarted/': {
-        base: '/Assembly/GettingStarted/', items: sidebarGS()
-      },
+      '/Assembly/': { base: '/Assembly/', items: sidebarAssembly() },
       '/About/': { base: '/About/', items: sidebarAbout() },
-      '/AdditionalMaterials/': [
-        {
-          text: 'Add\'l Info',
-          collapsable: true,
-          sidebarDepth: 3,
-          base: '/AdditionalMaterials/',
-          items: [
-            // { text: 'Add\'l Info', link: '.' },
-            { text: 'Links', link: 'Links' },
-            { text: 'Videos', link: 'Videos' },
-            '',
-            '',
-            'Videos',
-          ]
-        }
-      ],
+      '/AdditionalMaterials/': { base: '/AdditionalMaterials/', items: sidebarAddlInfo() }
     },
   }
 })
 
-function sidebarGS() {
+function nav() {
+  return [
+    {
+      text: 'Assembly',
+      link: '/Assembly/GettingStarted/InstallTools',
+      activeMatch: '/Assembly/'
+    },
+    {
+      text: 'Add\'l Info',
+      link: '/AdditionalMaterials/videos',
+      activeMatch: '/AdditionalMaterials/'
+    },
+    {
+      text: `EText Ver ${pkg.version}`,
+      items: [
+        { text: 'Class Organization', link: '/CS131/ClassOrganization' },
+        { text: 'CS-131 Course Info', link: '/CS131/CourseInformation' },
+        { text: 'CS-131 Course Rational', link: '/CS131/CourseRational' },
+      ]
+    },
+    {
+      text: 'About',
+      link: '/About/',
+      activeMatch: '/About/'
+    },
+  ]
+}
+
+function sidebarAddlInfo() {
+  return [
+    {
+      text: 'Additional Materials',
+      collapsed: false,
+      base: 'AdditionalMaterials/',
+      items: [
+        { text: 'Videos', link: 'Videos' },
+        { text: 'Links', link: 'Links' },
+      ]
+    },
+    {
+      text: 'SW Development',
+      collapsed: false,
+      base: 'AdditionalMaterials/Development/',
+      items: [
+        { text: 'Formatting And Commenting', link: 'FormattingAndCommenting' },
+        { text: 'Design', link: 'Design' },
+        { text: 'Debugging', link: 'Debugging' },
+      ]
+    },
+  ]
+};
+
+function sidebarAssembly() {
   return [
     {
       text: 'Getting Started',
       collapsed: false,
+      base: 'Assembly/GettingStarted/',
       items: [
         { text: 'Install Tools', link: 'InstallTools' },
         { text: 'Source Code', link: 'SourceCode' },
         { text: 'Running', link: 'Running' },
         { text: 'Hello World Example', link: 'HelloWorld' },
+      ]
+    },
+    {
+      text: 'The von Neumann Model',
+      collapsed: false,
+      link: 'vonNeumann',
+    },
+    {
+      text: 'Instructions',
+      collapsed: false,
+      base: 'Assembly/Instructions/',
+      items: [
+        { text: 'Anatomy of an Instruction', link: 'Anatomy' },
+        { text: 'Arithmetic & Logic', link: 'ALU' },
+        { text: 'Branching', link: 'Branching' },
+        { text: 'Memory Access', link: 'MemoryAccess' },
+        { text: 'TRAP Routines', link: 'TRAPRoutines' },
+        { text: 'Subroutines', link: 'Subroutines' },
+      ]
+    },
+    {
+      text: 'Program Flow',
+      collapsed: false,
+      base: 'Assembly/ProgramFlow/',
+      items: [
+        { text: 'Sequential', link: 'Sequential' },
+        { text: 'Conditional', link: 'Conditional' },
+        { text: 'Iterative', link: 'Iterative' },
+      ]
+    },
+    {
+      text: 'Input\/Output',
+      collapsed: false,
+      base: 'Assembly/IO/',
+      items: [
+        { text: 'General I\/O', link: 'GeneralIO' },
+        { text: 'LC-3 I\/O', link: 'LC3IO' },
       ]
     },
   ]

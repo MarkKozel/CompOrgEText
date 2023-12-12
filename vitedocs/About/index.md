@@ -1,3 +1,9 @@
+<!-- <script setup>
+import TestComp from '../.vitepress/components/TestComp.vue'
+</script>
+
+<TestComp /> -->
+
 # About this Text
 
 This online textbook was initially created for use at Allan Hancock College in Santa Maria, Ca, USA. It is open-source and available to any oen or program per the licensing requirements (below).
