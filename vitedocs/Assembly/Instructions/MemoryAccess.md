@@ -26,9 +26,9 @@ tags: []
 
 ## Introduction
 
-Memory Access Commands proved capability to move data between Registers and Memory (RAM). 
+Memory Access Instructions proved capability to move data between Registers and Memory (RAM). 
 
-Recall that [ALU Commands](ALUCommands) do not operate on data in memory. Before executing any instruction on data in memory it must first be loaded from memory into a register. ALU Commands only store results in registers, so it must be stored out to memory if needed.
+Recall that ALU Instructions do not operate on data in memory. Before executing any instruction on data in memory it must first be loaded from memory into a register. ALU Commands only store results in registers, so it must be stored out to memory if needed.
 
 **Add Two Values in Memory**
 

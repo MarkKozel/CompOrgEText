@@ -34,7 +34,8 @@ These elements are your code are purely for humans. Compilers and assemblers ign
 
 Using blank section or lines in source code makes it more readable for others. It is a way to visually group and align instructions into understandable groups
 
-### [LC-3 Whitespace Examples](../../../LC3/Development/WhitespaceAndCommenting/index.md#whitespace) 
+### LC-3 Whitespace Examples
+<!-- ### [LC-3 Whitespace Examples](../../../LC3/Development/WhitespaceAndCommenting/index.md#whitespace)  -->
 
 ### Indenting
 
@@ -61,7 +62,8 @@ The blank lines in this code separate Initialization, Processing Loop, and Outpu
 
 Comments are included to help other developers understand the organization and important parts of the code. This will help simplify future updates.
 
-### [LC-3 Commenting Examples](../../../LC3/Development/WhitespaceAndCommenting/index.md#comments) 
+### LC-3 Commenting Examples
+<!-- ### [LC-3 Commenting Examples](../../../LC3/Development/WhitespaceAndCommenting/index.md#comments)  -->
 
 ### Function Comments
 
