@@ -15,4 +15,4 @@ Rendering is performed on Netlify Build and Web Hosting. VuePress build script i
 ## Fonts
 In order of precedent...
 
-"Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+'Inter var', 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Helvetica, Arial

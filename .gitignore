@@ -1,9 +1,14 @@
 # Dist Folder
 
 CompOrgText/
-etext.zip
+*.zip
 CompOrgText20230816.zip
 vitedocs/.vitepress/cache/*
+*.bin
+*.hex
+*.lst
+*.obj
+*.sym
 
 # Logs
 logs

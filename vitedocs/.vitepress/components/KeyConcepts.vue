@@ -77,7 +77,7 @@ module.exports = {
   text-align: center;
   font-size: 16px;
   font-weight: bold;
-  color: rgb(117, 117, 117);
+  color: #005AAA;
   word-wrap: normal;
   margin: 0px;
 }
@@ -100,7 +100,7 @@ module.exports = {
   font-size: 24px;
   font-weight: bold;
   text-align: center;
-  color: #060675;
+  color: #005AAA;
   margin: 0px;
   padding: 1px;
 }

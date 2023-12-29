@@ -26,7 +26,7 @@ tags: []
 ]" />
 
 ::: details Terms
-!!!include(TextSnippets/Assembly/Development_Terms.md)!!!
+<!--@include: @/TextSnippets/Assembly/Development_Terms.md-->
 :::
 
 ## Introduction

@@ -44,7 +44,7 @@ The Control Unit is the central hub of activity in the von Neumann model. As not
 The Control knows *when* and *how* to interact to parts of the overall system to execute assembly instruction. At its heart is a **State Machine** containing all control and data signals that need to be issued for each ISA command
 
 ::: details State Machine Entry Example
-!!!include(TextSnippets/Assembly/StateMachineExample.md)!!!
+<!--@include: @/TextSnippets/Assembly/StateMachineExample.md-->
 :::
 
 The Controller is built and configured at the same time as the ISA/Assembly instructions. It must be able to recognize and execute every assembly instruction in the ISA. That is to say, it must have state procedures for every instruction.

@@ -44,7 +44,7 @@ function nav() {
     },
     {
       text: 'Add\'l Info',
-      link: '/AdditionalMaterials/videos',
+      link: '/AdditionalMaterials/Videos',
       activeMatch: '/AdditionalMaterials/'
     },
     {
@@ -93,6 +93,7 @@ function sidebarAssembly() {
       text: 'Getting Started',
       collapsed: false,
       base: 'Assembly/GettingStarted/',
+      sidebarDepth: 3,
       items: [
         { text: 'Install Tools', link: 'InstallTools' },
         { text: 'Source Code', link: 'SourceCode' },
