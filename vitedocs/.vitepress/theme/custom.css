@@ -411,7 +411,8 @@
 
   --vp-custom-block-details-border: var(--vp-custom-block-info-border);
   --vp-custom-block-details-text: var(--vp-custom-block-info-text);
-  --vp-custom-block-details-bg: var(--vp-custom-block-info-bg);
+  --vp-custom-block-details-bg: var(--hancock-yellow);
+  /* --vp-custom-block-details-bg: var(--vp-custom-block-info-bg); */
   --vp-custom-block-details-code-bg: var(--vp-custom-block-info-code-bg);
 }
 

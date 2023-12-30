@@ -63,8 +63,7 @@ When a key is pressed on the keyboard, the ASCII value for the key loaded into t
 Reading the value is simply loading the data from the KBDR address
 
 ### Example Code
-
-@[code lang=arm-asm{4-5,6,11-12}](.vuepress/public/examples/Assembly/BasicIO/getChar.asm)
+<<< @/public/examples/Assembly/BasicIO/getChar.asm {5,6,11-12 asm}
 
 - Lines 4 and 5 are a simple loop, waiting for KBSR to become negative
 - Once KBSR[15] is set to 1, and the entire KBSR is negative, the code falls through to line 6, where the KBDR is read into R0
@@ -97,8 +96,7 @@ When the display device is ready it sets the DSR[15] to 1. The program can now s
 The display device will detect the change in DDR and write the character out to the console.
 
 ### Example Code
-
-@[code lang=arm-asm{5-6,7,13-14}](.vuepress/public/examples/Assembly/BasicIO/setChar.asm)
+<<< @/public/examples/Assembly/BasicIO/setChar.asm {5-6,7,13-14 asm}
 
 - Lines 4 and 5 are a simple loop, waiting for DSR to become negative
 - Once DSR[15] is set to 1, and the entire DSR is negative, the code falls through to line 7, where the ascii value in R0 is written to DDR

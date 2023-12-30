@@ -59,7 +59,7 @@ In LC-3, assembly can perform the same behavior, but, like most things in assemb
 The main mechanism in *calling a subroutine* is manipulating the PC. Recall the PC controls the next instruction to execute. Without manipulation, the next line wil always be execute. But, by change it, another instruction can be executed next.
 
 ::: details The Program Counter register
-!!!include(TextSnippets/LC3/PC.md)!!!
+<!--@include: @/TextSnippets/LC3/PC.md-->
 :::
 
 ### Anatomy of a Subroutine
@@ -185,8 +185,7 @@ After the JSR instruction executes, the instructions at the PCOffset address beg
     - JSR sets R7 to the current PC before jumping. Using the **RET** instruction at the end of a subroutine will return to the instruction *after* the original jump
 
 ### Examples
-
-@[code lang=arm-asm{4, 8-11}](.vuepress/public/examples/Assembly/Commands/JSR1.asm)
+<<< @/public/examples/Assembly/Commands/JSR1.asm {4,8-11 asm}
 
 Lines 9 and 10 apply the 2's complement algorithm to the value in R1, storing the result in R0
 
@@ -218,7 +217,7 @@ JSRR also sets R7 for the RET instruction and has the same differences to BR as 
 
 **Call built-in subroutine**
 
-@[code lang=arm-asm{4, 8-11}](.vuepress/public/examples/Assembly/Commands/JSRR1.asm)
+<<< @/public/examples/Assembly/Commands/JSRR1.asm {4,8-11 asm}
 
 Lines 10-12 are the subroutine to be called
 
@@ -228,7 +227,7 @@ Line 5 uses the value in R4 to jump to the subroutine
 
 **Call subroutine loaded separately**
 
-@[code lang=arm-asm{4-5, 10, 14-21}](.vuepress/public/examples/Assembly/Commands/JSRR2.asm)
+<<< @/public/examples/Assembly/Commands/JSRR2.asm {4-5,10,14-21 asm}
 
 Lines 14-21 are a separate assembly file assembled and loaded into memory location x5000
 
@@ -282,7 +281,7 @@ The callee code is expected to save/restore R7 always. Should the TRAP/User Func
 
 The following Subroutine, _mySub_ will use R1 and R2 internally. As the Callee, it is responsible for saving R1 and R2 before using those registers. Once complete, it will restore both registers, then return to tha Caller
 
-@[code lang=arm-asm{4-5, 10, 14-21}](.vuepress/public/examples/Assembly/Commands/CalleeStorage.asm)
+<<< @/public/examples/Assembly/Commands/CalleeStorage.asm {4-5,10,14-21 asm}
 
 ## Java vs LC-3 Subroutines
 

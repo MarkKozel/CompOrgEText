@@ -1,7 +1,6 @@
 ### While Loop Example
-@[code lang=java{5-7}](.vuepress/public/examples/Assembly/ProgramFlow/While.java)
-
-@[code lang=arm-asm{6-10}](.vuepress/public/examples/Assembly/ProgramFlow/While.asm)
+<<< @/public/examples/Assembly/ProgramFlow/While.java {java}
+<<< @/public/examples/Assembly/ProgramFlow/While.asm {asm}
 
 ::: details Breakdown of code
   **i** is both the data to be acted on and the condition variable used to control the loop

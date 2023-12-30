@@ -12,20 +12,6 @@
             <td class="KCdetails">{{ concept.Details }}</td>
           </tr>
         </table>
-
-        <!-- <table class="KCinner" cellspacing="0" cellpadding="0">
-          <tr class="KCinner" v-for="concept in cArray"> -->
-        <!-- <tr class=" KCinner" v-for="concept in ConceptArray" :key="concept.Concept"> -->
-        <!-- <td>{{ concept.Concept }} -->
-        <!-- <p class="KCconcept"></p> -->
-        <!-- <p :id="concept.Concept" class="KCconcept">{{ concept.Concept }}</p> -->
-        <!-- </td>
-            <td class="KCinner">
-              <p :id="concept.Concept" class="KCdetails">{{ concept.Details }}</p>
-            </td>
-          </tr>
-        </table> -->
-
       </tr>
     </table>
   </div>
@@ -33,44 +19,13 @@
 
 <script setup>
 import { ref } from 'vue';
-// const ConceptArray = ref(0);
-const cArray = defineProps(['ConceptArray']);
-// module.exports = {
-// name: "KeyConcepts",
-// props: {
-//   ConceptArray: {
-//     type: Array,
-//     required: true
-//   },
-// },
-
-// data: function () {
-//   return {
-//     rawData: {},
-//     concepts: []
-//   };
-// }
-// };
-</script>
-
-<!-- <script>
-module.exports = {
-  name: "KeyConcepts",
-  props: {
-    ConceptArray: {
-      type: Array,
-      required: true
-    },
+const props = defineProps({
+  ConceptArray: {
+    type: Array,
+    required: true
   },
-
-  data: function () {
-    return {
-      rawData: {},
-      concepts: []
-    };
-  }
-};
-</script> -->
+});
+</script>
 
 <style >
 .KCconcept {

@@ -1,8 +1,6 @@
 ### For Loop Example
-
-@[code lang=java{3}](.vuepress/public/examples/Assembly/ProgramFlow/ForLoop.java)
-
-@[code lang=arm-asm{7-10}](.vuepress/public/examples/Assembly/ProgramFlow/ForLoop.asm)
+<<< @/public/examples/Assembly/ProgramFlow/ForLoop.java{java}
+<<< @/public/examples/Assembly/ProgramFlow/ForLoop.asm {asm}
 
 ::: details Breakdown of code
 *i* is the **loop control** variable that hold the *number of times the loop and executed*

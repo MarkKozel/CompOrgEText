@@ -32,9 +32,9 @@ Recall that ALU Instructions do not operate on data in memory. Before executing 
 
 **Add Two Values in Memory**
 
-This LC-3 program adds 2 values from memory and stores it in a different memory location.
+This LC-3 program adds 2 values from memory and stores it in a different memory location
 
-@[code lang=arm-asm{2,3,7}](.vuepress/public/examples/Assembly/Commands/addMemData.asm)
+<<< @/public/examples/Assembly/Commands/addMemData.asm {2,3,7 asm}
 
 - The program allocates memory using the labels **MyVal1**, **MyVal2**, and **Result**
 - **MyVal1**, **MyVal2** are assigned values
@@ -72,15 +72,13 @@ LD loads from Memory into a Register. A destination register is provided to rece
 ### Examples
 
 #### Loads value from memory location MyVal1 into Register 3
-@[code lang=arm-asm{2}](.vuepress/public/examples/Assembly/Commands/ld1.asm)
+<<< @/public/examples/Assembly/Commands/ld1.asm {2 asm}
 
 #### Loads value from memory location MyVal2 into Register 0
-
-@[code lang=arm-asm{2}](.vuepress/public/examples/Assembly/Commands/ld2.asm)
+<<< @/public/examples/Assembly/Commands/ld2.asm {2 asm}
 
 #### Loads value from memory location MyVal3 into Register 0
-
-@[code lang=arm-asm{2}](.vuepress/public/examples/Assembly/Commands/ld3.asm)
+<<< @/public/examples/Assembly/Commands/ld3.asm {2 asm}
 
 ### Gotchas
 
@@ -104,7 +102,7 @@ Stores a value in a Register into a Memory location. A source register is provid
 ### Examples
 
 #### Store value from Register 3 into memory location MyVal1
-@[code lang=arm-asm{3}](.vuepress/public/examples/Assembly/Commands/st1.asm)
+<<< @/public/examples/Assembly/Commands/st1.asm {3 asm}
 
 ```MyVal1 .BLKW 1``` allocates 1 *word* (16-bit memory slot) and labels it *MyVal1*
 
@@ -149,7 +147,7 @@ Using a 16-bit address to request data from memory allows the program to load fr
 ### Examples
 
 #### Loads value from memory location contained in MyAddr1 into Register 3
-@[code lang=arm-asm{2}](.vuepress/public/examples/Assembly/Commands/ldi1.asm)
+<<< @/public/examples/Assembly/Commands/ldi1.asm {2 asm}
 
 ``` asm {4}
 Address   Value
@@ -189,9 +187,8 @@ The memory location containing the storage address is still limited to -256 to +
 Using a 16-bit address to request data from memory allows the program to store to any of the 56535 memory locations in the LC-3.
 
 ### Examples
-
 #### Store value into memory location contained in MyAddr1 from Register 3
-@[code lang=arm-asm{3}](.vuepress/public/examples/Assembly/Commands/sti1.asm)
+<<< @/public/examples/Assembly/Commands/sti1.asm {3 asm}
 
 ``` asm {5}
 Before Update           After Update
@@ -228,8 +225,7 @@ The address to load from is calculated using the 16-bit value in BaseReg added t
 This load instruction is similar to arrays in high-level languages. The BaseReg is the *Array Name* and the Offset in the *Array Index*.
 
 ### Examples
-
-@[code lang=arm-asm{3,6}](.vuepress/public/examples/Assembly/Commands/ldr1.asm)
+<<< @/public/examples/Assembly/Commands/ldr1.asm {3,6 asm}
 
 The LEA instruction reads the Memory Address of MyArray1 label. It does not load that value at the Memory Address
 
@@ -258,8 +254,7 @@ The address to load from is calculated using the 16-bit value in BaseReg added t
 This store instruction is similar to arrays in high-level languages. The BaseReg is the *Array Name* and the Offset in the *Array Index*.
 
 ### Examples
-
-@[code lang=arm-asm{4,7}](.vuepress/public/examples/Assembly/Commands/sdr1.asm)
+<<< @/public/examples/Assembly/Commands/sdr1.asm {4,7 asm}
 
 The LEA instruction reads the Memory Address of MyArray1 label. It does not load that value at the Memory Address
 
@@ -281,7 +276,8 @@ LEA load the address of a label, not the value at that label. This is useful whe
 This command does not require any memory reading or writing. The PCOffset9 value is added to the PC and that result is address to store in the DR.
 
 ### Examples
-@[code lang=arm-asm{2}](.vuepress/public/examples/Assembly/Commands/lea1.asm)
+<<< @/public/examples/Assembly/Commands/lea1.asm {2 asm}
+
 
 1. **Controller** uses *PCOffset9* value to calculate memory location that contains address to load
 1. **Controller** copies value from calculated value (x3001 in the example) into the Destination Register (R3 in the example)
