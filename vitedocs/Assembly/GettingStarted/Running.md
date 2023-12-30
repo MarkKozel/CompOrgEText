@@ -1,5 +1,5 @@
 ---
-title: The LC-3 Executable
+title: LC-3 Execution Environment
 parent: Getting Started
 description: Loading and Running an LC-3 Program
 pageClass: Topic

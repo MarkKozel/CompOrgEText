@@ -1,7 +1,7 @@
 ---
-title: Variables
+title: LC-3 Hello World Example
 parent: Getting Started
-description: Loading and Storing Data
+description: Deep Dive on a basic LC-3 Assembly Program
 pageClass: Topic
 tags: []
 ---

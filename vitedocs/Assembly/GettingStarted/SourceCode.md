@@ -1,5 +1,5 @@
 ---
-title: The LC-3 Source File
+title: LC-3 Source File Editing
 parent: Getting Started
 description: Writing and Assembling LC-3 Source Code
 pageClass: Topic

@@ -7,7 +7,7 @@ export default defineConfig({
   description: "Computer Organization online textbook",
   lastUpdate: true,
   head: [
-    ['link', { rel: 'icon', href: '/favicon.png' }]
+    ['link', { rel: 'icon', href: '/favicon.ico' }]
   ],
   markdown: {
     lineNumbers: true
@@ -96,9 +96,9 @@ function sidebarAssembly() {
       sidebarDepth: 3,
       items: [
         { text: 'Install Tools', link: 'InstallTools' },
-        { text: 'Source Code', link: 'SourceCode' },
-        { text: 'Running', link: 'Running' },
-        { text: 'Hello World Example', link: 'HelloWorld' },
+        { text: 'LC-3 Source File Editing', link: 'SourceCode' },
+        { text: 'LC-3 Execution Environment', link: 'Running' },
+        { text: 'LC-3 Hello World Example', link: 'HelloWorld' },
       ]
     },
     {

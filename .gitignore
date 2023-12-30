@@ -10,6 +10,9 @@ vitedocs/.vitepress/cache/*
 *.obj
 *.sym
 
+#For vitepress
+docs/
+
 # Logs
 logs
 *.log
