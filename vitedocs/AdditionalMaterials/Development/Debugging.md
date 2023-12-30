@@ -6,6 +6,11 @@ pageClass: Topic
 tags: [Debugging, Step Through, Errors, Syntactic, Functional, Program Flow]
 ---
 
+<script setup>
+import KeyConcepts from '../../.vitepress/components/KeyConcepts.vue';
+import QuestionMC from '../../.vitepress/components/QuestionMC.vue';
+</script>
+
 # {{ $frontmatter.title }}
 **{{ $frontmatter.description }}**
 

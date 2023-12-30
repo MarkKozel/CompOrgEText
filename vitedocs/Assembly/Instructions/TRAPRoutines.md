@@ -6,6 +6,12 @@ pageClass: Topic
 tags: [GETC, OUT, PUTS, IN, HALT, TRAP Built-in]
 ---
 
+<script setup>
+import KeyConcepts from '../../.vitepress/components/KeyConcepts.vue';
+import QuestionTF from '../../.vitepress/components/QuestionTF.vue';
+import QuestionMC from '../../.vitepress/components/QuestionMC.vue';
+</script>
+
 <KeyConcepts :ConceptArray = "[
   {
     Concept: 'TRAP Routines are Built-In',

@@ -6,6 +6,11 @@ pageClass: Topic
 tags: []
 ---
 
+<script setup>
+import KeyConcepts from '../../.vitepress/components/KeyConcepts.vue'
+import QuestionTF from '../../.vitepress/components/QuestionTF.vue'
+</script>
+
 # {{ $frontmatter.title }}
 **{{ $frontmatter.description }}**
 

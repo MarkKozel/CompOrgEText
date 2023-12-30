@@ -6,6 +6,10 @@ pageClass: Topic
 tags: [von Neumann Model, CPU, Control Unit, ALU, RAM, MAR, MDR, IO]
 ---
 
+<script setup>
+import KeyConcepts from '../../.vitepress/components/KeyConcepts.vue'
+</script>
+
 # {{ $frontmatter.title }}
 **{{ $frontmatter.description }}**
 
