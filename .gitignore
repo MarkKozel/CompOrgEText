@@ -4,11 +4,13 @@ CompOrgText/
 *.zip
 CompOrgText20230816.zip
 vitedocs/.vitepress/cache/*
+vitedocs/.vitepress/dist/*
 *.bin
 *.hex
 *.lst
 *.obj
 *.sym
+
 
 #For vitepress
 docs/
