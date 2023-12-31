@@ -103,7 +103,7 @@ function checkAnswer() {
       ? `${props.wrongAnswerFeedback}`
       : `${props.rightAnswerFeedback}`;
   }
-},
+};
 </script>
 
 <script>
