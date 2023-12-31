@@ -55,7 +55,7 @@ This is an overview of what the code does at a high-level
 
 ::: code-group
 <<< @/public/examples/AddlMaterials/Development/inlinecomments.asm {asm}[No Function Comments]
-<<< @/public/examples/AddlMaterials/Development/javafunctioncomments.asm {asm}[Function Comments]
+<<< @/public/examples/AddlMaterials/Development/functioncomments.asm {asm}[Function Comments]
 :::
 
 View the No No Function Comments and Function Comments tabs to compare the visual effect of using block comments
