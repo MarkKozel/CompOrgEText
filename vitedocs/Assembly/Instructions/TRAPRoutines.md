@@ -105,7 +105,7 @@ Same function as PUTS, however the upper [bits 15-8] and lower [bits 7-0] 16 bit
 Terminates program execution and displays a message to the console.
 
 <<< @/public/examples/Assembly/Commands/TRAP_x25.asm {asm}
-<<< @/public/examples/Assembly/Commands/TRAP_HALT.asm {asm}
+<<< @/public/examples/Assembly/Commands/TRAP_Halt.asm {asm}
 
 ## Review TRAP Code in LC-3 Simulate
 
