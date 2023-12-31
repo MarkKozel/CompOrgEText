@@ -12,7 +12,7 @@ hero:
   actions:
     - theme: brand
       text: Getting Started with LC-3
-      link: /Assembly/GettingStarted/InstallTools
+      link: /Assembly/GettingStarted/
     - theme: alt
       text: About CS-131
       link: /About/CS131Information

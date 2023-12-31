@@ -8,8 +8,6 @@ tags: []
 # {{ $frontmatter.title }}
 **{{ $frontmatter.description }}**
 
-some high-level introduction
+Navigate using the **Getting Started** links on the left to get setup, and to build an understanding of the key features of the LC3 Tools a simple *Hello, World* assembly program
 
-## Topic 1
-[Topic 1](./Topic 1)
-Description of Topic
+We will expand our understanding of all the thing going on in this example, but for now download the LC3 tools and Hello World example. Follow along with the text and video tutorial

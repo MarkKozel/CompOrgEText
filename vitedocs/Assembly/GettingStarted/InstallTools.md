@@ -48,7 +48,7 @@ The LC-3 editor and simulator are used in the course to use the defined ISA to c
 
 <!-- In class, we will be using version 3.01. Windows versions should be downloaded from McGraw Hill (https://highered.mheducation.com/sites/0072467509/student_view0/lc-3_simulator.html) -->
 
-> Download and uncompress the file. You will be using these tools for the remainder of teh semester
+> Download and uncompress the file. You will be using these tools for the remainder of the semester
 
 There are various implementations of the LC-3 available online, but most are student projects or hobby programmer implementations. Using these version may change your results
 

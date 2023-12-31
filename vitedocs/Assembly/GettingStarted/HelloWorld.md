@@ -15,6 +15,10 @@ tags: []
 
 We will start with the classic *first program*, **Hello, World**, to discuss the basics parts and instructions of LC-3 Assembly
 
+> Download the LC-3 [Hello World example](../_CodeSnippets/HelloWorld.asm) used in this demo
+>
+>*Rt-Click* and selected *Save as* or *Save link as*
+
 While the .asm and .java file output the same characters to the screen, they are quite different
 
 >Click on the *asm* and *java* tabs, below, to compare HelloWorld programs
