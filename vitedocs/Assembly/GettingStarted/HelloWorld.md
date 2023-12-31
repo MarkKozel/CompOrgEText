@@ -9,6 +9,8 @@ tags: []
 # {{ $frontmatter.title }}
 **{{ $frontmatter.description }}**
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fU9dGlTYZAU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Introduction
 
 We will start with the classic *first program*, **Hello, World**, to discuss the basics parts and instructions of LC-3 Assembly

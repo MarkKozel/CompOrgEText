@@ -27,6 +27,8 @@ import KeyConcepts from '../../.vitepress/components/KeyConcepts.vue'
   Details:'There are many variations of LC-3 created by schools and students. Ensure you download the correct version for our class'
 }]" />
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uOfsziZaPl8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Introduction
 
 The Little Computer 3 (LC-3) assembly environment is an emulated Instruction Set Architecture (ISA) used to learn the basics of assembly language programming

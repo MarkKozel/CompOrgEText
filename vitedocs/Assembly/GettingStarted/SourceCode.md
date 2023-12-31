@@ -23,6 +23,8 @@ import KeyConcepts from '../../.vitepress/components/KeyConcepts.vue'
   Details:'Assembling source code results in an object file that can be loaded into the Simulate tool for execution. Assembling is similar to compiling java source code'
 }]" />
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/a4cA3lL1EQ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Introduction
 
 LC3Edit is the tool used to edit source (```.asm```) files. It provides some basic text editing capabilities

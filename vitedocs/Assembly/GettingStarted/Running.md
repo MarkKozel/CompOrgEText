@@ -23,6 +23,8 @@ import KeyConcepts from '../../.vitepress/components/KeyConcepts.vue'
   Details:'With the debugging tools, a student can execute single instructions, pausing between each to see what has changed in memory, IO devices, and in the registers. This set of tools is invaluable for both understanding the environment and finding bugs'
 }]" />
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/88tbQM0s45k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Introduction
 
 Simulate is the part of LC-3 that actually executes your LC-3 programs. After assembling your source code in the LC-3 Editor, the resulting object file (.obj) is loaded into Simulate. The user can the run and step over each assembly instruction to see what is changing.
