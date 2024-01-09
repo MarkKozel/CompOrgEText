@@ -32,7 +32,7 @@ tags: []
 </p></td>
         <td style="width:20%">
           <figure>
-            <img src="/images/general/HW-SW_Abstraction-Circuits.png"/>
+            <!-- <img src="/images/general/HW-SW_Abstraction-Circuits.png"/> -->
             <figcaption>HW/SW Abstraction Layers</figcaption>
           </figure>
          </td>
