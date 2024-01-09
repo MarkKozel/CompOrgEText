@@ -28,6 +28,8 @@ export default defineConfig({
     },
 
     sidebar: {
+      '/Introduction/': { base: '/Introduction/', items: sidebarIntroduction() },
+      '/Foundations/': { base: '/Foundations/', items: sidebarFoundations() },
       '/Assembly/': { base: '/Assembly/', items: sidebarAssembly() },
       '/About/': { base: '/About/', items: sidebarAbout() },
       '/AdditionalMaterials/': { base: '/AdditionalMaterials/', items: sidebarAddlInfo() }
@@ -38,8 +40,18 @@ export default defineConfig({
 function nav() {
   return [
     {
+      text: 'Introduction',
+      link: '/Introduction/',
+      activeMatch: '/Introduction/'
+    },
+    {
+      text: 'Foundations',
+      link: '/Foundations/',
+      activeMatch: '/Foundations/'
+    },
+    {
       text: 'Assembly',
-      link: '/Assembly/GettingStarted/InstallTools',
+      link: '/Assembly/GettingStarted/InstallLC3Tools',
       activeMatch: '/Assembly/'
     },
     {
@@ -87,20 +99,115 @@ function sidebarAddlInfo() {
   ]
 };
 
+function sidebarIntroduction() {
+  return [
+    {
+      text: 'Diversity',
+      collapsed: false,
+      base: 'Introduction/',
+      items: [
+        { text: 'Diversity in CS', link: 'CSDiversity' },
+        //   { text: 'vonNeumann', link: 'vonNeumann' },
+        //   { text: 'Shannon', link: 'Shannon' },
+      ]
+    },
+    {
+      text: 'History',
+      collapsed: false,
+      base: 'Introduction/History/',
+      items: [
+        { text: 'Prehistory', link: '01_Prehistory' },
+        { text: 'Dawn', link: '02_Dawn' },
+        { text: '1st Generation', link: '03_1stGen' },
+        { text: '2nd Generation', link: '04_2ndGen' },
+        { text: '3rd Generation', link: '05_3rdGen' },
+        { text: '4th Generation', link: '06_4thGen' },
+        { text: 'Modern Era', link: '07_Modern' },
+      ]
+    },
+    {
+      text: 'Concepts',
+      collapsed: false,
+      base: 'Introduction/Concepts/',
+      items: [
+        { text: 'Abstraction', link: 'Abstraction' },
+        { text: 'Algorithms', link: 'Algorithms' },
+        { text: 'HardwareSoftware', link: 'HardwareSoftware' },
+        { text: 'AnalogDigitalComputers', link: 'AnalogDigitalComputers' },
+        { text: 'SpecificGeneralUseComputers', link: 'SpecificGeneralUseComputers' },
+      ]
+    },
+  ]
+};
+
+function sidebarFoundations() {
+  return [
+    {
+      text: 'Pioneers',
+      collapsed: false,
+      base: 'Foundations/Pioneers/',
+      items: [
+        { text: 'Turing', link: 'Turing' },
+        { text: 'vonNeumann', link: 'vonNeumann' },
+        { text: 'Shannon', link: 'Shannon' },
+      ]
+    },
+    {
+      text: 'Number Systems',
+      collapsed: false,
+      base: 'Foundations/NumberSystems/',
+      items: [
+        { text: 'DecimalValues', link: 'DecimalValues' },
+        { text: 'BinaryValues', link: 'BinaryValues' },
+        { text: 'HexadecimalValues', link: 'HexadecimalValues' },
+        { text: 'RepresentingNumbers', link: 'RepresentingNumbers' },
+        { text: 'RepresentingNonNumbers', link: 'RepresentingNonNumbers' },
+      ]
+    },
+    {
+      text: 'Digital Circuits',
+      collapsed: false,
+      base: 'Foundations/LogicAndDigitalCircuits/',
+      items: [
+        { text: 'TruthTables', link: 'TruthTables' },
+        { text: 'TheTransistor', link: 'TheTransistor' },
+        { text: 'BasicLogicCircuits', link: 'BasicLogicCircuits' },
+        { text: 'DesigningCircuits', link: 'DesigningCircuits' },
+        { text: 'ControlCircuits', link: 'ControlCircuits' },
+        { text: 'ArithmeticCircuits', link: 'ArithmeticCircuits' },
+        { text: 'StorageCircuits', link: 'StorageCircuits' },
+      ]
+    },
+  ]
+};
+
 function sidebarAssembly() {
   return [
     {
-      text: 'Getting Started',
+      text: 'Quick Start',
       collapsed: false,
       base: 'Assembly/GettingStarted/',
       sidebarDepth: 3,
       items: [
-        { text: 'Install Tools', link: 'InstallTools' },
-        { text: 'LC-3 Source File Editing', link: 'SourceCode' },
-        { text: 'LC-3 Execution Environment', link: 'Running' },
-        { text: 'LC-3 Hello World Example', link: 'HelloWorld' },
+        { text: 'Install LC3Tools', link: 'InstallLC3Tools' },
+        { text: 'Using the LC3Tools', link: 'UsingLC3Tools' },
+        { text: 'The Assembly Template', link: 'TheAssemblyTemplate' },
+        { text: 'Loading Registers', link: 'LC-3_LoadingRegisters' },
+        { text: 'ALU Instructions', link: 'LC-3_ALUInstructions' },
       ]
     },
+    // {
+    //   text: 'Getting Started',
+    //   collapsed: false,
+    //   base: 'Assembly/GettingStarted/',
+    //   sidebarDepth: 3,
+    //   items: [
+    //     { text: 'Install Tools', link: 'InstallTools' },
+    //     { text: 'LC-3 Source File Editing', link: 'SourceCode' },
+    //     { text: 'LC-3 Execution Environment', link: 'Running' },
+    //     { text: 'LC-3 Hello World Example', link: 'HelloWorld' },
+    //   ]
+    // },
     {
       text: 'The von Neumann Model',
       collapsed: false,
