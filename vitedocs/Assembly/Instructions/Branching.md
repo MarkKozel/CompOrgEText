@@ -9,6 +9,7 @@ tags: []
 <script setup>
 import KeyConcepts from '../../.vitepress/components/KeyConcepts.vue'
 import QuestionTF from '../../.vitepress/components/QuestionTF.vue'
+import LC3Instruction from '../../.vitepress/components/LC3Instruction.vue'
 </script>
 
 # {{ $frontmatter.title }}
@@ -62,13 +63,13 @@ BR change the flow of an LC-3 program during execution. It is used to create beh
 
 #### Labels
 
-!!!include(TextSnippets/LC3/Labels.md)!!!
+<!--@include: @/TextSnippets/LC3/Labels.md-->
 
 #### PCOffset
 
 The least-significant 9 bits of the BR command is a 9-bit PCOffset values. As described in the above Label section, the assembler converts the label into this PCOffset.
 
-!!!include(TextSnippets/LC3/PCOffset.md)!!!
+<!--@include: @/TextSnippets/LC3/PCOffset.md-->
 
 #### Condition Code Register
 
@@ -123,6 +124,6 @@ Conditions can be grouped on a single BR instruction
 
 ## Conclusion
 
-Branch instruction may or may not be *taken*, depending on the current value in the **Condition Code* register. The CC register is set each time ALU or Memory Load instruction execute. The CC from the previous instruction will be used by Branch instructions.
+Branch instruction may or may not be *taken*, depending on the current value in the *Condition Code* register. The CC register is set each time ALU or Memory Load instruction execute. The CC from the previous instruction will be used by Branch instructions.
 
 If/Else and looping behavior can be created using labels, a control value, and the BR instruction.

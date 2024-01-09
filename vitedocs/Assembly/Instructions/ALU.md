@@ -8,6 +8,7 @@ tags: []
 
 <script setup>
 import KeyConcepts from '../../.vitepress/components/KeyConcepts.vue'
+import LC3Instruction from '../../.vitepress/components/LC3Instruction.vue'
 </script>
 
 # {{ $frontmatter.title }}

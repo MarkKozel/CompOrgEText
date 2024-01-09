@@ -10,6 +10,7 @@ tags: []
 import KeyConcepts from '../../.vitepress/components/KeyConcepts.vue';
 import QuestionTF from '../../.vitepress/components/QuestionTF.vue';
 import QuestionMC from '../../.vitepress/components/QuestionMC.vue';
+import LC3Instruction from '../../.vitepress/components/LC3Instruction.vue'
 </script>
 
 # {{ $frontmatter.title }}
@@ -51,13 +52,13 @@ This LC-3 program adds 2 values from memory and stores it in a different memory 
 Memory Access instructions used labels to name and reference memory locations. During assembly, the label names are converted to offset values. Review Labels and PCOffsets if needed, below.
 
 ::: details Labels Revisited
-!!!include(TextSnippets/LC3/Labels.md)!!!
+<!--@include: @/TextSnippets/LC3/Labels.md-->
 :::
 
 ::: details PCOffset Revisited
 The least-significant 9 bits of the LD command is a 9-bit PCOffset values. As described in the above Label section, the assembler converts the label into this PCOffset.
 
-!!!include(TextSnippets/LC3/PCOffset.md)!!!
+
 :::
 
 ## LD

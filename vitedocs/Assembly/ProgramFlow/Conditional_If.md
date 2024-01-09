@@ -1,9 +1,5 @@
-### IF Branch
-A program can evaluate a condition, such as an arithmetic or logical comparison between values. Based on that condition, the code may skip a section of code that does not pertain to the condition
-
 *Simple conditional 'if'  program in Java and LC-3 Assembly*
-:::: code-group
-::: code-group-item Java
+::: code-group
 ```java
   Scanner myObj = new Scanner(System.in);
   System.out.println("Enter age");
@@ -13,9 +9,7 @@ A program can evaluate a condition, such as an arithmetic or logical comparison 
     System.out.println("You entered a valid age");
   }
 ```
-:::
-::: code-group-item Assembly
-```
+```asm
 .ORIG x3000
   LEA R0, enterAge
   PUTS
@@ -34,4 +28,3 @@ enterAge .STRINGZ "Enter age"
 goodAge .STRINGZ "You entered a valid age"
 ```
 :::
-::::

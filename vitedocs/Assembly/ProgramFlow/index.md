@@ -11,7 +11,7 @@ tags: []
 **{{ $frontmatter.description }}**
 
 ### Terms Used in this Section
-!!!include(TextSnippets/Assembly/ProgramFlow_Terms.md)!!!
+<!--@include: @/TextSnippets/Assembly/ProgramFlow_Terms.md-->
 
 ## Sequential Program Flow
 This is normal program execution. Each instruction in order.
@@ -22,4 +22,4 @@ Programs can decide, while executing, to jump to a different section of the prog
 ## Iterative Program Flow
 Based on some value, a program make execute the same set of instruction several times, until something changes. This is seen in loop flows like for-loop and while-loop behavior.
 
-!!!include(TextSnippets/GetStartedByExpandingTheSidebar.md)!!!
+<!--@include: @/TextSnippets/GetStartedByExpandingTheSidebar.md-->

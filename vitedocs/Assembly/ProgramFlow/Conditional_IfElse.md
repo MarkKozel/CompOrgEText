@@ -1,9 +1,5 @@
-### If/Else Branch
-The program may choose between 2 separate code sections based on a condition
-
 *Simple conditional 'if/else'  program in Java and LC-3 Assembly*
-:::: code-group
-::: code-group-item Java
+::: code-group
 ```java
   Scanner myObj = new Scanner(System.in);
   System.out.println("Enter age");
@@ -17,9 +13,7 @@ The program may choose between 2 separate code sections based on a condition
     System.out.println("You entered an invalid age");
   }
 ```
-:::
-::: code-group-item Assembly
-```
+```asm
 .ORIG x3000
   LEA R0, enterAge
   PUTS
@@ -43,6 +37,4 @@ goodAge .STRINGZ "You entered a valid age"
 badAge .STRINGZ "You entered an invalid age"
 ```
 :::
-::::
 
-Other conditionals constructs, such as Switch, While, and Do/While are based on these same Condition check and change in flow

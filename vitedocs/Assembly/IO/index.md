@@ -10,7 +10,7 @@ tags: []
 **{{ $frontmatter.description }}**
 
 ### Terms Used in this Section
-!!!include(TextSnippets/Assembly/BasicIO_Terms.md)!!!
+<!--@include: @/TextSnippets/Assembly/BasicIO_Terms.md-->
 
 ## Introduction
 
@@ -31,4 +31,4 @@ LC-3 has 2 IO Devices:
 - Keyboard
 - Monitor
   
-!!!include(TextSnippets/GetStartedByExpandingTheSidebar.md)!!!
+<!--@include: @/TextSnippets/GetStartedByExpandingTheSidebar.md-->

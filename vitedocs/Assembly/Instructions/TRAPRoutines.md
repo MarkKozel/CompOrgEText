@@ -10,6 +10,7 @@ tags: [GETC, OUT, PUTS, IN, HALT, TRAP Built-in]
 import KeyConcepts from '../../.vitepress/components/KeyConcepts.vue';
 import QuestionTF from '../../.vitepress/components/QuestionTF.vue';
 import QuestionMC from '../../.vitepress/components/QuestionMC.vue';
+import LC3Instruction from '../../.vitepress/components/LC3Instruction.vue'
 </script>
 
 <KeyConcepts :ConceptArray = "[

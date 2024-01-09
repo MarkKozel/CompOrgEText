@@ -39,9 +39,7 @@ Programs can react to data or user inputs during execution, and *decide* to exec
 
 The standard conditional flow has two (2) types: 1) IF, where instructions are executed or skipped and , 2) IF/ELSE, where one (1) set of instructions are executed or an different set are executed.
 
-
-!!!include(TextSnippets/Assembly/Conditional.md)!!!
-
+<!--@include: @/TextSnippets/Assembly/Conditional.md-->
 
 ## Conditional Flow
 
@@ -50,94 +48,17 @@ In conditional flow, the program can execute or skip 1 or more lines of code bas
 
 ![Conditional Flow Diagram](/images/AssemblyProgramming/ProgramFlow/Diagram_Conditional.png)
 
-<!-- If Branch md file 
-!!!include(Assembly/ProgramFlow/Conditional_If.md)!!!-->
+<!--@include: ./Conditional_IfElse.md-->
+
 ### If Branch
 A program can evaluate a condition, such as an arithmetic or logical comparison between values. Based on that condition, the code may skip a section of code that does not pertain to the condition
 
 *Simple conditional 'if'  program in Java and LC-3 Assembly*
-:::: code-group
-::: code-group-item Java
-```java
-  Scanner myObj = new Scanner(System.in);
-  System.out.println("Enter age");
-  String userAge = myObj.nextInt();
-  if(userAge > 0)
-  {
-    System.out.println("You entered a valid age");
-  }
-```
-:::
-::: code-group-item Assembly
-```
-.ORIG x3000
-  LEA R0, enterAge
-  PUTS
-  IN
-  JSR convertToInt ; subroutine to convert input into a number and save in R1
-  BRp Valid ; Based on CC register set by convertToInt
-  BRnz Done
+<!--@include: ./Conditional_If.md-->
 
-  Valid LEA R0, goodAge
-  PUTS
-
-  Done HALT
-.END
-
-enterAge .STRINGZ "Enter age"
-goodAge .STRINGZ "You entered a valid age"
-```
-:::
-::::
-
-<!-- If Branch md file 
-!!!include(Assembly/ProgramFlow/Conditional_IfElse.md)!!!-->
 ### If/Else Branch
 The program may choose between 2 separate code sections based on a condition
-
-*Simple conditional 'if/else'  program in Java and LC-3 Assembly*
-:::: code-group
-::: code-group-item Java
-```java
-  Scanner myObj = new Scanner(System.in);
-  System.out.println("Enter age");
-  String userAge = myObj.nextInt();
-  if(userAge > 0)
-  {
-    System.out.println("You entered a valid age");
-  }
-  else
-  {
-    System.out.println("You entered an invalid age");
-  }
-```
-:::
-::: code-group-item Assembly
-```
-.ORIG x3000
-  LEA R0, enterAge
-  PUTS
-  IN
-  JSR convertToInt ; subroutine to convert input into a number and save in R1
-  BRp Valid ; Based on CC register set by convertToInt
-  BRnz Invalid
-
-  Valid LEA R0, goodAge
-    PUTS
-    BR Done
-
-  Invalid LEA R0, badAge
-    PUTS
-
-  Done HALT
-.END
-
-enterAge .STRINGZ "Enter age"
-goodAge .STRINGZ "You entered a valid age"
-badAge .STRINGZ "You entered an invalid age"
-```
-:::
-::::
+<!--@include: ./Conditional_IfElse.md-->
 
 Other conditionals constructs, such as Switch, While, and Do/While are based on these same Condition check and change in flow
 

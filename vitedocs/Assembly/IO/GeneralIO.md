@@ -7,7 +7,9 @@ tags: []
 ---
 
 <script setup>
-import KeyConcepts from '../../.vitepress/components/KeyConcepts.vue'
+import KeyConcepts from '../../.vitepress/components/KeyConcepts.vue';
+import QuestionMC from '../../.vitepress/components/QuestionMC.vue';
+import QuestionTF from '../../.vitepress/components/QuestionTF.vue';
 </script>
 
 # {{ $frontmatter.title }}
@@ -25,7 +27,7 @@ import KeyConcepts from '../../.vitepress/components/KeyConcepts.vue'
 {
   Concept:'Output to users or other systems make software more useful',
   Details:'Displaying or sending data as it changes allow users and other systems to react more quickly, and more often'
-},
+}
 ]" />
 
 ::: details Terms

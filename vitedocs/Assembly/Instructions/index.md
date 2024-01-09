@@ -10,7 +10,7 @@ tags: []
 **{{ $frontmatter.description }}**
 
 ### Terms Used in this Section
-!!!include(TextSnippets/Assembly/Instructions_Terms.md)!!!
+<!--@include: @/TextSnippets/Assembly/Instructions_Terms.md-->
 
 ## Anatomy of LC-3 Instructions
 Breakdown of LC-3 instructions and hwo they are processed
@@ -30,4 +30,4 @@ Built-in functions and how to use in programs
 ## Subroutine Instruction
 Explanation and examples of subroutine instructions
 
-!!!include(TextSnippets/GetStartedByExpandingTheSidebar.md)!!!
+<!--@include: @/TextSnippets/GetStartedByExpandingTheSidebar.md-->
