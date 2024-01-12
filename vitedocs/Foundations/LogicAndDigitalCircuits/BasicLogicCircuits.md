@@ -49,7 +49,7 @@ Basic logic operations
 | 0   | 1   |
 | 1   | 0   |
 
-![NOT Gate](/images/Circuits/Gate_NOT.png =150x)
+<img src="/images/Circuits/Gate_NOT.png" width="150px">
 
 Applying NOT to something typically means considering the opposite of the original things.
 
@@ -79,10 +79,10 @@ NOR is referred to as **NOT OR**. It negates the results of the OR output. In ef
 NOR is effectively feeding the output of an OR operation into a NOT operation. It is interesting that the result is *0* unless both inputs are *0*
 #### NOR Transistors
 
-![AND Gate](/images/Circuits/TransistorNOR.png =600x)
+<img src="/images/Circuits/TransistorNOR.png" width="600px">
 
 #### NOR Gate
-![NOR Gate](/images/Circuits/Gate_NOR.png =150x)
+<img src="/images/Circuits/Gate_NOR.png" width="150px">
 
 We simplify the transistor diagram into a simple circuit symbol.
 
@@ -99,10 +99,10 @@ We simplify the transistor diagram into a simple circuit symbol.
 
 #### OR Transistors
 
-![AND Gate](/images/Circuits/TransistorOR.png =600x)
+<img src="/images/Circuits/TransistorOR.png" width="600px">
 
 #### OR Gate
-![OR Gate](/images/Circuits/Gate_OR.png =150x)
+<img src="/images/Circuits/Gate_OR.png" width="150px">
 
 We simplify the transistor diagram into a simple circuit symbol.
 
@@ -134,12 +134,12 @@ It is interesting that the result is *1* unless both inputs are *1*
 
 #### NAND Transistors
 
-![AND Gate](/images/Circuits/TransistorNAND.png =600x)
+<img src="/images/Circuits/TransistorNAND.png" width="600px">
 
 The NAND circuit requires 2 P-Type transistors in parallel and 2 N-Type transistors in series. **a** and **b** inputs are connected to one of the P- and N-Type transistor control inputs. In this configuration, the junction between the P- and N-Type pairs outputs the NAND logic.
 
 #### NAND Gate
-![NAND Gate](/images/Circuits/Gate_NAND.png =150x)
+<img src="/images/Circuits/Gate_NAND.png" width="150px">
 
 We simplify the transistor diagram into a simple circuit symbol.
 
@@ -161,12 +161,12 @@ In this example both things must be true: traffic is low as well as there is an 
 
 #### AND Transistors
 
-![AND Gate](/images/Circuits/TransistorAND.png =600x)
+<img src="/images/Circuits/TransistorAND.png" width="600px">
 
 
 #### AND Gate
 
-![AND Gate](/images/Circuits/Gate_AND.png =150x)
+<img src="/images/Circuits/Gate_AND.png" width="150px">
 We simplify the transistor diagram into a simple circuit symbol
 
 When applied to binary values, AND compare two bits. If either bit is *0* the result to *0*. If 1 bit is *0* and the other is  *1* to product is also *0* result. The only case that *ANDing* 2 bits results in *1* is when both bits are *1*. In the above real-life if traffic was heavy or there were no Uber rides available, the park trip is cancelled
@@ -180,7 +180,7 @@ When applied to binary values, AND compare two bits. If either bit is *0* the re
 | 1   | 0   | 1   |
 | 1   | 1   | 0   |
 
-![XOR Gate](/images/Circuits/Gate_XOR.png =150x)
+<img src="/images/Circuits/Gate_XOR.png" width="150px">
 
 XOR is referred to as **Exclusive OR**. The difference between XOR and OR is the case where both bits as *1* results in *0*. Another way to think of this is *the two bits being compared must be **different** to result in 1*
 
@@ -194,7 +194,7 @@ At this point all of our logic circuits have 2 inputs (with the exception of NOT
 
 While the diagram for a 3 or 4 input AND circuit seems simple, under-the-hood it is a set of 2-input AND circuits with the output of 1 feeding an input of the next. The logical behavior still works as expected. 
 
-![XOR Gate](/images/Circuits/BasicCircuit_MultipleInputs.png =500x)
+<img src="/images/Circuits/BasicCircuit_MultipleInputs.png" width="500px">
 
 ### DeMorgan's Laws
 
@@ -209,11 +209,11 @@ Inverting the inputs to an OR gate, then inverting the output produces the same 
 | 1   | 0   |   0   |   1   |        0        |          1           |   1    |
 | 1   | 1   |   0   |   0   |        0        |          1           |   1    |
 
-![XOR Gate](/images/Circuits/DeMorgans_AndToOr.png =500x)
+<img src="/images/Circuits/DeMorgans_AndToOr.png" width="500px">
 
 Inverting the inputs to an AND gate, then inverting the output produces the same truth table as an OR gate.
 
-![XOR Gate](/images/Circuits/DeMorgans_OrToAnd.png =500x)
+<img src="/images/Circuits/DeMorgans_OrToAnd.png" width="500px">
 
 So, with only NOT and OR gates, you can produce a circuit that outputs AND results. Using NOT and AND gates will, similarly produce OR outputs.
 

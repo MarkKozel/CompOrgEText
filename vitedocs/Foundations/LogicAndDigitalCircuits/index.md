@@ -31,8 +31,8 @@ tags: []
   In this section we will discuss the Devices and Circuits layers of the Hardware/Software Abstraction Model.
 </p></td>
         <td style="width:20%">
-          <figure>
-            <!-- <img src="/images/general/HW-SW_Abstraction-Circuits.png"/> -->
+          <figure> 
+            <img src="/images/General/HW-SW_Abstraction-Circuits.png"/>
             <figcaption>HW/SW Abstraction Layers</figcaption>
           </figure>
          </td>

@@ -1,11 +1,11 @@
 import { defineConfig } from 'vitepress'
-const pkg = require('../package.json')
+const pkg = require('../../package.json')
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "CS-131 Textbook",
   description: "Computer Organization online textbook",
-  lastUpdate: true,
+
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }]
   ],
@@ -15,6 +15,16 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: { src: '/images/HeroImage.jpg', width: 24, height: 24 },
+
+    lastUpdated: {
+      text: 'Updated at',
+      formatOptions: {
+        dateStyle: 'medium',
+        // timeStyle: 'short'
+      }
+    },
+
+    Outline: 4,
 
     nav: nav(),
 
@@ -107,8 +117,6 @@ function sidebarIntroduction() {
       base: 'Introduction/',
       items: [
         { text: 'Diversity in CS', link: 'CSDiversity' },
-        //   { text: 'vonNeumann', link: 'vonNeumann' },
-        //   { text: 'Shannon', link: 'Shannon' },
       ]
     },
     {
@@ -132,9 +140,9 @@ function sidebarIntroduction() {
       items: [
         { text: 'Abstraction', link: 'Abstraction' },
         { text: 'Algorithms', link: 'Algorithms' },
-        { text: 'HardwareSoftware', link: 'HardwareSoftware' },
-        { text: 'AnalogDigitalComputers', link: 'AnalogDigitalComputers' },
-        { text: 'SpecificGeneralUseComputers', link: 'SpecificGeneralUseComputers' },
+        { text: 'Hardware Software', link: 'HardwareSoftware' },
+        { text: 'Analog Digital Computers', link: 'AnalogDigitalComputers' },
+        { text: 'Specific/General Use Computers', link: 'SpecificGeneralUseComputers' },
       ]
     },
   ]
@@ -157,11 +165,11 @@ function sidebarFoundations() {
       collapsed: false,
       base: 'Foundations/NumberSystems/',
       items: [
-        { text: 'DecimalValues', link: 'DecimalValues' },
-        { text: 'BinaryValues', link: 'BinaryValues' },
-        { text: 'HexadecimalValues', link: 'HexadecimalValues' },
-        { text: 'RepresentingNumbers', link: 'RepresentingNumbers' },
-        { text: 'RepresentingNonNumbers', link: 'RepresentingNonNumbers' },
+        { text: 'Decimal Values', link: 'DecimalValues' },
+        { text: 'Binary Values', link: 'BinaryValues' },
+        { text: 'Hexadecimal Values', link: 'HexadecimalValues' },
+        { text: 'Representing Numbers', link: 'RepresentingNumbers' },
+        { text: 'Representing Non-Numbers', link: 'RepresentingNonNumbers' },
       ]
     },
     {
@@ -169,13 +177,14 @@ function sidebarFoundations() {
       collapsed: false,
       base: 'Foundations/LogicAndDigitalCircuits/',
       items: [
-        { text: 'TruthTables', link: 'TruthTables' },
-        { text: 'TheTransistor', link: 'TheTransistor' },
-        { text: 'BasicLogicCircuits', link: 'BasicLogicCircuits' },
-        { text: 'DesigningCircuits', link: 'DesigningCircuits' },
-        { text: 'ControlCircuits', link: 'ControlCircuits' },
-        { text: 'ArithmeticCircuits', link: 'ArithmeticCircuits' },
-        { text: 'StorageCircuits', link: 'StorageCircuits' },
+        { text: 'Introduction', link: 'index' },
+        { text: 'Truth Tables', link: 'TruthTables' },
+        { text: 'The Transistor', link: 'TheTransistor' },
+        { text: 'Basic Logic Circuits', link: 'BasicLogicCircuits' },
+        { text: 'Designing Circuits', link: 'DesigningCircuits' },
+        { text: 'Control Circuits', link: 'ControlCircuits' },
+        { text: 'Arithmetic Circuits', link: 'ArithmeticCircuits' },
+        { text: 'Storage Circuits', link: 'StorageCircuits' },
       ]
     },
   ]
