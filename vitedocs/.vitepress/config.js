@@ -203,6 +203,8 @@ function sidebarAssembly() {
         { text: 'The Assembly Template', link: 'TheAssemblyTemplate' },
         { text: 'Loading Registers', link: 'LC-3_LoadingRegisters' },
         { text: 'ALU Instructions', link: 'LC-3_ALUInstructions' },
+        { text: 'Branch Instructions', link: 'LC-3_BranchInstruction' },
+        { text: 'Subroutine Instructions', link: 'LC-3_SubroutineInstructions' },
       ]
     },
     // {

@@ -20,7 +20,7 @@
   "scripts": {
     "dev": "cd vitedocs && npm run dev",
     "build": "cd vitedocs && npm run build",
-    "preview": "vitepress preview"
+    "preview": "cd vitedocs && vitepress preview"
   },
   "devDependencies": {
     "vitepress": "^1.0.0-rc.33"

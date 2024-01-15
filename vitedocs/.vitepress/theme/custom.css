@@ -396,17 +396,21 @@
 
   --vp-custom-block-tip-border: transparent;
   --vp-custom-block-tip-text: var(--vp-c-text-1);
-  --vp-custom-block-tip-bg: var(--vp-c-brand-soft);
+  --vp-custom-block-tip-bg: var(--hancock-yellow);
+  /* --vp-custom-block-tip-bg: var(--vp-c-brand-soft); */
   --vp-custom-block-tip-code-bg: var(--vp-c-brand-soft);
 
   --vp-custom-block-warning-border: transparent;
   --vp-custom-block-warning-text: var(--vp-c-text-1);
-  --vp-custom-block-warning-bg: var(--vp-c-warning-soft);
+  --vp-custom-block-warning-bg: var(--hancock-orange);
+  /* --vp-custom-block-warning-bg: var(--vp-c-warning-soft); */
   --vp-custom-block-warning-code-bg: var(--vp-c-warning-soft);
 
   --vp-custom-block-danger-border: transparent;
-  --vp-custom-block-danger-text: var(--vp-c-text-1);
-  --vp-custom-block-danger-bg: var(--vp-c-danger-soft);
+  --vp-custom-block-danger-text: rgba(255, 255, 245, 0.86);
+  /* --vp-custom-block-danger-text: var(--vp-c-text-1); */
+  --vp-custom-block-danger-bg: var(--hancock-red);
+  /* --vp-custom-block-danger-bg: var(--vp-c-danger-soft); */
   --vp-custom-block-danger-code-bg: var(--vp-c-danger-soft);
 
   --vp-custom-block-details-border: var(--vp-custom-block-info-border);
