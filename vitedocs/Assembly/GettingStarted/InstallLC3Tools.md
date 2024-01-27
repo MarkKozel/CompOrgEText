@@ -43,14 +43,24 @@ LC3Tools is a free tool maintained on Github. It is licensed under [Apache Licen
 
 The tools will run under Windows, MacOS, and modern Linux operating system
 
-Download the appropriate version from the [LC3Tools 2.0.2 Build](https://github.com/chiragsakhuja/lc3tools/releases/tag/v2.0.2). Use this link to view and download the correct setup/installer for your personal system
+Download the appropriate version from the [LC3Tools Build](https://github.com/chiragsakhuja/lc3tools/releases/tag/v2.0.2). Use this link to view and download the correct setup/installer for your personal system
 
-:::tip Note for Windows users
-The ```LC3Tools-2.0.2.exe``` release is a portable version that can be loaded onto a thumbdrive or portable disk fro use on any Win10 system
+:::tip What to Download
+***Windows 10/11***
 
-```LC3Tools-Setup-2.0.2.exe``` is an installer that is meant to install on a single Win10 system
+>The **LC3Tools-*n.n.n*.exe** release is a portable version that can be loaded onto a thumbdrive or portable disk fro use on any Win10 system
+>
+>**LC3Tools-Setup-*n.n.n*.exe** is an installer that is meant to install on a single Win10 system
+>
+>When in doubt, use the portable version
 
-When in doubt, use the portable version
+***Linux***
+>The **LC3Tools-*n.n.n*.AppImage** is a Linux portable package. Download into your home directory. To start, double-click from a GUI file explorer -or- use ```./LC3Tools-*n.n.n*.AppImage``` from the command line
+>
+>If you have issues check that execute permissions are set for user (or all)
+
+***Mac***
+>The **LC3Tools-*n.n.n*.dmg** is the compressed executable. Double-click the file, drag the application to your system, then eject the .dmg file. Start the application normally
 :::
 
 ### Downloading the Docs and Template

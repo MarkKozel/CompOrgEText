@@ -1,7 +1,7 @@
 # Dist Folder
 
 CompOrgText/
-*.zip
+
 CompOrgText20230816.zip
 vitedocs/.vitepress/cache/*
 vitedocs/.vitepress/dist/*
