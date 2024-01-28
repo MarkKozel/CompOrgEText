@@ -6,29 +6,9 @@ pageClass: Topic
 tags: []
 ---
 
-<!-- <script setup>
-import KeyConcepts from '../../.vitepress/components/KeyConcepts.vue'
-</script> -->
-
 # {{ $frontmatter.title }}
-<!-- **{{ $frontmatter.description }}** -->
 
-<!-- <KeyConcepts :ConceptArray= "[
-  {
-  Concept:'Little Computer 3 (LC-3) is an educational environment',
-  Details:'We will be using a very simple environment to learn assembly. Is is highly simplified, but contains plenty of instructions to expose students to the level of programming'
-},
-  {
-  Concept:'LC-3 is Windows-only',
-  Details:'The official version only runs on the Windows platform. Students may need to use computer labs on campus or get access to a Windows system if they do not own one.'
-},
-{
-  Concept:'Download the correct version',
-  Details:'There are many variations of LC-3 created by schools and students. Ensure you download the correct version for our class'
-}]" /> -->
-
-<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/uOfsziZaPl8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ak7WGbFvMp8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 The Little Computer 3 (LC-3) assembly environment is an emulated Instruction Set Architecture (ISA) used to learn the basics of assembly language programming
 
