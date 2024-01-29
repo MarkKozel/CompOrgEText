@@ -8,6 +8,8 @@ tags: []
 
 # {{ $frontmatter.title }}
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WsybkuWznpg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 Students will use and complete the assembly template for all graded work. This file is in the LC-3 Docs zip file downloaded earlier
 
 ![Assembly Template](/images/LC3/Assembly_Template.png)

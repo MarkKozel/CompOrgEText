@@ -8,6 +8,8 @@ tags: []
 
 # {{ $frontmatter.title }}
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/aY8B3KnanMo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 An LC-3 assembly programs can only perform operations on data in the *General Purpose* registers
 
 ![LC3Tools Simulator Registers](/images/LC3/LC3Tools_Simulator_Registers.png)
