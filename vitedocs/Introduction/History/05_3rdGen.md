@@ -6,7 +6,7 @@ pageClass: Topic
 tags: [integrated circuit]
 prev:
   text: 'History > 2nd Gen'
-  link: '/Introduction/History/02_2ndGen'
+  link: '/Introduction/History/04_2ndGen'
 next:
   text: 'History > 4th Gen'
   link: '/Introduction/History/06_4thGen'
