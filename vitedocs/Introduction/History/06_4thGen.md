@@ -4,10 +4,10 @@ parent: History
 description: 
 pageClass: Topic
 tags: [microprocessor, Fourth Generation, IBM PC, Apple I]
-next:
+prev:
   text: 'History > 3rd Gen'
   link: '/Introduction/History/05_3rdGen'
-prev:
+next:
   text: 'History > Modern Gen'
   link: '/Introduction/History/07_Modern'
 ---

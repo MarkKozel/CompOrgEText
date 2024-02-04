@@ -5,11 +5,11 @@ description:
 pageClass: Topic
 tags: [Second Generation, transistor]
 next:
-  text: 'History > 1st Gen'
-  link: '/Introduction/History/03_1stGen'
-prev:
   text: 'History > 3rd Gen'
   link: '/Introduction/History/05_3rdGen'
+prev:
+  text: 'History > 1st Gen'
+  link: '/Introduction/History/03_1stGen'
 ---
 
 # {{ $frontmatter.title }}

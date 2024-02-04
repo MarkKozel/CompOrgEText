@@ -4,10 +4,10 @@ parent: History
 description: 
 pageClass: Topic
 tags: [integrated circuit]
-next:
-  text: 'History > 2nd Gen'
-  link: '/Introduction/History/02_2ndtGen'
 prev:
+  text: 'History > 2nd Gen'
+  link: '/Introduction/History/02_2ndGen'
+next:
   text: 'History > 4th Gen'
   link: '/Introduction/History/06_4thGen'
 ---
