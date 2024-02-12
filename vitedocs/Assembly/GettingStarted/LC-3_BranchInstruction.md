@@ -8,6 +8,8 @@ tags: []
 
 # {{ $frontmatter.title }}
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/INGTAFuc_hI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 The LC-3 provides a single instruction used to change program flow based on the result of a previous instruction
 
 Normal program flow is to execute each instruction in-order until the last instruction is complete. While this good enough to solve simple problems, more complex problems require code to be skipped or repeated

@@ -7,6 +7,7 @@ tags: []
 ---
 
 # {{ $frontmatter.title }}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cHtBbG9pCeU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 The LC-3 provides three (3) Arithmetic and Logic Unit (ALU) Instructions
 
