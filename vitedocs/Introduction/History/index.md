@@ -15,7 +15,7 @@ From notched sticks used to record trade transactions to high-powered computers 
 
 <hr>
 
-::: left 
+::: info 
 There is no one person who can claim to be the inventor of the computer. Many people contributed to the development of the modern computer
 :::
 

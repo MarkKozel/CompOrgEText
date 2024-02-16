@@ -58,8 +58,7 @@ To be truly useful, we need to be able to represent negative (signed) values in 
 
 Before proceeding, we need to understand how to add 1 binary values. We will explore this moreIt is just like adding 2 decimal numbers:
 
-::: left
-A Full Adder
+::: info A Full Adder
 <!--@include: @/TextSnippets/Foundations/full_adder_table.md-->
 :::
 
@@ -88,7 +87,7 @@ To fix these issues, signed binary values use a conversion algorithm called **2'
 <!--@include: @/TextSnippets/Foundations/fourbit_table_twoscomplement.md-->
 
 These conversions are generated using the 2's complement algorithm:
-::: left
+::: info 2's complement
 <!--@include: @/TextSnippets/Foundations/twos_complement.md-->
 
 :::

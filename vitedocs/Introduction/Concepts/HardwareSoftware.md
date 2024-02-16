@@ -57,8 +57,7 @@ In assembly the program must create the string in memory, check with the display
 
 It is an understatement to say that assembly is more *Hands On* than high-level languages like Java.
 
-In the above assembly program, the programmer must:
-::: left
+::: info In the above assembly program, the programmer must:
 1. Define the Hello World string in memory (HW, line 28)
 1. Load the memory address of the first character of HW (line 3)
 1. Check for the end-of-string indication (0 value, line 6)

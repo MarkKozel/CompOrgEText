@@ -134,7 +134,7 @@ Decimal (base 10) number system is the de-facto standard number system used by h
 
 ### Another Common Number System
 We use other number systems for some tasks. One interesting (and complex) number system is used for Data and Time. Time is a mix of systems: 
-::: left
+::: info Other Number Systems
 1 millennia = 1000 years
 
 1 year = 12 months
