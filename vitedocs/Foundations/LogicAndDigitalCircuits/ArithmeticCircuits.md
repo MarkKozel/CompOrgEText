@@ -32,7 +32,7 @@ import KeyConcepts from '../../.vitepress/components/KeyConcepts.vue'
 
 Performing mathematical operations is a fundamental capability for computers. In this section we review Addition and Subtraction circuits. There are other circuits to performs other basic and complex math operations.
 
-> [Download this example circuits](/downloads/Logisim/Arithmetic.circ) to examine in [Logisim Circuit Simulation Tool](http://www.cburch.com/logisim/)
+> [Download this example circuits](@/public//downloads/Logisim/Arithmetic.circ) to examine in [Logisim Circuit Simulation Tool](http://www.cburch.com/logisim/)
 
 ## Adder
 

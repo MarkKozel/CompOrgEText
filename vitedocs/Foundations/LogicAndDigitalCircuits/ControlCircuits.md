@@ -41,7 +41,7 @@ Circuits are sent input signals during a single clock cycle. The electrons propa
 
 Next time the same control circuit is used, it is reset. It does not *remember* its last results to use in producing then next result. This *stateless* property of control circuits. They functions control circuits provide are all simple, stand alone actions.
 
-> [Download these example circuits](/downloads/Logisim/Control.circ) to examine in [Logisim Circuit Simulation Tool](http://www.cburch.com/logisim/)
+> [Download these example circuits](/@/public/downloads/Logisim/Control.circ) to examine in [Logisim Circuit Simulation Tool](http://www.cburch.com/logisim/)
 
 ## Decoder
 
