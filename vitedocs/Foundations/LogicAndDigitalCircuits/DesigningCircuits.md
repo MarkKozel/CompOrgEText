@@ -36,7 +36,7 @@ Using a 3-step algorithm, a circuit diagram can be created that implements the e
 
 The result will produce the expected outputs given the set of inputs. However, the circuit may contain redundant elements of unnecessary section that can be simplified.
 
-> [Download this example circuits](/@/public/downloads/Logisim/TTAlgorithm.circ) to examine in [Logisim Circuit Simulation Tool](http://www.cburch.com/logisim/)
+> [Download this example circuits](@/public/downloads/Logisim/TTAlgorithm.circ) to examine in [Logisim Circuit Simulation Tool](http://www.cburch.com/logisim/)
 
 ## Truth Table to Circuit Diagram
 
@@ -167,7 +167,7 @@ After implementing a circuit diagram from a truth table using the 3-Step Algorit
 
 Examining the Truth Table and the resulting Circuit can reveal redundancies and unnecessary sections that can be removed and/or recombined to simplify the circuit.
 
-> [Download this example circuit](/@/public/downloads/Logisim/Design.circ) to examine in [Logisim Circuit Simulation Tool](http://www.cburch.com/logisim/)
+> [Download this example circuit](@/public/downloads/Logisim/Design.circ) to examine in [Logisim Circuit Simulation Tool](http://www.cburch.com/logisim/)
 
 >> Optimization is not required. The algorithm will produce the correct circuit
 >>
