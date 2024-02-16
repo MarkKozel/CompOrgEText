@@ -9,6 +9,7 @@ import DefaultTheme from 'vitepress/theme'
 //   }
 // }
 import './questionComponent.css'
+import './iframe.css'
 import './custom.css'
 
 export default DefaultTheme

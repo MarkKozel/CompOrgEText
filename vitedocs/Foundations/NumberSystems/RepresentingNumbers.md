@@ -66,6 +66,8 @@ Before proceeding, we need to understand how to add 1 binary values. We will exp
 
 Computer designers chose the most significate bit to represent the sign of the remaining bits. **0** in the left most **Sign Bit** position indicates a positive value for the entire bit string. A **Sign Bit** of **1** indicates a negative value.
 
+![Convert to Base 2](/images/NumberSystems/Base2_SignBitMagnitude.png)
+
 We can still represent 2<sup>num of bits</sup> values with a **Sign Bit**, however the maximum value represented is now 2<sup>num of bits - 1</sup>
 > 4 bits can represent 2<sup>4</sup> or 16 values.  -8 : +8<sub>10</sub>
 > 
@@ -84,10 +86,31 @@ We can see in this updates table that 111<sub>2</sub> is still 7<sub>10</sub>, h
 
 To fix these issues, signed binary values use a conversion algorithm called **2's Complement**
 
+<div class="iframe-responsive">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4qH4unVtJkE?si=7jWG2rh_XoAMr04U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+> Video on 1's and 2's complement representations of values
+>
+
+#### Table of 2's Complement Value in 4 bits
 <!--@include: @/TextSnippets/Foundations/fourbit_table_twoscomplement.md-->
 
-These conversions are generated using the 2's complement algorithm:
-::: info 2's complement
+
+#### Converting 2's Complement Binary to Base 10
+
+In a 2's complement system, the conversion is the same as unsigned, however the *sign bit* is negative
+
+This example uses 8 bit values where the least 7 bits are the *value/magnitude* of the base 10 number being represented and the most significate bit is the *sign bit*
+
+![Convert to Base 2](/images/NumberSystems/Base2_ConvertToBase10_2sComp.png)
+
+![Convert to Base 2](/images/NumberSystems/Base2_ConvertToBase10_2sCompPos.png)
+
+#### Convert a 2's Complement value to it's opposite value
+In Base 10 we can multiply a value by -1 to switch from negative to positive -or- positiver to negative. In 2's complement binary were can perform the same conversion, using a 2-step process
+
+::: info Algorithm to convert between positive and negative values in 2's complement
 <!--@include: @/TextSnippets/Foundations/twos_complement.md-->
 
 :::
