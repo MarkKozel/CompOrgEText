@@ -19,7 +19,7 @@ Done HALT
 ;   output: Result contains the doubled value
 DoubleValue
     ST R3, SaveR3   ;Backup the value in R3
-    ST R4, SaveR4   ;Backup the value in R3
+    ST R4, SaveR4   ;Backup the value in R4
     
     LD R4, Param
     

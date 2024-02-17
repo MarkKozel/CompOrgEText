@@ -2,7 +2,7 @@
 
     AND R2, R2, #0  ; Clear R2
     ADD R2, R2, #7  ; Place 7 in R2
-    ST R2, Param    ; Copy value into memoery for Sub to use
+    ST R2, Param    ; Copy value into memory for Sub to use
     
     JSR DoubleValue
     ;Result now contains 14

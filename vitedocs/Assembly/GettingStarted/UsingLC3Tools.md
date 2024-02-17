@@ -7,8 +7,9 @@ tags: []
 ---
 
 # {{ $frontmatter.title }}
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0NujH-XO6zM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="iframe-responsive">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0NujH-XO6zM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
 
 LC3Tools contains an editor and hardware simulator
 

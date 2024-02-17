@@ -8,7 +8,9 @@ tags: []
 
 # {{ $frontmatter.title }}
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/INGTAFuc_hI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="iframe-responsive">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/INGTAFuc_hI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
 
 The LC-3 provides a single instruction used to change program flow based on the result of a previous instruction
 

@@ -101,7 +101,7 @@ To fix these issues, signed binary values use a conversion algorithm called **2'
 
 In a 2's complement system, the conversion is the same as unsigned, however the *sign bit* is negative
 
-This example uses 8 bit values where the least 7 bits are the *value/magnitude* of the base 10 number being represented and the most significate bit is the *sign bit*
+This example uses 8 bit values where the least 7 bits are the *value/magnitude* of the base 10 number being represented and the most significant bit is the *sign bit*
 
 ![Convert to Base 2](/images/NumberSystems/Base2_ConvertToBase10_2sComp.png)
 

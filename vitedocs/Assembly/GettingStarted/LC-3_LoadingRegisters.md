@@ -8,7 +8,9 @@ tags: []
 
 # {{ $frontmatter.title }}
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/aY8B3KnanMo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="iframe-responsive">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/aY8B3KnanMo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
 
 An LC-3 assembly programs can only perform operations on data in the *General Purpose* registers
 

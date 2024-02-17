@@ -8,6 +8,10 @@ tags: []
 
 # {{ $frontmatter.title }}
 
+<div class="iframe-responsive">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-W1Q4OeDKT8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
 The LC-3 provides the ability to jump to a subroutine (like calling a function in Java) and return back to the main program
 
 Like in Java, this is helpful when a program needs to execute the same code several times. The subroutine only has to be written and tested once, then can be executed multiple time
@@ -27,7 +31,7 @@ The subroutine us located between ```HALT``` and ```.END```
 
 The comment above the subroutine is essential. It documents how the main program uses the subroutine (which registers to use for parameters/input and which to use for a return value/output)
 
-The subroutine is names with a label, ```DoubleValue``` in this case. The main program prepares parameters (placing a value in R2), the calls the subroutine with ```JSR <label>```
+The subroutine is named with a label, ```DoubleValue``` in this case. The main program prepares parameters (placing a value in R2), the calls the subroutine with ```JSR <label>```
 
 <<< ../_CodeSnippets/QuickStart/JSRMem.asm {17,22-29 asm}
 
