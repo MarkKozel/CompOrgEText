@@ -32,7 +32,7 @@ import KeyConcepts from '../../.vitepress/components/KeyConcepts.vue'
 
 The primary function of storage circuits is to retain information between clock cycles. This is commonly called **Statefulness** as these circuits *remember* their last state for future clock cycles.
 
-> [Download this example circuits](/downloads/Logisim/Storage.circ) to examine in [Logisim Circuit Simulation Tool](http://www.cburch.com/logisim/)
+> [Download the Logisim Examples collection](/downloads/Logisim/LogisimExamples.zip) to examine in [Logisim Circuit Simulation Tool](http://www.cburch.com/logisim/)
 
 ### Storage Circuit vs Gate/Control Circuit Output
 

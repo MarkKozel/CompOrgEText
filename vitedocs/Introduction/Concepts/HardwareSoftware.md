@@ -53,7 +53,7 @@ System.out.println("Hello, World!");
 
 In assembly the program must create the string in memory, check with the display to see it it is ready for a character, send characters, and send the newline to accomplish the same result.
 
-@[code lang=text{3,6,9-11,13,15,19,21-23,28}](.vuepress/public/examples/Introduction/helloworld.asm)
+<<< @/public/examples/Introduction/helloworld.asm {3,6,9-11,13,15,19,21-23,28 asm}
 
 It is an understatement to say that assembly is more *Hands On* than high-level languages like Java.
 
