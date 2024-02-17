@@ -75,7 +75,7 @@ Binary values are digital. The have 2 distinct values and nothing in between. At
 
 ![P- and N-Type](/images/Circuits/PNTypeBinaryFunctions.png)
 
-> [Download this example circuits](downloads/Logisim/Transistors.circ) to examine in [Logisim Circuit Simulation Tool](http://www.cburch.com/logisim/)
+> [Download this example circuits](/downloads/Logisim/Transistors.circ) to examine in [Logisim Circuit Simulation Tool](http://www.cburch.com/logisim/)
 
 To use analog transistors to represent digital bits, hardware designers must consider the rise/fall time of transistors. Essentially, then a transistor is first set to *on* or *1*, it will take a very short time for the voltage in the transistor to *rise* to a level that is *on* or *1*.
 
