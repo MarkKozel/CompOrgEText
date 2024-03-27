@@ -20,11 +20,14 @@ hero:
 features:
   - title: School
     details: Allan Hancock College, Santa Maria, Ca
+    link: https://www.hancockcollege.edu/
   - title: Degree
     details: Associate of Arts (AA) -or- Associate in Science (AS) for Transfer
+    link: https://www.hancockcollege.edu/pathways/sciences-technologies/computer-science.php
   - title: Author
     details: Mark Kozel - MKozel@HancockCollege.edu - Math Science - Computer Science
 ---
+
 <hr>
 
 <div>Course logo by <a rel="license" href="http://karldawson.deviantart.com/">Karl Dawson (Creative Commons Attribution-Noncommercial-Share Alike 3.0 License)</a>
