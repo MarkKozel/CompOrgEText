@@ -18,7 +18,7 @@ Like in Java, this is helpful when a program needs to execute the same code seve
 
 Assembly does not have a way to pass parameters into a subroutine, not a way to return a result back to the main program. This behavior can be emulated by using general purpose registers -or- by using memory locations
 
-One additional difference in assembly is that general purpose registers as shared between the main and subroutine code. So when a subroutine changes it may cause issues in the main program is the original value was still needed. There is a way to safeguard this
+One additional difference in assembly is that general purpose registers are shared between the main and subroutine code. So when a subroutine changes it may cause issues in the main program is the original value was still needed. There is a way to safeguard this
 
 ## JSR
 Unconditionally jump to a subroutine

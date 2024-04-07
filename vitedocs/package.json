@@ -1,6 +1,6 @@
 {
   "name": "comp-org-etext",
-  "version": "0.0.4",
+  "version": "0.01.0",
   "description": "Computer Organization online textbook",
   "main": "index.js",
   "type": "module",
