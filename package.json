@@ -1,6 +1,6 @@
 {
   "name": "comp-org-etext",
-  "version": "0.4.1",
+  "version": "0.5.0",
   "description": "Computer Organization online textbook",
   "main": "index.js",
   "type": "module",
@@ -23,6 +23,6 @@
     "preview": "cd vitedocs && vitepress preview"
   },
   "devDependencies": {
-    "vitepress": "^1.0.0-rc.42"
+    "vitepress": "^1.0.2"
   }
 }

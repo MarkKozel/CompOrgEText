@@ -3,7 +3,7 @@ const pkg = require('../../package.json')
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "CS-131 Textbook",
+  title: "CS-131",
   description: "Computer Organization online textbook",
 
   head: [
@@ -14,7 +14,8 @@ export default defineConfig({
   },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    logo: { src: '/images/HeroImage.jpg', width: 24, height: 24 },
+    logo: '/images/HeroImage.jpg',
+    // logo: { src: '/images/HeroImage.jpg', width: 24, height: 24 },
     siteTitle: "CS-131 Textbook",
 
     lastUpdated: {
@@ -71,18 +72,49 @@ function nav() {
       activeMatch: '/AdditionalMaterials/'
     },
     {
-      text: `EText Ver ${pkg.version}`,
+      // text: 'About',
+      text: 'About this Resource',
       items: [
-        { text: 'Class Organization', link: '/CS131/ClassOrganization' },
-        { text: 'CS-131 Course Info', link: '/CS131/CourseInformation' },
-        { text: 'CS-131 Course Rational', link: '/CS131/CourseRational' },
+        {
+          text: `EText Ver ${pkg.version}`,
+          items: [],
+        },
+        {
+          text: 'CS-131 Info',
+          // link: '/CS131/',
+          items: [
+            { text: 'Class Organization', link: '/CS131/ClassOrganization' },
+            { text: 'CS-131 Course Info', link: '/CS131/CourseInformation' },
+            { text: 'CS-131 Course Rational', link: '/CS131/CourseRational' }
+          ]
+        },
+        {
+          text: 'About this textbook',
+          // link: '/About/',
+          items: [
+            { text: 'CS131 Information', link: '/About/CS131Information' },
+            { text: 'Funding', link: '/About/Funding' },
+            { text: 'Colophon', link: '/About/Colophon' },
+            { text: 'Using this project', link: '/About/GettingStarted' },
+            { text: 'Git Build Mgmt', link: '/About/GitBuildMgmt' },
+            { text: 'Contributors', link: '/About/Contributors' },
+          ]
+        }
       ]
     },
-    {
-      text: 'About',
-      link: '/About/',
-      activeMatch: '/About/'
-    },
+    // {
+    //   text: `EText Ver ${pkg.version}`,
+    //   items: [
+    //     { text: 'Class Organization', link: '/CS131/ClassOrganization' },
+    //     { text: 'CS-131 Course Info', link: '/CS131/CourseInformation' },
+    //     { text: 'CS-131 Course Rational', link: '/CS131/CourseRational' },
+    //   ]
+    // },
+    // {
+    //   text: 'About',
+    //   link: '/About/',
+    //   activeMatch: '/About/'
+    // },
   ]
 }
 
