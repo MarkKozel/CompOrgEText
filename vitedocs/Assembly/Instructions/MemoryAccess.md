@@ -250,18 +250,18 @@ Store Relative
 
 ### LC-3 ISA Format
 
-<LC3Instruction opName="SDR" :bitPattern="{OpCode:'0110', SR: '000',BaseReg: '000', Offset:'000000'}" :descriptions="[{OPCode:''},{SR: 'Source Register' },{BaseReg: 'Base Register'},{Offset6:'Offset from address in SR'}]"  :examples="['SDR R3, R1, #0 ; Add value in R1 with #0. Use that result as address to store value to Memory in Register 3', 'SDR R0, R1, #2 ; Add value in R1 with #2. Use that result as address to store value to Memory in Register 0']"/>
+<LC3Instruction opName="STR" :bitPattern="{OpCode:'0110', SR: '000',BaseReg: '000', Offset:'000000'}" :descriptions="[{OPCode:''},{SR: 'Source Register' },{BaseReg: 'Base Register'},{Offset6:'Offset from address in SR'}]"  :examples="['STR R3, R1, #0 ; Add value in R1 with #0. Use that result as address to store value to Memory in Register 3', 'STR R0, R1, #2 ; Add value in R1 with #2. Use that result as address to store value to Memory in Register 0']"/>
 
 ### Explanation
 
-SDR stores a value from a Register into Memory. A source register is provided to provide the value to memory. 
+STR stores a value from a Register into Memory. A source register is provided to provide the value to memory. 
 
 The address to load from is calculated using the 16-bit value in BaseReg added to the 6-bit offset. The the destination register value is stored at this calculated address.
 
 This store instruction is similar to arrays in high-level languages. The BaseReg is the *Array Name* and the Offset in the *Array Index*.
 
 ### Examples
-<<< @/public/examples/Assembly/Commands/sdr1.asm {4,7 asm}
+<<< @/public/examples/Assembly/Commands/str1.asm {4,7 asm}
 
 The LEA instruction reads the Memory Address of MyArray1 label. It does not load that value at the Memory Address
 
