@@ -84,9 +84,7 @@ Reverted to VuePress 1 as the beta is still a problem
 
 Created basic VuePress site with images and styles from prototype site. Created new Netlify site w/ Auto Deploy from Github push
 
-20210901 - CC ECHO Grant awarded for completion of COMP-142/CS 131 OER Course Material
-
-         - Adding Jest fro Vue Component Testing. Will look into Cypress for E2E testing for CI/CD testing
+20210901 - CC ECHO Grant awarded for completion of COMP-142/CS 131 OER Course Material. Adding Jest for Vue Component Testing. Will look into Cypress for E2E testing for CI/CD testing
 
 20210804 - Added Download (DL) menu items w/ link to download files from /assets/download dir
 
