@@ -18,6 +18,9 @@ export default defineConfig({
     // logo: { src: '/images/HeroImage.jpg', width: 24, height: 24 },
     siteTitle: "CS-131 Textbook",
 
+    outline: 'deep', //page outlines [2,6] https://vitepress.dev/reference/default-theme-config#outline
+    aside: true, //show aside/outline https://vitepress.dev/reference/default-theme-config#aside
+
     lastUpdated: {
       text: 'Updated at',
       formatOptions: {
@@ -102,19 +105,6 @@ function nav() {
         }
       ]
     },
-    // {
-    //   text: `EText Ver ${pkg.version}`,
-    //   items: [
-    //     { text: 'Class Organization', link: '/CS131/ClassOrganization' },
-    //     { text: 'CS-131 Course Info', link: '/CS131/CourseInformation' },
-    //     { text: 'CS-131 Course Rational', link: '/CS131/CourseRational' },
-    //   ]
-    // },
-    // {
-    //   text: 'About',
-    //   link: '/About/',
-    //   activeMatch: '/About/'
-    // },
   ]
 }
 
@@ -287,6 +277,15 @@ function sidebarAssembly() {
       items: [
         { text: 'General I\/O', link: 'GeneralIO' },
         { text: 'LC-3 I\/O', link: 'LC3IO' },
+      ]
+    },
+    {
+      text: 'The Stack',
+      collapsed: false,
+      base: 'Assembly/Stack/',
+      items: [
+        { text: 'Stack ADT', link: 'StackADT' },
+        { text: 'Stack Implementation', link: 'StackImplementation' },
       ]
     },
   ]

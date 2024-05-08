@@ -46,6 +46,8 @@ The VitePress site is built into a static web site that can be deployed to vario
 The Documentation Source will be available on GitHub to allow others to instructors to modify and deploy their own version of the documentation. Other instructors couple then deploy their modified documentation to their own web sites for their students to access
 
 ## Development Log
+20240507 - Added Stack pages in Assembly section
+
 20240407 - Updated to Vitepress 1.0,2, official release. Revamped About and CS131 Nav menu into 1 nested dropdown
 
 20240112 - Committed to VitePress using version 1.0.0-rc.36. Converting all pages to VitePress
