@@ -1,6 +1,6 @@
 {
   "name": "comp-org-etext",
-  "version": "0.4.2",
+  "version": "0.9.9",
   "description": "Computer Organization online textbook",
   "main": "index.js",
   "type": "module",
@@ -19,6 +19,7 @@
   "repository": "https://github.com/MarkKozel/CompOrgEText.git",
   "scripts": {
     "dev": "vitepress dev",
+    "devh": "vitepress dev --host",
     "build": "vitepress build",
     "preview": "vitepress preview"
   },
