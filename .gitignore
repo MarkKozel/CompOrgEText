@@ -13,9 +13,6 @@ docs/.vitepress/dist/*
 *.sym
 
 
-#For vitepress
-docs/
-
 # Logs
 logs
 *.log
