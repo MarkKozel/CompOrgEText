@@ -79,10 +79,6 @@ function nav() {
       text: 'About this Resource',
       items: [
         {
-          text: `EText Ver ${pkg.version}`,
-          items: [],
-        },
-        {
           text: 'CS-131 Info',
           // link: '/CS131/',
           items: [
@@ -102,7 +98,11 @@ function nav() {
             { text: 'Git Build Mgmt', link: '/About/GitBuildMgmt' },
             { text: 'Contributors', link: '/About/Contributors' },
           ]
-        }
+        },
+        {
+          text: `EText Ver ${pkg.version}`,
+          items: [],
+        },
       ]
     },
   ]

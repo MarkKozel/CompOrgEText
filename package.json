@@ -22,7 +22,8 @@
     "dev": "vitepress dev docs",
     "dev:host": "vitepress dev docs --host",
     "build": "vitepress build docs",
-    "preview": "vitepress preview docs"
+    "preview": "vitepress preview docs",
+    "preview:host": "vitepress preview docs --port 5173"
   },
   "devDependencies": {
     "markdown-it-imsize": "^2.0.1",
