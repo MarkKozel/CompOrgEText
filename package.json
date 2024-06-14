@@ -18,6 +18,9 @@
     "url": "https://github.com/MarkKozel/CompOrgEText/issues"
   },
   "repository": "https://github.com/MarkKozel/CompOrgEText.git",
+  "engines": {
+    "node": "21.x"
+  },
   "scripts": {
     "dev": "vitepress dev docs",
     "dev:host": "vitepress dev docs --host",
