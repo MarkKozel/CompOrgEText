@@ -19,10 +19,10 @@
   },
   "repository": "https://github.com/MarkKozel/CompOrgEText.git",
   "scripts": {
-    "dev": "cd docs && npm run dev",
-    "devh": "cd docs && npm run devh",
-    "build": "cd docs && npm run build",
-    "preview": "cd docs && vitepress preview"
+    "dev": "vitepress dev docs",
+    "dev:host": "vitepress dev docs --host",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs"
   },
   "devDependencies": {
     "markdown-it-imsize": "^2.0.1",
