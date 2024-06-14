@@ -1,6 +1,7 @@
 {
   "name": "comp-org-etext",
-  "version": "0.9.9",
+  "version": "1.0.123",
+  "title": "CS-131",
   "description": "Computer Organization online textbook",
   "main": "index.js",
   "type": "module",
@@ -18,12 +19,13 @@
   },
   "repository": "https://github.com/MarkKozel/CompOrgEText.git",
   "scripts": {
-    "dev": "cd vitedocs && npm run dev",
-    "devh": "cd vitedocs && npm run devh",
-    "build": "cd vitedocs && npm run build",
-    "preview": "cd vitedocs && vitepress preview"
+    "dev": "cd docs && npm run dev",
+    "devh": "cd docs && npm run devh",
+    "build": "cd docs && npm run build",
+    "preview": "cd docs && vitepress preview"
   },
   "devDependencies": {
-    "vitepress": "^1.2.0"
+    "markdown-it-imsize": "^2.0.1",
+    "vitepress": "^1.2.3"
   }
 }

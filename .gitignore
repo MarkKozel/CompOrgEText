@@ -3,9 +3,9 @@
 CompOrgText/
 
 CompOrgText20230816.zip
-vitedocs/Assembly/GettingStarted/old.zip
-vitedocs/.vitepress/cache/*
-vitedocs/.vitepress/dist/*
+docs/Assembly/GettingStarted/old.zip
+docs/.vitepress/cache/*
+docs/.vitepress/dist/*
 *.bin
 *.hex
 *.lst
