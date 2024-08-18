@@ -51,7 +51,7 @@
   --hancock-light-green: #80FF00;
   --hancock-orange: #FF6600;
   --hancock-purple: #9900FF;
-  
+
   --vp-c-gray-1: #dddde3;
   --vp-c-gray-2: #e4e4e9;
   --vp-c-gray-3: #ebebef;
@@ -439,15 +439,10 @@
   --vp-nav-height: 64px;
   --vp-nav-bg-color: var(--vp-c-bg);
   --vp-nav-screen-bg-color: var(--vp-c-bg);
-  --vp-nav-logo-height: 24px;
-}
+  --vp-nav-logo-height: 36px;
 
-.hide-nav {
-  --vp-nav-height: 0px;
-}
-
-.hide-nav .VPSidebar {
-  --vp-nav-height: 22px;
+  --vp-z-index-nav: 1000;
+  --vp-z-index-sidebar: 999;
 }
 
 /**
