@@ -29,7 +29,13 @@
   "engines": {
     "node": "20.x"
   },
-  "scripts": {},
+  "scripts": {
+    "dev": "vitepress dev .",
+    "dev:host": "vitepress dev docs --host --port 5173",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs",
+    "preview:host": "vitepress preview docs --host --port 5174"
+  },
   "devDependencies": {
     "markdown-it-imsize": "^2.0.1",
     "vitepress": "^1.3.3"
