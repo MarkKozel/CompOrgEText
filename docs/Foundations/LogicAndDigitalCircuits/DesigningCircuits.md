@@ -6,6 +6,10 @@ pageClass: Topic
 tags: []
 ---
 
+<script setup>
+import KeyConcepts from '../../.vitepress/components/KeyConcepts.vue'
+</script>
+
 # {{ $frontmatter.title }}
 **{{ $frontmatter.description }}**
 
@@ -21,7 +25,7 @@ tags: []
 ]" />
 
 ::: details Terms
-!!!include(TextSnippets/Foundations/LogicAndDigitalCircuits_Terms.md)!!!
+<!--@include: @/TextSnippets/Foundations/LogicAndDigitalCircuits_Terms.md-->
 :::
 
 ## Introduction
@@ -32,7 +36,7 @@ Using a 3-step algorithm, a circuit diagram can be created that implements the e
 
 The result will produce the expected outputs given the set of inputs. However, the circuit may contain redundant elements of unnecessary section that can be simplified.
 
-> [Download this example circuits](/downloads/Logisim/TTAlgorithm.circ) to examine in [Logisim Circuit Simulation Tool](http://www.cburch.com/logisim/)
+> [Download the Logisim Examples collection](/downloads/Logisim/LogisimExamples.zip) to examine in [Logisim Circuit Simulation Tool](http://www.cburch.com/logisim/)
 
 ## Truth Table to Circuit Diagram
 
@@ -162,8 +166,6 @@ With two (2) outputs, two (2) OR gates are added, each connected to the associat
 After implementing a circuit diagram from a truth table using the 3-Step Algorithm, some elements *may* be simplified and still produce the correct outputs. 
 
 Examining the Truth Table and the resulting Circuit can reveal redundancies and unnecessary sections that can be removed and/or recombined to simplify the circuit.
-
-> [Download this example circuit](/downloads/Logisim/Design.circ) to examine in [Logisim Circuit Simulation Tool](http://www.cburch.com/logisim/)
 
 >> Optimization is not required. The algorithm will produce the correct circuit
 >>

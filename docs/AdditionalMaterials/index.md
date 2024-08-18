@@ -10,4 +10,4 @@ tags: [number systems, binary, data, digital, analog, hexadecimal, hex, conversi
 
 Links and references to supplement CS-131 materials
 
-!!!include(TextSnippets/GetStartedByExpandingTheSidebar.md)!!!
+<!--@include: @/TextSnippets/GetStartedByExpandingTheSidebar.md-->

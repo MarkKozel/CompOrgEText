@@ -4,6 +4,12 @@ parent: History
 description: 
 pageClass: Topic
 tags: [first Generation, vacuum tube, Colossus, UNIVAC]
+next:
+  text: 'History > 2nd Gen'
+  link: '/Introduction/History/04_2ndGen'
+prev:
+  text: 'History > Dawn'
+  link: '/Introduction/History/02_Dawn'
 ---
 
 # {{ $frontmatter.title }}
@@ -11,36 +17,28 @@ tags: [first Generation, vacuum tube, Colossus, UNIVAC]
 
 ## Vacuum tube
 
-Generations of computers are largely defined by the components used to build them. Although mechanical computers like Babbage\'s Engines and the Hollerith desk would continue to see use well into the 20th century, mathematicians and engineers in the 1930\'s realized that the logic of computation - Boolean logic - could be implemented with electronic relays and switches. **Vacuum tubes**, an electrical component that can be used as a switching device, became the core components of the first electrical computers.
+Generations of computers are largely defined by the components used to build them. Although mechanical computers like Babbage's Engines and the Hollerith desk would continue to see use well into the 20th century, mathematicians and engineers in the 1930's realized that the logic of computation - Boolean logic - could be implemented with electronic relays and switches. **Vacuum tubes**, an electrical component that can be used as a switching device, became the core components of the first electrical computers.
 
 <table>
   <tr>
-    <td colspan="2">Vacuum Tube</td>
-  </tr>
-  <tr>
-    <td style="width:60%" >
-      The fundamental building block of most early computers
-    </td>
-    <td style="width:40%">
+    <td style="width:40%"> The fundamental building block of most early computers </td>
+    <td style="width:60%">
       <img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/RCA_%E2%80%99808%E2%80%99_Power_Vacuum_Tube.jpg" style="max-height:100%; max-width:100%"/> 
       <figcaption> Public domain, via Wikimedia Commons </figcaption>
     </td>
   </tr>
 </table>
 
-
 ## Colossus
 World War II inspired a great deal of mathematical work. The British developed a series of computational devices designed to do calculations required to break German codes. These devices culminated in **Colossus**, the world\'s first electronic digital computer that was all programmable. Operators could reprogram the machine by changing switches and rewiring connections. Colossus could not compute any possible program, but it could be \"reprogrammed\" to solve different problems relating to the breaking of codes.
 
-The ability to send secret, encoded communications led to ruthless devastation by Nazi troops early in WWII. Allied mathematicians and engineers rushed to build a machine capable of breaking the codes. Here we pay tribute to “Colossus” for helping to end the war and begin the age of computing.</p> 
+The ability to send secret, encoded communications led to ruthless devastation by Nazi troops early in WWII. Allied mathematicians and engineers rushed to build a machine capable of breaking the codes. Here we pay tribute to “Colossus” for helping to end the war and begin the age of computing.
  
 
 <table>
   <tr>
-    <td colspan="2">Colossus, World War II Code Breaker</td>
-  </tr>
-  <tr>
-    <td style="width:50%">
+    <td style="width:40%">Colossus, World War II Code Breaker</td>
+    <td style="width:60%">
       <iframe width="640" height="360"  src="https://www.youtube.com/embed/7cDeG3hyraA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
     </td>
   </tr>

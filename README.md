@@ -1,16 +1,10 @@
 # Computer Organization E-Textbook
 ## Online Open Educational Resources (OER) / Zero Cost Textbook (ZCT)
 
-| Link                                                              | Build Status                                                                                                                                                                   |
-| ----------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [Master Site](https://comp-org-etext.netlify.app/)                | [![Netlify Status](https://api.netlify.com/api/v1/badges/f3989d12-377f-4c71-9d7f-9970711129b9/deploy-status)](https://app.netlify.com/sites/comp-org-etext/deploys)            |
-| [Dev Site](https://comp-org-etext-dev.netlify.app/)               | [![Netlify Status](https://api.netlify.com/api/v1/badges/c805c9e1-1cb6-443b-b135-44b21528c680/deploy-status)](https://app.netlify.com/sites/comp-org-etext-dev/deploys)        |
-| [Doc Review Site](https://comp-org-etext-doc-review.netlify.app/) | [![Netlify Status](https://api.netlify.com/api/v1/badges/924c0833-cb75-495d-b875-f49bcf844bc7/deploy-status)](https://app.netlify.com/sites/comp-org-etext-doc-review/deploys) |
-
 ## Project
 Create a set of online resources to replace current textbook for CS 131, Computer Organization at Allan Hancock
 
-Use [VuePress](https://vuepress.vuejs.org/) Vue-based static site generator, [Markdown](https://daringfireball.net/projects/markdown/), and [Vue](https://vuejs.org/) interactive element to create an online, interactive, and searchable set of resources for college students pursuing a degree in Computer Science
+Use [VitePress](https://https://vitepress.dev/) Vue-based static site generator, [Markdown](https://daringfireball.net/projects/markdown/), and [Vue](https://vuejs.org/) interactive element to create an online, interactive, and searchable set of resources for college students pursuing a degree in Computer Science
 
 Additionally, this project will be structures to make integration into other college Computer Science programs simpler and flexible
 
@@ -43,15 +37,27 @@ An online textbook can be updated easily and can include elements that require s
 Pages can include embedded videos to expand on the information being presented. Videos from other creators can provide another way of presenting or exploring a topic
 
 ### Make Textbook and Textbook Build Environment Freely Available
-The online documentation framework I plan to use is VuePress (https://vuepress.vuejs.org/). It is a static website generator that incorporates Vue (dynamic, interactive) web page components. VuePress also supports plug-ins to support various web site capabilities (such as copy/paste elements, navigation options, and analytic data gathering)
+The online documentation framework I plan to use is VitePress (https://vitepress.dev). It is a static website generator that incorporates Vue (dynamic, interactive) web page components. VitePress also supports plug-ins to support various web site capabilities (such as copy/paste elements, navigation options, and analytic data gathering)
 
-A VuePress site is created using Markdown (simplified HTML syntax), style and theme configuration, plugin implementations, and Vue components. This is the Documentation Source
+A VitePress site is created using Markdown (simplified HTML syntax), style and theme configuration, plugin implementations, and Vue components. This is the Documentation Source
 
-The VuePress site is built into a static web site that can be deployed to various hosting sites for student use
+The VitePress site is built into a static web site that can be deployed to various hosting sites for student use
 
 The Documentation Source will be available on GitHub to allow others to instructors to modify and deploy their own version of the documentation. Other instructors couple then deploy their modified documentation to their own web sites for their students to access
 
 ## Development Log
+20240818 - Updated to vitepress 1.3.3. Merged ViteConversion branch into master
+
+20240613 - Updated to vitepress 1.2.3. Adder ver info to nav bar. Renamed *vitedocs* to *docs*
+
+20240507 - Added Stack pages in Assembly section
+
+20240407 - Updated to Vitepress 1.0,2, official release. Revamped About and CS131 Nav menu into 1 nested dropdown
+
+20240112 - Committed to VitePress using version 1.0.0-rc.36. Converting all pages to VitePress
+
+20231126 - Building VitePress version in separate *vitedocs* folder. Starting to build a new Getting Started set of pages to improve the first week of assembly
+
 20230825 - Typo fixes
 
 22020501 - Completed first draft. Ready for Peer Review for Grant
@@ -84,9 +90,7 @@ Reverted to VuePress 1 as the beta is still a problem
 
 Created basic VuePress site with images and styles from prototype site. Created new Netlify site w/ Auto Deploy from Github push
 
-20210901 - CC ECHO Grant awarded for completion of COMP-142/CS 131 OER Course Material
-
-         - Adding Jest fro Vue Component Testing. Will look into Cypress for E2E testing for CI/CD testing
+20210901 - CC ECHO Grant awarded for completion of COMP-142/CS 131 OER Course Material. Adding Jest for Vue Component Testing. Will look into Cypress for E2E testing for CI/CD testing
 
 20210804 - Added Download (DL) menu items w/ link to download files from /assets/download dir
 

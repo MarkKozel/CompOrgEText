@@ -6,6 +6,10 @@ pageClass: Topic
 tags: [von Neumann Model, CPU, Control Unit, ALU, RAM, MAR, MDR, IO]
 ---
 
+<script setup>
+import KeyConcepts from '../.vitepress/components/KeyConcepts.vue'
+</script>
+
 # {{ $frontmatter.title }}
 **{{ $frontmatter.description }}**
 
@@ -44,7 +48,7 @@ The Control Unit is the central hub of activity in the von Neumann model. As not
 The Control knows *when* and *how* to interact to parts of the overall system to execute assembly instruction. At its heart is a **State Machine** containing all control and data signals that need to be issued for each ISA command
 
 ::: details State Machine Entry Example
-!!!include(TextSnippets/Assembly/StateMachineExample.md)!!!
+<!--@include: @/TextSnippets/Assembly/StateMachineExample.md-->
 :::
 
 The Controller is built and configured at the same time as the ISA/Assembly instructions. It must be able to recognize and execute every assembly instruction in the ISA. That is to say, it must have state procedures for every instruction.
@@ -79,7 +83,7 @@ Lastly, because the Controller advanced the PC, expecting to execute the next in
 
 After ALU or Memory Read instructions, the Controller will update the CC register to indicate the nature of the data that was just processed. It sets internal flags to indicate wether the data was *negative*, *positive, or *zero**.
 
-:::whatsgoingon CC Set for future instructions
+:::tip CC Set for future instructions
 The CC value is updates at the end of an assembly instruction execution. It can be used by the next instruction to make decisions
 
 If the next instruction does not alter the CC, it will remain as-is for other instructions, until one is executed that changes it
@@ -87,7 +91,7 @@ If the next instruction does not alter the CC, it will remain as-is for other in
 
 While this is a fairly basic collection of information about the data, the program can use the CC to decide to loop, jump, and other actions to change program flow.
 
-:::note
+:::tip
 This is how the LC-3 processes data condition codes
 
 Modern ISAs will have other elements to the CC register, including *Under/Overflow*, *Borrow/Carry*, and others
@@ -108,11 +112,11 @@ A common pattern in assembly programs to update Memory is:
 
 In Java:
 
-@[code lang=java{3}](.vuepress/public/examples/Assembly/Patterns/UpdateRAMPatternJava.asm)
+<<< @/public/examples/Assembly/Patterns/UpdateRAMPatternJava.asm {java}
 
 In LC-3 Assembly:
 
-@[code lang=arm-asm{4,9}](.vuepress/public/examples/Assembly/Patterns/UpdateRAMPattern.asm)
+<<< @/public/examples/Assembly/Commands/ld1.asm {asm}
 :::
 
 ## CPU
@@ -168,7 +172,7 @@ When requesting data from Memory, the address of the requested RAMlocation is co
 
 To make computers truly useful they need to have a mechanism for interfacing with the outside world. I/O devices send/receive data to/from the controller. The data can be inputs into a running program, and the program can outputs results to a device.
 
-:::note A Little Perspective
+:::tip A Little Perspective
 Input and Output is from the Program’s perspective:
 - A program receives data *in* from the keyboard (Input Device)
 - A program sends data *out* to the monitor (Output Device)
@@ -176,7 +180,7 @@ Input and Output is from the Program’s perspective:
 
 ![von Neumann Model - I/O](/images/Foundations/vonNeumann/vonNeumannModel_IO.png)
 
-:::note
+:::tip
 Looking at the above diagram, note that there are no control lines. To simplify the interface, only registers are used to share status and data
 :::
 

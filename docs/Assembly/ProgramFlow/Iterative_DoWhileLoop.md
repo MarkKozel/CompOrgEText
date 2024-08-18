@@ -1,6 +1,6 @@
 ### Do-While Loop Example
 
-@[code lang=java{5-7}](.vuepress/public/examples/Assembly/ProgramFlow/DoWhile.java)
+<<< @/public/examples/Assembly/ProgramFlow/DoWhile.java{5-7 java}
 
 ::: details Breakdown of code
   **i** is both the data to be acted on and the condition variable used to control the loop
@@ -22,7 +22,7 @@
 
 <QuestionMC question="After the Do-While Loop completes i will contain what number?" answer='A' AChoice="2" BChoice="8" CChoice="10" DChoice="12" rightAnswerFeedback="Right! It will loop 1 time total" wrongAnswerFeedback="Incorrect. Because the condition is 'greater than or equal to', when i = 10 the loop is entered 1 last time, adding 2 more"/>
 
-@[code lang=arm-asm{6-10}](.vuepress/public/examples/Assembly/ProgramFlow/DoWhile.asm)
+<<< @/public/examples/Assembly/ProgramFlow/DoWhile.asm{6-10 asm}
 
 <!-- ``` 
 ;Updated 11/3/2022

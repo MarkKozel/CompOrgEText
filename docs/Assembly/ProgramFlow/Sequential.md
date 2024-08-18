@@ -6,6 +6,10 @@ pageClass: Topic
 tags: []
 ---
 
+<script setup>
+import KeyConcepts from '../../.vitepress/components/KeyConcepts.vue'
+</script>
+
 # {{ $frontmatter.title }}
 
 **{{ $frontmatter.description }}**
@@ -22,7 +26,7 @@ tags: []
 ]" />
 
 ::: details Terms
-!!!include(TextSnippets/Assembly/ProgramFlow_Terms.md)!!!
+<!--@include: @/TextSnippets/Assembly/ProgramFlow_Terms.md-->
 :::
 
 ## Introduction

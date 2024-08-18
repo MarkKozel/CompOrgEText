@@ -4,27 +4,35 @@ parent: History
 description: 
 pageClass: Topic
 tags: [computer; history, pre, Pascaline, Antikythera Mechanism]
+prev: false
+next:
+  text: 'History > Dawn'
+  link: '/Introduction/History/02_Dawn'
 ---
 # {{ $frontmatter.title }}
 **{{ $frontmatter.description }}**
 
  Devices have been used to aid computation for thousands of years. The earliest known counting devices are clay tokens that were in use before 4000 BC. A given token might represent one sheep or ten sheep. To represent a count of 32 sheep, you would take three 10-sheep tokens and two 1-sheep tokens and seal them in a clay container.
 
+
+<!-- **Counting stones**
+<img src="/images/Foundations/History/220px-Chinese-abacus.jpg" width="400px">
+<figcaption> &copy; Marie-Lan Nguyen / Wikimedia Commons </figcaption> -->
 <table>
   <tr>
-    <td colspan="2">Counting stones</td>
-  </tr>
+    <!-- <td colspan="2">Counting stones</td>
+  </tr> -->
+  <td style="width:40%">
+  Clay Counting Stones
+  </td>
   <td style="width:60%">
-  <figure>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Accountancy_clay_envelope_Louvre_Sb1932.jpg" /> 
-    <figcaption> &copy; Marie-Lan Nguyen / Wikimedia Commons </figcaption>
-    </figure>
+    <!-- <figure> -->
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Accountancy_clay_envelope_Louvre_Sb1932.jpg" height="200px" /> 
+      <!-- </figure> -->
+      <figcaption> &copy; Marie-Lan Nguyen / Wikimedia Commons </figcaption> 
   </td>
   </tr>
 </table>
-
-
-
 
 ### Abacus
 

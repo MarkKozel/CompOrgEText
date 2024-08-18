@@ -6,6 +6,10 @@ pageClass: Topic
 tags: []
 ---
 
+<script setup>
+import KeyConcepts from '../../.vitepress/components/KeyConcepts.vue'
+</script>
+
 # {{ $frontmatter.title }}
 **{{ $frontmatter.description }}**
 
@@ -53,7 +57,7 @@ In general, algorithms are a **sequence** of steps that **solve a problem** with
 ### Algorithms in Computer Organization
 We will use Algorithms to understand how common analog procedures are executed in the digital world. If we were to add two multi-digit numbers, we can likely complete the task without much step-by-step thought. However, if we were to explain it in using digital logic and assembly language, we would need to think of how to use simple math operations as part of an Algorithm.
 
-::: considerit Quick Thought Experiment
+::: tip Quick Thought Experiment
 Think about how you would teach a first grade student how to add two multi-digit numbers:
 
 First, think of the steps to add 1234 and 4321 (note, there are no carries).
@@ -92,7 +96,7 @@ However, software engineers must remove all **ambiguity** somewhere between the 
 
 We are going to removal all **ambiguity** and **natural language** when converting the problem statement to an algorithm.
 
-::: right
+::: tip
 Learn how trivial bit of ambiguity caused the Mars Climate Orbiter that burned up in Mars' atmosphere
 [Mars Climate Orbiter 1998](https://www.jpl.nasa.gov/missions/mars-climate-orbiter)
 :::

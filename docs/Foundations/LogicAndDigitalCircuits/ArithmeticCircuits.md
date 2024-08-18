@@ -6,6 +6,10 @@ pageClass: Topic
 tags: []
 ---
 
+<script setup>
+import KeyConcepts from '../../.vitepress/components/KeyConcepts.vue'
+</script>
+
 # {{ $frontmatter.title }}
 **{{ $frontmatter.description }}**
 
@@ -21,14 +25,14 @@ tags: []
 ]" />
 
 ::: details Terms
-!!!include(TextSnippets/Foundations/LogicAndDigitalCircuits_Terms.md)!!!
+<!--@include: @/TextSnippets/Foundations/LogicAndDigitalCircuits_Terms.md-->
 :::
 
 ## Introduction
 
 Performing mathematical operations is a fundamental capability for computers. In this section we review Addition and Subtraction circuits. There are other circuits to performs other basic and complex math operations.
 
-> [Download this example circuits](/downloads/Logisim/Arithmetic.circ) to examine in [Logisim Circuit Simulation Tool](http://www.cburch.com/logisim/)
+> [Download the Logisim Examples collection](/downloads/Logisim/LogisimExamples.zip) to examine in [Logisim Circuit Simulation Tool](http://www.cburch.com/logisim/)
 
 ## Adder
 
@@ -63,7 +67,7 @@ The two (2) AND gates handling 0,1 and 1,0 inputs are functioning together like 
 
 To be useful in most situations, a *Full* Adder is required. It behaves like a *Half* Adder and includes *Carry<sub>in</sub>*, therefore it handles all possible inputs and outputs used to add 2 bits.
 
-!!!include(TextSnippets/Foundations/full_adder_table.md)!!!
+<!--@include: @/TextSnippets/Foundations/full_adder_table.md-->
 
 ![Half Adder Circuit](/images/Circuits/Arithmetic_FullAdder.png)
 

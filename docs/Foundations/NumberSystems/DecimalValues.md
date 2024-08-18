@@ -6,6 +6,10 @@ pageClass: Topic
 tags: [decimal base10 place value]
 ---
 
+<script setup>
+import KeyConcepts from '../../.vitepress/components/KeyConcepts.vue'
+</script>
+
 # {{ $frontmatter.title }}
 **{{ $frontmatter.description }}**
 
@@ -25,7 +29,7 @@ tags: [decimal base10 place value]
 ]" />
 
 ::: details Terms
-!!!include(TextSnippets/Foundations/NumberSystems_Terms.md)!!!
+<!--@include: @/TextSnippets/Foundations/NumberSystems_Terms.md-->
 :::
 
 ## Introduction
@@ -54,7 +58,7 @@ We all pretty competently work in all these numbers systems. In Computer Organiz
 
 ## What is **Base 10**?
 
-::: bythenumbers Base 10 Number System
+::: tip Base 10 Number System
 | Property           |               Value |
 | ------------------ | ------------------: |
 | # of symbols       |                  10 |
@@ -118,7 +122,7 @@ It is likely that human adopted this 10 symbols to match the number of fingers o
 
 There is no particular importance of 10 as a number system, it is just the system most easily adopted by early humans. As humans persisted and began developing a deeper understanding of numbers, base 10 also persisted
 
-::: readmore Base 10/Decimal Number System
+::: tip Base 10/Decimal Number System
 [Origins](https://en.wikipedia.org/wiki/Decimal#Origin)
 
 [History](https://en.wikipedia.org/wiki/Decimal#History)
@@ -130,7 +134,7 @@ Decimal (base 10) number system is the de-facto standard number system used by h
 
 ### Another Common Number System
 We use other number systems for some tasks. One interesting (and complex) number system is used for Data and Time. Time is a mix of systems: 
-::: left
+::: info Other Number Systems
 1 millennia = 1000 years
 
 1 year = 12 months

@@ -6,6 +6,10 @@ pageClass: Topic
 tags: []
 ---
 
+<script setup>
+  import KeyConcepts from '../../.vitepress/components/KeyConcepts.vue';
+</script>
+
 # {{ $frontmatter.title }}
 **{{ $frontmatter.description }}**
 
@@ -21,11 +25,10 @@ tags: []
 ]" />
 
 ::: details Terms
-!!!include(TextSnippets/Foundations/LogicAndDigitalCircuits_Terms.md)!!!
+<!--@include: @/TextSnippets/Foundations/LogicAndDigitalCircuits_Terms.md-->
 :::
 
 ## Introduction
-
 Control or Combination circuits are used to manage the flow of information from clock cycle to clock cycle. These groups of <a href="./BasicLogicCircuits" target="_blank">Basic Logic Circuits</a> consist of input/control bits, and one or more output bits.
 
 Control circuits are used to execute the current program instruction (assembly instructions in this course). In the course of executing a single assembly instruction, the CPU's *Control Unit* will use required control circuits to complete actions like *retrieved data*, *store data*, *add bit*, *read keyboard input*.
@@ -38,7 +41,7 @@ Circuits are sent input signals during a single clock cycle. The electrons propa
 
 Next time the same control circuit is used, it is reset. It does not *remember* its last results to use in producing then next result. This *stateless* property of control circuits. They functions control circuits provide are all simple, stand alone actions.
 
-> [Download these example circuits](/downloads/Logisim/Control.circ) to examine in [Logisim Circuit Simulation Tool](http://www.cburch.com/logisim/)
+> [Download the Logisim Examples collection](/downloads/Logisim/LogisimExamples.zip) to examine in [Logisim Circuit Simulation Tool](http://www.cburch.com/logisim/)
 
 ## Decoder
 
@@ -67,32 +70,26 @@ With this two (2) input Decoder, there will always be 4 outputs. In order to ret
 
 The decoder circuit is useful to convert encoded data to the original value. Setting A and B inputs will result in a one (1) output on 1 of the 4 lines. The example below works like a switch, with the two (2) inputs mimicking the *address* of the output to light up.
 
-![Decoder Truth Table](/images/Circuits/Decoder_2x4.png =300x)
-
+<img src="/images/Circuits/Decoder_2x4.png" width="300px">
 
 ::: details Decoding ISA Arithmetic Instructions
 
 In modern ISAs, 2 bits of an instruction might represent which basic arithmetic operation to execute. In our example 16-bit ISA, bits 7 & 8 of an assembly instruction represent the math function for the Arithmetic Logic Unit (ALU) 
 
 <table>
-<tr>
-<td>
-
-|Decoded Instruction|Bits 8 & 7|Operation|
-|-|:-:|-|
-|1010110**00**1111100|00|Add|
-|1010110**01**1111100|01|Subtract|
-|1010110**10**1111100|10|Multiply|
-|1010110**11**1111100|11|Divide|
-
-</td>
-
-</td>
-
-![Decoder Example](/images/Circuits/Decoder_Example.png =300x)
-
-</td>
-</tr>
+  <tr>
+    <td>
+      |Decoded Instruction|Bits 8 & 7|Operation|
+      |-|:-:|-|
+      |1010110**00**1111100|00|Add|
+      |1010110**01**1111100|01|Subtract|
+      |1010110**10**1111100|10|Multiply|
+      |1010110**11**1111100|11|Divide|
+    </td>
+    <td>
+    <img src="/images/Circuits/Decoder_Example.png" width="300px">
+    </td>
+  </tr>
 </table>
 
 Bits 8 & 7 are inputs into decoder to select 1 of the 4 operations. The output of this decoder will provide input another circuit (The Operation Selector) that enables the correct arithmetic operation for the instruction.
@@ -102,7 +99,7 @@ Bits 8 & 7 are inputs into decoder to select 1 of the 4 operations. The output o
 
 To simplify more complicate circuit diagrams, the Decoder has a symbol that hide the inner workings.
 
-![Decoder Truth Table](/images/Circuits/Circuit_Decoder_Simple.png =300x)
+<img src="/images/Circuits/Circuit_Decoder_Simple.png" width="300px">
 
 Like the circuit above this symbol has 2 inputs (A and B) and four (4) mutually exclusive outputs (D0, D1, D2, and D3).
 
@@ -137,32 +134,28 @@ Inverted signals is effective run through a NOT gate or *flipped*. Normal signal
 
 The four (4) input values are all normal connections. Each is allowed into the its AND gate unaltered.
 
-![Decoder Truth Table](/images/Circuits/Multiplexer_2x4.png =600x)
+<img src="/images/Circuits/Multiplexer_2x4.png" width="600px">
 
 ::: details Multiplexing ISA Arithmetic Instructions
 
 In modern ISAs, 2 bits of an instruction might represent which data source to use. We have 4 1-bit values from 4 memory locations. In our example 16-bit ISA, bits 2 & 1 of an assembly instruction contain an address/reference for each source.
 
 <table>
-<tr>
-<td>
-
-|Decoded Instruction|Bits 2 & 1|Operation|
-|-|:-:|-|
-|1010110001111**00**0|00|L1 Cache|
-|1010110011111**01**0|01|Temp Register|
-|1010110101111**10**0|10|RAM|
-|1010110111111**11**0|11|Keyboard|
-
-</td>
-
-<td>
-
-![Multiplexer Example](/images/Circuits/Multiplexer_Example.png =1500x)
-
-</td>
-</tr>
+  <tr>
+    <td>
+    |Decoded Instruction|Bits 2 & 1|Operation|
+    |-|:-:|-|
+    |1010110001111**00**0|00|L1 Cache|
+    |1010110011111**01**0|01|Temp Register|
+    |1010110101111**10**0|10|RAM|
+    |1010110111111**11**0|11|Keyboard|
+    </td>
+    <td>
+    <img src="/images/Circuits/Multiplexer_Example.png" width="1500px">
+    </td>
+  </tr>
 </table>
+
 Each of the 4 source devices is sending a 1 into the multiplexer. Bits 2 & 1 from the instruction are used to select one (1) of the four (4) sources to pass on to the next circuit using the value.
 :::
 
@@ -170,7 +163,7 @@ Each of the 4 source devices is sending a 1 into the multiplexer. Bits 2 & 1 fro
 
 We can use the simpler multiplexer symbol keep our diagram clean
 
-![Decoder Truth Table](/images/Circuits/Circuit_Multiplexer_Simple.png =300x)
+<img src="/images/Circuits/Circuit_Multiplexer_Simple.png" width="300px">
 
 Input value and selection signals work the same as above
 

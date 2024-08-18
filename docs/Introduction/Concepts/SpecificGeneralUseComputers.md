@@ -6,6 +6,11 @@ pageClass: Topic
 tags: []
 ---
 
+<script setup>
+import KeyConcepts from '../../.vitepress/components/KeyConcepts.vue'
+</script>
+
+
 # {{ $frontmatter.title }}
 **{{ $frontmatter.description }}**
 
@@ -34,7 +39,7 @@ Early computers were specific-purpose devices. They we built to solve one (1) pr
 
 The predecessor to the common Abacus is an early example of a Specific (or Special) Purpose Computer device. The [Sumerian Abacus](https://en.wikipedia.org/wiki/Abacus#Mesopotamian) dates back to Mesopotamia in 2700 BCE.
 
-![Early Chinese Abacus](/images/Foundations/History/220px-Chinese-abacus.jpg =300x)
+<img src="/images/Foundations/History/220px-Chinese-abacus.jpg" width="300px">
 
 Early Chinese Abacus 
 

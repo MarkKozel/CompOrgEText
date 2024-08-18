@@ -4,6 +4,10 @@ parent: Computer Organization EText
 description: Introduction
 pageClass: Section
 tags: []
+prev: false
+next:
+  text: 'History > Prehistory'
+  link: '/Introduction/History/01_Prehistory'
 ---
 
 # {{ $frontmatter.title }}

@@ -2,7 +2,7 @@ The Program Counter (PC) register is used my Simulate to control which like of L
 
 The PC is initially set to the address in the ```.ORIG xnnnn``` when to load the assembled program
 
-@[code lang=arm-asm{5-6}](@/TextSnippets/LC3/PCExample.asm)
+<<< @/TextSnippets/LC3/PCExample.asm {5-6 asm}
 
 The Condition Code (CC) register is set based on ```ADD R0, R0, #-1``` (line 4)
 - If the result is negative, CC is set to N

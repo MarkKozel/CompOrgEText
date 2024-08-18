@@ -19,4 +19,4 @@ Building on Turing's designs, this Hungarian mathematician layed out the parts o
 ## Claude Shannon
 IBM engineer and technology hobbiest that recognized the power boolean logic and binary as the core data format for today's computer storage and transmission.
 
-!!!include(TextSnippets/GetStartedByExpandingTheSidebar.md)!!!
+<!--@include: @/TextSnippets/GetStartedByExpandingTheSidebar.md-->

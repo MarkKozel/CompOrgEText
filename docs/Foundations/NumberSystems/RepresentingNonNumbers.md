@@ -6,6 +6,10 @@ pageClass: Topic
 tags: [ascii, unicode, text]
 ---
 
+<script setup>
+import KeyConcepts from '../../.vitepress/components/KeyConcepts.vue'
+</script>
+
 # {{ $frontmatter.title }}
 **{{ $frontmatter.description }}**
 
@@ -21,7 +25,7 @@ tags: [ascii, unicode, text]
 ]" />
 
 ::: details Terms
-!!!include(TextSnippets/Foundations/NumberSystems_Terms.md)!!!
+<!--@include: @/TextSnippets/Foundations/NumberSystems_Terms.md-->
 :::
 
 ## Introduction
@@ -51,7 +55,7 @@ ASCII is limited to english characters and punctuation characters. In addition, 
 
 As of Unicode version 14.0, September 2021, the standard represents 159 different *scripts* or character sets and 144,697 individual characters.
 
-::: readmore Unicode 
+::: tip Unicode 
 [Wikipedia](https://en.wikipedia.org/wiki/Unicode)
 :::
 

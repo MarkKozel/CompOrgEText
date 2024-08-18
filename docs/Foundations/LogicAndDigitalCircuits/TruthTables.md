@@ -6,6 +6,10 @@ pageClass: Topic
 tags: []
 ---
 
+<script setup>
+import KeyConcepts from '../../.vitepress/components/KeyConcepts.vue'
+</script>
+
 # {{ $frontmatter.title }}
 **{{ $frontmatter.description }}**
 
@@ -25,7 +29,7 @@ tags: []
 ]" />
 
 ::: details Terms
-!!!include(TextSnippets/Foundations/LogicAndDigitalCircuits_Terms.md)!!!
+<!--@include: @/TextSnippets/Foundations/LogicAndDigitalCircuits_Terms.md-->
 :::
 
 ## Introduction

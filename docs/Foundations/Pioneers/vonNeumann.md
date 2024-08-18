@@ -6,6 +6,10 @@ pageClass: Topic
 tags: [von Neumann, von Neumann model]
 ---
 
+<script setup>
+import KeyConcepts from '../../.vitepress/components/KeyConcepts.vue'
+</script>
+
 # {{ $frontmatter.title }}
 
 #### {{ $frontmatter.description }}
@@ -26,7 +30,7 @@ John von Neumann (1916 - 2001) was a Hungarian mathematician, physicist, a desig
 
 In 1945, while designing the [EDVAC (Electronic Discrete Variable Automatic Computer)](https://en.wikipedia.org/wiki/EDVAC) electronic computer, von Neumann documented the first logical design of a *stored-program* digital computer architecture. As the document circulated it became known as the **von Neumann Architecture** or **Model**
 
-::: readmore Life of John von Neumann
+::: tip Life of John von Neumann
 [John von Neumann - Wikipedia](https://en.wikipedia.org/wiki/John_von_Neumann) - December 28, 1903 – February 8, 1957
 :::
 

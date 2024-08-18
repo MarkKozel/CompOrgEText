@@ -6,6 +6,10 @@ pageClass: Topic
 tags: [2's complement, unsigned, fixed point, sign bit, ]
 ---
 
+<script setup>
+import KeyConcepts from '../../.vitepress/components/KeyConcepts.vue'
+</script>
+
 # {{ $frontmatter.title }}
 **{{ $frontmatter.description }}**
 
@@ -20,22 +24,27 @@ tags: [2's complement, unsigned, fixed point, sign bit, ]
   }
 ]" />
 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mRvcGijXI9w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QFlbvSeBkwY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ::: details Terms
-!!!include(TextSnippets/Foundations/NumberSystems_Terms.md)!!!
+<!--@include: @/TextSnippets/Foundations/NumberSystems_Terms.md-->
 :::
 
 ## Introduction
 
 The following table is a quick reference between binary and decimal numbers 0 - 15. For unsigned decimal numbers, 4 bits is all that in needed to represent 0 - 15
 
-!!!include(TextSnippets/Foundations/fourbit_table.md)!!!
+<!--@include: @/TextSnippets/Foundations/fourbit_table.md-->
 
 ## Unsigned Integers
 
 Using the conversion algorithm we learned in [Binary Values](BinaryValues.md#converting-to-base-10), you can verify the above table. Each binary value converts to the corresponding decimal l value.
 
 ::: details Binary to Decimal Algorithm
-!!!include(TextSnippets/Foundations/Algo_unsigned_bin2dec.md)!!!
+<!--@include: @/TextSnippets/Foundations/Algo_unsigned_bin2dec.md-->
 :::
 
 The number of decimal values that can be represented in a fix number of binary digits (bits) is 2<sup>num of bits</sup>. The minimum value is 0 and the maximum is is 2<sup>num of bits</sup>.
@@ -49,21 +58,22 @@ To be truly useful, we need to be able to represent negative (signed) values in 
 
 Before proceeding, we need to understand how to add 1 binary values. We will explore this moreIt is just like adding 2 decimal numbers:
 
-::: left
-A Full Adder
-!!!include(TextSnippets/Foundations/full_adder_table.md)!!!
+::: info A Full Adder
+<!--@include: @/TextSnippets/Foundations/full_adder_table.md-->
 :::
 
 ### The Sign Bit
 
 Computer designers chose the most significate bit to represent the sign of the remaining bits. **0** in the left most **Sign Bit** position indicates a positive value for the entire bit string. A **Sign Bit** of **1** indicates a negative value.
 
+![Convert to Base 2](/images/NumberSystems/Base2_SignBitMagnitude.png)
+
 We can still represent 2<sup>num of bits</sup> values with a **Sign Bit**, however the maximum value represented is now 2<sup>num of bits - 1</sup>
 > 4 bits can represent 2<sup>4</sup> or 16 values.  -8 : +8<sub>10</sub>
 > 
 > 16 bits can represent 2<sup>16</sup> or 65535 values.  -32786 : 32786<sub>10</sub>
 
-!!!include(TextSnippets/Foundations/fourbit_table_signbit.md)!!!
+<!--@include: @/TextSnippets/Foundations/fourbit_table_signbit.md-->
 
 We can see in this updates table that 111<sub>2</sub> is still 7<sub>10</sub>, however with the sign bit is 1 (**1**111), the value is -7<sub>10</sub>. Check a couple of other values...for any two values where the three (3) least significate bits are the same, it is the same value, but positive is the **sign bit** is **0** and negative if it is **1**.
 
@@ -76,11 +86,33 @@ We can see in this updates table that 111<sub>2</sub> is still 7<sub>10</sub>, h
 
 To fix these issues, signed binary values use a conversion algorithm called **2's Complement**
 
-!!!include(TextSnippets/Foundations/fourbit_table_twoscomplement.md)!!!
+<div class="iframe-responsive">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4qH4unVtJkE?si=7jWG2rh_XoAMr04U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
 
-These conversions are generated using the 2's complement algorithm:
-::: left
-!!!include(TextSnippets/Foundations/twos_complement.md)!!!
+> Video on 1's and 2's complement representations of values
+>
+
+#### Table of 2's Complement Value in 4 bits
+<!--@include: @/TextSnippets/Foundations/fourbit_table_twoscomplement.md-->
+
+
+#### Converting 2's Complement Binary to Base 10
+
+In a 2's complement system, the conversion is the same as unsigned, however the *sign bit* is negative
+
+This example uses 8 bit values where the least 7 bits are the *value/magnitude* of the base 10 number being represented and the most significant bit is the *sign bit*
+
+![Convert to Base 2](/images/NumberSystems/Base2_ConvertToBase10_2sComp.png)
+
+![Convert to Base 2](/images/NumberSystems/Base2_ConvertToBase10_2sCompPos.png)
+
+#### Convert a 2's Complement value to it's opposite value
+In Base 10 we can multiply a value by -1 to switch from negative to positive -or- positiver to negative. In 2's complement binary were can perform the same conversion, using a 2-step process
+
+::: info Algorithm to convert between positive and negative values in 2's complement
+<!--@include: @/TextSnippets/Foundations/twos_complement.md-->
+
 :::
 
 Use the above algorithm to test yourself
@@ -93,10 +125,6 @@ Use the above algorithm to test yourself
 | Add 1          | 100111    | -25           |
 
 :::
-
-**Computer Science Series** - Binary 2 - Two's Complement Representation of Negative Numbers
-<p>This is the second in a series of videos about the binary number system which is fundamental to the operation of a digital electronic computer. It covers the two's complement system of representing positive and negative integers in binary. It demonstrates how two's complement allows computers to perform subtraction operations, and explains with examples three different methods that can be used to convert negative denary numbers into binary</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/mRvcGijXI9w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Sign Extension
 
@@ -125,10 +153,6 @@ In order to represent fractional values in binary, a fixed number of the least s
 ![Fixed Point](/images/NumberSystems/Base2_FixedPoint.png)
 
 An architecture will define how many bits are used for the fractional and whole-number part. There is no bit used to hold the *decimal point* in memory. The hardware is configured to always, in the case of this example, use the 3 least significant bits.
-
-#### **Computer Science Series** - Binary 3 – Fixed Point Binary Fractions
-<p>This is the third in a series of videos about the binary number system which is fundamental to the operation of a digital electronic computer. It covers the representation of real numbers in binary using a fixed size, fixed point, register. It explains with examples how to convert both positive and negative denary numbers to and from fixed point binary format. It also covers the advantages and limitations of processors that make use of fixed point registers.</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/QFlbvSeBkwY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 The conversion from fixed point binary to base 10 fractional is the same as a whole number, however the fractions bits are multiplied by a fractional power of 2.
 

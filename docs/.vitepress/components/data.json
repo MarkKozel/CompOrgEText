@@ -1,0 +1,22 @@
+[
+  {
+    "name": "John Doe",
+    "age": 30,
+    "address": {
+      "street": "123 Main Street",
+      "city": "Anytown",
+      "state": "CA",
+      "zip": "12345"
+    }
+  },
+  {
+    "name": "Jane Doe",
+    "age": 25,
+    "address": {
+      "street": "456 Elm Street",
+      "city": "Newtown",
+      "state": "NY",
+      "zip": "54321"
+    }
+  }
+]

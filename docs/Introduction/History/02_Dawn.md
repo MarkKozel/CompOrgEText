@@ -4,6 +4,12 @@ parent: History
 description: 
 pageClass: Topic
 tags: [Difference Engine, Analytical Engine, Charles Babbage, Lovelace, Ada, Hollerith Machine]
+next:
+  text: 'History > 1st Gen'
+  link: '/Introduction/History/03_1stGen'
+prev:
+  text: 'History > Dawn'
+  link: '/Introduction/History/02_Dawn'
 ---
 
 # {{ $frontmatter.title }}
@@ -15,12 +21,12 @@ tags: [Difference Engine, Analytical Engine, Charles Babbage, Lovelace, Ada, Hol
 
 After working on the machine for ten years he realized that a much more general design that could be instructed to perform arbitrary computations was possible and began to focus on that project.
 
-Charles Babbage (1791-1871), computer pioneer, designed the first automatic computing engines. He invented computers but failed to build them. The first complete Babbage Engine was completed in London in 2002, 153 years after it was designed. Difference Engine No. 2, built faithfully to the original drawings, consists of 8,000 parts, weighs five tons, and measures 11 feet long.</p> 
+Charles Babbage (1791-1871), computer pioneer, designed the first automatic computing engines. He invented computers but failed to build them. The first complete Babbage Engine was completed in London in 2002, 153 years after it was designed. Difference Engine No. 2, built faithfully to the original drawings, consists of 8,000 parts, weighs five tons, and measures 11 feet long.
 
 <table>
   <tr>
-    <td colspan="2">The Babbage Engine</td>
-  </tr>
+    <!-- <td colspan="2">The Babbage Engine</td> -->
+    <td style="width:40%">The Babbage Engine </td>
     <td style="width:60%">
       <iframe width="640" height="360"  src="https://www.youtube.com/embed/XSkGY6LchJs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
     </td>

@@ -6,6 +6,10 @@ pageClass: Topic
 tags: [Turing, General Purpose Computer, Theory, State, State Machine]
 ---
 
+<script setup>
+import KeyConcepts from '../../.vitepress/components/KeyConcepts.vue'
+</script>
+
 # {{ $frontmatter.title }}
 **{{ $frontmatter.description }}**
 
@@ -29,7 +33,7 @@ tags: [Turing, General Purpose Computer, Theory, State, State Machine]
 
 Alan Turing (1912 - 1954) was an English mathematician, cryptographer, and creator of theoretic computer science. His legacy as a scientist, philosopher, and world war 2 code breaker lives on in scientific and popular culture.
 
-::: readmore Life of Alan Turing
+::: tip Life of Alan Turing
 [Alan Turing - Wikipedia](https://en.wikipedia.org/wiki/Alan_Turing) - June 23, 1912 - June 7, 1954
 :::
 

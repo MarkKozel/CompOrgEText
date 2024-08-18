@@ -6,6 +6,10 @@ pageClass: Topic
 tags: [Claude Shannon, Binary]
 ---
 
+<script setup>
+import KeyConcepts from '../../.vitepress/components/KeyConcepts.vue'
+</script>
+
 # {{ $frontmatter.title }}
 
 #### {{ $frontmatter.description }}
@@ -27,7 +31,7 @@ Claude Shannon (1916 - 2001) was an American mathematician, electrical engineer,
 
 As part of his master's thesis in 1937, Shannon defined a new branch of mathematics, *Boolean Algebra*. In his work, he layed out the basis of digital circuit design and the use of binary underlying *language* of digital hardware.
 
-::: readmore Life of Claude Shannon
+::: tip Life of Claude Shannon
 [Claude Shannon](https://en.wikipedia.org/wiki/Claude_Shannon) - April 30, 1916 to February 24, 2001
 
 :::

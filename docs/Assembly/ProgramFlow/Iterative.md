@@ -6,6 +6,10 @@ pageClass: Topic
 tags: []
 ---
 
+<script setup>
+import KeyConcepts from '../../.vitepress/components/KeyConcepts.vue'
+</script>
+
 # {{ $frontmatter.title }}
 
 **{{ $frontmatter.description }}**
@@ -26,14 +30,16 @@ tags: []
 ]" />
 
 ::: details Terms
-!!!include(TextSnippets/Assembly/ProgramFlow_Terms.md)!!!
+<!--@include: @/TextSnippets/Assembly/ProgramFlow_Terms.md-->
 :::
 
 ## Introduction
 
 Beyond executing sequential and conditional instructions, computers reliably execute the same set.
 
-!!!include(TextSnippets/Assembly/Conditional.md)!!!
+## The Condition
+
+<!--@include: @/TextSnippets/Assembly/Conditional.md-->
 
 ## Iterative Flow
 
@@ -48,7 +54,7 @@ Iterative loops must have some **control** criteria to determine when to stop lo
 ## For Loop
 Iteration using a *For Loop* is doing the work a set number of times. The work can use the number of times the loop has been run as a reference. An example is using the count as an array index
 
-!!!include(Assembly/ProgramFlow/Iterative_ForLoop.md)!!!
+<!--@include: ../ProgramFlow/Iterative_ForLoop.md-->
 
 ## While Loop
 Rather than looping a set number of times, a While Loop will loop as long as a condition is true. 
@@ -57,15 +63,14 @@ Iterating until a condition is met (true) causes a While Loop to execute zero (0
 
 A while loop much update the condition variable inside the loop, so that when tested at the start of the next iteration it may make the condition true, and exit the loop.
 
-!!!include(Assembly/ProgramFlow/Iterative_WhileLoop.md)!!!
-
+<!--@include: ../ProgramFlow/Iterative_WhileLoop.md-->
 
 ## Do-While Loop
 Unlike the *While* loop, a *Do-While* will complete the loop one (1) time before checking the condition. The condition test is at the bottom of the loop.
 
 This is useful when the work performed in the loop must be, such as in processing a user action. Also useful when the work performed in the loop changes the condition test.
 
-!!!include(Assembly/ProgramFlow/Iterative_DoWhileLoop.md)!!!
+<!--@include: ../ProgramFlow/Iterative_DoWhileLoop.md-->
 
 ## Conclusion
 One or more instructions are executed more that one time. Each time the instructions are executed, data can be updated to new values.

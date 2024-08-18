@@ -6,6 +6,11 @@ pageClass: Topic
 tags: [Analog, Digital, Voltage, ]
 ---
 
+<script setup>
+import KeyConcepts from '../../.vitepress/components/KeyConcepts.vue';
+import QuestionMC from '../../.vitepress/components/QuestionMC.vue';
+</script>
+
 # {{ $frontmatter.title }}
 **{{ $frontmatter.description }}**
 
@@ -24,7 +29,7 @@ tags: [Analog, Digital, Voltage, ]
 
 Humans developed devices to complete tasks (everyday and labor-intensive) 1) faster, and 2) reliably. As new materials and technologies become available (and cost-effective), these devices are upgraded or replaced.
 
-::: left
+::: info Technological Advancements
 It was left to people with rocks and sticks to turn and prepare soil for planting crops
 
 As animals were domesticated, a work animal pulling wooden tools could prepare soil for planting quicker and more consistency that a group humans with shovels
@@ -42,7 +47,7 @@ Fast-forward to today's high-speed stock market trading computers, considering t
 
 ## Analog Computing Devices
 
-::: left
+::: info Analog
 Analog, in the computer context, means signals or data represented by values that have a continuous and infinite number of variations
 
 i.e.: The number of unique values between 0 and 1
@@ -61,17 +66,17 @@ These Mechanical Computers could be built to a wide varies of tasks. The complex
 Mechanical computers were typically single-calculate (Specific-Purpose) computers. Changing the "program" meant swapping out gears, springs, and levers for a different set
 
 More complex systems required special training to operate, maintain, and repair
-::: readmore Predicting the Tides with Torque
+::: tip Predicting the Tides with Torque
 [Nordsieck's Machine](https://www.computerhistory.org/revolution/analog-computers/3/141)
 :::
 
 <iframe src="https://player.vimeo.com/video/70589461" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 <p>UCLA&#039;s 1948 Mechanical Computer from <a href="https://vimeo.com/gizmodo">Gizmodo</a>.</p>
 
-::: left
+::: info Things to note
 As seen in this video, electricity is used to turn shafts to move gears as needed
 
-Also, the "program" us changed by swapping gears and shafts
+Also, the "program" is changed by swapping gears and shafts
 :::
 
 ### Electrical Analog Systems
@@ -85,7 +90,7 @@ Electric circuits replaced springs and gears with a faster and more reliable mea
 
 Electrical computing systems also were also easier to modify "programs"
 
-::: readmore Analog Computer Timeline
+::: tip Analog Computer Timeline
 [CHM Analog Computers](https://www.computerhistory.org/revolution/analog-computers/3)
 :::
 
@@ -93,7 +98,7 @@ Electrical computing systems also were also easier to modify "programs"
 
 Further advances in electronic technology drove the next major advance in computers...**Vacuum Tubes**. While eventually replaced with transistors, vacuum tubes allowed computers to control electricity with electricity. Coupled with control circuits, digital computers could now be programmed and run using electricity to perform logical operations and maintain data between steps
 
-::: left
+::: info Digital
 Digital, in the computer context, means signals or data represented by values that have a finite set of possible values. The possible values for a digital system are finite, and do not have "fractional parts"
 
 Digital computers are based on the binary (base 2) number system, where the only single-digit values are 0 and 1
@@ -101,7 +106,7 @@ Digital computers are based on the binary (base 2) number system, where the only
 i.e. the number a values between 0 and 5 in the whole number system
 :::
 
-::: readmore First Electrical Digital Computer
+::: tip First Electrical Digital Computer
 ENIAC (Electronic Numerical Integrator And Computer), built between 1943 and 1945—the first large-scale computer to run at electronic speed without being slowed by any mechanical parts.
 [ENIAC](https://www.computerhistory.org/revolution/birth-of-the-computer/4/78)
 :::

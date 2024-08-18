@@ -6,6 +6,13 @@ pageClass: Topic
 tags: [GETC, OUT, PUTS, IN, HALT, TRAP Built-in]
 ---
 
+<script setup>
+import KeyConcepts from '../../.vitepress/components/KeyConcepts.vue';
+import QuestionTF from '../../.vitepress/components/QuestionTF.vue';
+import QuestionMC from '../../.vitepress/components/QuestionMC.vue';
+import LC3Instruction from '../../.vitepress/components/LC3Instruction.vue'
+</script>
+
 <KeyConcepts :ConceptArray = "[
   {
     Concept: 'TRAP Routines are Built-In',
@@ -59,17 +66,15 @@ Reads a single character from the keyboard. The character is not echoed to the d
 
 The ASCII value of the pressed key is placed in R0 before returning to the user code
 
-@[code lang=arm-asm{2}](.vuepress/public/examples/Assembly/Commands/TRAP_x20.asm)
-
-@[code lang=arm-asm{2}](.vuepress/public/examples/Assembly/Commands/TRAP_GetC.asm)
+<<< @/public/examples/Assembly/Commands/TRAP_x20.asm {asm}
+<<< @/public/examples/Assembly/Commands/TRAP_GetC.asm {asm}
 
 ### TRAP x21 / OUT
 
 Writes a character from R0 to the display. R0 must contain the ASCII value of the character to display.
 
-@[code lang=arm-asm{3}](.vuepress/public/examples/Assembly/Commands/TRAP_x21.asm)
-
-@[code lang=arm-asm{3}](.vuepress/public/examples/Assembly/Commands/TRAP_Out.asm)
+<<< @/public/examples/Assembly/Commands/TRAP_x21.asm {asm}
+<<< @/public/examples/Assembly/Commands/TRAP_Out.asm {asm}
 
 ### TRAP x22 / PUTS
 
@@ -79,38 +84,33 @@ The string is a series of ASCII values in contiguous memory. The last memory loc
 
 R0 must contain the address of the first character
 
-@[code lang=arm-asm{3}](.vuepress/public/examples/Assembly/Commands/TRAP_x22.asm)
-
-@[code lang=arm-asm{3}](.vuepress/public/examples/Assembly/Commands/TRAP_Puts.asm)
+<<< @/public/examples/Assembly/Commands/TRAP_x22.asm {asm}
+<<< @/public/examples/Assembly/Commands/TRAP_Puts.asm {asm}
 
 ### TRAP x23 / IN
 
 Displays a prompt to the user on the display, then waits for a single keypress. The character is stored in R0 and is echoed to the display.
 
-@[code lang=arm-asm{2}](.vuepress/public/examples/Assembly/Commands/TRAP_x23.asm)
-
-@[code lang=arm-asm{2}](.vuepress/public/examples/Assembly/Commands/TRAP_In.asm)
+<<< @/public/examples/Assembly/Commands/TRAP_x23.asm {asm}
+<<< @/public/examples/Assembly/Commands/TRAP_In.asm {asm}
 
 ### TRAP x24 / PUTSP
 
 Same function as PUTS, however the upper [bits 15-8] and lower [bits 7-0] 16 bits of each memory location can be loaded to 8-bit ascii values. PUTSP first displays the lower 8 bits, then the upper 8 bits.
 
-@[code lang=arm-asm{3}](.vuepress/public/examples/Assembly/Commands/TRAP_x24.asm)
-
-@[code lang=arm-asm{3}](.vuepress/public/examples/Assembly/Commands/TRAP_PutSp.asm)
+<<< @/public/examples/Assembly/Commands/TRAP_x24.asm {asm}
+<<< @/public/examples/Assembly/Commands/TRAP_PutSp.asm {asm}
 
 ### TRAP x25 / HALT
 
 Terminates program execution and displays a message to the console.
 
-@[code lang=arm-asm{3}](.vuepress/public/examples/Assembly/Commands/TRAP_x25.asm)
-
-@[code lang=arm-asm{3}](.vuepress/public/examples/Assembly/Commands/TRAP_HALT.asm)
+<<< @/public/examples/Assembly/Commands/TRAP_x25.asm {asm}
+<<< @/public/examples/Assembly/Commands/TRAP_Halt.asm {asm}
 
 ## Review TRAP Code in LC-3 Simulate
 
 :::tip You Do It - Find and Review GETC TRAP Code
-
 
 1. Start the LC-3 Simulate environment. Don't load an code, just use the system are it starts up
 2. Enter x0020 in Jump to box and press enter
@@ -198,7 +198,7 @@ Things to note:
 
 ### The PUTS Function
 
-@[code lang=arm-asm{}](.vuepress/public/examples/Assembly/Commands/TRAP_PUTSFunction.asm)
+<<< @/public/examples/Assembly/Commands/TRAP_PUTSFunction.asm {asm}
 
 Things to note:
 
@@ -237,7 +237,7 @@ When calling a TRAP routine, ```TRAP xnn``` uses **nn** as a look-up address in 
 
 We will be using jump table address x2a. We must modify this address to hold the address to the start of our TRAP routine function
 
-@[code lang=arm-asm{5}](.vuepress/public/examples/Assembly/Commands/TRAP_NewJTEntry.asm)
+<<< @/public/examples/Assembly/Commands/TRAP_NewJTEntry.asm {5 asm}
 
 This code will *FILL* memory location x002a (in the Jump Table) with x0700 (the address of the start of our TRAP routine function)
 
@@ -253,7 +253,7 @@ The function will swap R0 and R1 by using R2 as temporary swap storage. The stan
 > 
 > Move value in **temp** storage into **second** value's spot
 
-@[code lang=arm-asm{7-10}](.vuepress/public/examples/Assembly/Commands/TRAP_NewFunction.asm)
+<<< @/public/examples/Assembly/Commands/TRAP_NewFunction.asm {7-10 asm}
 
 The function starts by storing R2 to memory. This safeguards any data that the calling program may have placed there before calling this function. It is standard practice for subroutines and TRAP routines to save all registers that will be changed.
 
@@ -267,7 +267,7 @@ Finally, ```RET``` causes execution to switch back to the calling program.
 
 The user code calls the new TRAP routine with ```TRAP x2a```. Recall we can't use a name like ```PUTS```. This is because the LC-3 assembler converts any TRAP names to address. There is no way to update the assembler to convert ```SWAP``` to ```TRAP x2a```.
 
-@[code lang=arm-asm{6}](.vuepress/public/examples/Assembly/Commands/TRAP_NewFunctionUserCode.asm)
+<<< @/public/examples/Assembly/Commands/TRAP_NewFunctionUserCode.asm {6 asm}
 
 This example user code places values in R0 and R1, then calls ```TRAP x2a```
 

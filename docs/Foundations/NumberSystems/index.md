@@ -9,7 +9,7 @@ tags: [number systems, binary, data, digital, analog, hexadecimal, hex]
 **{{ $frontmatter.description }}**
 
 ### Terms Used in this Section
-!!!include(TextSnippets/Foundations/NumberSystems_Terms.md)!!!
+<!--@include: @/TextSnippets/Foundations/NumberSystems_Terms.md-->
 
 ## Introduction
 
@@ -48,4 +48,4 @@ Including Unsigned and Signed Integers, and Fractional numbers.
 ## Representing Non-Numeric Data in Binary
 Learn how binary is encoded in various formats to represent text and other non-numeric data.
 
-!!!include(TextSnippets/GetStartedByExpandingTheSidebar.md)!!!
+<!--@include: @/TextSnippets/GetStartedByExpandingTheSidebar.md-->

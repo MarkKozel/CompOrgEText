@@ -6,6 +6,10 @@ pageClass: Topic
 tags: []
 ---
 
+<script setup>
+import KeyConcepts from '../../.vitepress/components/KeyConcepts.vue'
+</script>
+
 # {{ $frontmatter.title }}
 **{{ $frontmatter.description }}**
 
@@ -49,12 +53,11 @@ System.out.println("Hello, World!");
 
 In assembly the program must create the string in memory, check with the display to see it it is ready for a character, send characters, and send the newline to accomplish the same result.
 
-@[code lang=text{3,6,9-11,13,15,19,21-23,28}](.vuepress/public/examples/Introduction/helloworld.asm)
+<<< @/public/examples/Introduction/helloworld.asm {3,6,9-11,13,15,19,21-23,28 asm}
 
 It is an understatement to say that assembly is more *Hands On* than high-level languages like Java.
 
-In the above assembly program, the programmer must:
-::: left
+::: info In the above assembly program, the programmer must:
 1. Define the Hello World string in memory (HW, line 28)
 1. Load the memory address of the first character of HW (line 3)
 1. Check for the end-of-string indication (0 value, line 6)

@@ -20,6 +20,11 @@ tags: []
 }
 ]" />
 
+<script setup>
+import KeyConcepts from '../../.vitepress/components/KeyConcepts.vue'
+import QuestionTF from '../../.vitepress/components/QuestionTF.vue';
+</script>
+
 ## Introduction
 Humans understand the world through classifying and grouping information, associating items based on similarities and differences. This form of organization, called abstraction, helps us communicate concepts and ideas for ourselves and between each other. It could be argued that thinking in abstraction is a capability that sets humans apart from other animals.
 

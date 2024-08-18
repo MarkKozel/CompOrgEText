@@ -6,6 +6,10 @@ pageClass: Topic
 tags: []
 ---
 
+<script setup>
+import KeyConcepts from '../../.vitepress/components/KeyConcepts.vue'
+</script>
+
 # {{ $frontmatter.title }}
 **{{ $frontmatter.description }}**
 
@@ -21,14 +25,14 @@ tags: []
 ]" />
 
 ::: details Terms
-!!!include(TextSnippets/Foundations/NumberSystems_Terms.md)!!!
+<!--@include: @/TextSnippets/Foundations/NumberSystems_Terms.md-->
 :::
 
 ## Introduction
 
 ## What is **Base 16**?
 
-::: bythenumbers Base 16 Number System
+::: tip Base 16 Number System
 |Property|Value|
 |-|-:|
 |# of symbols|16|

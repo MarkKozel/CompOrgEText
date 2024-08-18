@@ -4,6 +4,9 @@ parent: History
 description: 
 pageClass: Topic
 tags: [Modern Computers, ubiquitous computing]
+prev:
+  text: 'History > 4th Gen'
+  link: '/Introduction/History/06_4thGen'
 ---
 
 # {{ $frontmatter.title }}

@@ -10,7 +10,7 @@ tags: []
 **{{ $frontmatter.description }}**
 
 ### Terms Used in this Section
-!!!include(TextSnippets/Foundations/LogicAndDigitalCircuits_Terms.md)!!!
+<!--@include: @/TextSnippets/Foundations/LogicAndDigitalCircuits_Terms.md-->
 
 <table>
     <tr>
@@ -31,8 +31,8 @@ tags: []
   In this section we will discuss the Devices and Circuits layers of the Hardware/Software Abstraction Model.
 </p></td>
         <td style="width:20%">
-          <figure>
-            <img src="/images/general/HW-SW_Abstraction-Circuits.png"/>
+          <figure> 
+            <img src="/images/General/HW-SW_Abstraction-Circuits.png"/>
             <figcaption>HW/SW Abstraction Layers</figcaption>
           </figure>
          </td>
@@ -68,4 +68,4 @@ Understand how basic logic circuits can implement math operations like addition 
 ## Storage Circuits
 Basic logic circuits can also be arraigned to maintain digital information between computer clock-cycles. This allows modern computer hardware to retain information through more complex operations that take multiple operations to complete.
 
-!!!include(TextSnippets/GetStartedByExpandingTheSidebar.md)!!!
+<!--@include: @/TextSnippets/GetStartedByExpandingTheSidebar.md-->

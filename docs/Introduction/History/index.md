@@ -15,7 +15,7 @@ From notched sticks used to record trade transactions to high-powered computers 
 
 <hr>
 
-::: left 
+::: info 
 There is no one person who can claim to be the inventor of the computer. Many people contributed to the development of the modern computer
 :::
 
@@ -36,7 +36,7 @@ There are more than a dozen legitimate contenders to consider, all designers of 
 </table>
 
 
-::: readmore Additional Computer History Information
+::: tip Additional Computer History Information
 Wikipedia's [History of Computing Devices](https://en.wikipedia.org/wiki/History_of_computing_hardware) page starting from 35,000 BCE
 
 The Computer History Museum's [Timeline of Computer History](https://www.computerhistory.org/timeline/) starting in the 1930
