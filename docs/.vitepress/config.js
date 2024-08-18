@@ -1,5 +1,5 @@
 import { defineConfig } from 'vitepress'
-const pkg = require('../../package.json')
+const pkg = require('../package.json')
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({

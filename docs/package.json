@@ -2,7 +2,7 @@
   "name": "comp-org-etext",
   "version": "1.0.133",
   "title": "CS-131",
-  "description": "Computer Organization online textbook",
+  "description": "Computer Organization Online Textbook",
   "main": "index.js",
   "type": "module",
   "authors": {
@@ -13,7 +13,12 @@
     "node": "20.x"
   },
   "scripts": {
-    "build:digitalocean": "vitepress build docs"
+    "dev": "vitepress dev .",
+    "dev:host": "vitepress dev . --host --port 5173",
+    "build": "vitepress build docs",
+    "build:digitalocean": "vitepress build .",
+    "preview": "vitepress preview .",
+    "preview:host": "vitepress preview . --host --port 5174"
   },
   "devDependencies": {
     "markdown-it-imsize": "^2.0.1",

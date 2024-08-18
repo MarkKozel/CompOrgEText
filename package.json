@@ -9,6 +9,14 @@
     "name": "Mark Kozel",
     "email": "Development@markkozel.net"
   },
+  "contributors": [
+    {
+      "name": "Rachel Baumann"
+    },
+    {
+      "name": "Michael Wagner"
+    }
+  ],
   "funding": {
     "type": "individual",
     "url": "https://www.buymeacoffee.com/MarkKozel"
@@ -19,15 +27,9 @@
   },
   "repository": "https://github.com/MarkKozel/CompOrgEText.git",
   "engines": {
-    "node": "18.x"
+    "node": "20.x"
   },
-  "scripts": {
-    "dev": "vitepress dev docs",
-    "dev:host": "vitepress dev docs --host --port 5173",
-    "build": "vitepress build docs",
-    "preview": "vitepress preview docs",
-    "preview:host": "vitepress preview docs --host --port 5174"
-  },
+  "scripts": {},
   "devDependencies": {
     "markdown-it-imsize": "^2.0.1",
     "vitepress": "^1.3.3"
