@@ -19,4 +19,4 @@ The following Classes/Students provided comments that fixed errors and made the 
 
 **CS-131 Spring 2024**: Jose Medina, Nathaniel Victorino
 
-**CS-131 Fall 2024**: Bastian Slater-Tyler
+**CS-131 Fall 2024**: Bastian Slater-Tyler, Phillip Larson 
