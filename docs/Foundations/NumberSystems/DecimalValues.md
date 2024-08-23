@@ -79,7 +79,7 @@ The *10* in **Base 10** identifies the number of single digit symbols in the sys
 
 > The largest symbol is **Base - 1**
 >
-> The largest value in Base 10 is 9
+> 9 in Base 10
 
 ### Positional Notation
 

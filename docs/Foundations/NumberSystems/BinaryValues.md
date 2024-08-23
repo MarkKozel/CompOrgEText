@@ -55,7 +55,7 @@ The *2* in **Base 2** identifies the number of single digit symbols in the syste
 
 > The largest symbol is **Base - 1**
 >
-> The largest value in Base 2 is 1
+> 1 in Base 2
 
 ## Converting to Base 10
 
