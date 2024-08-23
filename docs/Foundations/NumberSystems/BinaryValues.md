@@ -53,7 +53,9 @@ Also referred to as Binary system, *Base 2* is a system used by computers to ref
 
 The *2* in **Base 2** identifies the number of single digit symbols in the system
 
-> The largest symbol is **Base - 1**, Therefore, the largest value is a single digit is 1
+> The largest symbol is **Base - 1**
+>
+> The largest value in Base 2 is 1
 
 ## Converting to Base 10
 

@@ -77,6 +77,10 @@ Unlike Roman Numerals, no digit has an additive ot subtractive action on an adja
 
 The *10* in **Base 10** identifies the number of single digit symbols in the system
 
+> The largest symbol is **Base - 1**
+>
+> The largest value in Base 10 is 9
+
 ### Positional Notation
 
 AKA *Place Value*
