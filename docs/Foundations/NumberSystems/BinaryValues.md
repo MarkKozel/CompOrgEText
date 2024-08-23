@@ -49,8 +49,11 @@ Modern computers are designed to use a different number system...*Binary* or *Ba
 
 Also referred to as Binary system, *Base 2* is a system used by computers to refer to all data, including numbers
 
-The *2* in **Base 2** identifies the largest value that can be represented in a single digit (symbol)
-> Base - 1, Therefore, the largest value is a single digit is 1
+<!-- The *2* in **Base 2** identifies the largest value that can be represented in a single digit (symbol) -->
+
+The *2* in **Base 2** identifies the number of single digit symbols in the system
+
+> The largest symbol is **Base - 1**, Therefore, the largest value is a single digit is 1
 
 ## Converting to Base 10
 

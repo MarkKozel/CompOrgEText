@@ -18,3 +18,5 @@ The following Classes/Students provided comments that fixed errors and made the 
 **CS-131 Fall 2023**: Kathryn Cardona, Dylan Martin, Daniel Rowland
 
 **CS-131 Spring 2024**: Jose Medina, Nathaniel Victorino
+
+**CS-131 Fall 2024**: Bastian Slater-Tyler

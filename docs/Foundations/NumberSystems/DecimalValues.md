@@ -69,11 +69,13 @@ We all pretty competently work in all these numbers systems. In Computer Organiz
 
 Also referred to as Decimal and Denary system, *Base 10* is a system commonly used by humans to refer to integer values or quantities
 
-*Base 10* is the name for the system commonly used by modern humans to counting things. The **10** is the number of symbols used to represent quantities. Each symbol (digit) represents a single quantity in the range of symbols 0 -9.
+*Base 10* is the name for the system commonly used by modern humans to count things. The **10** is the number of symbols used to represent quantities. Each symbol (digit) represents a single quantity in the range of symbols 0 -9.
 
 Unlike Roman Numerals, no digit has an additive ot subtractive action on an adjacent digit
 
-The *10* in **Base 10** identifies the largest value that can be represented in a single digit (symbol)
+<!-- The *10* in **Base 10** identifies the largest value that can be represented in a single digit (symbol) -->
+
+The *10* in **Base 10** identifies the number of single digit symbols in the system
 
 ### Positional Notation
 

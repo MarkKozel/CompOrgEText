@@ -39,17 +39,15 @@ Without any influence from user or data, a program will execute each instruction
 While the program is performing operations on data from user input and/or data stored in memory, it is not jumping around in the code based on the data
 
 *Simple sequential program in Java and LC-3 Assembly*
-:::: code-group
-::: code-group-item Java
+::: code-group
 ```java
 int result = 0;
 int x = 15;
 x += 15;
 result = x * 2;
 ```
-:::
-::: code-group-item LC-3
-```
+
+``` LC-3
 .ORIG x3000
 
    LD R2, X
@@ -64,7 +62,6 @@ Result .FILL #0
 X .FILL #15
 ```
 :::
-::::
 
 These two code examples run top to bottom with no change in flow
 
