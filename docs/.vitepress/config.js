@@ -18,6 +18,8 @@ export default defineConfig({
     // logo: { src: '/images/HeroImage.jpg', width: 24, height: 24 },
     siteTitle: "CS-131 Textbook",
 
+    search: { provider: 'local' },
+
     outline: 'deep', //page outlines [2,6] https://vitepress.dev/reference/default-theme-config#outline
     aside: true, //show aside/outline https://vitepress.dev/reference/default-theme-config#aside
 
