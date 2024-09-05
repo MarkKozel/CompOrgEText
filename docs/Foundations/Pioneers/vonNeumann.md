@@ -26,7 +26,7 @@ import KeyConcepts from '../../.vitepress/components/KeyConcepts.vue'
 ]" />
 
 ## Introduction
-John von Neumann (1916 - 2001) was a Hungarian mathematician, physicist, a designer of a practical digital computer architecture.
+John von Neumann (1916 - 2001) was a Hungarian mathematician, physicist, and designer of a practical digital computer architecture.
 
 In 1945, while designing the [EDVAC (Electronic Discrete Variable Automatic Computer)](https://en.wikipedia.org/wiki/EDVAC) electronic computer, von Neumann documented the first logical design of a *stored-program* digital computer architecture. As the document circulated it became known as the **von Neumann Architecture** or **Model**
 
@@ -57,9 +57,9 @@ It is, at its heart, a state machine that orchestrates all activities of the sys
 ### Memory
 Section 2.4, *M*
 
-Devices for storing partial solutions to complex operations. von Neumann referenced differential equations and logarithmic function as needing a place to store partial results is these operations execute.
+Devices for storing partial solutions to complex operations. von Neumann referenced differential equations and logarithmic function as needing a place to store partial results as these operations execute.
 
-In section 2.5 of the paper, he suggests that the memory device not be divided into separate devices based on need/function (such as data memory, static lookup memory, and program code memory), but that it be one *"organ"*. This was a major change to exiting architectures of the time, that had several different storage devices for different information/functions.
+In section 2.5 of the paper, he suggests that the memory device not be divided into separate devices based on need/function (such as data memory, static lookup memory, and program code memory), but that it be one *"organ"*. This was a major change to existing architectures of the time, that had several different storage devices for different information/functions.
 
 ### Input/Output
 
@@ -79,4 +79,4 @@ von Neumann's model, based on the human nervous system, re-defined computer arch
 
 Today's computers contain the same core elements, albeit, considerably faster and smaller.
 
-The concepts or using a single memory system for *data* and *programs* fundamentally change how computer are built, simplifying the hardware and the architecture complexity.
+The concepts of using a single memory system for *data* and *programs* fundamentally change how computer are built, simplifying the hardware and the architecture complexity.

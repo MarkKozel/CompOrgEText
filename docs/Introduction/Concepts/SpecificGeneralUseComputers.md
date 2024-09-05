@@ -17,7 +17,7 @@ import KeyConcepts from '../../.vitepress/components/KeyConcepts.vue'
 <KeyConcepts :ConceptArray= "[
 {
   Concept:'Specific-Purpose Computers are specialized for a single task',
-  Details:'Early computers were made to perform one (1) or a limited set of similar tasks. Today we used these types of computers to make out homes smart and our traffic flow smoothly'
+  Details:'Early computers were made to perform one (1) or a limited set of similar tasks. Today we used these types of computers to make our homes smart and our traffic flow smoothly'
 },
 {  
   Concept:'General-Purpose Computers are designed to handle a variety of software needs',
@@ -35,7 +35,7 @@ Specific-purpose computers solve specific problems, but as science, math, and th
 
 ## Specific-Purpose Computers
 
-Early computers were specific-purpose devices. They we built to solve one (1) problem or calculate one (1) value. These devices were imagines, designed, built, and executed with a specific task in mind. As such, these devices were often designed and built with components that were best suited to solve that problem. They would be very good (efficient, accurate, etc) at performing that task. There was little compromise in design or construction of specific-purpose computers.
+Early computers were specific-purpose devices. They were built to solve one (1) problem or calculate one (1) value. These devices were imagined, designed, built, and executed with a specific task in mind. As such, these devices were often designed and built with components that were best suited to solve that problem. They would be very good (efficient, accurate, etc) at performing that task. There was little compromise in design or construction of specific-purpose computers.
 
 The predecessor to the common Abacus is an early example of a Specific (or Special) Purpose Computer device. The [Sumerian Abacus](https://en.wikipedia.org/wiki/Abacus#Mesopotamian) dates back to Mesopotamia in 2700 BCE.
 
@@ -49,16 +49,16 @@ Modern specific-purpose computers include traffic light controllers, ear buds, s
 
 By contrast, general-purpose devices are designed and built to solve known and unknown problems. They are made with standard resources, such as memory and input/output peripherals, to be able to support tasks with various resource needs.
 
-Today's modern desktop computer is a well-known general-purpose device. While today's computers are designed and manufactured by various companies, and are filled with parts from different suppliers, they are function in the same general way (more on that when we discuss the von Neumann Architecture).
+Today's modern desktop computer is a well-known general-purpose device. While today's computers are designed and manufactured by various companies, and are filled with parts from different suppliers, they function in the same general way (more on this when we discuss the von Neumann Architecture).
 
 Software became the specific-purpose element of modern computers. Each specific software packages, running on the same general hardware, can solve many different problems.
 
-Any person can create a program to solve any problem using a modern computer. It may take a very long time to solve the problem. Fortunately, modern computers are built with some expandable resources. So, to solve a problem that require many mathematic calculations can upgrade parts (such as CPU or RAM) to make the calculation execute faster. Without the upgrades, the problem can still be solved, it will just take longer to calculate the result.
+Any person can create a program to solve any problem using a modern computer. It may take a very long time to solve the problem. Fortunately, modern computers are built with some expandable resources. So, to solve a problem that require many mathematic calculations we can upgrade parts (such as CPU or RAM) to make the calculation execute faster. Without the upgrades, the problem can still be solved, it will just take longer to calculate the result.
 
-And, if a particular problem has very specific elements that would be prohibited slow on a general-purpose computer, as specific-purpose device could be designed to increase speed and/or accuracy.
+And, if a particular problem has very specific elements that would be prohibitively slow on a general-purpose computer, a specific-purpose device could be designed to increase speed and/or accuracy.
 
 ## Conclusion
 
-Early computers were developed to do a simple task. They were designed solely for that tasks, as were, therefore, optimized to execute their function. 
+Early computers were developed to do a single, simple task. They were designed solely for that tasks, and therefore optimized to execute their function. 
 
 As computers evolved, it was advantageous to design general-purpose hardware that could run standard software. The software became the specific-purpose elements that all can run on any standard computer hardware.

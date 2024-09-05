@@ -16,7 +16,7 @@ import KeyConcepts from '../../.vitepress/components/KeyConcepts.vue'
 <KeyConcepts :ConceptArray= "[
 {
   Concept:'High-Level vs Assembly Languages',
-  Details:'An instruction in a High_Level language is typically compiled tinto many separate assembly language instructions'
+  Details:'An instruction in a High_Level language is typically compiled into many separate assembly language instructions'
 },
 {  
   Concept:'Software and Hardware work together at the Microarchitecture/ISA level',
@@ -30,7 +30,7 @@ Computer Science courses focus primarily on software (File Systems, Operating Sy
 
 Computer Organization connects those to worlds, and explores how they work together to provide today's modern computer systems
 
-To look discuss the interface between Hardware and Software, we need to dive down into the lowest levels of the Computer Abstraction Layers. We will learn how a 5-volt current becomes a bit of data, Why the timing of hardware is essential of digital data integrity, and How a set of electronic circuits can reliably manipulate bits into useful data
+To discuss the interface between Hardware and Software, we need to dive down into the lowest levels of the Computer Abstraction Layers. We will learn how a 5-volt current becomes a bit of data, Why the timing of hardware is essential of digital data integrity, and How a set of electronic circuits can reliably manipulate bits into useful data
 
 ## Differences Between High-Level Programming Language and Assembly
 
@@ -41,7 +41,7 @@ There are several layers of conversions that may take place, depending on the hi
 A simple [Hello World](https://en.wikipedia.org/wiki/%22Hello,_World!%22_program) program written in Java [example code](https://en.wikipedia.org/wiki/%22Hello,_World!%22_program#Java) is likely to result in a different set of bits for an Intel, AMD, or Apple CPU. The Java tools detect the target processor and use the correct conversion tools to create and execute the program.
 
 ::: tip
-Java, and other interpreted high-level languages actually have an ever more complex set of tools that non-interpreted languages. It is beyond the scope of this class, but look around online if you are interested
+Java, and other interpreted high-level languages actually have a more complex set of tools than non-interpreted languages. It is beyond the scope of this class, but look around online if you are interested
 :::
 
 ## Example High- and Low-Level Program

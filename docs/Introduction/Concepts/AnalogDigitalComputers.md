@@ -61,7 +61,7 @@ Until relatively recently, computers were not digital devices. They were mechani
 
 Gears and springs could be constructed to retain states and move to different states in a pre-determined sequence.
 
-These Mechanical Computers could be built to a wide varies of tasks. The complexity of these systems were driven my the difficulty of the task they performs
+These Mechanical Computers could be built to perform a wide varies of tasks. The complexity of these systems were driven by the difficulty of the tasks they performed
 
 Mechanical computers were typically single-calculate (Specific-Purpose) computers. Changing the "program" meant swapping out gears, springs, and levers for a different set
 
@@ -81,14 +81,14 @@ Also, the "program" is changed by swapping gears and shafts
 
 ### Electrical Analog Systems
 
-In the 1930s and 1940s, humans were able to make and control electricity to a highly precise level. With improved electrical switched, resistors, and capacitors; mechanical systems in analog computers were replaces with electrical current to represent states and changes in states
+In the 1930s and 1940s, humans were able to make and control electricity to a highly precise level. With improved electrical switches, resistors, and capacitors; mechanical systems in analog computers were replaced with electrical current to represent states and changes in states
 
 While electricity was used in Mechanical Computers, the power was used to turn shafts and move gears. True Electrical Analog computer systems use electricity in place of the gears, to represent states and changes in the calculations
 [Analog Goes Electronic](https://www.computerhistory.org/revolution/analog-computers/3/150)
 
 Electric circuits replaced springs and gears with a faster and more reliable means of computing. Failure rates and normal wear-and-tear issues were minimized by removing mechanical systems
 
-Electrical computing systems also were also easier to modify "programs"
+Electrical computing systems also made it easier to modify "programs"
 
 ::: tip Analog Computer Timeline
 [CHM Analog Computers](https://www.computerhistory.org/revolution/analog-computers/3)
@@ -103,7 +103,7 @@ Digital, in the computer context, means signals or data represented by values th
 
 Digital computers are based on the binary (base 2) number system, where the only single-digit values are 0 and 1
 
-i.e. the number a values between 0 and 5 in the whole number system
+i.e. the number a values between 0 and 1 in the whole number system
 :::
 
 ::: tip First Electrical Digital Computer
@@ -111,9 +111,9 @@ ENIAC (Electronic Numerical Integrator And Computer), built between 1943 and 194
 [ENIAC](https://www.computerhistory.org/revolution/birth-of-the-computer/4/78)
 :::
 
-Vacuum tubes were replaced with **Transistors** in the late 1950s. Based on the semi-conducting nature of silicon, transistors able to reliably represent digital values (0 or 1) using electricity (as we recall, an analog medium). They were a simple replacement for vacuum tubes as they performs the same type of function
+Vacuum tubes were replaced with **Transistors** in the late 1950s. Based on the semi-conducting nature of silicon, transistors are able to reliably represent digital values (0 or 1) using electricity (as we recall, an analog medium). They were a simple replacement for vacuum tubes as they perform the same type of function
 
-Transistors were, however, cheaper, more energy-efficient, and far more reliable that vacuum tubes
+Transistors were, however, cheaper, more energy-efficient, and far more reliable than vacuum tubes
 
 <QuestionMC question="Which of the following is made up of digital values?" answer='D' AChoice="The tension of a spring" BChoice="Your current interest level in this reading" CChoice="Pressure you can apply to a car's break pedal" DChoice="Number of students on this class's Wait List" rightAnswerFeedback="Right! Since we can't have 1/2 students signing up for classes, this value is digital" wrongAnswerFeedback="Incorrect. That value can have ever an infinite amount of variations. Students on a wait list can only be a count of whole students, and never a number in-between"/>
 

@@ -21,7 +21,7 @@ import KeyConcepts from '../../.vitepress/components/KeyConcepts.vue'
 },
 {
   Concept:'Maintaining State',
-  Details:'The state machine is the heart of Turing\'s theory, allowing computer to execute based on changing inputs and internal events'
+  Details:'The state machine is the heart of Turing\'s theory, allowing a computer to operate based on changing inputs and internal events (state changes)'
 },
 {
   Concept:'The Turing Machine',
@@ -37,7 +37,7 @@ Alan Turing (1912 - 1954) was an English mathematician, cryptographer, and creat
 [Alan Turing - Wikipedia](https://en.wikipedia.org/wiki/Alan_Turing) - June 23, 1912 - June 7, 1954
 :::
 
-Among his many contributions to computer science, he imagined a machine that could run any programs, solve any problem, and, without the technology to build one, designed the first draft of the modern computer architecture.
+Among his many contributions to computer science, he imagined a machine that could run any program, solve any problem, and, without the technology to build one, designed the first draft of the modern computer architecture.
 
 *Turing Machines Explained - Computerphile*
 <p>Turing Machines are the basis of modern computing, but what actually is a Turing Machine?</p> <p>Assistant Professor Mark Jago. Copyright CC BY International</p> 
@@ -45,7 +45,7 @@ Among his many contributions to computer science, he imagined a machine that cou
 
 ## A Theoretical General Purpose Computer
 
-While not a new idea, [the first general purpose digital computers](https://en.wikipedia.org/wiki/History_of_computing_hardware#Advent_of_the_digital_computer) were decades away in the 1930's when Turing described him simple *stored-program computer*. Turing would describe the elements needed and the mechanism to maintain information (states) during program execution.
+While not a new idea, [the first general purpose digital computers](https://en.wikipedia.org/wiki/History_of_computing_hardware#Advent_of_the_digital_computer) were decades away in the 1930's when Turing described his simple *stored-program computer*. Turing would describe the elements needed and the mechanism to maintain information (states) during program execution.
 
 ## The Turing Machine
 
@@ -73,9 +73,16 @@ As the Turing machine runs, it maintains a current state, based on reading from 
 
 ### Instructions
 
-*Instructions* are the program that runs on a Turing Machine. It is equitant to modern computer programs, although considerable simpler. It is what makes Turing Machines **General-Purpose** computer.
+Each instruction can both *react* to previous events and *act* to modify the machine for future instructions. When executed, an instruction first reads the State Register. Next it reads the data at the current head position. With these two (2) pieces of information, the instruction *may* cause in one (1) or more of the following actions:
+- State change
+- Update to data on the tape at the current head position
+- Movement of the head one (1) position left or right
 
-A program in a simple Turing Machine contains rows of states. Based on the current state, the correct row is *executes* and the state is updated for the next instruction cycle.
+Together a set of *Instructions* make up the program that runs on a Turing Machine. It is equitant to modern computer programs, although considerably simpler.
+
+Instructions makes Turing Machines **General-Purpose** computer.
+
+A program in a simple Turing Machine contains rows of states. Based on the current state, the correct row is *executed* and the state is updated for the next instruction cycle.
 
 ## Sample Turing Program
 
@@ -106,7 +113,7 @@ Below is an animation of a simple Turing Machine.
 
 This example has 3 states (A, B, and C) and 2 symbols (0, and 1).
 
-The purple bar shows the instruction being executes.
+The purple bar shows the instruction being executed.
 
 ![Animated Turing Machine](/images/Foundations/Turing/Turing_machines_06-1.gif)
 

@@ -21,7 +21,7 @@ import KeyConcepts from '../../.vitepress/components/KeyConcepts.vue'
 },
 {
   Concept:'Binary becomes the core data type',
-  Details:'Based on the needs to digital computers to handles are share data, binary was the best option'
+  Details:'Based on the needs of digital computers to handles are share data, binary was the best option'
 },
 ]" />
 
@@ -72,8 +72,8 @@ Copying binary values can be performed with simple circuits and, if needed, is s
 
 ## Conclusion
 
-Identifying binary as the data type for digital computer made the data *simple*, allowing for digital circuit fast.
+Identifying binary as the data type for digital computer made the data *simple*, allowing for digital circuit to be fast.
 
 Binary, by its nature, is unambiguous with only two (2) possible values. 
 
-Because Shannon was working on Information Theory, he insisted digital data flawlessly copied. Binary allowed simple circuits to move data easily and reliably.
+Because Shannon was working on Information Theory, he insisted that digital data be flawlessly copied. Binary allowed simple circuits to move data easily and reliably.
