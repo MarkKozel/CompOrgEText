@@ -102,7 +102,7 @@ Using this effect, we can extract each Binary digit from the Decimal value...but
 
 **Algorithm**
 1. Divide the Decimal number by 2
-1. The reminder is the least-significate Binary value
+1. The reminder becomes the most-significate Binary value
 1. The result of the division is the new Decimal value to operate upon
 1. Repeat steps until the result of division is 0
 

@@ -57,7 +57,7 @@ Recall that number positions in a number string start at zero. So the value in t
 Also, we will be raising 16 to the power of the position, because the original number is in Base 16
 
 1. Convert each Hex value to Base 10 using the lookup table
-1. Multiply the resulting Base 10 value by 16 raised to the power if the value's position
+1. Multiply the resulting Base 10 value by 16 raised to the power of the value's position
 1. Add the result to the final Decimal result
 1. Repeat for all Hex values
 
