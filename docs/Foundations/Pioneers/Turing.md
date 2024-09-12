@@ -61,7 +61,7 @@ By Rocky Acosta - Own work, CC BY 3.0, https://commons.wikimedia.org/w/index.php
 ### Tape
 The *Tape* is an infinitely long read/write ledger of data. It is made up of cells, each containing a single symbol that the machine understands.
 
-We'd recognize the *Tape* in today's computers as data stored in RAM/ROM/External storage.
+We'd recognize the *Tape* in today's computers as data stored in RAM/External storage.
 
 ### Head
 
@@ -70,6 +70,8 @@ The *Head* can read/write symbols to/from the tape. It can move the tape as orde
 ### State Register
 
 As the Turing machine runs, it maintains a current state, based on reading from the tape. The state drives the next instruction to execute. The *State Register* holds the current state for reference.
+
+While the State Register is a simple storage device, it functions as the modern Controller. It drives what happens each instruction cycle
 
 ### Instructions
 
