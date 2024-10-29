@@ -1,37 +1,41 @@
 <template>
   <div class="lc3instruction">
     <table class="int-outer" style="width: auto">
-      <h3 class="int-title">{{ opName }}</h3>
+      <tbody>
+        <h3 class="int-title">{{ opName }}</h3>
 
-      <table class="int-inner" style="width: 80%">
-        <tr>
-          <td class="int-bits float-left" v-for="heading in getHeader" :key="heading">
-            {{ heading }}
-          </td>
-        </tr>
+        <table class="int-inner" style="width: 80%">
+          <tbody>
+            <tr>
+              <td class="int-bits float-left" v-for="heading in getHeader" :key="heading">
+                {{ heading }}
+              </td>
+            </tr>
 
-        <tr>
-          <td class="int-bits float-left" v-for="bits in getBits" :key="bits">
-            {{ bits }}
-          </td>
-        </tr>
-      </table>
+            <tr>
+              <td class="int-bits float-left" v-for="bits in getBits" :key="bits">
+                {{ bits }}
+              </td>
+            </tr>
+          </tbody>
+        </table>
 
-      <p class="int-close" v-for="description in descriptions" :key="description">
-        <b>{{ formatName(description) }}</b> : {{ formatDesc(description) }}
-      </p>
-
-      <div class="int-close" v-if="examples">
-        <br />
-
-        <p v-if="operation" class="int-example">Operation:</p>
-        <p class="int-operation">{{ operation }}</p>
-
-        <p class="int-example">Examples:</p>
-        <p class="int-close int-code" v-for="example in examples" :key="example">
-          {{ example }}
+        <p class="int-close" v-for="description in descriptions" :key="description">
+          <b>{{ formatName(description) }}</b> : {{ formatDesc(description) }}
         </p>
-      </div>
+
+        <div class="int-close" v-if="examples">
+          <br />
+
+          <p v-if="operation" class="int-example">Operation:</p>
+          <p class="int-operation">{{ operation }}</p>
+
+          <p class="int-example">Examples:</p>
+          <p class="int-close int-code" v-for="example in examples" :key="example">
+            {{ example }}
+          </p>
+        </div>
+      </tbody>
     </table>
   </div>
 </template>

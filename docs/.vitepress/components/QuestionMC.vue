@@ -1,50 +1,55 @@
 <template>
   <div class="question-mc">
     <table class="questionTable" style="width: 100%">
-      <tr>
-        <p class="questionHeader"><b>Quick Question:</b> Choose One</p>
-        <p class="question">{{ question }}</p>
-      </tr>
+      <tbody>
+        <!--    <tr>
+          <td>
+            <p class="questionHeader"><b>Quick Question:</b> Choose One</p>
+            <p class="question">{{ question }}</p>
+          </td>
 
-      <tr>
-        <td>
-          <label class="PossibleAnswers">
-            <input type="radio" name="radio" value="A" id="A" v-model="picked" />
-            <b>A</b>. {{ AChoice }}
-            <span class="questionCheckmark"></span>
-          </label>
-        </td>
-        <td>
-          <label class="PossibleAnswers">
-            <input type="radio" name="radio" value="B" id="B" v-model="picked" />
-            <b>B</b>. {{ BChoice }}
-            <span class="questionCheckmark"></span>
-          </label>
-        </td>
-      </tr>
+        </tr>
 
-      <tr>
-        <td>
-          <label v-if="CChoice" class="PossibleAnswers">
-            <input type="radio" name="radio" value="C" id="C" v-model="picked" />
-            <b>C</b>. {{ CChoice }}
-            <span class="questionCheckmark"></span>
-          </label>
-        </td>
-        <td>
-          <label v-if="DChoice" class="PossibleAnswers">
-            <input type="radio" name="radio" value="D" id="D" v-model="picked" />
-            <b>D</b>. {{ DChoice }}
-            <span class="questionCheckmark"></span>
-          </label>
-        </td>
-      </tr>
+        <tr>
+          <td>
+            <label class="PossibleAnswers">
+              <input type="radio" name="radio" value="A" id="A" v-model="picked" />
+              <b>A</b>. {{ AChoice }}
+              <span class="questionCheckmark"></span>
+            </label>
+          </td>
+          <td>
+            <label class="PossibleAnswers">
+              <input type="radio" name="radio" value="B" id="B" v-model="picked" />
+              <b>B</b>. {{ BChoice }}
+              <span class="questionCheckmark"></span>
+            </label>
+          </td>
+        </tr>
 
-      <button class="questionButton" v-if="picked" v-on:click="checkAnswer">Submit</button>
-      <div v-if="result">
-        <p class="mcresult"> {{ result }} </p>
-        <p class="mcresultfb">{{ resultFeedback }} </p>
-      </div>
+        <tr>
+          <td>
+            <label v-if="CChoice" class="PossibleAnswers">
+              <input type="radio" name="radio" value="C" id="C" v-model="picked" />
+              <b>C</b>. {{ CChoice }}
+              <span class="questionCheckmark"></span>
+            </label>
+          </td>
+          <td>
+            <label v-if="DChoice" class="PossibleAnswers">
+              <input type="radio" name="radio" value="D" id="D" v-model="picked" />
+              <b>D</b>. {{ DChoice }}
+              <span class="questionCheckmark"></span>
+            </label>
+          </td>
+        </tr>
+
+        <button class="questionButton" v-if="picked" v-on:click="checkAnswer">Submit</button>
+        <div v-if="result">
+          <p class="mcresult"> {{ result }} </p>
+          <p class="mcresultfb">{{ resultFeedback }} </p>
+        </div>-->
+      </tbody>
     </table>
   </div>
 </template>

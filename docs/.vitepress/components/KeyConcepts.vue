@@ -1,18 +1,21 @@
 <template>
   <div class="key-concepts">
     <table style="border:none">
-      <tr>
-        <td class="KCborder" style="10%">
-          <p class="KCheader">Key Concepts</p>
-        </td>
-
-        <table class="KCinner" cellspacing="0" cellpadding="0">
-          <tr class="KCinner" v-for="concept in ConceptArray">
-            <td class="KCconcept">{{ concept.Concept }}</td>
-            <td class="KCdetails">{{ concept.Details }}</td>
-          </tr>
-        </table>
-      </tr>
+      <tbody>
+        <tr>
+          <td class="KCborder" style="width:10%">
+            <p class="KCheader">Key Concepts</p>
+          </td>
+          <td style="" width:90%>
+            <table class="KCinner" cellspacing="0" cellpadding="0">
+              <tr class="KCinner" v-for="concept in ConceptArray">
+                <td class="KCconcept">{{ concept.Concept }}</td>
+                <td class="KCdetails">{{ concept.Details }}</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </tbody>
     </table>
   </div>
 </template>
@@ -27,7 +30,7 @@ const props = defineProps({
 });
 </script>
 
-<style >
+<style>
 .KCconcept {
   text-align: center;
   font-size: 16px;
@@ -86,4 +89,3 @@ td {
   padding-bottom: 5px;
 }
 </style>
-
