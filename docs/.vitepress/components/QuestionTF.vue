@@ -1,11 +1,12 @@
 <template>
   <div class="question-tf">
-    <table class="questionTable" style="width: 100%">
-      <tr class="questionTr">
-        <p class="questionHeader"><b>True/False</b></p>
-
-        <p class="question">{{ question }}</p>
-
+    <table class="questionTable" style="width: 100%;" v-cloak>
+      <tr class="questionTr" :key="question">
+        <td colspan="2">
+          <p class="questionHeader"><b>True/False</b></p>
+          <p class="question">{{ question }}</p>
+        </td>
+      </tr>
       <tr class="questionTr">
         <td class="questionTd">
           <label class="PossibleAnswers">
@@ -22,14 +23,13 @@
           </label>
         </td>
       </tr>
-
-      <button class="questionButton" v-if="picked" v-on:click="checkAnswer">Submit</button>
-      <div v-if="result">
-        <p class="tfresult"> {{ result }} </p>
-        <p class="tfresultfb">{{ resultFeedback }} </p>
-      </div>
-      </tr>
     </table>
+
+    <button class="questionButton" v-if="picked" v-on:click="checkAnswer">Submit</button>
+    <div v-if="result">
+      <p class="tfresult">{{ result }}</p>
+      <p class="tfresultfb">{{ resultFeedback }}</p>
+    </div>
   </div>
 </template>
 

@@ -1,0 +1,20 @@
+/* Define colors for custom keywords in "mylang" */
+.token.keyword.mylang {
+  color: #ff007f;
+}
+
+.token.command.mylang {
+  color: #4a11cf;
+  background: #d3b4b4
+}
+
+.token.string.mylang {
+  color: #00ff7f;
+}
+
+/* General code block styling */
+code[class*="language-"],
+pre[class*="language-"] {
+  /* background: #d3b4b4; */
+  color: #d4d4d4;
+}

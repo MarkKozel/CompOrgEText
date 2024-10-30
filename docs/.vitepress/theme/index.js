@@ -8,6 +8,7 @@ import DefaultTheme from 'vitepress/theme'
 //     // app.component('KeyConcepts' /* ... */)
 //   }
 // }
+import './mylang.css'
 import './questionComponent.css'
 import './iframe.css'
 import './custom.css'

@@ -1,9 +1,11 @@
 <template>
   <div class="question-mc">
-    <table class="questionTable" style="width: 100%">
+    <table class="questionTable" style="width: 100%;">
       <tr>
-        <p class="questionHeader"><b>Quick Question:</b> Choose One</p>
-        <p class="question">{{ question }}</p>
+        <td colspan="2">
+          <p class="questionHeader"><b>Quick Question:</b> Choose One</p>
+          <p class="question">{{ question }}</p>
+        </td>
       </tr>
 
       <tr>
@@ -39,13 +41,13 @@
           </label>
         </td>
       </tr>
-
-      <button class="questionButton" v-if="picked" v-on:click="checkAnswer">Submit</button>
-      <div v-if="result">
-        <p class="mcresult"> {{ result }} </p>
-        <p class="mcresultfb">{{ resultFeedback }} </p>
-      </div>
     </table>
+
+    <button class="questionButton" v-if="picked" v-on:click="checkAnswer">Submit</button>
+    <div v-if="result">
+      <p class="mcresult">{{ result }}</p>
+      <p class="mcresultfb">{{ resultFeedback }}</p>
+    </div>
   </div>
 </template>
 
