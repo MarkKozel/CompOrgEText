@@ -1,5 +1,4 @@
 import { defineConfig } from 'vitepress'
-import Prism from 'prismjs'
 const pkg = require('../../package.json')
 
 // https://vitepress.dev/reference/site-config
@@ -12,16 +11,6 @@ export default defineConfig({
   ],
   markdown: {
     lineNumbers: true,
-    highlight: (code, lang) => {
-      if (lang === 'mylang') {
-        return Prism.highlight(code, {
-          'keyword': /\b(keyword1|keyword2|keyword3)\b/g,
-          'command': /\b(command1|command2|command3)\b/g,
-          'string': /"[^"]*"/g
-        }, 'mylang')
-      }
-      return Prism.highlight(code, Prism.languages[lang] || Prism.languages.markup)
-    }
   },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
