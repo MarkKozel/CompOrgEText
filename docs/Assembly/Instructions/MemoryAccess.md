@@ -96,7 +96,7 @@ Store
 
 ### LC-3 ISA Format
 
-<LC3Instruction opName="ST" :bitPattern="{OpCode:'0011', SR: '000',PCOffset:'000000000'}" :descriptions="[{OPCode:''},{SR:'Source Register'},{PCOffset9:'Offset from current PC to branch'}]"  :examples="['ST R3, MyVal1 ; Store value from Register 3 into memory location labeled MyVal1', 'ST R0, MyVal2 ; Loads the value from Register 0 into memory location labeled MyVal2']"/>
+<LC3Instruction opName="ST" :bitPattern="{OpCode:'0011', SR: '000',PCOffset:'000000000'}" :descriptions="[{OPCode:''},{SR:'Source Register'},{PCOffset9:'Offset from current PC to branch'}]"  :examples="['ST R3, MyVal1 ; Store value from Register 3 into memory location labeled MyVal1', 'ST R0, MyVal2 ; Loads the value from Register 0 into memory location labeled MyVal2']" />
 
 ### State Machine
 
@@ -128,7 +128,7 @@ Stores a value in a Register into a Memory location. A source register is provid
     - The programmer could have preserved the starting value by storing into a different memory location
 :::
 
-<QuestionMC question="What would the programmer need to add in order to save Result in a different Memory location?" answer='B' AChoice="Use one of the other Memory Access instructions" BChoice="Add another Memory location with the .FILL PseudoOp" CChoice="Another register" DChoice="A newer version of LC-3" rightAnswerFeedback="Yes, and change the label in the ST instruction to the new label name"/>
+<QuestionMC question="What would the programmer need to add in order to save Result in a different Memory location?" answer='B' AChoice="Use one of the other Memory Access instructions" BChoice="Add another Memory location with the .FILL PseudoOp" CChoice="Another register" DChoice="A newer version of LC-3" rightAnswerFeedback="Yes, and change the label in the ST instruction to the new label name" />
 
 ### Gotchas
 
@@ -139,7 +139,7 @@ Load Indirect
 
 ### LC-3 ISA Format
 
-<LC3Instruction opName="LDI" :bitPattern="{OpCode:'1010', DR: '000',PCOffset:'000000000'}" :descriptions="[{OPCode:''},{DR: 'Destination Register' },{PCOffset9:'Offset from current PC to branch'}]"  :examples="['LDI R3, MyAddr1 ; Loads the value using the address in MyAddr1 into Register 3', 'LDI R0, MyAddr2 ; Loads the value using the address in MyAddr2 into Register 3']"/>
+<LC3Instruction opName="LDI" :bitPattern="{OpCode:'1010', DR: '000',PCOffset:'000000000'}" :descriptions="[{OPCode:''},{DR: 'Destination Register' },{PCOffset9:'Offset from current PC to branch'}]"  :examples="['LDI R3, MyAddr1 ; Loads the value using the address in MyAddr1 into Register 3', 'LDI R0, MyAddr2 ; Loads the value using the address in MyAddr2 into Register 3']" />
 
 ### Explanation
 
@@ -181,7 +181,7 @@ Store Indirect
 
 ### LC-3 ISA Format
 
-<LC3Instruction opName="SDI" :bitPattern="{OpCode:'0011', SR: '000',PCOffset:'000000000'}" :descriptions="[{OPCode:''},{SR: 'Source Register' },{PCOffset9:'Offset from current PC to branch'}]"  :examples="['SDI R3, MyAddr1 ; Stores the value in Register 3 into the address in MyAddr1', 'SDI R0, MyAddr2 ; Stores the value in Register 0 into the address in MyAddr2']"/>
+<LC3Instruction opName="SDI" :bitPattern="{OpCode:'0011', SR: '000',PCOffset:'000000000'}" :descriptions="[{OPCode:''},{SR: 'Source Register' },{PCOffset9:'Offset from current PC to branch'}]"  :examples="['SDI R3, MyAddr1 ; Stores the value in Register 3 into the address in MyAddr1', 'SDI R0, MyAddr2 ; Stores the value in Register 0 into the address in MyAddr2']" />
 
 ### Explanation
 
@@ -221,7 +221,7 @@ Load Relative
 
 ### LC-3 ISA Format
 
-<LC3Instruction opName="LDR" :bitPattern="{OpCode:'0110', DR: '000',BaseReg: '000', Offset:'000000'}" :descriptions="[{OPCode:''},{DR: 'Destination Register' },{BaseReg: 'Base Register'},{Offset6:'Offset from address in DR'}]"  :examples="['LDR R3, R1, #0 ; Add value in R1 with #0. Use that result as address to load value from Memory into Register 3', 'LDR R0, R1, #2 ; Add value in R1 with #2. Use that result as address to load value from Memory into Register 0']"/>
+<LC3Instruction opName="LDR" :bitPattern="{OpCode:'0110', DR: '000',BaseReg: '000', Offset:'000000'}" :descriptions="[{OPCode:''},{DR: 'Destination Register' },{BaseReg: 'Base Register'},{Offset6:'Offset from address in DR'}]"  :examples="['LDR R3, R1, #0 ; Add value in R1 with #0. Use that result as address to load value from Memory into Register 3', 'LDR R0, R1, #2 ; Add value in R1 with #2. Use that result as address to load value from Memory into Register 0']" />
 
 ### Explanation
 
@@ -250,7 +250,7 @@ Store Relative
 
 ### LC-3 ISA Format
 
-<LC3Instruction opName="STR" :bitPattern="{OpCode:'0110', SR: '000',BaseReg: '000', Offset:'000000'}" :descriptions="[{OPCode:''},{SR: 'Source Register' },{BaseReg: 'Base Register'},{Offset6:'Offset from address in SR'}]"  :examples="['STR R3, R1, #0 ; Add value in R1 with #0. Use that result as address to store value to Memory in Register 3', 'STR R0, R1, #2 ; Add value in R1 with #2. Use that result as address to store value to Memory in Register 0']"/>
+<LC3Instruction opName="STR" :bitPattern="{OpCode:'0110', SR: '000',BaseReg: '000', Offset:'000000'}" :descriptions="[{OPCode:''},{SR: 'Source Register' },{BaseReg: 'Base Register'},{Offset6:'Offset from address in SR'}]"  :examples="['STR R3, R1, #0 ; Add value in R1 with #0. Use that result as address to store value to Memory in Register 3', 'STR R0, R1, #2 ; Add value in R1 with #2. Use that result as address to store value to Memory in Register 0']" />
 
 ### Explanation
 
@@ -274,7 +274,7 @@ Load Effective Address
 
 ### LC-3 ISA Format
 
-<LC3Instruction opName="LEA" :bitPattern="{OpCode:'1110', DR: '000',PCOffset:'000000000'}" :descriptions="[{OPCode:''},{DR: 'Destination Register'},{PCOffset9:'Offset from current PC to branch'}]"  :examples="['LEA R3, MyVal1 ; Loads the memory address of MyVal1 into Register 3', 'LEA R0, MyVal2 ; Loads the memory address of MyVal2 into Register 0']"/>
+<LC3Instruction opName="LEA" :bitPattern="{OpCode:'1110', DR: '000',PCOffset:'000000000'}" :descriptions="[{OPCode:''},{DR: 'Destination Register'},{PCOffset9:'Offset from current PC to branch'}]"  :examples="['LEA R3, MyVal1 ; Loads the memory address of MyVal1 into Register 3', 'LEA R0, MyVal2 ; Loads the memory address of MyVal2 into Register 0']" />
 
 ### Explanation
 
