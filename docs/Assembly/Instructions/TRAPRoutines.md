@@ -13,6 +13,9 @@ import QuestionMC from '../../.vitepress/components/QuestionMC.vue';
 import LC3Instruction from '../../.vitepress/components/LC3Instruction.vue'
 </script>
 
+# {{ $frontmatter.title }}
+**{{ $frontmatter.description }}**
+
 <KeyConcepts :ConceptArray = "[
   {
     Concept: 'TRAP Routines are Built-In',

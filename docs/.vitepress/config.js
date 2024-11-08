@@ -10,7 +10,7 @@ export default defineConfig({
     ['link', { rel: 'icon', href: '/favicon.ico' }]
   ],
   markdown: {
-    lineNumbers: true
+    lineNumbers: true,
   },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config

@@ -36,6 +36,8 @@ import QuestionTF from '../../.vitepress/components/QuestionTF.vue';
 
 ## Introduction
 
+
+
 A program with hard-coded data (values defined in the source code) can only perform calculations on that data. To change data requires modifying the source code and re-compiling and assembling the code
 
 This takes a lot of time relative to the speed at which the computer can execute the program
