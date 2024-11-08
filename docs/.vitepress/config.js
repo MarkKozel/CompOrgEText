@@ -1,7 +1,6 @@
 import { defineConfig } from 'vitepress'
 const pkg = require('../../package.json')
 
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: pkg.title,
   description: pkg.description,
@@ -13,9 +12,7 @@ export default defineConfig({
     lineNumbers: true,
   },
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
     logo: '/images/HeroImage.jpg',
-    // logo: { src: '/images/HeroImage.jpg', width: 24, height: 24 },
     siteTitle: "CS-131 Textbook",
 
     search: { provider: 'local' },
@@ -27,14 +24,12 @@ export default defineConfig({
       text: 'Updated at',
       formatOptions: {
         dateStyle: 'medium',
-        // timeStyle: 'short'
       }
     },
 
     Outline: 4,
 
     nav: nav(),
-
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/MarkKozel/CompOrgEText' }
@@ -77,12 +72,10 @@ function nav() {
       activeMatch: '/AdditionalMaterials/'
     },
     {
-      // text: 'About',
       text: 'About this Resource',
       items: [
         {
           text: 'CS-131 Info',
-          // link: '/CS131/',
           items: [
             { text: 'Class Organization', link: '/CS131/ClassOrganization' },
             { text: 'CS-131 Course Info', link: '/CS131/CourseInformation' },
@@ -91,7 +84,6 @@ function nav() {
         },
         {
           text: 'About this textbook',
-          // link: '/About/',
           items: [
             { text: 'CS131 Information', link: '/About/CS131Information' },
             { text: 'Funding', link: '/About/Funding' },
@@ -232,18 +224,6 @@ function sidebarAssembly() {
         { text: 'Branch Instructions', link: 'LC-3_BranchInstruction' },
       ]
     },
-    // {
-    //   text: 'Getting Started',
-    //   collapsed: false,
-    //   base: 'Assembly/GettingStarted/',
-    //   sidebarDepth: 3,
-    //   items: [
-    //     { text: 'Install Tools', link: 'InstallTools' },
-    //     { text: 'LC-3 Source File Editing', link: 'SourceCode' },
-    //     { text: 'LC-3 Execution Environment', link: 'Running' },
-    //     { text: 'LC-3 Hello World Example', link: 'HelloWorld' },
-    //   ]
-    // },
     {
       text: 'The von Neumann Model',
       collapsed: false,
