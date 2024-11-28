@@ -12,5 +12,6 @@ import './mylang.css'
 import './questionComponent.css'
 import './iframe.css'
 import './custom.css'
+import './customContainer.css'
 
 export default DefaultTheme
