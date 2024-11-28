@@ -1,5 +1,6 @@
 import { defineConfig } from 'vitepress'
 import markdownItContainer from 'markdown-it-container';
+import GoogleAnalytics from 'vitepress-plugin-google-analytics';
 const pkg = require('../../package.json')
 
 export default defineConfig({
@@ -29,6 +30,13 @@ export default defineConfig({
       });
     }
   },
+
+  plugins: [
+    GoogleAnalytics({
+      id: 'G-9YS8KK0K1R'
+    })
+  ],
+
   themeConfig: {
     logo: '/images/HeroImage.jpg',
     siteTitle: "CS-131 Textbook",
