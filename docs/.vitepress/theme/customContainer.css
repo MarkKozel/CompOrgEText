@@ -1,0 +1,12 @@
+.custom-title {
+  font-weight: bold;
+  font-size: 1.1em;
+  margin-bottom: 0.5em;
+  color: #2c7a7b;
+}
+
+.custom-considerit {
+  border-left: 4px solid #42b983;
+  padding: 1em;
+  background: #f0f9eb;
+}

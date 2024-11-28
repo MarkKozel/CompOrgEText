@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import markdownItContainer from 'markdown-it-container';
 const pkg = require('../../package.json')
 
 export default defineConfig({
@@ -10,6 +11,23 @@ export default defineConfig({
   ],
   markdown: {
     lineNumbers: true,
+    config: (md) => {
+      // Register custom container
+      md.use(markdownItContainer, 'considerit', {
+        render(tokens, idx) {
+          const token = tokens[idx];
+          if (token.nesting === 1) {
+            // Extract the title after "::: considerit"
+            const keyword = token.info.trim().split(' ')[0];
+            const info = token.info.trim().slice(keyword.length).trim(); //remove the container name
+            const title = info ? `<p class="custom-title">${info}</p>` : '';
+            return `<div class="custom-considerit">\n${title}`;
+          } else {
+            return '</div>\n';
+          }
+        },
+      });
+    }
   },
   themeConfig: {
     logo: '/images/HeroImage.jpg',

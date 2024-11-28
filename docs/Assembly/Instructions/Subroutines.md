@@ -255,7 +255,7 @@ There is another reason to store registers in memory...to save the state of your
 <QuestionMC question="The LC-3 instruction for storing a register R5 to a memory location labeled 'Result' is..." answer='C' AChoice="STI R5, #12" BChoice="ST Result, R5" CChoice="ST R5, Result" DChoice="R5 .BLKW 1" rightAnswerFeedback="The simplest PC-relative Data Movement instruction" wrongAnswerFeedback="ST R5, Result, the PC-relative Data Movement instruction is the correct answer"/>
 
 **Does the Main Program or Subroutine save registers**
-The *caller* code (your code) or the *callee* code (TRAP or Sub) can both be responsible for preventing register data loss
+The *caller* code (your code, the *main* program) or the *callee* code (TRAP or Sub) can both be responsible for preventing register data loss
 
 It would be a waste of clock-cycles and memory for both *caller* and *callee* to perform this work
 The *caller* code could, but it would have to save all 8 registers because it does not know which registers the *callee* code will be using
