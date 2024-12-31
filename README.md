@@ -8,6 +8,10 @@ Use [VitePress](https://https://vitepress.dev/) Vue-based static site generator,
 
 Additionally, this project will be structures to make integration into other college Computer Science programs simpler and flexible
 
+## Contributors
+
+Initial editors and student contributors are located in the [About this Resource > Contributors page](./docs/About/Contributors.md)
+
 **Proposal**
 ## CS 131 Course Info:
 Basics of computer Number Systems, Logic Operations, Computer Electronics from transistors to CPUs
