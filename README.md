@@ -12,18 +12,6 @@ Additionally, this project will be structures to make integration into other col
 
 Initial editors and student contributors are located in the [About this Resource > Contributors page](./docs/About/Contributors.md)
 
-**Proposal**
-## CS 131 Course Info:
-Basics of computer Number Systems, Logic Operations, Computer Electronics from transistors to CPUs
-
-Instruction Set Architecture (ISA) and Assembly Language Programming using the Little Computer 3 (LC-3) ISA emulator run on Windows PCs
-
-Current Textbook: Patt & Patel. introduction to computing systems: from bits & gates to C & beyond. Second Edition. McGraw-Hill. ISBN-hardback: 978-0-07-246750-5 2003
-
-Purchase: $150 (new) $112 (used). Rental $97 (new) $60 (used)
-
-The current course structure is tied closely to the organization of the textbook. The textbook is organized such that students do not get to program in assembly language until the 6th week of class. The first 5 weeks are building foundational info, but no connection to programming until later. I feel using programming throughout the course would help reinforce the fundamentals with hands-on programming opportunities
-
 ## Proposal:
 Initial proposal text: [About this Resource > Proposal page](./docs/About/Proposal.md)
 
