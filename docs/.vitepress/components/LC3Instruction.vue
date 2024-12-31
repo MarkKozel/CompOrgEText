@@ -1,37 +1,57 @@
 <template>
   <div class="lc3instruction">
-    <table class="int-outer" style="width: auto">
-      <h3 class="int-title">{{ opName }}</h3>
-
-      <table class="int-inner" style="width: 80%">
+    <table class="int-outer">
+      <thead>
         <tr>
-          <td class="int-bits float-left" v-for="heading in getHeader" :key="heading">
-            {{ heading }}
+          <th colspan="2">
+            <h3 class="int-title">{{ opName }}</h3>
+          </th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td colspan="2">
+            <table class="int-inner" style="width: 80%">
+              <tbody>
+                <tr>
+                  <td class="int-bits float-left" v-for="heading in getHeader" :key="heading">
+                    {{ heading }}
+                  </td>
+                </tr>
+                <tr>
+                  <td class="int-bits float-left" v-for="bits in getBits" :key="bits">
+                    {{ bits }}
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </td>
         </tr>
 
-        <tr>
-          <td class="int-bits float-left" v-for="bits in getBits" :key="bits">
-            {{ bits }}
+        <tr v-for="description in descriptions" :key="description">
+          <td colspan="2">
+            <p class="int-close">
+              <b>{{ formatName(description) }}</b> : {{ formatDesc(description) }}
+            </p>
           </td>
         </tr>
-      </table>
 
-      <p class="int-close" v-for="description in descriptions" :key="description">
-        <b>{{ formatName(description) }}</b> : {{ formatDesc(description) }}
-      </p>
+        <tr v-if="examples">
+          <td colspan="2">
+            <div class="int-close">
+              <br />
+              <p v-if="operation" class="int-example">Operation:</p>
+              <p class="int-operation">{{ operation }}</p>
 
-      <div class="int-close" v-if="examples">
-        <br />
-
-        <p v-if="operation" class="int-example">Operation:</p>
-        <p class="int-operation">{{ operation }}</p>
-
-        <p class="int-example">Examples:</p>
-        <p class="int-close int-code" v-for="example in examples" :key="example">
-          {{ example }}
-        </p>
-      </div>
+              <p class="int-example">Examples:</p>
+              <p class="int-close int-code" v-for="example in examples" :key="example">
+                {{ example }}
+              </p>
+            </div>
+          </td>
+        </tr>
+      </tbody>
     </table>
   </div>
 </template>
@@ -179,6 +199,7 @@ table.int-outer {
   border-style: solid;
   border-width: 1px;
   border-spacing: 1px;
+  width: 100%;
   /* margin-left:50px */
 }
 
