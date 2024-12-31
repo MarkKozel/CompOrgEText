@@ -46,6 +46,8 @@ The VitePress site is built into a static web site that can be deployed to vario
 The Documentation Source will be available on GitHub to allow others to instructors to modify and deploy their own version of the documentation. Other instructors couple then deploy their modified documentation to their own web sites for their students to access
 
 ## Development Log
+20241231 - Updated to vitepress 1.5.0. Fixed table spec non-compliance issues and tweaked T/F and MC question styles
+
 20240818 - Updated to vitepress 1.3.3. Merged ViteConversion branch into master
 
 20240613 - Updated to vitepress 1.2.3. Adder ver info to nav bar. Renamed *vitedocs* to *docs*
