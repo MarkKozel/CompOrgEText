@@ -1,6 +1,6 @@
 {
   "name": "comp-org-etext",
-  "version": "2.2.133",
+  "version": "2.3.133",
   "title": "CS-131",
   "description": "Computer Organization Online Textbook",
   "main": "index.js",
