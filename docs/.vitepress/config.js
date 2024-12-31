@@ -117,6 +117,7 @@ function nav() {
             { text: 'Using this project', link: '/About/GettingStarted' },
             { text: 'Git Build Mgmt', link: '/About/GitBuildMgmt' },
             { text: 'Contributors', link: '/About/Contributors' },
+            { text: 'Dev log', link: '/About/DevLog' },
           ]
         },
         {
