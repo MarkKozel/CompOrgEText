@@ -113,6 +113,7 @@ function nav() {
           items: [
             { text: 'CS131 Information', link: '/About/CS131Information' },
             { text: 'Funding', link: '/About/Funding' },
+            { text: 'Proposal', link: '/About/Proposal' },
             { text: 'Colophon', link: '/About/Colophon' },
             { text: 'Using this project', link: '/About/GettingStarted' },
             { text: 'Git Build Mgmt', link: '/About/GitBuildMgmt' },
