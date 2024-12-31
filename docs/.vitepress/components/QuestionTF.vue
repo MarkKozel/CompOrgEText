@@ -1,34 +1,37 @@
 <template>
-  <div class="question-tf">
-    <table class="questionTable" style="width: 100%;" v-cloak>
-      <tr class="questionTr" :key="question">
-        <td colspan="2">
-          <p class="questionHeader"><b>True/False</b></p>
-          <p class="question">{{ question }}</p>
-        </td>
-      </tr>
-      <tr class="questionTr">
-        <td class="questionTd">
-          <label class="PossibleAnswers">
-            True
-            <input type="radio" name="radio" value="True" id="t" v-model="picked" />
-            <span class="questionCheckmark"></span>
-          </label>
-        </td>
-        <td class="questionTd">
-          <label class="PossibleAnswers">
-            False
-            <input type="radio" name="radio" value="False" id="f" v-model="picked" />
-            <span class="questionCheckmark"></span>
-          </label>
-        </td>
-      </tr>
+  <div class="question">
+    <table class="question-table" v-cloak>
+      <thead>
+        <tr>
+          <th colspan="2">
+            <p class="question-header"><strong>True/False</strong></p>
+            <p class="question-text">{{ question }}</p>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="possible-answers-group">
+          <td>
+            <label class="possible-answer">
+              <input type="radio" name="answer" value="True" v-model="picked" />
+              <span class="answer-label">True</span>
+            </label>
+          </td>
+          <td>
+            <label class="possible-answer">
+              <input type="radio" name="answer" value="False" v-model="picked" />
+              <span class="answer-label">False</span>
+            </label>
+          </td>
+        </tr>
+      </tbody>
     </table>
 
-    <button class="questionButton" v-if="picked" v-on:click="checkAnswer">Submit</button>
-    <div v-if="result">
-      <p class="tfresult">{{ result }}</p>
-      <p class="tfresultfb">{{ resultFeedback }}</p>
+    <button class="submit-button" v-if="picked" @click="checkAnswer"> Check Your Answer </button>
+
+    <div v-if="result" class="result-container">
+      <p class="result-text">{{ result }}</p>
+      <p class="result-feedback">{{ resultFeedback }}</p>
     </div>
   </div>
 </template>

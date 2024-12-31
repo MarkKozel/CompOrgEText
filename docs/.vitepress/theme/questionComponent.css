@@ -11,18 +11,125 @@
 }
 
 /* Multiple Choice Styles */
-.mcresult {
+.result-text {
   font-size: 20px;
   padding: 5px 15px;
 }
 
-.mcresultfb {
+.result-feedback {
   font-size: 16px;
   text-align: center;
   padding: 5px 60px;
 }
 
 /* Shared Question styles */
+
+.question-table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.question {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.answer-label {
+  display: inline-block;
+  /* padding: 10px 20px; */
+  font-size: 16px;
+  /* border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f0f0f0; */
+  color: #333;
+  cursor: pointer;
+  /* transition: background-color 0.3s, color 0.3s; */
+  text-align: center;
+}
+
+.submit-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.submit-button:active {
+  background-color: #004085;
+  /* Even darker blue on click */
+  transform: scale(1);
+  /* Reset scaling */
+}
+
+.submit-button img {
+  width: 20px;
+  /* Icon size */
+  height: 20px;
+  display: inline-block;
+}
+
+.possible-answers-group {
+  display: flex;
+  /* justify-content: space-around; */
+  gap: 10px;
+}
+
+.possible-answers-group td {
+  padding: 10px;
+  text-align: center;
+}
+
+.possible-answer {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  text-align: center;
+  width: 100%;
+}
+
+.possible-answer input[type="radio"] {
+  display: none;
+  /* Hide the radio input */
+}
+
+.possible-answer input[type="radio"]:checked+.answer-label {
+  background-color: #007bff;
+  color: white;
+  padding: 5px 10px;
+  border-color: #0056b3;
+}
+
+.possible-answer:hover {
+  background-color: #e0e0e0;
+}
+
+.possible-answer-cell {
+  width: 50%;
+  text-align: center;
+  padding: 10px;
+}
 
 .questionButton {
   background-color: #0000ff;
@@ -41,23 +148,26 @@
   font-size: 22px;
   font-family: Arial, sans-serif;
 }
+
 .instructions {
   text-align: left;
   font-size: 14px;
   font-family: Arial, sans-serif;
 }
-.questionHeader {
+
+.question-header {
   font-size: 22px;
   text-align: left;
   font-family: Arial, sans-serif;
 }
+
 .question {
   font-size: 22px;
   text-align: left;
   font-family: Arial, sans-serif;
 }
 
-.PossibleAnswers {
+.possible-answers {
   display: block;
   position: relative;
   padding-left: 35px;
@@ -72,7 +182,7 @@
 }
 
 /* Hide the browser's default radio button */
-.PossibleAnswers input {
+.possible-answers input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -92,12 +202,12 @@
 }
 
 /* On mouse-over, add a grey background color */
-.PossibleAnswers:hover input ~ .questionCheckmark {
+.possible-answers:hover input~.questionCheckmark {
   background-color: #9999ff;
 }
 
 /* When the radio button is checked, add a blue background */
-.PossibleAnswers input:checked ~ .questionCheckmark {
+.possible-answers input:checked~.questionCheckmark {
   background-color: #9999ff;
 }
 
@@ -109,12 +219,12 @@
 }
 
 /* Show the indicator (dot/circle) when checked */
-.PossibleAnswers input:checked ~ .questionCheckmark:after {
+.possible-answers input:checked~.questionCheckmark:after {
   display: block;
 }
 
 /* Style the indicator (dot/circle) */
-.PossibleAnswers .questionCheckmark:after {
+.possible-answers .questionCheckmark:after {
   top: 6px;
   left: 6px;
   width: 13px;
@@ -128,7 +238,7 @@
   border-style: solid;
   border-width: 1px;
   border-spacing: 0px;
-  border-radius:5px;
+  border-radius: 5px;
   margin: 0px;
   padding: 10px;
 }
