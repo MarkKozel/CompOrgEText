@@ -62,7 +62,7 @@ New data added to the stack is *pushed  onto the stack*. The stack provides a pu
 >>
 >Lines 10 - 12 push 3 strings onto the stack
 
-<QuestionTF question="In the java code, above, the first name that can be accessed is Charles" answer='true' rightAnswerFeedback="Yes! It was the last one in, so it will be the first one out" wrongAnswerFeedback="Remember the last on in will be the first one out. In this code Charles will be the first one out"/> 
+<QuestionTF question="In the java code, above, the first name that will be popped is Charles" answer='true' rightAnswerFeedback="It was the last one in, so it will be the first one out" wrongAnswerFeedback="Remember the last one in will be the first one out. In this code Charles will be the first one out"/> 
 
 ### Pop
 Data is removed from the stack by *popping it off the stack*. The last data element is removed from the stack and returned to the main program for use
